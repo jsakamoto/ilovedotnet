@@ -161,7 +161,7 @@
       "url": "css\/app.css"
     },
     {
-      "hash": "sha256-7\/cawTYmSOjx1793kcpm\/gadZgPy66pgvrowkpnBkiQ=",
+      "hash": "sha256-GA08oXRdRRqD9i5HyFmo8Q6SxC3wPWjrc6H8rkxhTdw=",
       "url": "css\/app.min.css"
     },
     {
@@ -201,5 +201,5 @@
       "url": "manifest.json"
     }
   ],
-  "version": "CRo+e\/Qa"
+  "version": "uoX6pzg8"
 };
