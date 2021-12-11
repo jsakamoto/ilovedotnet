@@ -193,7 +193,7 @@
       "url": "image\/social\/youtube-brands.svg"
     },
     {
-      "hash": "sha256-NpB8hI/+Qn1NMQAQt/aPhBuEMfhCPCMMWvJ4kN6FXCE=",
+      "hash": "sha256-7VBD+ekSoZyRBtg95GakVZlxDpbMzZFNO7lwsAvgVNc=",
       "url": "index.html"
     },
     {
