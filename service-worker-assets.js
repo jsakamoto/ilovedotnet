@@ -161,7 +161,7 @@
       "url": "css\/app.css"
     },
     {
-      "hash": "sha256-GA08oXRdRRqD9i5HyFmo8Q6SxC3wPWjrc6H8rkxhTdw=",
+      "hash": "sha256-9BaZ7L2yu1MwwzXntX3nYMhhWfJ2BKKPPV1tyykBDZA=",
       "url": "css\/app.min.css"
     },
     {
@@ -193,7 +193,7 @@
       "url": "image\/social\/youtube-brands.svg"
     },
     {
-      "hash": "sha256-Ig5H0anBPS9hh6gf4IBpB0xNsy8bSzk5atEk9aQLs0E=",
+      "hash": "sha256-NpB8hI/+Qn1NMQAQt/aPhBuEMfhCPCMMWvJ4kN6FXCE=",
       "url": "index.html"
     },
     {
@@ -201,5 +201,5 @@
       "url": "manifest.json"
     }
   ],
-  "version": "uoX6pzg8"
+  "version": "gTgxRW3q"
 };
