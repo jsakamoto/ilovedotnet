@@ -205,7 +205,7 @@
       "url": "image\/dotnet-bot-construction.png"
     },
     {
-      "hash": "sha256-rl3ObUJjEdOsEuV0pc9GhxVhzUObC469yu5Tmnsg6mQ=",
+      "hash": "sha256-mQRrTPewgnIW10EeEahpwW1RfpxaWImLR28uOCMaSGo=",
       "url": "index.html"
     },
     {
@@ -217,5 +217,5 @@
       "url": "manifest.json"
     }
   ],
-  "version": "Mrd\/woY\/"
+  "version": "I+C4XZ63"
 };
