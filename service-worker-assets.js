@@ -189,7 +189,7 @@
       "url": "image\/dotnet-bot-construction.png"
     },
     {
-      "hash": "sha256-szcHZXxx/u/Ofj9oleQFHJVGz8rsimezsCacgGYrBWs=",
+      "hash": "sha256-rbJuGUg/zVoMs9zQBJ18HpaRsiHr5UrIBTgqreaIAAc=",
       "url": "index.html"
     },
     {
