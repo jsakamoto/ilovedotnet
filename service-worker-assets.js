@@ -197,7 +197,7 @@
       "url": "image\/icons\/blazor.png"
     },
     {
-      "hash": "sha256-oEdSUlLlCtSA9oCQdwp7JTczSioBwNnj3cYh5s3jPE0=",
+      "hash": "sha256-pc+jUDcFp0rP/JXm1yPujEICzyFpZgH148cQCewr8Hg=",
       "url": "index.html"
     },
     {
