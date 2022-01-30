@@ -21,7 +21,7 @@
       "url": "_framework\/icudt.dat"
     },
     {
-      "hash": "sha256-t\/JynV1t62oVPjTkYA9f6a\/8DkZqrbyS\/dGjrA2Cdec=",
+      "hash": "sha256-64mfuax5tp4pHxzBe86LpoE7CLd47F95sMxZmNsAEeQ=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -33,11 +33,11 @@
       "url": "_framework\/Humanizer.dll"
     },
     {
-      "hash": "sha256-57Z18DJXnpsQ4J2kyIHyVjIR01h97lEUg8mygXiVZlw=",
+      "hash": "sha256-V2hBFYkaZw\/keqgf7QMQS2lzzxy89U18MnUmcCAigrc=",
       "url": "_framework\/Microsoft.AspNetCore.Components.dll"
     },
     {
-      "hash": "sha256-JpvKn01ij575WNuXR+DWcX8AyoB\/8QJeSieSASNs668=",
+      "hash": "sha256-CS9WNiGAXwWz4eElItY1c6gy2FuwhNHu7avRV1ebwF4=",
       "url": "_framework\/Microsoft.AspNetCore.Components.Web.dll"
     },
     {
@@ -125,7 +125,7 @@
       "url": "_framework\/System.dll"
     },
     {
-      "hash": "sha256-j4gCC7h+xJk158WwPc3mitAzOurSTIGBPZceZS9+Feg=",
+      "hash": "sha256-5xyz7tu7UnRtMhT96Y9Oei\/8t19x0JKFnFEWTI6oSTo=",
       "url": "_framework\/System.Linq.dll"
     },
     {
@@ -145,7 +145,7 @@
       "url": "_framework\/System.ObjectModel.dll"
     },
     {
-      "hash": "sha256-7ixuZwzV3NRxkI06eanCdgKYz1zRGg\/jVDogo13+Wd4=",
+      "hash": "sha256-aypEVT3GKpwC0SJJZkLQE7sA+8J3I9xQ3bjRL+\/xWgI=",
       "url": "_framework\/System.Private.CoreLib.dll"
     },
     {
@@ -181,7 +181,11 @@
       "url": "_framework\/System.Threading.dll"
     },
     {
-      "hash": "sha256-k\/mSWkL+xrQfH9l7HoSxI+B++eYf32tHPUxNw+ri+78=",
+      "hash": "sha256-bv2iRnqhHXP3FLemFgjTVA9tnhktkB9i8pQuRr4AqQM=",
+      "url": "_framework\/System.Web.HttpUtility.dll"
+    },
+    {
+      "hash": "sha256-H60tLSZMdP0cS80tkU6wQ79r8ZChoGVeCi6Dc\/EaJQY=",
       "url": "_framework\/Web.dll"
     },
     {
@@ -189,15 +193,15 @@
       "url": "_framework\/dotnet.6.0.1.3nmi6qu0e8.js"
     },
     {
-      "hash": "sha256-9Xh3XMa6\/R0fgx1PWlKBwr646t7xaZiZ6aOBnloeK3c=",
+      "hash": "sha256-SFOfAUuuX2qZwFmTGhqQbgJ76xtttYuEcwFnVeqiFmE=",
       "url": "_framework\/dotnet.wasm"
     },
     {
-      "hash": "sha256-vpzE4J\/YW7gEr+HSsKUB7YlVmNP7GW+nq8kuEl52k8s=",
+      "hash": "sha256-2HR7IQ8J3Ejn6\/4JPqlwkYKaGJwr0NqU6\/H30q6RWbM=",
       "url": "appsettings.json"
     },
     {
-      "hash": "sha256-nKB4cw4PQvMFIAgPPbVb77ySfcxA4VyyagczzEoqO0E=",
+      "hash": "sha256-APrHa5ReBaEimCWYZcZvtPveQt9VgDl3lboQ\/gXclKo=",
       "url": "css\/app.min.css"
     },
     {
@@ -213,35 +217,43 @@
       "url": "icon-512.png"
     },
     {
-      "hash": "sha256-Ju+heY9p8RDFvLLs20vcN5FgAW9teYyjRhpS5D3H1uY=",
-      "url": "image\/blogs\/blazor\/wasm\/blazor-wasm-error-logging-1200w.png"
+      "hash": "sha256-IRzWpi3+lWK7z5Bxk7j\/c419RGcSpepYtqV6Gthr8MI=",
+      "url": "image\/blogs\/blazor\/wasm\/blazor-wasm-dark-theme-and-light-theme-1200w.svg"
     },
     {
-      "hash": "sha256-9GkLMWVWiZEoZ4sWCYXdc+5LIRsGpBPxbf4AORcNRaI=",
-      "url": "image\/blogs\/blazor\/wasm\/blazor-wasm-error-logging-400w.png"
+      "hash": "sha256-EO96LYk8twX5p6OnBD1EyXmYQdF6FfFvtSekgs6Sw4o=",
+      "url": "image\/blogs\/blazor\/wasm\/blazor-wasm-dark-theme-and-light-theme-400w.svg"
     },
     {
-      "hash": "sha256-6sZh3BE\/woVZRIYdEG36mSXBpmmT\/1UyodWJbrXrJMc=",
-      "url": "image\/blogs\/blazor\/wasm\/blazor-wasm-exception-handling-and-error-boundary-1200w.png"
+      "hash": "sha256-OejC2syKB\/2op8l\/PvgfdPyb92UOGjhdiFziCwPjHSo=",
+      "url": "image\/blogs\/blazor\/wasm\/blazor-wasm-error-logging-1200w.svg"
     },
     {
-      "hash": "sha256-kLVb1CnhEKKZJaTZfxq4wOCSwt\/72RKUaQ8wboqEx5I=",
-      "url": "image\/blogs\/blazor\/wasm\/blazor-wasm-exception-handling-and-error-boundary-400w.png"
+      "hash": "sha256-B2UBMkV3QBPzd6YvVUz47dYiuazy96qBy2X7tgBVv18=",
+      "url": "image\/blogs\/blazor\/wasm\/blazor-wasm-error-logging-400w.svg"
+    },
+    {
+      "hash": "sha256-tZCFfyF28elM1UPd69K5FoDDcP6iNStbSsoVxPaGSw8=",
+      "url": "image\/blogs\/blazor\/wasm\/blazor-wasm-exception-handling-and-error-boundary-1200w.svg"
+    },
+    {
+      "hash": "sha256-\/1dDbE8uq0Hl2gm\/wXTH2hJ9cRcGc7DFYfS+53J\/LYA=",
+      "url": "image\/blogs\/blazor\/wasm\/blazor-wasm-exception-handling-and-error-boundary-400w.svg"
     },
     {
       "hash": "sha256-oLB1xzwgyqDl0rBtu4fkFXrUJgb\/zoEqGsAYGDjgMYI=",
       "url": "image\/icons\/blazor.png"
     },
     {
-      "hash": "sha256-zH+Gl1vHwlqkNRKgUXBQ5dhmX/mx6Yd2WfxpIR2hvxs=",
+      "hash": "sha256-oaYHcCunUYRc2VHvmPF+y6KfXSMhtqhQ96TCTpwmQ4Q=",
       "url": "index.html"
     },
     {
-      "hash": "sha256-M+2Nd35a\/LDsg9aaL1oNBpKpUzz+0aMBkjq7bvtB74U=",
+      "hash": "sha256-Tj3S+B+8R4ZdX3VXqYGahJ\/vmsUBc6j0BiE15Rh9ChM=",
       "url": "js\/displaymode.js"
     },
     {
-      "hash": "sha256-PQxOYj7VrSPd3KrMYrVhpJHoxC\/WHfUryjszdCy4Bis=",
+      "hash": "sha256-ta5ORMtQf5A5evdtGMz8nek6InUOXnK2ESU5Ovrvom8=",
       "url": "js\/githubgist.js"
     },
     {
@@ -249,13 +261,13 @@
       "url": "js\/scrollto.js"
     },
     {
-      "hash": "sha256-6Fmhkwp0XvWFOPqKMwC\/pYytr6DCSvV2qHEacRSRpxk=",
-      "url": "js\/viewport.js"
+      "hash": "sha256-sB0F9yXNT3+Ox\/u+4\/m8iKiuYIzvLto1yQ3dXbFNwdw=",
+      "url": "js\/search.js"
     },
     {
       "hash": "sha256-gV2xORHn3bSZhiIQ3KqnEXjSdj4crJQ5+qNZe5SPhF4=",
       "url": "manifest.json"
     }
   ],
-  "version": "Fl3LUxSH"
+  "version": "cRkR1Rlc"
 };
