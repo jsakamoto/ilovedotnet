@@ -6,9 +6,8 @@ self.addEventListener('install', event => event.waitUntil(onInstall(event)));
 self.addEventListener('activate', event => event.waitUntil(onActivate(event)));
 self.addEventListener('fetch', event => event.respondWith(onFetch(event)));
 
-const cacheVersion = 20220220223000;
 const cacheNamePrefix = 'offline-cache-';
-const cacheName = `${cacheNamePrefix}${self.assetsManifest.version}${cacheVersion}`;
+const cacheName = `${cacheNamePrefix}${self.assetsManifest.version}`;
 const offlineAssetsInclude = [ /\.dll$/, /\.pdb$/, /\.wasm/, /\.html/, /\.js$/, /\.json$/, /\.css$/, /\.woff$/, /\.png$/, /\.jpe?g$/, /\.gif$/, /\.ico$/, /\.blat$/, /\.dat$/ ];
 const offlineAssetsExclude = [ /^service-worker\.js$/ ];
 
@@ -47,4 +46,4 @@ async function onFetch(event) {
 
     return cachedResponse || fetch(event.request);
 }
-/* Manifest version: X1HtY1NJ */
+/* Manifest version: qwqf9S7M */

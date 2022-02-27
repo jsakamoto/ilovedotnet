@@ -1,0 +1,410 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="utf-8"/>
+    <meta name="author" content="Abdul Rahman Shabeek Mohamed"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="copyright" content="I Love DotNet"/>
+    <meta name="language" content="EN"/>
+    <meta name="robots" content="index,follow"/>
+    <meta name="owner" content="Abdul Rahman Shabeek Mohamed"/>
+    <meta http-equiv="Content-Security-Policy" content="base-uri 'self';
+               block-all-mixed-content;
+               img-src data: 'self';
+               object-src 'none';
+               script-src 'self'
+                          https://gist.github.com
+                          'unsafe-eval'
+                          'unsafe-inline'
+                          data:;
+               style-src 'self'
+                         https://github.githubassets.com
+                         'unsafe-inline';
+               upgrade-insecure-requests;"/>
+    <title>I ❤️ DotNet</title>
+    <base href="/"/>
+    <link href="css/app.min.css" rel="stylesheet"/>
+    <link href="manifest.json" rel="manifest"/>
+    <link rel="icon" type="image/x-icon" href="favicon.ico"/>
+    <link rel="me" href="https://www.linkedin.com/in/fingers10" type="text/html"/>
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="appicons/apple-touch-icon-144x144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="appicons/apple-touch-icon-152x152.png"/>
+    <link rel="icon" type="image/png" href="appicons/favicon-196x196.png" sizes="196x196"/>
+    <link rel="icon" type="image/png" href="appicons/favicon-128.png" sizes="128x128"/>
+    <script>
+        if (localStorage.DisplayMode === 'dark' || (!('DisplayMode' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+    </script>
+
+<!-- %%-PRERENDERING-HEADOUTLET-BEGIN-%% -->
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Love DotNet",
+            "url": "https://www.ilovedotnet.org/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://www.ilovedotnet.org/favicon.ico",
+                "width": 16,
+                "height": 16
+            }
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Abdul Rahman Shabeek Mohamed",
+            "image": {
+                "@type": "ImageObject",
+                "url": "//https://media-exp1.licdn.com/dms/image/C5603AQGIbBUf4NvSqA/profile-displayphoto-shrink_200_200/0/1588467007026?e=1648080000&v=beta&t=bbZe_QpTmS_g0w0DxVaJGLPgyXU1bu41QyppAIhZNss",
+                "width": 250,
+                "height": 250
+            },
+            "url": "https://www.ilovedotnet.org/author/abdulrahman/",
+            "sameAs": [
+                "https://www.linkedin.com/in/fingers10",
+                "https://github.com/fingers10",
+                "https://stackoverflow.com/users/10851213/fingers10",
+                "https://www.youtube.com/channel/UCOS3wCw7SVXjXXffMPqid7A"
+            ]
+        },
+        "headline": "Blazor WASM Exception Handling and Error Boundary",
+        "url": "https://www.ilovedotnet.org/blogs/blazor-wasm-exception-handling-and-error-boundary/",
+        "datePublished": "2022-01-16T22:30:00.000Z",
+        "dateModified": "2022-01-23T22:30:00.000Z",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://www.ilovedotnet.org/image/blogs/blazor/wasm/blazor-wasm-exception-handling-and-error-boundary-1200w.svg",
+            "width": 1265,
+            "height": 827
+        },
+        "keywords": "I Love DotNet, Blogs, Blazor, Blazor (WebAssembly), Exception Handling, Error Boundary",
+        "description": "In this post I will teach you how exception handling works and how to use error boundary in your Blazor applications. All with live working demo.",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://www.ilovedotnet.org/"
+        }
+    }
+    </script>
+<!-- %%-PRERENDERING-HEADOUTLET-END-%% -->
+<script src="data:text/javascript;base64,KGZ1bmN0aW9uKG4sdCxpKXtmb3IodmFyIGY9bi5jcmVhdGVOb2RlSXRlcmF0b3IobiwxMjgpLHIsZSx1O2YubmV4dE5vZGUoKTspaWYocj1mLnJlZmVyZW5jZU5vZGUsdC50ZXN0KHIudGV4dENvbnRlbnQudHJpbSgpKSl7d2hpbGUoaT1yLm5leHRTaWJsaW5nKWlmKGU9aS50ZXh0Q29udGVudC50cmltKCksaS5yZW1vdmUoKSx0LnRlc3QoZSkpYnJlYWs7ci5yZW1vdmUoKTticmVha311PUFycmF5LmZyb20obi5xdWVyeVNlbGVjdG9yQWxsKCJzY3JpcHQiKSkucG9wKCk7dSYmdS5yZW1vdmUoKX0pKGRvY3VtZW50LC9eJSUtUFJFUkVOREVSSU5HLUhFQURPVVRMRVQtKEJFR0lOfEVORCktJSUkLyk7"></script>
+</head>
+
+<body class="[ m-0 ] [ h-full ] [ dark:bg-stone-900 ] [ bg-gray-100 ]">
+    <div id="app" class="[ dark:text-white ]">Loading...
+<!-- %%-PRERENDERING-BEGIN-%% -->
+<div style="opacity: 0; position: fixed; z-index: -1; top: 0; left: 0; bottom: 0; right: 0;">
+    <header id="header" class="[ flex items-center justify-between ] [ bg-white ] [ px-5 ] [ dark:bg-gray-800 dark:bg-gray-800/80 ] [ h-14 ] [ sticky top-0 ] [ backdrop-blur-sm bg-white/30 ]"><h1 id="brand" class="[  ]"><a href="/" class="[ font-bold ] [ flex items-center justify-between space-x-1 ] active"><span class="[ dark:text-white ]">I</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-heart ] [ text-red-500 ] [ inline ] [ fill-current ]" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"></path></svg>
+            <span class="[ text-indigo-600 ] [ dark:text-white ]">.NET</span></a></h1>
+    <section id="search" class="[ flex grow justify-center ]"><button type="button" aria-label="Exit Search" class="[ hidden ] [ bg-white ] [ h-10 w-10 ] [ border-2 ] [ dark:bg-gray-800 dark:border-gray-800 ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-arrow-left ] [ inline ] [ text-gray-500 ] [ stroke-1 ] [ dark:text-white ]" width="25" height="25" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <line x1="5" y1="12" x2="11" y2="18"></line>
+            <line x1="5" y1="12" x2="11" y2="6"></line></svg></button>
+    <div class="[ dropdown ] [  ] [ w-1/2 ] [  ] [  ]"><div class="[ dropdown-trigger ] [ w-full ]"><input type="search" placeholder="Search" class="[ w-full h-full ] [ px-4 ] [ border-2 ] [ focus:outline-none focus:border-gray-400 ] [ dark:bg-black dark:border-gray-800 dark:focus:border-b-white dark:md:focus:border-blue-800 dark:caret-white dark:text-white  ]" autocapitalize="none" autocomplete="off" autocorrect="off" aria-haspopup="true" aria-controls="dropdown-menu" value=""></input></div>
+        <div class="[ dropdown-menu ] [ w-full ]" id="dropdown-menu" role="menu"><div class="[ dropdown-content ] [ dark:bg-black ]"></div></div></div>
+    <button type="button" aria-label="Search" class="[ bg-white ] [ h-10 w-10 ] [ border-2 border-l-0 ] [ dark:bg-gray-700 dark:border-gray-700 ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-search ] [ inline ] [ text-gray-500 ] [ stroke-1 ] [ dark:text-white ]" width="25" height="25" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <circle cx="10" cy="10" r="7"></circle>
+            <line x1="21" y1="21" x2="15" y2="15"></line></svg></button></section>
+    <section id="display-and-social" class="[  ] [ flex items-center space-x-1.5 ]"><section id="displaymode"><div class="dropdown is-right "><div class="dropdown-trigger"><button class="button [ flex items-center ]" aria-haspopup="true" aria-controls="displaymode-menu"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-brightness-up ] [ dark:text-white ]" width="25" height="25" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                        <line x1="12" y1="5" x2="12" y2="3"></line>
+                        <line x1="17" y1="7" x2="18.4" y2="5.6"></line>
+                        <line x1="19" y1="12" x2="21" y2="12"></line>
+                        <line x1="17" y1="17" x2="18.4" y2="18.4"></line>
+                        <line x1="12" y1="19" x2="12" y2="21"></line>
+                        <line x1="7" y1="17" x2="5.6" y2="18.4"></line>
+                        <line x1="6" y1="12" x2="4" y2="12"></line>
+                        <line x1="7" y1="7" x2="5.6" y2="5.6"></line></svg></button></div>
+        <div class="dropdown-menu" id="displaymode-menu" role="menu"><div class="dropdown-content [ dark:bg-black ]"><button type="button" class="dropdown-item [ flex items-center space-x-1 ] [ dark:hover:bg-gray-700 ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-brightness-up ] [ dark:text-white ]" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                        <line x1="12" y1="5" x2="12" y2="3"></line>
+                        <line x1="17" y1="7" x2="18.4" y2="5.6"></line>
+                        <line x1="19" y1="12" x2="21" y2="12"></line>
+                        <line x1="17" y1="17" x2="18.4" y2="18.4"></line>
+                        <line x1="12" y1="19" x2="12" y2="21"></line>
+                        <line x1="7" y1="17" x2="5.6" y2="18.4"></line>
+                        <line x1="6" y1="12" x2="4" y2="12"></line>
+                        <line x1="7" y1="7" x2="5.6" y2="5.6"></line></svg>
+                    <p class="[ dark:text-white ]">Light</p></button>
+                <button type="button" class="dropdown-item [ flex items-center space-x-1 ] [ dark:hover:bg-gray-700 ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-moon ] [ dark:text-white ]" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"></path></svg>
+                    <p class="[ dark:text-white ]">Dark</p></button>
+                <button type="button" class="dropdown-item [ flex items-center space-x-1 ] [ dark:hover:bg-gray-700 ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-device-desktop ] [ dark:text-white ]" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <rect x="3" y="4" width="18" height="12" rx="1"></rect>
+                        <line x1="7" y1="20" x2="17" y2="20"></line>
+                        <line x1="9" y1="16" x2="9" y2="20"></line>
+                        <line x1="15" y1="16" x2="15" y2="20"></line></svg>
+                    <p class="[ dark:text-white ]">System</p></button></div></div></div></section>
+        <section id="social" class="[ flex justify-between ]"><a href="https://stackoverflow.com/users/10851213/fingers10" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-brand-stackoverflow ] [ text-yellow-500 ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M4 17v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-1"></path>
+            <path d="M8 16h8"></path>
+            <path d="M8.322 12.582l7.956 .836"></path>
+            <path d="M8.787 9.168l7.826 1.664"></path>
+            <path d="M10.096 5.764l7.608 2.472"></path></svg></a>
+    <a href="https://lnkd.in/g4-f-dcN" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-brand-linkedin ] [ text-blue-500 ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <rect x="4" y="4" width="16" height="16" rx="2"></rect>
+            <line x1="8" y1="11" x2="8" y2="16"></line>
+            <line x1="8" y1="8" x2="8" y2="8.01"></line>
+            <line x1="12" y1="16" x2="12" y2="11"></line>
+            <path d="M16 16v-3a2 2 0 0 0 -4 0"></path></svg></a>
+    <a href="https://github.com/ILoveDotNet" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-brand-github ] [ text-black ] [ dark:text-white ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path></svg></a>
+    <a href="https://www.youtube.com/channel/UCOS3wCw7SVXjXXffMPqid7A" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-brand-youtube ] [ text-red-500 ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <rect x="3" y="5" width="18" height="14" rx="4"></rect>
+            <path d="M10 9l5 3l-5 3z"></path></svg></a></section></section></header>
+<main id="main">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="[ flex flex-col md:flex-row ] [ p-5 md:px-20 ] [ md:space-x-5 space-y-5 md:space-y-0 ]"><article class="[ md:basis-4/5 ] [ space-y-5 ]"><header class="[ space-y-2 ]"><figure><img srcset="image/blogs/blazor/wasm/blazor-wasm-exception-handling-and-error-boundary-400w.svg 400w,image/blogs/blazor/wasm/blazor-wasm-exception-handling-and-error-boundary-1200w.svg 1200w" sizes="(max-width: 400px) 480px,1200px" alt="Blazor WASM Exception Handling and Error Boundary" class="[ w-full ]" loading="lazy" /></figure>
+    <h2 class="[ dark:text-white ] [ font-semibold text-xl ]">Blazor WASM Exception Handling and Error Boundary</h2>
+    <section class="[ flex flex-col md:flex-row justify-between ] [ space-y-1 md:space-y-0 ] [ dark:text-white ] [ font-bold ]"><div><p>Authors - <a href="https://www.linkedin.com/in/fingers10" class="[ underline ]" target="_blank">Abdul Rahman (Content Writer)</a>, <a href="https://www.linkedin.com/in/regina-sharon" class="[ underline ]" target="_blank">Regina Sharon (Graphic Designer)</a></p>
+            <time datetime="2022-01-23 22:30:00">Last updated one month ago</time></div>
+        <div><section class="[ flex justify-between md:justify-start ]"><a href="https://api.whatsapp.com/send?text=Blazor WASM Exception Handling and Error Boundary%20https%3a%2f%2fwww.ilovedotnet.org%2fblogs%2fblazor-wasm-exception-handling-and-error-boundary%2f" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-brand-whatsapp ] [ text-emerald-500 dark:text-emerald-300 ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9"></path>
+            <path d="M9 10a0.5 .5 0 0 0 1 0v-1a0.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a0.5 .5 0 0 0 0 -1h-1a0.5 .5 0 0 0 0 1"></path></svg></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fwww.ilovedotnet.org%2fblogs%2fblazor-wasm-exception-handling-and-error-boundary%2f" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-brand-linkedin ] [ text-blue-500 ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <rect x="4" y="4" width="16" height="16" rx="2"></rect>
+            <line x1="8" y1="11" x2="8" y2="16"></line>
+            <line x1="8" y1="8" x2="8" y2="8.01"></line>
+            <line x1="12" y1="16" x2="12" y2="11"></line>
+            <path d="M16 16v-3a2 2 0 0 0 -4 0"></path></svg></a>
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fwww.ilovedotnet.org%2fblogs%2fblazor-wasm-exception-handling-and-error-boundary%2f" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-brand-facebook ] [ text-blue-400 ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"></path></svg></a>
+    <a href="https://twitter.com/intent/tweet?url=https%3a%2f%2fwww.ilovedotnet.org%2fblogs%2fblazor-wasm-exception-handling-and-error-boundary%2f&amp;text=Blazor WASM Exception Handling and Error Boundary" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-brand-twitter ] [ text-blue-700 ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z"></path></svg></a></section></div></section>
+    <hr class="[ dark:text-white my-1.5 ]"></header>
+        <section class="[ dark:text-white ] [ space-y-2 ] [ leading-relaxed ]"><p>
+                Exceptions are common in all apps. We can handle known exceptions which we expect using <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">try</code>
+                <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">catch</code> blocks. But this cannot be the case always. Some times we might end up in unforeseen
+                run time unhandled exceptions. There are different ways to handle exceptions. Luckily with <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">blazor</code>
+                we have exception handling built in in two different ways.
+            </p>
+
+            <section class="[ flex flex-col ]"><h4 class="[ bg-gray-200 ] [ p-2 ] [ font-semibold ] [ text-black ] [ flex items-center ] [ dark:bg-gray-800 dark:bg-gray-800/80 dark:text-white ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-code ] [ text-purple-700 ] [ fill-purple-500 ]" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <polyline points="7 8 3 12 7 16"></polyline>
+            <polyline points="17 8 21 12 17 16"></polyline>
+            <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - Chat component to simulate exception</h4>
+    <article id="b2110762-4dae-4cc4-87dc-1b58ea3929ff" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+
+            <ol class="[ list-decimal ] [ ml-3.5 ]"><li><a href="blogs/blazor-wasm-exception-handling-and-error-boundary#global-exception-handling" class="[ underline ]">
+                        Global Exception Handling
+                    </a></li>
+                <li><a href="blogs/blazor-wasm-exception-handling-and-error-boundary#error-boundary" class="[ underline ]">
+                        Error Boundary
+                    </a></li>
+                <li><a href="blogs/blazor-wasm-exception-handling-and-error-boundary#alternative-global-exception-handling" class="[ underline ]">
+                        Alternative Global Exception Handling
+                    </a></li></ol>
+
+            <h3 id="global-exception-handling" class="[ font-semibold text-lg ]">Global Exception Handling</h3>
+
+            <p>
+                Blazor has global error handling element <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">&lt;div id=&quot;blazor-error-ui&quot;&gt;</code> in <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">index.html</code>. This will act
+                as an global error handler which will catch any unhanled exception across blazor app and display nice error UI codesent inside
+                <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">&lt;div id=&quot;blazor-error-ui&quot;&gt;</code> at the bottom of the screen by default and logs the error stack trace to browser
+                console. This will also have reload option to reload the app to restore the app to correct working state.
+            </p>
+
+            <section class="[ flex flex-col ]"><h4 class="[ bg-gray-200 ] [ p-2 ] [ font-semibold ] [ text-black ] [ flex items-center ] [ dark:bg-gray-800 dark:bg-gray-800/80 dark:text-white ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-code ] [ text-purple-700 ] [ fill-purple-500 ]" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <polyline points="7 8 3 12 7 16"></polyline>
+            <polyline points="17 8 21 12 17 16"></polyline>
+            <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - Blazor Global Exception Handling</h4>
+    <article id="c626ec1d-d984-4525-ab49-c8396413a224" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+
+            <section class="[ flex flex-col ]"><h4 class="[ bg-gray-200 ] [ p-2 ] [ font-semibold ] [ text-black ] [ flex items-center ] [ dark:bg-gray-800 dark:bg-gray-800/80 dark:text-white ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-caret-right ] [ text-lime-700 ] [ fill-lime-500 ]" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M18 15l-6 -6l-6 6h12" transform="rotate(90 12 12)"></path></svg> Demo - Global Exception Handling</h4>
+    <article class="[ bg-gray-300 ] [ dark:bg-gray-700 ] [ p-4 ]"><p class="[ text-black ] [ dark:text-white ]"><b>Scenario - Let's simulate an error connecting to chat agent</b></p>
+                    <button type="button" class="[ bg-cyan-500 ] [ px-4 py-2 ] [ inline-block ] [ rounded-md ] [ inline-flex ] [ space-x-1 ]"><p class="[ text-white ]">Click to initiate chat with agent</p>
+    <svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-message-circle-2 ] [ text-white ]" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M3 20l1.3 -3.9a9 8 0 1 1 3.4 2.9l-4.7 1"></path>
+        <line x1="12" y1="12" x2="12" y2="12.01"></line>
+        <line x1="8" y1="12" x2="8" y2="12.01"></line>
+        <line x1="16" y1="12" x2="16" y2="12.01"></line></svg></button></article></section>
+
+            <h3 id="error-boundary" class="[ font-semibold text-lg ]">Error Boundary</h3>
+
+            <p>
+                Though <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">&lt;div id=&quot;blazor-error-ui&quot;&gt;</code> handles all unhandled exceptions it will be nice to restrict the error
+                handling boundary and have better control of the error message and error UI. That said <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">.Net 6</code> introduced
+                <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">&lt;ErrorBoundary&gt;</code> to serve this purpose. We can wrap any component inside <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">&lt;ErrorBoundary&gt;</code> and this
+                will take care of showing error UI when an unhandled exception occurs inside the component.
+            </p>
+
+            <section class="[ flex flex-col ]"><h4 class="[ bg-gray-200 ] [ p-2 ] [ font-semibold ] [ text-black ] [ flex items-center ] [ dark:bg-gray-800 dark:bg-gray-800/80 dark:text-white ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-code ] [ text-purple-700 ] [ fill-purple-500 ]" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <polyline points="7 8 3 12 7 16"></polyline>
+            <polyline points="17 8 21 12 17 16"></polyline>
+            <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - Blazor Error Boundary</h4>
+    <article id="870a427d-1b06-4ba3-93ca-1c84c79cdb38" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+
+            <section class="[ flex flex-col ]"><h4 class="[ bg-gray-200 ] [ p-2 ] [ font-semibold ] [ text-black ] [ flex items-center ] [ dark:bg-gray-800 dark:bg-gray-800/80 dark:text-white ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-caret-right ] [ text-lime-700 ] [ fill-lime-500 ]" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M18 15l-6 -6l-6 6h12" transform="rotate(90 12 12)"></path></svg> Demo - Error Boundary</h4>
+    <article class="[ bg-gray-300 ] [ dark:bg-gray-700 ] [ p-4 ]"><p class="[ text-black ] [ dark:text-white ]"><b>Scenario - Let's simulate an error connecting to chat agent</b></p>
+                        <button type="button" class="[ bg-cyan-500 ] [ px-4 py-2 ] [ inline-block ] [ rounded-md ] [ inline-flex ] [ space-x-1 ]"><p class="[ text-white ]">Click to initiate chat with agent</p>
+    <svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-message-circle-2 ] [ text-white ]" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M3 20l1.3 -3.9a9 8 0 1 1 3.4 2.9l-4.7 1"></path>
+        <line x1="12" y1="12" x2="12" y2="12.01"></line>
+        <line x1="8" y1="12" x2="8" y2="12.01"></line>
+        <line x1="16" y1="12" x2="16" y2="12.01"></line></svg></button></article></section>
+
+            <p>
+                We can control the error message with our own custom error message and error UI using <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">&lt;ErrorContent&gt;</code>. From now incase of any
+                unhandled exception, our custom error UI will be displayed.
+            </p>
+
+            <section class="[ flex flex-col ]"><h4 class="[ bg-gray-200 ] [ p-2 ] [ font-semibold ] [ text-black ] [ flex items-center ] [ dark:bg-gray-800 dark:bg-gray-800/80 dark:text-white ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-code ] [ text-purple-700 ] [ fill-purple-500 ]" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <polyline points="7 8 3 12 7 16"></polyline>
+            <polyline points="17 8 21 12 17 16"></polyline>
+            <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - Blazor Error Boundary with custom Error UI</h4>
+    <article id="9de245d4-e1ad-4b09-8cb6-1f5c882ab2bc" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+
+            <section class="[ flex flex-col ]"><h4 class="[ bg-gray-200 ] [ p-2 ] [ font-semibold ] [ text-black ] [ flex items-center ] [ dark:bg-gray-800 dark:bg-gray-800/80 dark:text-white ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-caret-right ] [ text-lime-700 ] [ fill-lime-500 ]" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M18 15l-6 -6l-6 6h12" transform="rotate(90 12 12)"></path></svg> Demo - Error Boundary with Custom Error UI</h4>
+    <article class="[ bg-gray-300 ] [ dark:bg-gray-700 ] [ p-4 ]"><p class="[ text-black ] [ dark:text-white ]"><b>Scenario - Let's simulate an error connecting to chat agent</b></p>
+                            <button type="button" class="[ bg-cyan-500 ] [ px-4 py-2 ] [ inline-block ] [ rounded-md ] [ inline-flex ] [ space-x-1 ]"><p class="[ text-white ]">Click to initiate chat with agent</p>
+    <svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-message-circle-2 ] [ text-white ]" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M3 20l1.3 -3.9a9 8 0 1 1 3.4 2.9l-4.7 1"></path>
+        <line x1="12" y1="12" x2="12" y2="12.01"></line>
+        <line x1="8" y1="12" x2="8" y2="12.01"></line>
+        <line x1="16" y1="12" x2="16" y2="12.01"></line></svg></button></article></section>
+
+            <p>
+                So far so good. But doesn't this leave a bad user experience? How will the user retry the action? One way is to reload the page.
+                But there is an another easy option called Recovery in Error Boundary. All we need to do is to add a reference to Error Boundary
+                and call <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">errorBoundary?.Recover()</code> method to retry the action.
+            </p>
+
+            <section class="[ flex flex-col ]"><h4 class="[ bg-gray-200 ] [ p-2 ] [ font-semibold ] [ text-black ] [ flex items-center ] [ dark:bg-gray-800 dark:bg-gray-800/80 dark:text-white ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-code ] [ text-purple-700 ] [ fill-purple-500 ]" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <polyline points="7 8 3 12 7 16"></polyline>
+            <polyline points="17 8 21 12 17 16"></polyline>
+            <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - Blazor Error Boundary with custom Error UI and Recovery</h4>
+    <article id="1b870cc9-8619-40df-af1a-e4e03d2d877a" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+
+            <section class="[ flex flex-col ]"><h4 class="[ bg-gray-200 ] [ p-2 ] [ font-semibold ] [ text-black ] [ flex items-center ] [ dark:bg-gray-800 dark:bg-gray-800/80 dark:text-white ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-caret-right ] [ text-lime-700 ] [ fill-lime-500 ]" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M18 15l-6 -6l-6 6h12" transform="rotate(90 12 12)"></path></svg> Demo - Error Boundary with Custom Error UI and Recovery</h4>
+    <article class="[ bg-gray-300 ] [ dark:bg-gray-700 ] [ p-4 ]"><p class="[ text-black ] [ dark:text-white ]"><b>Scenario - Let's simulate an error connecting to chat agent</b></p>
+                            <button type="button" class="[ bg-cyan-500 ] [ px-4 py-2 ] [ inline-block ] [ rounded-md ] [ inline-flex ] [ space-x-1 ]"><p class="[ text-white ]">Click to initiate chat with agent</p>
+    <svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-message-circle-2 ] [ text-white ]" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M3 20l1.3 -3.9a9 8 0 1 1 3.4 2.9l-4.7 1"></path>
+        <line x1="12" y1="12" x2="12" y2="12.01"></line>
+        <line x1="8" y1="12" x2="8" y2="12.01"></line>
+        <line x1="16" y1="12" x2="16" y2="12.01"></line></svg></button>
+
+                    <button type="button" class="[ bg-fuchsia-500 ] [ px-4 py-2 ] [ rounded-md ] [ text-white ]">
+                        Click to recover
+                        <svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-activity ] [ inline ]" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M3 12h4l3 8l4 -16l3 8h4"></path></svg></button></article></section>
+
+            <h3 id="alternative-global-exception-handling" class="[ font-semibold text-lg ]">Alternative Global Exception Handling</h3>
+
+            <p>
+                An alternative to using <a href="blogs/blazor-wasm-exception-handling-and-error-boundary#error-boundary" class="[ underline ]">Error boundaries (ErrorBoundary)</a>
+                is to pass a custom <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">Error</code> component as a
+                <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">CascadingValue</code>to child components. An advantage of
+                using a component over using an injected service or a custom logger implementation is that a cascaded component can render content
+                and apply CSS styles when an error occurs.
+            </p>
+
+            <section class="[ flex flex-col ]"><h4 class="[ bg-gray-200 ] [ p-2 ] [ font-semibold ] [ text-black ] [ flex items-center ] [ dark:bg-gray-800 dark:bg-gray-800/80 dark:text-white ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-code ] [ text-purple-700 ] [ fill-purple-500 ]" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <polyline points="7 8 3 12 7 16"></polyline>
+            <polyline points="17 8 21 12 17 16"></polyline>
+            <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - Error component</h4>
+    <article id="98ec106c-ac37-4f8c-ab40-b4686d397fe5" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+
+            <p>
+                Now in the <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">App</code> component, wrap the
+                <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">Router</code> component with the
+                <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">Error</code> component. This permits the
+                <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">Error</code> component to cascade down to any component of
+                the app where the <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">Error</code> component is received as a
+                <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">CascadingParameter</code>. We can then call error processing
+                method <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">ProcessError</code> from
+                <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">Error</code> component to handle error. To learn more about this,
+                head over to <a href="blogs/blazor-wasm-error-logging/" class="[ underline ]">Blazor Wasm Error Logging</a></p>
+
+            <section class="[ flex flex-col ]"><h4 class="[ bg-gray-200 ] [ p-2 ] [ font-semibold ] [ text-black ] [ flex items-center ] [ dark:bg-gray-800 dark:bg-gray-800/80 dark:text-white ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-code ] [ text-purple-700 ] [ fill-purple-500 ]" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <polyline points="7 8 3 12 7 16"></polyline>
+            <polyline points="17 8 21 12 17 16"></polyline>
+            <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - Alternative Global Exception Handling</h4>
+    <article id="0cda6619-9065-40ad-9c3c-dfa1c75a1965" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section></section>
+        <hr class="[ dark:text-white my-1.5 ]"></article>
+    <aside class="[ flex flex-col md:basis-1/5 ] [ space-y-2 ]"><a href="blogs/blazor-wasm-error-logging"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-error-logging-400w.svg" alt="Blazor WASM Error Logging" loading="lazy" /></figure></header>
+            <main class="[ basis-3/5 ]"><article class="[ flex flex-col ] [ dark:text-white ]"><h2 class="[ font-medium text-sm break-words leading-tight ]">Blazor WASM Error Logging</h2>
+                    <section class="[ flex flex-col ]"><p class="[ text-xs dark:text-neutral-400 ]">Abdul Rahman</p>
+                        <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-01-23 22-30-00">one month ago</time></section></article></main></section></a><a href="blogs/blazor-wasm-dark-theme-and-light-theme"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-dark-theme-and-light-theme-400w.svg" alt="Blazor WASM Dark Theme and Light Theme" loading="lazy" /></figure></header>
+            <main class="[ basis-3/5 ]"><article class="[ flex flex-col ] [ dark:text-white ]"><h2 class="[ font-medium text-sm break-words leading-tight ]">Blazor WASM Dark Theme and Light Theme</h2>
+                    <section class="[ flex flex-col ]"><p class="[ text-xs dark:text-neutral-400 ]">Abdul Rahman</p>
+                        <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-01-30 22-30-00">27 days ago</time></section></article></main></section></a><a href="blogs/blazor-wasm-javascript-interop-and-isolation"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-javascript-interop-and-isolation-400w.svg" alt="Blazor WASM Javascript Interop and Isolation" loading="lazy" /></figure></header>
+            <main class="[ basis-3/5 ]"><article class="[ flex flex-col ] [ dark:text-white ]"><h2 class="[ font-medium text-sm break-words leading-tight ]">Blazor WASM Javascript Interop and Isolation</h2>
+                    <section class="[ flex flex-col ]"><p class="[ text-xs dark:text-neutral-400 ]">Abdul Rahman</p>
+                        <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-02-06 22-30-00">20 days ago</time></section></article></main></section></a><a href="blogs/blazor-wasm-styles-and-css-isolation"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-styles-and-css-isolation-400w.svg" alt="Blazor WASM Styles and CSS Isolation" loading="lazy" /></figure></header>
+            <main class="[ basis-3/5 ]"><article class="[ flex flex-col ] [ dark:text-white ]"><h2 class="[ font-medium text-sm break-words leading-tight ]">Blazor WASM Styles and CSS Isolation</h2>
+                    <section class="[ flex flex-col ]"><p class="[ text-xs dark:text-neutral-400 ]">Abdul Rahman</p>
+                        <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-02-13 22-30-00">13 days ago</time></section></article></main></section></a><a href="blogs/blazor-wasm-lazy-loading"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-lazy-loading-400w.svg" alt="Blazor WASM Lazy Loading" loading="lazy" /></figure></header>
+            <main class="[ basis-3/5 ]"><article class="[ flex flex-col ] [ dark:text-white ]"><h2 class="[ font-medium text-sm break-words leading-tight ]">Blazor WASM Lazy Loading</h2>
+                    <section class="[ flex flex-col ]"><p class="[ text-xs dark:text-neutral-400 ]">Abdul Rahman</p>
+                        <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-02-20 22-30-00">6 days ago</time></section></article></main></section></a><a href="blogs/blazor-wasm-app-settings"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-app-settings-400w.svg" alt="Blazor WASM App Settings" loading="lazy" /></figure></header>
+            <main class="[ basis-3/5 ]"><article class="[ flex flex-col ] [ dark:text-white ]"><h2 class="[ font-medium text-sm break-words leading-tight ]">Blazor WASM App Settings</h2>
+                    <section class="[ flex flex-col ]"><p class="[ text-xs dark:text-neutral-400 ]">Abdul Rahman</p>
+                        <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-02-27 22-30-00">6 hours from now</time></section></article></main></section></a></aside></section></main>
+            
+
+</div>
+<!-- %%-PRERENDERING-END-%% -->
+</div>
+
+    <div id="blazor-error-ui" class="[ bg-red-500 ] [ text-white ] [ fixed bottom-0 ] [ w-full ] [ p-2 ]" style="display: none;">
+        An unhandled error has occurred. Please click on
+        <a href="javascript: void(0)" class="[ inline-block ] [ underline ] [ hover\:text-white ]" onclick="location.reload()">Reload</a>
+        to proceed.
+        <button class="[ dismiss ] [ fixed right-5 bottom-2 ]">
+            <svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-x ] [ text-white ]" width="25" height="25" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+        </button>
+    </div>
+
+    <script src="_framework/blazor.webassembly.js"></script>
+    <script src="_content/BlazorDemoComponents/jsinterop.js"></script>
+    <script>navigator.serviceWorker.register('service-worker.js', { updateViaCache: 'none' });</script>
+
+
+
+</body></html>
