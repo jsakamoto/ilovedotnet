@@ -1,0 +1,517 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="utf-8"/>
+    <meta name="author" content="Abdul Rahman Shabeek Mohamed"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="copyright" content="I Love DotNet"/>
+    <meta name="language" content="EN"/>
+    <meta name="robots" content="index,follow"/>
+    <meta name="owner" content="Abdul Rahman Shabeek Mohamed"/>
+    <meta http-equiv="Content-Security-Policy" content="base-uri 'self';
+               block-all-mixed-content;
+               img-src data: 'self';
+               object-src 'none';
+               script-src 'self'
+                          https://gist.github.com
+                          'unsafe-eval'
+                          'unsafe-inline'
+                          data:;
+               style-src 'self'
+                         https://github.githubassets.com
+                         'unsafe-inline';
+               upgrade-insecure-requests;"/>
+    <title>Blazor WASM Javascript Interop and Isolation - I ❤️ DotNet</title>
+    <base href="/"/>
+    <link href="css/app.min.css" rel="stylesheet"/>
+    <link href="manifest.json" rel="manifest"/>
+    <link rel="icon" type="image/x-icon" href="favicon.ico"/>
+    <link rel="me" href="https://www.linkedin.com/in/fingers10" type="text/html"/>
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="appicons/apple-touch-icon-144x144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="appicons/apple-touch-icon-152x152.png"/>
+    <link rel="icon" type="image/png" href="appicons/favicon-196x196.png" sizes="196x196"/>
+    <link rel="icon" type="image/png" href="appicons/favicon-128.png" sizes="128x128"/>
+    <script>
+        if (localStorage.DisplayMode === 'dark' || (!('DisplayMode' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+    </script>
+
+<!-- %%-PRERENDERING-HEADOUTLET-BEGIN-%% -->
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Love DotNet",
+            "url": "https://www.ilovedotnet.org/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://www.ilovedotnet.org/favicon.ico",
+                "width": 16,
+                "height": 16
+            }
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Abdul Rahman Shabeek Mohamed",
+            "image": {
+                "@type": "ImageObject",
+                "url": "//https://media-exp1.licdn.com/dms/image/C5603AQGIbBUf4NvSqA/profile-displayphoto-shrink_200_200/0/1588467007026?e=1648080000&v=beta&t=bbZe_QpTmS_g0w0DxVaJGLPgyXU1bu41QyppAIhZNss",
+                "width": 250,
+                "height": 250
+            },
+            "url": "https://www.ilovedotnet.org/author/abdulrahman/",
+            "sameAs": [
+                "https://www.linkedin.com/in/fingers10",
+                "https://github.com/fingers10",
+                "https://stackoverflow.com/users/10851213/fingers10",
+                "https://www.youtube.com/channel/UCOS3wCw7SVXjXXffMPqid7A"
+            ]
+        },
+        "headline": "Blazor WASM Javascript Interop and Isolation",
+        "url": "https://www.ilovedotnet.org/blogs/blazor-wasm-javascript-interop-and-isolation/",
+        "datePublished": "2022-02-06T22:30:00.000Z",
+        "dateModified": "2022-02-06T22:30:00.000Z",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://www.ilovedotnet.org/image/blogs/blazor/wasm/blazor-wasm-javascript-interop-and-isolation-1200w.svg",
+            "width": 1265,
+            "height": 827
+        },
+        "keywords": "I Love DotNet, Blogs, Blazor, Blazor (WebAssembly), Exception Handling, Error Boundary",
+        "description": "In this post I will teach you how to interact with javascript and isolate javascript in your Blazor applications. All with live working demo.",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://www.ilovedotnet.org/"
+        }
+    }
+    </script>
+<!-- %%-PRERENDERING-HEADOUTLET-END-%% -->
+<script src="data:text/javascript;base64,KGZ1bmN0aW9uKG4sdCxpKXtmb3IodmFyIGY9bi5jcmVhdGVOb2RlSXRlcmF0b3IobiwxMjgpLHIsZSx1O2YubmV4dE5vZGUoKTspaWYocj1mLnJlZmVyZW5jZU5vZGUsdC50ZXN0KHIudGV4dENvbnRlbnQudHJpbSgpKSl7d2hpbGUoaT1yLm5leHRTaWJsaW5nKWlmKGU9aS50ZXh0Q29udGVudC50cmltKCksaS5yZW1vdmUoKSx0LnRlc3QoZSkpYnJlYWs7ci5yZW1vdmUoKTticmVha311PUFycmF5LmZyb20obi5xdWVyeVNlbGVjdG9yQWxsKCJzY3JpcHQiKSkucG9wKCk7dSYmdS5yZW1vdmUoKX0pKGRvY3VtZW50LC9eJSUtUFJFUkVOREVSSU5HLUhFQURPVVRMRVQtKEJFR0lOfEVORCktJSUkLyk7"></script>
+
+    <script type="text/default-title">I ❤️ DotNet</script>
+    <script type="text/default-meta-elements">[[,"author",,"Abdul Rahman Shabeek Mohamed"],[,"viewport",,"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"],[,"copyright",,"I Love DotNet"],[,"language",,"EN"],[,"robots",,"index,follow"],[,"owner",,"Abdul Rahman Shabeek Mohamed"],[,,"Content-Security-Policy","base-uri \u0027self\u0027;\n               block-all-mixed-content;\n               img-src data: \u0027self\u0027;\n               object-src \u0027none\u0027;\n               script-src \u0027self\u0027\n                          https://gist.github.com\n                          \u0027unsafe-eval\u0027\n                          \u0027unsafe-inline\u0027\n                          data:;\n               style-src \u0027self\u0027\n                         https://github.githubassets.com\n                         \u0027unsafe-inline\u0027;\n               upgrade-insecure-requests;"]]</script>
+    <meta property="description" content="In this post I will teach you how to interact with javascript and isolate javascript in your Blazor applications. All with live working demo."/>
+    <meta property="keywords" content=".NET, DotNet, I Love DotNet, I ❤️ DotNet, Blazor, Blazor (WebAssembly), Blazor Wasm, C#, Entity Framework Core, LINQ, ML.NET, Web API, Javascript, Javascript Interop, Javascript Isolation"/>
+    <meta property="url" content="https://www.ilovedotnet.org/blogs/blazor-wasm-javascript-interop-and-isolation/"/>
+    <meta property="identifier-URL" content="https://www.ilovedotnet.org/blogs/blazor-wasm-javascript-interop-and-isolation/"/>
+    <meta property="og:site_name" content="I Love DotNet"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="Blazor WASM Javascript Interop and Isolation"/>
+    <meta property="og:image" content="https://www.ilovedotnet.org/image/brand/mini-logo.png"/>
+    <meta property="og:image:alt" content="DotNet bot with heart and DotNet brand"/>
+    <meta property="og:description" content="In this post I will teach you how to interact with javascript and isolate javascript in your Blazor applications. All with live working demo."/>
+    <meta property="og:url" content="https://www.ilovedotnet.org/blogs/blazor-wasm-javascript-interop-and-isolation/"/>
+    <meta property="twitter:card" content="summary_large_image"/>
+    <meta property="twitter:title" content="Blazor WASM Javascript Interop and Isolation"/>
+    <meta property="twitter:image" content="https://www.ilovedotnet.org/image/brand/mini-logo.png"/>
+    <meta property="twitter:image:alt" content="DotNet bot with heart and DotNet brand"/>
+    <meta property="twitter:description" content="In this post I will teach you how to interact with javascript and isolate javascript in your Blazor applications. All with live working demo."/>
+    <meta property="twitter:url" content="https://www.ilovedotnet.org/blogs/blazor-wasm-javascript-interop-and-isolation/"/>
+    <meta property="article:published_time" content="2022-02-06T22:30:00.000Z"/>
+    <meta property="article:modified_time" content="2022-02-06T22:30:00.000Z"/>
+    <meta property="article:tag" content="Javascript Isolation"/>
+    <script type="text/default-link-elements">[["stylesheet","css/app.min.css"],["manifest","manifest.json"],["icon","favicon.ico",,"image/x-icon"],["me","https://www.linkedin.com/in/fingers10",,"text/html"],["apple-touch-icon-precomposed","appicons/apple-touch-icon-144x144.png","144x144"],["apple-touch-icon-precomposed","appicons/apple-touch-icon-152x152.png","152x152"],["icon","appicons/favicon-196x196.png","196x196","image/png"],["icon","appicons/favicon-128.png","128x128","image/png"]]</script>
+    <link rel="sitemap" href="https://www.ilovedotnet.org/sitemap.xml" type="application/xml" title="Sitemap"/>
+    <link rel="alternate" href="https://www.ilovedotnet.org/atom.xml" type="application/rss+xml"/>
+    <link rel="alternate" href="https://www.ilovedotnet.org/blogs/blazor-wasm-javascript-interop-and-isolation/" hreflang="en"/>
+    <link rel="alternate" href="https://www.ilovedotnet.org/blogs/blazor-wasm-javascript-interop-and-isolation/" hreflang="x-default"/>
+    <link rel="canonical" href="https://www.ilovedotnet.org/blogs/blazor-wasm-javascript-interop-and-isolation/"/>
+    <link rel="index" href="https://www.ilovedotnet.org/blogs/blazor-wasm-javascript-interop-and-isolation/" title="Blazor WASM Javascript Interop and Isolation - I ❤️ DotNet"/>
+</head>
+
+<body class="[ m-0 ] [ h-full ] [ dark:bg-stone-900 ] [ bg-gray-100 ]">
+    <div id="app" class="[ dark:text-white ]">
+        <div class="[ fixed ] [ inset-0 ] [ w-full ] [ h-full ] [ flex items-center justify-center ] [ text-4xl md:text-9xl ]">
+            <span class="[ dark:text-white ]">I</span>
+            <span class="animate-pulse">❤️</span>
+            <span class="[ text-indigo-600 ] [ dark:text-white ]">.NET</span>
+        </div>
+    
+<!-- %%-PRERENDERING-BEGIN-%% -->
+<div style="opacity: 0; position: fixed; z-index: -1; top: 0; left: 0; bottom: 0; right: 0;">
+    <header id="header" class="[ flex items-center justify-between ] [ bg-white ] [ px-5 ] [ dark:bg-gray-800 dark:bg-gray-800/80 ] [ h-14 ] [ sticky top-0 ] [ backdrop-blur-sm bg-white/30 ]"><h1 id="brand" class="[  ]"><a href="/" class="[ font-bold ] [ flex items-center justify-between space-x-1 ] active"><span class="[ dark:text-white ]">I</span>
+            <span class="animate-pulse">❤️</span>
+            <span class="[ text-indigo-600 ] [ dark:text-white ]">.NET</span></a></h1>
+    <section id="search" class="[ flex grow justify-center ]"><button type="button" aria-label="Exit Search" class="[ hidden ] [ bg-white ] [ h-10 w-10 ] [ border-2 ] [ dark:bg-gray-800 dark:border-gray-800 ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-arrow-left ] [ inline ] [ text-gray-500 ] [ stroke-1 ] [ dark:text-white ]" width="25" height="25" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <line x1="5" y1="12" x2="11" y2="18"></line>
+            <line x1="5" y1="12" x2="11" y2="6"></line></svg></button>
+    <div class="[ dropdown ] [  ] [ w-1/2 ] [  ] [  ]"><div class="[ dropdown-trigger ] [ w-full ]"><input type="search" placeholder="Search" class="[ w-full h-full ] [ px-4 ] [ border-2 ] [ focus:outline-none focus:border-gray-400 ] [ dark:bg-black dark:border-gray-800 dark:focus:border-b-white dark:md:focus:border-blue-800 dark:caret-white dark:text-white  ]" autocapitalize="none" autocomplete="off" autocorrect="off" aria-haspopup="true" aria-controls="dropdown-menu" value=""/></div>
+        <div class="[ dropdown-menu ] [ w-full ]" id="dropdown-menu" role="menu"><div class="[ dropdown-content ] [ dark:bg-black ]"></div></div></div>
+    <button type="button" aria-label="Search" class="[ bg-white ] [ h-10 w-10 ] [ border-2 border-l-0 ] [ dark:bg-gray-700 dark:border-gray-700 ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-search ] [ inline ] [ text-gray-500 ] [ stroke-1 ] [ dark:text-white ]" width="25" height="25" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <circle cx="10" cy="10" r="7"></circle>
+            <line x1="21" y1="21" x2="15" y2="15"></line></svg></button></section>
+    <section id="display-and-social" class="[  ] [ flex items-center space-x-1.5 ]"><section id="displaymode"><div class="dropdown is-right "><div class="dropdown-trigger"><button class="button [ flex items-center ]" aria-haspopup="true" aria-controls="displaymode-menu"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-brightness-up ] [ dark:text-white ]" width="25" height="25" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                        <line x1="12" y1="5" x2="12" y2="3"></line>
+                        <line x1="17" y1="7" x2="18.4" y2="5.6"></line>
+                        <line x1="19" y1="12" x2="21" y2="12"></line>
+                        <line x1="17" y1="17" x2="18.4" y2="18.4"></line>
+                        <line x1="12" y1="19" x2="12" y2="21"></line>
+                        <line x1="7" y1="17" x2="5.6" y2="18.4"></line>
+                        <line x1="6" y1="12" x2="4" y2="12"></line>
+                        <line x1="7" y1="7" x2="5.6" y2="5.6"></line></svg></button></div>
+        <div class="dropdown-menu" id="displaymode-menu" role="menu"><div class="dropdown-content [ dark:bg-black ]"><button type="button" class="dropdown-item [ flex items-center space-x-1 ] [ dark:hover:bg-gray-700 ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-brightness-up ] [ dark:text-white ]" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                        <line x1="12" y1="5" x2="12" y2="3"></line>
+                        <line x1="17" y1="7" x2="18.4" y2="5.6"></line>
+                        <line x1="19" y1="12" x2="21" y2="12"></line>
+                        <line x1="17" y1="17" x2="18.4" y2="18.4"></line>
+                        <line x1="12" y1="19" x2="12" y2="21"></line>
+                        <line x1="7" y1="17" x2="5.6" y2="18.4"></line>
+                        <line x1="6" y1="12" x2="4" y2="12"></line>
+                        <line x1="7" y1="7" x2="5.6" y2="5.6"></line></svg>
+                    <p class="[ dark:text-white ]">Light</p></button>
+                <button type="button" class="dropdown-item [ flex items-center space-x-1 ] [ dark:hover:bg-gray-700 ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-moon ] [ dark:text-white ]" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"></path></svg>
+                    <p class="[ dark:text-white ]">Dark</p></button>
+                <button type="button" class="dropdown-item [ flex items-center space-x-1 ] [ dark:hover:bg-gray-700 ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-device-desktop ] [ dark:text-white ]" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <rect x="3" y="4" width="18" height="12" rx="1"></rect>
+                        <line x1="7" y1="20" x2="17" y2="20"></line>
+                        <line x1="9" y1="16" x2="9" y2="20"></line>
+                        <line x1="15" y1="16" x2="15" y2="20"></line></svg>
+                    <p class="[ dark:text-white ]">System</p></button></div></div></div></section>
+        <section id="social" class="[ flex justify-between ]"><a href="https://stackoverflow.com/users/10851213/fingers10" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-brand-stackoverflow ] [ text-yellow-500 ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M4 17v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-1"></path>
+            <path d="M8 16h8"></path>
+            <path d="M8.322 12.582l7.956 .836"></path>
+            <path d="M8.787 9.168l7.826 1.664"></path>
+            <path d="M10.096 5.764l7.608 2.472"></path></svg></a>
+    <a href="https://lnkd.in/g4-f-dcN" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-brand-linkedin ] [ text-blue-500 ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <rect x="4" y="4" width="16" height="16" rx="2"></rect>
+            <line x1="8" y1="11" x2="8" y2="16"></line>
+            <line x1="8" y1="8" x2="8" y2="8.01"></line>
+            <line x1="12" y1="16" x2="12" y2="11"></line>
+            <path d="M16 16v-3a2 2 0 0 0 -4 0"></path></svg></a>
+    <a href="https://github.com/ILoveDotNet" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-brand-github ] [ text-black ] [ dark:text-white ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path></svg></a>
+    <a href="https://www.youtube.com/channel/UCOS3wCw7SVXjXXffMPqid7A" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-brand-youtube ] [ text-red-500 ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <rect x="3" y="5" width="18" height="14" rx="4"></rect>
+            <path d="M10 9l5 3l-5 3z"></path></svg></a></section></section></header>
+<main id="main">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="[ flex flex-col md:flex-row ] [ p-5 md:px-20 ] [ md:space-x-5 space-y-5 md:space-y-0 ]"><article class="[ md:basis-4/5 ] [ space-y-5 ]"><header class="[ space-y-2 ]"><figure><img srcset="image/blogs/blazor/wasm/blazor-wasm-javascript-interop-and-isolation-400w.svg 400w,image/blogs/blazor/wasm/blazor-wasm-javascript-interop-and-isolation-1200w.svg 1200w" sizes="(max-width: 400px) 480px,1200px" alt="Blazor WASM Javascript Interop and Isolation" class="[ w-full ]" loading="lazy"/></figure>
+    <h2 class="[ dark:text-white ] [ font-semibold text-xl ]">Blazor WASM Javascript Interop and Isolation</h2>
+    <section class="[ flex flex-col md:flex-row justify-between ] [ space-y-1 md:space-y-0 ] [ dark:text-white ] [ font-bold ]"><div><p>Authors - <a href="https://www.linkedin.com/in/fingers10" class="[ underline ]" target="_blank">Abdul Rahman (Content Writer)</a>, <a href="https://www.linkedin.com/in/regina-sharon" class="[ underline ]" target="_blank">Regina Sharon (Graphic Designer)</a></p>
+            <time datetime="2022-02-06 22:30:00">Last updated 27 days ago</time></div>
+        <div><section class="[ flex justify-between md:justify-start ]"><a href="https://api.whatsapp.com/send?text=Blazor WASM Javascript Interop and Isolation%20https%3a%2f%2fwww.ilovedotnet.org%2fblogs%2fblazor-wasm-javascript-interop-and-isolation%2f" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-brand-whatsapp ] [ text-emerald-500 dark:text-emerald-300 ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9"></path>
+            <path d="M9 10a0.5 .5 0 0 0 1 0v-1a0.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a0.5 .5 0 0 0 0 -1h-1a0.5 .5 0 0 0 0 1"></path></svg></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fwww.ilovedotnet.org%2fblogs%2fblazor-wasm-javascript-interop-and-isolation%2f" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-brand-linkedin ] [ text-blue-500 ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <rect x="4" y="4" width="16" height="16" rx="2"></rect>
+            <line x1="8" y1="11" x2="8" y2="16"></line>
+            <line x1="8" y1="8" x2="8" y2="8.01"></line>
+            <line x1="12" y1="16" x2="12" y2="11"></line>
+            <path d="M16 16v-3a2 2 0 0 0 -4 0"></path></svg></a>
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fwww.ilovedotnet.org%2fblogs%2fblazor-wasm-javascript-interop-and-isolation%2f" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-brand-facebook ] [ text-blue-400 ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"></path></svg></a>
+    <a href="https://twitter.com/intent/tweet?url=https%3a%2f%2fwww.ilovedotnet.org%2fblogs%2fblazor-wasm-javascript-interop-and-isolation%2f&amp;text=Blazor WASM Javascript Interop and Isolation" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-brand-twitter ] [ text-blue-700 ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z"></path></svg></a></section></div></section>
+    <hr class="[ dark:text-white my-1.5 ]"/></header>
+        <section class="[ dark:text-white ] [ space-y-2 ] [ leading-relaxed ]"><p>
+            In Blazor WASM we should try to have minimal usage of Javascript. Though Blazor WASM runs on top of web assembly, we might sometime
+            require access to javascript for certain operations like displaying alert, prompt setting theme on html element, focusing a suggestion
+            from autocomplete input on up and down keyboard key press, getting viewport size or at few cases we might need to use the existing
+            javascript library to render chart, grid, etc.
+        </p>
+
+        <p>
+            The above usecases can be solved in two different ways as mentioned below.
+            </p><ol class="[ list-decimal ] [ ml-3.5 ]"><li><a href="blogs/blazor-wasm-javascript-interop-and-isolation#javascript-interop" class="[ underline ]">
+                        Javascript Interop
+                    </a>
+                    <ol class="[ list-disc ] [ ml-3.5 ]"><li><a href="blogs/blazor-wasm-javascript-interop-and-isolation#javascript-interop-js-from-dotnet" class="[ underline ]">
+                                Calling JS functions from .Net
+                            </a></li>
+                        <li><a href="blogs/blazor-wasm-javascript-interop-and-isolation#javascript-interop-dotnet-from-js" class="[ underline ]">
+                                Calling .Net methods from JS
+                            </a></li></ol></li>
+                <li><a href="blogs/blazor-wasm-javascript-interop-and-isolation#javascript-isolation" class="[ underline ]">
+                        Javascript Isolation
+                    </a></li></ol><p></p>
+
+        <h3 id="javascript-interop" class="[ font-semibold text-lg ]">Javascript Interop</h3>
+
+        <p>
+            To start using <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">Javascript</code> using JS interop, first we
+            need our javascript code in a separate js file place inside <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">wwwroot</code>
+            and we need to inject <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">IJSRuntime</code> in the component to invoke our
+            javascript function.
+        </p>
+
+        <p>
+            Let's look on how to display a simple javascript alert in blazor. We'll start with defining a <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">blazorInterop</code>
+            object just to make sure we don't pollute the global <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">window</code> object.
+            Now let's register a simple <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">displayAlert</code> function which
+            will take text and display it in javascript <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">alert()</code>.
+        </p>
+
+        <section class="[ flex flex-col ]"><h4 class="[ bg-gray-200 ] [ p-2 ] [ font-semibold ] [ text-black ] [ flex items-center ] [ dark:bg-gray-800 dark:bg-gray-800/80 dark:text-white ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-code ] [ text-purple-700 ] [ fill-purple-500 ]" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <polyline points="7 8 3 12 7 16"></polyline>
+            <polyline points="17 8 21 12 17 16"></polyline>
+            <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - JS function to be called from .NET which returns no value</h4>
+    <article id="76401029-787c-4e8b-bd55-a76cb5699422" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+
+        <h4 id="javascript-interop-js-from-dotnet" class="[ font-semibold text-base ]">Calling JS from .Net</h4>
+
+        <p>
+            Befor we proceed on invoking the function make sure to add a reference to your jsvascript file in <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">index.html</code>.
+            Now let's inject <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">IJSRuntimr</code> into our component and call
+            <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">blazorInterop.displayAlert("I ❤️ DotNet")</code> using
+            <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">InvokeVoidAsync</code> as we don't have any return
+            value from the javascript function.
+        </p>
+
+        <section class="[ flex flex-col ]"><h4 class="[ bg-gray-200 ] [ p-2 ] [ font-semibold ] [ text-black ] [ flex items-center ] [ dark:bg-gray-800 dark:bg-gray-800/80 dark:text-white ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-code ] [ text-purple-700 ] [ fill-purple-500 ]" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <polyline points="7 8 3 12 7 16"></polyline>
+            <polyline points="17 8 21 12 17 16"></polyline>
+            <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - Alert Component to call JS from .NET which returns no value</h4>
+    <article id="b528180a-e3b3-4fa6-aed0-07af20e893b7" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+
+        <section class="[ flex flex-col ]"><h4 class="[ bg-gray-200 ] [ p-2 ] [ font-semibold ] [ text-black ] [ flex items-center ] [ dark:bg-gray-800 dark:bg-gray-800/80 dark:text-white ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-caret-right ] [ text-lime-700 ] [ fill-lime-500 ]" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M18 15l-6 -6l-6 6h12" transform="rotate(90 12 12)"></path></svg> Demo - Javascript Interop - Displaying Alert</h4>
+    <article class="[ bg-gray-300 ] [ dark:bg-gray-700 ] [ p-4 ]"><button class="[ bg-fuchsia-500 ] [ px-4 py-2 ] [ inline-block ] [ rounded-md ] [ inline-flex ] [ space-x-1 ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-message ] [ text-white ]" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M4 21v-13a3 3 0 0 1 3 -3h10a3 3 0 0 1 3 3v6a3 3 0 0 1 -3 3h-9l-4 4"></path>
+        <line x1="8" y1="9" x2="16" y2="9"></line>
+        <line x1="8" y1="13" x2="14" y2="13"></line></svg>
+    <span class="[ text-white ]">Display Alert</span></button></article></section>
+
+        <p>
+            Voila.. now we are using javascript logics in our blazor app. That's a fairly simple example. Let's look at another example where we
+            need some values from javascript function. If we want to find the current viewport width and height, then we can levearge javascript to
+            get window height and width and return it back to blazor. The steps are same like before except this time we need to call the javascript
+            function using <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">InvokeAsync&lt;WindowDimensions&gt;("blazorInterop.getViewportDimensions")</code>.
+        </p>
+
+        <section class="[ flex flex-col ]"><h4 class="[ bg-gray-200 ] [ p-2 ] [ font-semibold ] [ text-black ] [ flex items-center ] [ dark:bg-gray-800 dark:bg-gray-800/80 dark:text-white ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-code ] [ text-purple-700 ] [ fill-purple-500 ]" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <polyline points="7 8 3 12 7 16"></polyline>
+            <polyline points="17 8 21 12 17 16"></polyline>
+            <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - JS function to be called from .NET which returns value</h4>
+    <article id="4f74206a-1577-496b-ad1c-8459766f084e" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+
+        <section class="[ flex flex-col ]"><h4 class="[ bg-gray-200 ] [ p-2 ] [ font-semibold ] [ text-black ] [ flex items-center ] [ dark:bg-gray-800 dark:bg-gray-800/80 dark:text-white ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-code ] [ text-purple-700 ] [ fill-purple-500 ]" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <polyline points="7 8 3 12 7 16"></polyline>
+            <polyline points="17 8 21 12 17 16"></polyline>
+            <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - JS function to be called from .NET which returns value</h4>
+    <article id="bca1e16f-b16d-4737-b690-fd2a3b42a1d0" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+
+        <section class="[ flex flex-col ]"><h4 class="[ bg-gray-200 ] [ p-2 ] [ font-semibold ] [ text-black ] [ flex items-center ] [ dark:bg-gray-800 dark:bg-gray-800/80 dark:text-white ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-caret-right ] [ text-lime-700 ] [ fill-lime-500 ]" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M18 15l-6 -6l-6 6h12" transform="rotate(90 12 12)"></path></svg> Demo - Javascript Interop - Finding Viewport Dimensions</h4>
+    <article class="[ bg-gray-300 ] [ dark:bg-gray-700 ] [ p-4 ]"><button class="[ bg-fuchsia-500 ] [ px-4 py-2 ] [ inline-block ] [ rounded-md ] [ inline-flex ] [ space-x-1 ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-dimensions ] [ text-white ]" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M3 5h11"></path>
+        <path d="M12 7l2 -2l-2 -2"></path>
+        <path d="M5 3l-2 2l2 2"></path>
+        <path d="M19 10v11"></path>
+        <path d="M17 19l2 2l2 -2"></path>
+        <path d="M21 12l-2 -2l-2 2"></path>
+        <rect x="3" y="10" width="11" height="11" rx="2"></rect></svg>
+    <span class="[ text-white ]">Get Dimensions</span></button>
+
+<p>Window Width: 0 px</p>
+<p>Window Height: 0 px</p></article></section>
+
+        <h4 id="javascript-interop-dotnet-from-js" class="[ font-semibold text-base ]">Calling .Net from JS</h4>
+
+        <p>
+            There are situations where you need to call a .Net method from JS function. One example is clicking on a point in chart to display
+            additional information. Now you need to pass some information from <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">JS</code>
+            to <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">.NET</code> and make API call to retrieve additional information.
+            You can call <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">static</code> method or
+            <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">.NET instance</code> method from JS. Let's see how to do
+            this in blazor.
+        </p>
+
+        <h5 class="[ font-semibold text-sm ]">Invoking Static Method</h5>
+
+        <p>
+            Calling a <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">static</code> method is pretty simple. All you need
+            to do is to add <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">[JSInvokable]</code> attribute to your
+            <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">.NET static</code> method and call the
+            static .Net method from JS using <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">DotNet.invokeMethod('Namespace', '.Net Static Method Name')</code>.
+        </p>
+
+        <section class="[ flex flex-col ]"><h4 class="[ bg-gray-200 ] [ p-2 ] [ font-semibold ] [ text-black ] [ flex items-center ] [ dark:bg-gray-800 dark:bg-gray-800/80 dark:text-white ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-code ] [ text-purple-700 ] [ fill-purple-500 ]" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <polyline points="7 8 3 12 7 16"></polyline>
+            <polyline points="17 8 21 12 17 16"></polyline>
+            <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - .NET static method to be called from JS</h4>
+    <article id="772422f7-74e9-4b70-8bc6-ccb02711c121" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+
+        <section class="[ flex flex-col ]"><h4 class="[ bg-gray-200 ] [ p-2 ] [ font-semibold ] [ text-black ] [ flex items-center ] [ dark:bg-gray-800 dark:bg-gray-800/80 dark:text-white ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-code ] [ text-purple-700 ] [ fill-purple-500 ]" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <polyline points="7 8 3 12 7 16"></polyline>
+            <polyline points="17 8 21 12 17 16"></polyline>
+            <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - .NET static method to be called from JS</h4>
+    <article id="7d51d594-dc78-4cc9-917a-cbaef9bf5c73" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+
+        <section class="[ flex flex-col ]"><h4 class="[ bg-gray-200 ] [ p-2 ] [ font-semibold ] [ text-black ] [ flex items-center ] [ dark:bg-gray-800 dark:bg-gray-800/80 dark:text-white ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-caret-right ] [ text-lime-700 ] [ fill-lime-500 ]" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M18 15l-6 -6l-6 6h12" transform="rotate(90 12 12)"></path></svg> Demo - Javascript Interop - Calling .Net Static Method From JS</h4>
+    <article class="[ bg-gray-300 ] [ dark:bg-gray-700 ] [ p-4 ]"><button class="[ bg-fuchsia-500 ] [ px-4 py-2 ] [ inline-block ] [ rounded-md ] [ inline-flex ] [ space-x-1 ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-brand-javascript ] [ text-white ]" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z"></path>
+        <path d="M7.5 8h3v8l-2 -1"></path>
+        <path d="M16.5 8h-2.5a0.5 .5 0 0 0 -.5 .5v3a0.5 .5 0 0 0 .5 .5h1.423a0.5 .5 0 0 1 .495 .57l-.418 2.93l-2 .5"></path></svg>
+    <span class="[ text-white ]">Calling .Net Static Method from JS</span></button></article></section>
+
+        <h5 class="[ font-semibold text-sm ]">Invoking Instance Method</h5>
+
+        <p>
+            Calling an <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">component instance</code> method needs an
+            <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">.NET instance by reference</code> to be passed to JS.
+            This can be done by warpping the component instance inside <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">DotNetObjectReference&lt;ComponentInstance&gt;</code>
+            and calling create on it. Then we can invoke .NET method from JS using <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">InvokeMethod</code> or
+            <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">InvokeMethodAsync</code> from the passed instance reference.
+            Finally we need to <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">dispose</code> the
+            <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">DotNetObjectReference</code>.
+        </p>
+
+        <section class="[ flex flex-col ]"><h4 class="[ bg-gray-200 ] [ p-2 ] [ font-semibold ] [ text-black ] [ flex items-center ] [ dark:bg-gray-800 dark:bg-gray-800/80 dark:text-white ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-code ] [ text-purple-700 ] [ fill-purple-500 ]" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <polyline points="7 8 3 12 7 16"></polyline>
+            <polyline points="17 8 21 12 17 16"></polyline>
+            <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - .NET instance method to be called from JS</h4>
+    <article id="22b25109-20f6-45de-9411-8de46f49aaa0" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+
+        <section class="[ flex flex-col ]"><h4 class="[ bg-gray-200 ] [ p-2 ] [ font-semibold ] [ text-black ] [ flex items-center ] [ dark:bg-gray-800 dark:bg-gray-800/80 dark:text-white ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-code ] [ text-purple-700 ] [ fill-purple-500 ]" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <polyline points="7 8 3 12 7 16"></polyline>
+            <polyline points="17 8 21 12 17 16"></polyline>
+            <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - .NET instance method to be called from JS</h4>
+    <article id="37c863f1-d0ac-42c3-a124-29f8d18a8ed7" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+
+        <section class="[ flex flex-col ]"><h4 class="[ bg-gray-200 ] [ p-2 ] [ font-semibold ] [ text-black ] [ flex items-center ] [ dark:bg-gray-800 dark:bg-gray-800/80 dark:text-white ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-caret-right ] [ text-lime-700 ] [ fill-lime-500 ]" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M18 15l-6 -6l-6 6h12" transform="rotate(90 12 12)"></path></svg> Demo - Javascript Interop - Calling .Net Instance Method From JS</h4>
+    <article class="[ bg-gray-300 ] [ dark:bg-gray-700 ] [ p-4 ]"><button class="[ bg-fuchsia-500 ] [ px-4 py-2 ] [ inline-block ] [ rounded-md ] [ inline-flex ] [ space-x-1 ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-brand-javascript ] [ text-white ]" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z"></path>
+        <path d="M7.5 8h3v8l-2 -1"></path>
+        <path d="M16.5 8h-2.5a0.5 .5 0 0 0 -.5 .5v3a0.5 .5 0 0 0 .5 .5h1.423a0.5 .5 0 0 1 .495 .57l-.418 2.93l-2 .5"></path></svg>
+    <span class="[ text-white ]">Calling .Net instance Method from JS</span></button></article></section>
+
+        <h3 id="javascript-isolation" class="[ font-semibold text-lg ]">Javascript Isolation</h3>
+
+        <p>
+            Blazor supports JS isolation in standard JS modules. This has the following benefits:
+            </p><ol class="[ list-disc ] [ ml-3.5 ]"><li>No need to add reference to js file in index.html</li>
+                <li>Imported JS no longer pollutes the global namespace.</li>
+                <li>Consumers of a library and components aren't required to import the related JS.</li></ol><p></p>
+
+        <p>
+            With Javascript Isolation, the steps are same but with an extra step to load <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">JS Module</code>
+            using <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">IJSRuntime</code> into
+            <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">IJSObjectReference (module)</code>.
+            After loading the module, we need to call JS functions using <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">IJSObjectReference module InvokeAsync</code>
+            instead of <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">IJSRuntime</code>. We also need to
+            make sure the module is <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">disposed</code> on
+            <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">component dispose</code>.
+        </p>
+
+        <section class="[ flex flex-col ]"><h4 class="[ bg-gray-200 ] [ p-2 ] [ font-semibold ] [ text-black ] [ flex items-center ] [ dark:bg-gray-800 dark:bg-gray-800/80 dark:text-white ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-code ] [ text-purple-700 ] [ fill-purple-500 ]" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <polyline points="7 8 3 12 7 16"></polyline>
+            <polyline points="17 8 21 12 17 16"></polyline>
+            <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - .NET instance method to be called from JS Module</h4>
+    <article id="8c7da5b4-2ff7-4aa8-ae1d-5a17d142f664" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+
+        <section class="[ flex flex-col ]"><h4 class="[ bg-gray-200 ] [ p-2 ] [ font-semibold ] [ text-black ] [ flex items-center ] [ dark:bg-gray-800 dark:bg-gray-800/80 dark:text-white ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-code ] [ text-purple-700 ] [ fill-purple-500 ]" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <polyline points="7 8 3 12 7 16"></polyline>
+            <polyline points="17 8 21 12 17 16"></polyline>
+            <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - .NET instance method to be called from JS Module</h4>
+    <article id="c9bb3d82-db6c-40c5-a278-1fab6691b750" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+
+        <section class="[ flex flex-col ]"><h4 class="[ bg-gray-200 ] [ p-2 ] [ font-semibold ] [ text-black ] [ flex items-center ] [ dark:bg-gray-800 dark:bg-gray-800/80 dark:text-white ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-caret-right ] [ text-lime-700 ] [ fill-lime-500 ]" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M18 15l-6 -6l-6 6h12" transform="rotate(90 12 12)"></path></svg> Demo - Javascript Isolation - Calling Javascript prompt from JS Module</h4>
+    <article class="[ bg-gray-300 ] [ dark:bg-gray-700 ] [ p-4 ]"><button class="[ bg-fuchsia-500 ] [ px-4 py-2 ] [ inline-block ] [ rounded-md ] [ inline-flex ] [ space-x-1 ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-message ] [ text-white ]" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M4 21v-13a3 3 0 0 1 3 -3h10a3 3 0 0 1 3 3v6a3 3 0 0 1 -3 3h-9l-4 4"></path>
+        <line x1="8" y1="9" x2="16" y2="9"></line>
+        <line x1="8" y1="13" x2="14" y2="13"></line></svg>
+    <span class="[ text-white ]">Trigger browser window prompt</span></button>
+
+<p class="[ dark:text-white ]">Your message: </p></article></section></section>
+        <footer class="[ max-w-full ]"><ul class="[ list-none ] [ flex items-center justify-center ] [ space-x-3 ] [ overflow-hidden overflow-x-auto ]"><li class="[ px-3 py-1 ] [ rounded-full ] [ bg-black text-white dark:bg-white dark:text-black ]">Javascript</li><li class="[ px-3 py-1 ] [ rounded-full ] [ bg-black text-white dark:bg-white dark:text-black ]">Javascript Interop</li><li class="[ px-3 py-1 ] [ rounded-full ] [ bg-black text-white dark:bg-white dark:text-black ]">Javascript Isolation</li></ul></footer>
+        <hr class="[ dark:text-white my-1.5 ]"/></article>
+    <aside class="[ flex flex-col md:basis-1/5 ] [ space-y-2 ]"><a href="blogs/blazor-wasm-exception-handling-and-error-boundary"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-exception-handling-and-error-boundary-1200w.svg" alt="Blazor WASM Exception Handling and Error Boundary" loading="lazy"/></figure></header>
+                    <div class="[ basis-3/5 ]"><article class="[ flex flex-col ] [ dark:text-white ]"><h2 class="[ font-medium text-sm break-words leading-tight ]">Blazor WASM Exception Handling and Error Boundary</h2>
+                            <section class="[ flex flex-col ]"><p class="[ text-xs dark:text-neutral-400 ]">Abdul Rahman</p>
+                                <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-01-16 22-30-00">one month ago</time></section></article></div></section></a><a href="blogs/blazor-wasm-error-logging"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-error-logging-1200w.svg" alt="Blazor WASM Error Logging" loading="lazy"/></figure></header>
+                    <div class="[ basis-3/5 ]"><article class="[ flex flex-col ] [ dark:text-white ]"><h2 class="[ font-medium text-sm break-words leading-tight ]">Blazor WASM Error Logging</h2>
+                            <section class="[ flex flex-col ]"><p class="[ text-xs dark:text-neutral-400 ]">Abdul Rahman</p>
+                                <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-01-23 22-30-00">one month ago</time></section></article></div></section></a><a href="blogs/blazor-wasm-dark-theme-and-light-theme"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-dark-theme-and-light-theme-1200w.svg" alt="Blazor WASM Dark Theme and Light Theme" loading="lazy"/></figure></header>
+                    <div class="[ basis-3/5 ]"><article class="[ flex flex-col ] [ dark:text-white ]"><h2 class="[ font-medium text-sm break-words leading-tight ]">Blazor WASM Dark Theme and Light Theme</h2>
+                            <section class="[ flex flex-col ]"><p class="[ text-xs dark:text-neutral-400 ]">Abdul Rahman</p>
+                                <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-01-30 22-30-00">one month ago</time></section></article></div></section></a><a href="blogs/blazor-wasm-styles-and-css-isolation"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-styles-and-css-isolation-1200w.svg" alt="Blazor WASM Styles and CSS Isolation" loading="lazy"/></figure></header>
+                    <div class="[ basis-3/5 ]"><article class="[ flex flex-col ] [ dark:text-white ]"><h2 class="[ font-medium text-sm break-words leading-tight ]">Blazor WASM Styles and CSS Isolation</h2>
+                            <section class="[ flex flex-col ]"><p class="[ text-xs dark:text-neutral-400 ]">Abdul Rahman</p>
+                                <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-02-13 22-30-00">20 days ago</time></section></article></div></section></a><a href="blogs/blazor-wasm-lazy-loading"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-lazy-loading-1200w.svg" alt="Blazor WASM Lazy Loading" loading="lazy"/></figure></header>
+                    <div class="[ basis-3/5 ]"><article class="[ flex flex-col ] [ dark:text-white ]"><h2 class="[ font-medium text-sm break-words leading-tight ]">Blazor WASM Lazy Loading</h2>
+                            <section class="[ flex flex-col ]"><p class="[ text-xs dark:text-neutral-400 ]">Abdul Rahman</p>
+                                <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-02-20 22-30-00">13 days ago</time></section></article></div></section></a><a href="blogs/blazor-wasm-app-settings"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-app-settings-1200w.svg" alt="Blazor WASM App Settings" loading="lazy"/></figure></header>
+                    <div class="[ basis-3/5 ]"><article class="[ flex flex-col ] [ dark:text-white ]"><h2 class="[ font-medium text-sm break-words leading-tight ]">Blazor WASM App Settings</h2>
+                            <section class="[ flex flex-col ]"><p class="[ text-xs dark:text-neutral-400 ]">Abdul Rahman</p>
+                                <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-02-27 22-30-00">6 days ago</time></section></article></div></section></a><a href="blogs/webapi-importance-of-status-code"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/webapi/webapi-importance-of-status-code-1200w.svg" alt="Importance of Status Code in Web API" loading="lazy"/></figure></header>
+                    <div class="[ basis-3/5 ]"><article class="[ flex flex-col ] [ dark:text-white ]"><h2 class="[ font-medium text-sm break-words leading-tight ]">Importance of Status Code in Web API</h2>
+                            <section class="[ flex flex-col ]"><p class="[ text-xs dark:text-neutral-400 ]">Abdul Rahman</p>
+                                <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-03-06 22-30-00">12 hours from now</time></section></article></div></section></a></aside></section></main>
+            
+
+</div>
+<!-- %%-PRERENDERING-END-%% -->
+</div>
+
+    <div id="blazor-error-ui" class="[ bg-red-500 ] [ text-white ] [ fixed bottom-0 ] [ w-full ] [ p-2 ]" style="display: none;">
+        An unhandled error has occurred. Please click on
+        <a href="javascript: void(0)" class="[ inline-block ] [ underline ] [ hover\:text-white ]" onclick="location.reload()">Reload</a>
+        to proceed.
+        <button class="[ dismiss ] [ fixed right-5 bottom-2 ]">
+            <svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-x ] [ text-white ]" width="25" height="25" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+        </button>
+    </div>
+
+    <script src="_framework/blazor.webassembly.js"></script>
+    <script src="_content/BlazorDemoComponents/jsinterop.js"></script>
+    <!--<script>navigator.serviceWorker.register('service-worker.js', { updateViaCache: 'none' });</script>-->
+
+
+
+</body></html>

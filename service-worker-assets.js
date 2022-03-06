@@ -21,11 +21,11 @@
       "url": "appicons\/favicon-196x196.png"
     },
     {
-      "hash": "sha256-BkDllbxKa3YJ1DdWijXUWWMIUaOyZ7\/Qv2XGcxoK\/kc=",
+      "hash": "sha256-5yaV3M5UbSdVWyr3xD7D9sfuPbzN\/0IYs+NZ4sIR6Ts=",
       "url": "atom.xml"
     },
     {
-      "hash": "sha256-t615sYS3XxhFHTpkgKcdmpN1dGNujI+9rV4u\/XNRis8=",
+      "hash": "sha256-w6AOrBxGwe4CN6iJjJ3xYn4cDpSdfeUJc3JkL+AAXYk=",
       "url": "css\/app.min.css"
     },
     {
@@ -89,12 +89,20 @@
       "url": "image\/blogs\/blazor\/wasm\/blazor-wasm-styles-and-css-isolation-400w.svg"
     },
     {
-      "hash": "sha256-\/veDK3kHU92AFr2e7j2TOy7AD2iQWU9sLSFlwJdrNh8=",
-      "url": "image\/blogs\/webapi\/web-api-importance-of-status-code-1200w.svg"
+      "hash": "sha256-7e6jQTbU9eV7eI46G3HYWQwpyyJSAE5RPu2lkTmxPRk=",
+      "url": "image\/blogs\/webapi\/webapi-importance-of-status-code-1200w.svg"
     },
     {
-      "hash": "sha256-\/veDK3kHU92AFr2e7j2TOy7AD2iQWU9sLSFlwJdrNh8=",
-      "url": "image\/blogs\/webapi\/web-api-importance-of-status-code-400w.svg"
+      "hash": "sha256-7e6jQTbU9eV7eI46G3HYWQwpyyJSAE5RPu2lkTmxPRk=",
+      "url": "image\/blogs\/webapi\/webapi-importance-of-status-code-400w.svg"
+    },
+    {
+      "hash": "sha256-TLfSI0Xzpktrxu7QiTzqWEueuFzSRHZCHh55Ww5\/v\/4=",
+      "url": "image\/brand\/mini-banner-logo.png"
+    },
+    {
+      "hash": "sha256-TIiKvlusHc\/jDV1KyxtmPoFALqDK4ihPLGzGlVFeJpw=",
+      "url": "image\/brand\/mini-logo.png"
     },
     {
       "hash": "sha256-oLB1xzwgyqDl0rBtu4fkFXrUJgb\/zoEqGsAYGDjgMYI=",
@@ -105,11 +113,11 @@
       "url": "image\/icons\/webapi.png"
     },
     {
-      "hash": "sha256-GTsYAgrFgZTmtiIy9DRiDBUlOjpLqbkeLL368pDJHvI=",
+      "hash": "sha256-fHlqK6kcGEztxuVJn+yV57J+Vv11emqrbw1lW2u02Hk=",
       "url": "index.html"
     },
     {
-      "hash": "sha256-P4OLu2CswJ2G2nXfBfcdqtwgUn2x9M9bnfRVlli7Mzc=",
+      "hash": "sha256-AferQUudXTfuWtUjXIbp2AVa44FBbIrEhEE6LUnfUXs=",
       "url": "js\/displaymode.js"
     },
     {
@@ -134,6 +142,18 @@
     },
     {
       "hash": "sha256-QYHWDHhDtEMaMxSmxvNe3ppq28rpfnuZMYsRClq2LJQ=",
+      "url": "sitemap-blog-blazor-wasm.xml"
+    },
+    {
+      "hash": "sha256-foQ6jl9XFnJ92B46OPpouez+oxg8AhaAGOkgWkGQjxo=",
+      "url": "sitemap-blog-webapi.xml"
+    },
+    {
+      "hash": "sha256-v\/N4Kgn30Ftl6FQSYUXHMsxvLBX89TqfW7vFcRC8UUo=",
+      "url": "sitemap-channels.xml"
+    },
+    {
+      "hash": "sha256-Rj5YveLP2G9vZfRbu\/OrpBmJFocG3Fbk8STUe6CGb1M=",
       "url": "sitemap.xml"
     },
     {
@@ -157,15 +177,15 @@
       "url": "_framework\/icudt.dat"
     },
     {
-      "hash": "sha256-5GXm2tJk8E6mOIkizDWnQGuVNLPMKMCKYup3jJnwnUE=",
+      "hash": "sha256-dNxaNmlkOvx242TyXN\/o2zFAJw0ihDsCw3Louisux\/c=",
       "url": "_framework\/blazor.boot.json"
     },
     {
-      "hash": "sha256-\/lgKtZo\/5KsV98cmPaTxfT1tD49LD7xmhsUl9euseeo=",
+      "hash": "sha256-oG3nQrjuokC2MFx8OuuAtsrmnT7hP1ndKkHsk7HgGGI=",
       "url": "_framework\/BlazorDemoComponents.dll"
     },
     {
-      "hash": "sha256-HXzCRNAbNdpd0Skk2twMFy8gMVoE0lC8TcHRXLy\/td8=",
+      "hash": "sha256-riPlKue6TAcYIcVNUiiBExnQo4b3w5q+XRlKyCqNZKQ=",
       "url": "_framework\/Components.dll"
     },
     {
@@ -237,7 +257,7 @@
       "url": "_framework\/netstandard.dll"
     },
     {
-      "hash": "sha256-7fRgWgEyPqTkcCCYCJ\/5X2UBpWkTb2+FidwkjP4AeYs=",
+      "hash": "sha256-+SUZsRTkPl9vvltmhQ2D\/q8iYGToxx+D\/+UO+Ivuj4o=",
       "url": "_framework\/SharedModels.dll"
     },
     {
@@ -277,7 +297,7 @@
       "url": "_framework\/System.dll"
     },
     {
-      "hash": "sha256-ZAVrfcnd07QfVWTr8cxvp7XYnQdl0sdwvRvrR2aQzh0=",
+      "hash": "sha256-3tY94AL5vopxX\/NOUn\/5yEwqVZHEW9PWGekyPWt9vyI=",
       "url": "_framework\/System.Linq.dll"
     },
     {
@@ -349,7 +369,7 @@
       "url": "_framework\/Toolbelt.Blazor.HeadElement.Services.dll"
     },
     {
-      "hash": "sha256-76xnh5UgOEmXI4hwTbLW9HK+hOGt\/qpnrYURx0xLm10=",
+      "hash": "sha256-dV5IN6tzRaABHVPeUh66hKSbFrZTX2psEXtJXSvoRBg=",
       "url": "_framework\/Web.dll"
     },
     {
@@ -389,5 +409,5 @@
       "url": "_content\/Components\/githubgist.js"
     }
   ],
-  "version": "qwqf9S7M"
+  "version": "fGDAakkv"
 };

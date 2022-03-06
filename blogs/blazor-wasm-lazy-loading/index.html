@@ -19,7 +19,7 @@
                          https://github.githubassets.com
                          'unsafe-inline';
                upgrade-insecure-requests;"/>
-    <title>I ❤️ DotNet</title>
+    <title>Blazor WASM Lazy Loading - I ❤️ DotNet</title>
     <base href="/"/>
     <link href="css/app.min.css" rel="stylesheet"/>
     <link href="manifest.json" rel="manifest"/>
@@ -90,21 +90,56 @@
     </script>
 <!-- %%-PRERENDERING-HEADOUTLET-END-%% -->
 <script src="data:text/javascript;base64,KGZ1bmN0aW9uKG4sdCxpKXtmb3IodmFyIGY9bi5jcmVhdGVOb2RlSXRlcmF0b3IobiwxMjgpLHIsZSx1O2YubmV4dE5vZGUoKTspaWYocj1mLnJlZmVyZW5jZU5vZGUsdC50ZXN0KHIudGV4dENvbnRlbnQudHJpbSgpKSl7d2hpbGUoaT1yLm5leHRTaWJsaW5nKWlmKGU9aS50ZXh0Q29udGVudC50cmltKCksaS5yZW1vdmUoKSx0LnRlc3QoZSkpYnJlYWs7ci5yZW1vdmUoKTticmVha311PUFycmF5LmZyb20obi5xdWVyeVNlbGVjdG9yQWxsKCJzY3JpcHQiKSkucG9wKCk7dSYmdS5yZW1vdmUoKX0pKGRvY3VtZW50LC9eJSUtUFJFUkVOREVSSU5HLUhFQURPVVRMRVQtKEJFR0lOfEVORCktJSUkLyk7"></script>
+
+    <script type="text/default-title">I ❤️ DotNet</script>
+    <script type="text/default-meta-elements">[[,"author",,"Abdul Rahman Shabeek Mohamed"],[,"viewport",,"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"],[,"copyright",,"I Love DotNet"],[,"language",,"EN"],[,"robots",,"index,follow"],[,"owner",,"Abdul Rahman Shabeek Mohamed"],[,,"Content-Security-Policy","base-uri \u0027self\u0027;\n               block-all-mixed-content;\n               img-src data: \u0027self\u0027;\n               object-src \u0027none\u0027;\n               script-src \u0027self\u0027\n                          https://gist.github.com\n                          \u0027unsafe-eval\u0027\n                          \u0027unsafe-inline\u0027\n                          data:;\n               style-src \u0027self\u0027\n                         https://github.githubassets.com\n                         \u0027unsafe-inline\u0027;\n               upgrade-insecure-requests;"]]</script>
+    <meta property="description" content="In this post I will teach you how to lazy load assemblies in your Blazor applications. All with live working demo."/>
+    <meta property="keywords" content=".NET, DotNet, I Love DotNet, I ❤️ DotNet, Blazor, Blazor (WebAssembly), Blazor Wasm, C#, Entity Framework Core, LINQ, ML.NET, Web API, Lazy Loading"/>
+    <meta property="url" content="https://www.ilovedotnet.org/blogs/blazor-wasm-lazy-loading/"/>
+    <meta property="identifier-URL" content="https://www.ilovedotnet.org/blogs/blazor-wasm-lazy-loading/"/>
+    <meta property="og:site_name" content="I Love DotNet"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="Blazor WASM Lazy Loading"/>
+    <meta property="og:image" content="https://www.ilovedotnet.org/image/brand/mini-logo.png"/>
+    <meta property="og:image:alt" content="DotNet bot with heart and DotNet brand"/>
+    <meta property="og:description" content="In this post I will teach you how to lazy load assemblies in your Blazor applications. All with live working demo."/>
+    <meta property="og:url" content="https://www.ilovedotnet.org/blogs/blazor-wasm-lazy-loading/"/>
+    <meta property="twitter:card" content="summary_large_image"/>
+    <meta property="twitter:title" content="Blazor WASM Lazy Loading"/>
+    <meta property="twitter:image" content="https://www.ilovedotnet.org/image/brand/mini-logo.png"/>
+    <meta property="twitter:image:alt" content="DotNet bot with heart and DotNet brand"/>
+    <meta property="twitter:description" content="In this post I will teach you how to lazy load assemblies in your Blazor applications. All with live working demo."/>
+    <meta property="twitter:url" content="https://www.ilovedotnet.org/blogs/blazor-wasm-lazy-loading/"/>
+    <meta property="article:published_time" content="2022-02-20T22:30:00.000Z"/>
+    <meta property="article:modified_time" content="2022-02-20T22:30:00.000Z"/>
+    <meta property="article:tag" content="Lazy Loading"/>
+    <script type="text/default-link-elements">[["stylesheet","css/app.min.css"],["manifest","manifest.json"],["icon","favicon.ico",,"image/x-icon"],["me","https://www.linkedin.com/in/fingers10",,"text/html"],["apple-touch-icon-precomposed","appicons/apple-touch-icon-144x144.png","144x144"],["apple-touch-icon-precomposed","appicons/apple-touch-icon-152x152.png","152x152"],["icon","appicons/favicon-196x196.png","196x196","image/png"],["icon","appicons/favicon-128.png","128x128","image/png"]]</script>
+    <link rel="sitemap" href="https://www.ilovedotnet.org/sitemap.xml" type="application/xml" title="Sitemap"/>
+    <link rel="alternate" href="https://www.ilovedotnet.org/atom.xml" type="application/rss+xml"/>
+    <link rel="alternate" href="https://www.ilovedotnet.org/blogs/blazor-wasm-lazy-loading/" hreflang="en"/>
+    <link rel="alternate" href="https://www.ilovedotnet.org/blogs/blazor-wasm-lazy-loading/" hreflang="x-default"/>
+    <link rel="canonical" href="https://www.ilovedotnet.org/blogs/blazor-wasm-lazy-loading/"/>
+    <link rel="index" href="https://www.ilovedotnet.org/blogs/blazor-wasm-lazy-loading/" title="Blazor WASM Lazy Loading - I ❤️ DotNet"/>
 </head>
 
 <body class="[ m-0 ] [ h-full ] [ dark:bg-stone-900 ] [ bg-gray-100 ]">
-    <div id="app" class="[ dark:text-white ]">Loading...
+    <div id="app" class="[ dark:text-white ]">
+        <div class="[ fixed ] [ inset-0 ] [ w-full ] [ h-full ] [ flex items-center justify-center ] [ text-4xl md:text-9xl ]">
+            <span class="[ dark:text-white ]">I</span>
+            <span class="animate-pulse">❤️</span>
+            <span class="[ text-indigo-600 ] [ dark:text-white ]">.NET</span>
+        </div>
+    
 <!-- %%-PRERENDERING-BEGIN-%% -->
 <div style="opacity: 0; position: fixed; z-index: -1; top: 0; left: 0; bottom: 0; right: 0;">
     <header id="header" class="[ flex items-center justify-between ] [ bg-white ] [ px-5 ] [ dark:bg-gray-800 dark:bg-gray-800/80 ] [ h-14 ] [ sticky top-0 ] [ backdrop-blur-sm bg-white/30 ]"><h1 id="brand" class="[  ]"><a href="/" class="[ font-bold ] [ flex items-center justify-between space-x-1 ] active"><span class="[ dark:text-white ]">I</span>
-            <svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-heart ] [ text-red-500 ] [ inline ] [ fill-current ]" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                <path d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"></path></svg>
+            <span class="animate-pulse">❤️</span>
             <span class="[ text-indigo-600 ] [ dark:text-white ]">.NET</span></a></h1>
     <section id="search" class="[ flex grow justify-center ]"><button type="button" aria-label="Exit Search" class="[ hidden ] [ bg-white ] [ h-10 w-10 ] [ border-2 ] [ dark:bg-gray-800 dark:border-gray-800 ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-arrow-left ] [ inline ] [ text-gray-500 ] [ stroke-1 ] [ dark:text-white ]" width="25" height="25" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
             <line x1="5" y1="12" x2="19" y2="12"></line>
             <line x1="5" y1="12" x2="11" y2="18"></line>
             <line x1="5" y1="12" x2="11" y2="6"></line></svg></button>
-    <div class="[ dropdown ] [  ] [ w-1/2 ] [  ] [  ]"><div class="[ dropdown-trigger ] [ w-full ]"><input type="search" placeholder="Search" class="[ w-full h-full ] [ px-4 ] [ border-2 ] [ focus:outline-none focus:border-gray-400 ] [ dark:bg-black dark:border-gray-800 dark:focus:border-b-white dark:md:focus:border-blue-800 dark:caret-white dark:text-white  ]" autocapitalize="none" autocomplete="off" autocorrect="off" aria-haspopup="true" aria-controls="dropdown-menu" value=""></input></div>
+    <div class="[ dropdown ] [  ] [ w-1/2 ] [  ] [  ]"><div class="[ dropdown-trigger ] [ w-full ]"><input type="search" placeholder="Search" class="[ w-full h-full ] [ px-4 ] [ border-2 ] [ focus:outline-none focus:border-gray-400 ] [ dark:bg-black dark:border-gray-800 dark:focus:border-b-white dark:md:focus:border-blue-800 dark:caret-white dark:text-white  ]" autocapitalize="none" autocomplete="off" autocorrect="off" aria-haspopup="true" aria-controls="dropdown-menu" value=""/></div>
         <div class="[ dropdown-menu ] [ w-full ]" id="dropdown-menu" role="menu"><div class="[ dropdown-content ] [ dark:bg-black ]"></div></div></div>
     <button type="button" aria-label="Search" class="[ bg-white ] [ h-10 w-10 ] [ border-2 border-l-0 ] [ dark:bg-gray-700 dark:border-gray-700 ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-search ] [ inline ] [ text-gray-500 ] [ stroke-1 ] [ dark:text-white ]" width="25" height="25" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
             <circle cx="10" cy="10" r="7"></circle>
@@ -191,10 +226,18 @@
 
 
 
-<section class="[ flex flex-col md:flex-row ] [ p-5 md:px-20 ] [ md:space-x-5 space-y-5 md:space-y-0 ]"><article class="[ md:basis-4/5 ] [ space-y-5 ]"><header class="[ space-y-2 ]"><figure><img srcset="image/blogs/blazor/wasm/blazor-wasm-lazy-loading-400w.svg 400w,image/blogs/blazor/wasm/blazor-wasm-lazy-loading-1200w.svg 1200w" sizes="(max-width: 400px) 480px,1200px" alt="Blazor WASM Lazy Loading" class="[ w-full ]" loading="lazy" /></figure>
+
+
+
+
+
+
+
+
+<section class="[ flex flex-col md:flex-row ] [ p-5 md:px-20 ] [ md:space-x-5 space-y-5 md:space-y-0 ]"><article class="[ md:basis-4/5 ] [ space-y-5 ]"><header class="[ space-y-2 ]"><figure><img srcset="image/blogs/blazor/wasm/blazor-wasm-lazy-loading-400w.svg 400w,image/blogs/blazor/wasm/blazor-wasm-lazy-loading-1200w.svg 1200w" sizes="(max-width: 400px) 480px,1200px" alt="Blazor WASM Lazy Loading" class="[ w-full ]" loading="lazy"/></figure>
     <h2 class="[ dark:text-white ] [ font-semibold text-xl ]">Blazor WASM Lazy Loading</h2>
     <section class="[ flex flex-col md:flex-row justify-between ] [ space-y-1 md:space-y-0 ] [ dark:text-white ] [ font-bold ]"><div><p>Authors - <a href="https://www.linkedin.com/in/fingers10" class="[ underline ]" target="_blank">Abdul Rahman (Content Writer)</a>, <a href="https://www.linkedin.com/in/regina-sharon" class="[ underline ]" target="_blank">Regina Sharon (Graphic Designer)</a></p>
-            <time datetime="2022-02-20 22:30:00">Last updated 6 days ago</time></div>
+            <time datetime="2022-02-20 22:30:00">Last updated 13 days ago</time></div>
         <div><section class="[ flex justify-between md:justify-start ]"><a href="https://api.whatsapp.com/send?text=Blazor WASM Lazy Loading%20https%3a%2f%2fwww.ilovedotnet.org%2fblogs%2fblazor-wasm-lazy-loading%2f" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-brand-whatsapp ] [ text-emerald-500 dark:text-emerald-300 ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
             <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9"></path>
             <path d="M9 10a0.5 .5 0 0 0 1 0v-1a0.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a0.5 .5 0 0 0 0 -1h-1a0.5 .5 0 0 0 0 1"></path></svg></a>
@@ -208,89 +251,93 @@
             <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"></path></svg></a>
     <a href="https://twitter.com/intent/tweet?url=https%3a%2f%2fwww.ilovedotnet.org%2fblogs%2fblazor-wasm-lazy-loading%2f&amp;text=Blazor WASM Lazy Loading" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-brand-twitter ] [ text-blue-700 ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
             <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z"></path></svg></a></section></div></section>
-    <hr class="[ dark:text-white my-1.5 ]"></header>
+    <hr class="[ dark:text-white my-1.5 ]"/></header>
         <section class="[ dark:text-white ] [ space-y-2 ] [ leading-relaxed ]"><p>
-                In this article, let's learn about what is lazy loading, why it is needed and how to implement lazy loading in Blazor WASM application.
-            </p>
+            In this article, let's learn about what is lazy loading, why it is needed and how to implement lazy loading in Blazor WASM application.
+        </p>
 
-            <h3 class="[ font-semibold text-lg ]">What is Lazy Loading and Why it is needed?</h3>
+        <h3 class="[ font-semibold text-lg ]">What is Lazy Loading and Why it is needed?</h3>
 
-            <p>
-                Lazy loading in Blazor WASM helps to defer downloading of assemblies until the route in which the assembly components used are requested
-                by the end user. This helps to improve startup performance of large Blazor WASM applications
-            </p>
+        <p>
+            Lazy loading in Blazor WASM helps to defer downloading of assemblies until the route in which the assembly components used are requested
+            by the end user. This helps to improve startup performance of large Blazor WASM applications
+        </p>
 
-            <p>
-                I ❤️ .NET makes use of lazy loading to load blog related components only when an blog is opened. It makes sense to not load all the
-                components and assemblies when the user just visit the home screen. Thus saving startup time and saving user bandwidth by avoiding
-                unnecessary downloads.
-            </p>
+        <p>
+            I ❤️ .NET makes use of lazy loading to load blog related components only when an blog is opened. It makes sense to not load all the
+            components and assemblies when the user just visit the home screen. Thus saving startup time and saving user bandwidth by avoiding
+            unnecessary downloads.
+        </p>
 
-            <h3 class="[ font-semibold text-lg ]">How to implement Lazy loading?</h3>
+        <h3 class="[ font-semibold text-lg ]">How to implement Lazy loading?</h3>
 
-            <p>
-                To implement lazy loading, we need to follow two steps.
-                <ol class="[ list-decimal ] [ ml-3.5 ]"><li><a href="blogs/blazor-wasm-lazy-loading#project-configuration" class="[ underline ]">
-                            Project file configuration
-                        </a></li>
-                    <li><a href="blogs/blazor-wasm-lazy-loading#router-configuration" class="[ underline ]"><code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">Router</code> component configuration
-                        </a></li></ol></p>
+        <p>
+            To implement lazy loading, we need to follow two steps.
+            </p><ol class="[ list-decimal ] [ ml-3.5 ]"><li><a href="blogs/blazor-wasm-lazy-loading#project-configuration" class="[ underline ]">
+                        Project file configuration
+                    </a></li>
+                <li><a href="blogs/blazor-wasm-lazy-loading#router-configuration" class="[ underline ]"><code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">Router</code> component configuration
+                    </a></li></ol><p></p>
 
-            <h4 id="project-configuration" class="[ font-semibold text-base ]">Project file configuration</h4>
+        <h4 id="project-configuration" class="[ font-semibold text-base ]">Project file configuration</h4>
 
-            <ol class="[ list-decimal ] [ ml-3.5 ]"><li>First we need to find the components to be lazy loaded and move them to new assembly (Razor Class Library Project).</li>
-                <li>Next refer this new assembly in the Blazor WASM project.</li>
-                <li>Finally add the assembly name with <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">.dll</code> extension in the Blazor WASM .csproj using <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">BlazorWebAssemblyLazyLoad</code>.</li>
-                <li>Repeat step 2 for as many assemblies to be lazy loaded.</li></ol>
+        <ol class="[ list-decimal ] [ ml-3.5 ]"><li>First we need to find the components to be lazy loaded and move them to new assembly (Razor Class Library Project).</li>
+            <li>Next refer this new assembly in the Blazor WASM project.</li>
+            <li>Finally add the assembly name with <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">.dll</code> extension in the Blazor WASM .csproj using <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">BlazorWebAssemblyLazyLoad</code>.</li>
+            <li>Repeat step 2 for as many assemblies to be lazy loaded.</li></ol>
 
-            <section class="[ flex flex-col ]"><h4 class="[ bg-gray-200 ] [ p-2 ] [ font-semibold ] [ text-black ] [ flex items-center ] [ dark:bg-gray-800 dark:bg-gray-800/80 dark:text-white ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-code ] [ text-purple-700 ] [ fill-purple-500 ]" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <section class="[ flex flex-col ]"><h4 class="[ bg-gray-200 ] [ p-2 ] [ font-semibold ] [ text-black ] [ flex items-center ] [ dark:bg-gray-800 dark:bg-gray-800/80 dark:text-white ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-code ] [ text-purple-700 ] [ fill-purple-500 ]" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - Blazor WASM Lazy Loading Project File Configuration</h4>
-    <article id="42deb3f4-5945-48fb-88d7-7bf089aa76ed" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="072fc147-93bb-4f32-beba-98b1319ccb17" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
-            <p>
-                This will make Blazor framework to prevent the assemblies to be loaded at app launch thus improves the performance.
-            </p>
+        <p>
+            This will make Blazor framework to prevent the assemblies to be loaded at app launch thus improves the performance.
+        </p>
 
-            <h4 id="router-configuration" class="[ font-semibold text-base ]"><code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">Router</code> component configuration</h4>
+        <h4 id="router-configuration" class="[ font-semibold text-base ]"><code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">Router</code> component configuration</h4>
 
-            <ol class="[ list-decimal ] [ ml-3.5 ]"><li>Go to <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">App.razor</code> file.</li>
-                <li>Import <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">@using Microsoft.AspNetCore.Components.WebAssembly.Services</code>.</li>
-                <li>Inject <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">@inject LazyAssemblyLoader AssemblyLoader</code></li>
-                <li>In <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">Router</code> component, assign <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">OnNavigateAsync="@OnNavigateAsync"</code>. This event gets triggered whenever we navigate to new page.</li>
-                <li>Now you can conditionally lazy load asssemblies based on route using <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">await AssemblyLoader.LoadAssembliesAsync(new[] { "Components.dll" });</code></li></ol>
+        <ol class="[ list-decimal ] [ ml-3.5 ]"><li>Go to <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">App.razor</code> file.</li>
+            <li>Import <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">@using Microsoft.AspNetCore.Components.WebAssembly.Services</code>.</li>
+            <li>Inject <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">@inject LazyAssemblyLoader AssemblyLoader</code></li>
+            <li>In <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">Router</code> component, assign <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">OnNavigateAsync="@OnNavigateAsync"</code>. This event gets triggered whenever we navigate to new page.</li>
+            <li>Now you can conditionally lazy load asssemblies based on route using <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">await AssemblyLoader.LoadAssembliesAsync(new[] { "Components.dll" });</code></li></ol>
 
-            <section class="[ flex flex-col ]"><h4 class="[ bg-gray-200 ] [ p-2 ] [ font-semibold ] [ text-black ] [ flex items-center ] [ dark:bg-gray-800 dark:bg-gray-800/80 dark:text-white ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-code ] [ text-purple-700 ] [ fill-purple-500 ]" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <section class="[ flex flex-col ]"><h4 class="[ bg-gray-200 ] [ p-2 ] [ font-semibold ] [ text-black ] [ flex items-center ] [ dark:bg-gray-800 dark:bg-gray-800/80 dark:text-white ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-code ] [ text-purple-700 ] [ fill-purple-500 ]" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - Blazor WASM Lazy Loading Project File Configuration</h4>
-    <article id="37049830-a035-4ee7-83dc-48b9e4850ede" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="3684c2c7-0125-4809-927f-5750f0d3a0f4" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
-            <p>
-                Wow. We have completed lazy loading implementation in Blazor WASM application. Now that your Blazor WASM app will start up faster and 
-                lazy load assemblies on demand based on route thus increasing speed and saves user bandwidth.
-            </p></section>
-        <hr class="[ dark:text-white my-1.5 ]"></article>
-    <aside class="[ flex flex-col md:basis-1/5 ] [ space-y-2 ]"><a href="blogs/blazor-wasm-exception-handling-and-error-boundary"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-exception-handling-and-error-boundary-400w.svg" alt="Blazor WASM Exception Handling and Error Boundary" loading="lazy" /></figure></header>
-            <main class="[ basis-3/5 ]"><article class="[ flex flex-col ] [ dark:text-white ]"><h2 class="[ font-medium text-sm break-words leading-tight ]">Blazor WASM Exception Handling and Error Boundary</h2>
-                    <section class="[ flex flex-col ]"><p class="[ text-xs dark:text-neutral-400 ]">Abdul Rahman</p>
-                        <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-01-16 22-30-00">one month ago</time></section></article></main></section></a><a href="blogs/blazor-wasm-error-logging"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-error-logging-400w.svg" alt="Blazor WASM Error Logging" loading="lazy" /></figure></header>
-            <main class="[ basis-3/5 ]"><article class="[ flex flex-col ] [ dark:text-white ]"><h2 class="[ font-medium text-sm break-words leading-tight ]">Blazor WASM Error Logging</h2>
-                    <section class="[ flex flex-col ]"><p class="[ text-xs dark:text-neutral-400 ]">Abdul Rahman</p>
-                        <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-01-23 22-30-00">one month ago</time></section></article></main></section></a><a href="blogs/blazor-wasm-dark-theme-and-light-theme"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-dark-theme-and-light-theme-400w.svg" alt="Blazor WASM Dark Theme and Light Theme" loading="lazy" /></figure></header>
-            <main class="[ basis-3/5 ]"><article class="[ flex flex-col ] [ dark:text-white ]"><h2 class="[ font-medium text-sm break-words leading-tight ]">Blazor WASM Dark Theme and Light Theme</h2>
-                    <section class="[ flex flex-col ]"><p class="[ text-xs dark:text-neutral-400 ]">Abdul Rahman</p>
-                        <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-01-30 22-30-00">27 days ago</time></section></article></main></section></a><a href="blogs/blazor-wasm-javascript-interop-and-isolation"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-javascript-interop-and-isolation-400w.svg" alt="Blazor WASM Javascript Interop and Isolation" loading="lazy" /></figure></header>
-            <main class="[ basis-3/5 ]"><article class="[ flex flex-col ] [ dark:text-white ]"><h2 class="[ font-medium text-sm break-words leading-tight ]">Blazor WASM Javascript Interop and Isolation</h2>
-                    <section class="[ flex flex-col ]"><p class="[ text-xs dark:text-neutral-400 ]">Abdul Rahman</p>
-                        <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-02-06 22-30-00">20 days ago</time></section></article></main></section></a><a href="blogs/blazor-wasm-styles-and-css-isolation"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-styles-and-css-isolation-400w.svg" alt="Blazor WASM Styles and CSS Isolation" loading="lazy" /></figure></header>
-            <main class="[ basis-3/5 ]"><article class="[ flex flex-col ] [ dark:text-white ]"><h2 class="[ font-medium text-sm break-words leading-tight ]">Blazor WASM Styles and CSS Isolation</h2>
-                    <section class="[ flex flex-col ]"><p class="[ text-xs dark:text-neutral-400 ]">Abdul Rahman</p>
-                        <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-02-13 22-30-00">13 days ago</time></section></article></main></section></a><a href="blogs/blazor-wasm-app-settings"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-app-settings-400w.svg" alt="Blazor WASM App Settings" loading="lazy" /></figure></header>
-            <main class="[ basis-3/5 ]"><article class="[ flex flex-col ] [ dark:text-white ]"><h2 class="[ font-medium text-sm break-words leading-tight ]">Blazor WASM App Settings</h2>
-                    <section class="[ flex flex-col ]"><p class="[ text-xs dark:text-neutral-400 ]">Abdul Rahman</p>
-                        <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-02-27 22-30-00">6 hours from now</time></section></article></main></section></a></aside></section></main>
+        <p>
+            Wow. We have completed lazy loading implementation in Blazor WASM application. Now that your Blazor WASM app will start up faster and
+            lazy load assemblies on demand based on route thus increasing speed and saves user bandwidth.
+        </p></section>
+        <footer class="[ max-w-full ]"><ul class="[ list-none ] [ flex items-center justify-center ] [ space-x-3 ] [ overflow-hidden overflow-x-auto ]"><li class="[ px-3 py-1 ] [ rounded-full ] [ bg-black text-white dark:bg-white dark:text-black ]">Lazy Loading</li></ul></footer>
+        <hr class="[ dark:text-white my-1.5 ]"/></article>
+    <aside class="[ flex flex-col md:basis-1/5 ] [ space-y-2 ]"><a href="blogs/blazor-wasm-exception-handling-and-error-boundary"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-exception-handling-and-error-boundary-1200w.svg" alt="Blazor WASM Exception Handling and Error Boundary" loading="lazy"/></figure></header>
+                    <div class="[ basis-3/5 ]"><article class="[ flex flex-col ] [ dark:text-white ]"><h2 class="[ font-medium text-sm break-words leading-tight ]">Blazor WASM Exception Handling and Error Boundary</h2>
+                            <section class="[ flex flex-col ]"><p class="[ text-xs dark:text-neutral-400 ]">Abdul Rahman</p>
+                                <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-01-16 22-30-00">one month ago</time></section></article></div></section></a><a href="blogs/blazor-wasm-error-logging"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-error-logging-1200w.svg" alt="Blazor WASM Error Logging" loading="lazy"/></figure></header>
+                    <div class="[ basis-3/5 ]"><article class="[ flex flex-col ] [ dark:text-white ]"><h2 class="[ font-medium text-sm break-words leading-tight ]">Blazor WASM Error Logging</h2>
+                            <section class="[ flex flex-col ]"><p class="[ text-xs dark:text-neutral-400 ]">Abdul Rahman</p>
+                                <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-01-23 22-30-00">one month ago</time></section></article></div></section></a><a href="blogs/blazor-wasm-dark-theme-and-light-theme"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-dark-theme-and-light-theme-1200w.svg" alt="Blazor WASM Dark Theme and Light Theme" loading="lazy"/></figure></header>
+                    <div class="[ basis-3/5 ]"><article class="[ flex flex-col ] [ dark:text-white ]"><h2 class="[ font-medium text-sm break-words leading-tight ]">Blazor WASM Dark Theme and Light Theme</h2>
+                            <section class="[ flex flex-col ]"><p class="[ text-xs dark:text-neutral-400 ]">Abdul Rahman</p>
+                                <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-01-30 22-30-00">one month ago</time></section></article></div></section></a><a href="blogs/blazor-wasm-javascript-interop-and-isolation"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-javascript-interop-and-isolation-1200w.svg" alt="Blazor WASM Javascript Interop and Isolation" loading="lazy"/></figure></header>
+                    <div class="[ basis-3/5 ]"><article class="[ flex flex-col ] [ dark:text-white ]"><h2 class="[ font-medium text-sm break-words leading-tight ]">Blazor WASM Javascript Interop and Isolation</h2>
+                            <section class="[ flex flex-col ]"><p class="[ text-xs dark:text-neutral-400 ]">Abdul Rahman</p>
+                                <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-02-06 22-30-00">27 days ago</time></section></article></div></section></a><a href="blogs/blazor-wasm-styles-and-css-isolation"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-styles-and-css-isolation-1200w.svg" alt="Blazor WASM Styles and CSS Isolation" loading="lazy"/></figure></header>
+                    <div class="[ basis-3/5 ]"><article class="[ flex flex-col ] [ dark:text-white ]"><h2 class="[ font-medium text-sm break-words leading-tight ]">Blazor WASM Styles and CSS Isolation</h2>
+                            <section class="[ flex flex-col ]"><p class="[ text-xs dark:text-neutral-400 ]">Abdul Rahman</p>
+                                <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-02-13 22-30-00">20 days ago</time></section></article></div></section></a><a href="blogs/blazor-wasm-app-settings"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-app-settings-1200w.svg" alt="Blazor WASM App Settings" loading="lazy"/></figure></header>
+                    <div class="[ basis-3/5 ]"><article class="[ flex flex-col ] [ dark:text-white ]"><h2 class="[ font-medium text-sm break-words leading-tight ]">Blazor WASM App Settings</h2>
+                            <section class="[ flex flex-col ]"><p class="[ text-xs dark:text-neutral-400 ]">Abdul Rahman</p>
+                                <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-02-27 22-30-00">6 days ago</time></section></article></div></section></a><a href="blogs/webapi-importance-of-status-code"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/webapi/webapi-importance-of-status-code-1200w.svg" alt="Importance of Status Code in Web API" loading="lazy"/></figure></header>
+                    <div class="[ basis-3/5 ]"><article class="[ flex flex-col ] [ dark:text-white ]"><h2 class="[ font-medium text-sm break-words leading-tight ]">Importance of Status Code in Web API</h2>
+                            <section class="[ flex flex-col ]"><p class="[ text-xs dark:text-neutral-400 ]">Abdul Rahman</p>
+                                <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-03-06 22-30-00">12 hours from now</time></section></article></div></section></a></aside></section></main>
             
 
 </div>
@@ -312,7 +359,7 @@
 
     <script src="_framework/blazor.webassembly.js"></script>
     <script src="_content/BlazorDemoComponents/jsinterop.js"></script>
-    <script>navigator.serviceWorker.register('service-worker.js', { updateViaCache: 'none' });</script>
+    <!--<script>navigator.serviceWorker.register('service-worker.js', { updateViaCache: 'none' });</script>-->
 
 
 

@@ -1,0 +1,372 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="utf-8"/>
+    <meta name="author" content="Abdul Rahman Shabeek Mohamed"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="copyright" content="I Love DotNet"/>
+    <meta name="language" content="EN"/>
+    <meta name="robots" content="index,follow"/>
+    <meta name="owner" content="Abdul Rahman Shabeek Mohamed"/>
+    <meta http-equiv="Content-Security-Policy" content="base-uri 'self';
+               block-all-mixed-content;
+               img-src data: 'self';
+               object-src 'none';
+               script-src 'self'
+                          https://gist.github.com
+                          'unsafe-eval'
+                          'unsafe-inline'
+                          data:;
+               style-src 'self'
+                         https://github.githubassets.com
+                         'unsafe-inline';
+               upgrade-insecure-requests;"/>
+    <title>Importance of Status Code in Web API - I ❤️ DotNet</title>
+    <base href="/"/>
+    <link href="css/app.min.css" rel="stylesheet"/>
+    <link href="manifest.json" rel="manifest"/>
+    <link rel="icon" type="image/x-icon" href="favicon.ico"/>
+    <link rel="me" href="https://www.linkedin.com/in/fingers10" type="text/html"/>
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="appicons/apple-touch-icon-144x144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="appicons/apple-touch-icon-152x152.png"/>
+    <link rel="icon" type="image/png" href="appicons/favicon-196x196.png" sizes="196x196"/>
+    <link rel="icon" type="image/png" href="appicons/favicon-128.png" sizes="128x128"/>
+    <script>
+        if (localStorage.DisplayMode === 'dark' || (!('DisplayMode' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+    </script>
+
+<!-- %%-PRERENDERING-HEADOUTLET-BEGIN-%% -->
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "publisher": {
+            "@type": "Organization",
+            "name": "I Love DotNet",
+            "url": "https://www.ilovedotnet.org/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://www.ilovedotnet.org/favicon.ico",
+                "width": 16,
+                "height": 16
+            }
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Abdul Rahman Shabeek Mohamed",
+            "image": {
+                "@type": "ImageObject",
+                "url": "//https://media-exp1.licdn.com/dms/image/C5603AQGIbBUf4NvSqA/profile-displayphoto-shrink_200_200/0/1588467007026?e=1648080000&v=beta&t=bbZe_QpTmS_g0w0DxVaJGLPgyXU1bu41QyppAIhZNss",
+                "width": 250,
+                "height": 250
+            },
+            "url": "https://www.ilovedotnet.org/author/abdulrahman/",
+            "sameAs": [
+                "https://www.linkedin.com/in/fingers10",
+                "https://github.com/fingers10",
+                "https://stackoverflow.com/users/10851213/fingers10",
+                "https://www.youtube.com/channel/UCOS3wCw7SVXjXXffMPqid7A"
+            ]
+        },
+        "headline": "Importance of Status Code in Web API",
+        "url": "https://www.ilovedotnet.org/blogs/webapi-importance-of-status-code/",
+        "datePublished": "2022-02-20T22:30:00.000Z",
+        "dateModified": "2022-02-20T22:30:00.000Z",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://www.ilovedotnet.org/image/blogs/webapi/webapi-importance-of-status-code-1200w.svg",
+            "width": 1265,
+            "height": 827
+        },
+        "keywords": "I Love DotNet, Blogs, Blazor, Blazor (WebAssembly), Exception Handling, Error Boundary",
+        "description": "In this post I will teach you the importance of status code in Web API. All with live working demo.",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://www.ilovedotnet.org/"
+        }
+    }
+    </script>
+<!-- %%-PRERENDERING-HEADOUTLET-END-%% -->
+<script src="data:text/javascript;base64,KGZ1bmN0aW9uKG4sdCxpKXtmb3IodmFyIGY9bi5jcmVhdGVOb2RlSXRlcmF0b3IobiwxMjgpLHIsZSx1O2YubmV4dE5vZGUoKTspaWYocj1mLnJlZmVyZW5jZU5vZGUsdC50ZXN0KHIudGV4dENvbnRlbnQudHJpbSgpKSl7d2hpbGUoaT1yLm5leHRTaWJsaW5nKWlmKGU9aS50ZXh0Q29udGVudC50cmltKCksaS5yZW1vdmUoKSx0LnRlc3QoZSkpYnJlYWs7ci5yZW1vdmUoKTticmVha311PUFycmF5LmZyb20obi5xdWVyeVNlbGVjdG9yQWxsKCJzY3JpcHQiKSkucG9wKCk7dSYmdS5yZW1vdmUoKX0pKGRvY3VtZW50LC9eJSUtUFJFUkVOREVSSU5HLUhFQURPVVRMRVQtKEJFR0lOfEVORCktJSUkLyk7"></script>
+
+    <script type="text/default-title">I ❤️ DotNet</script>
+    <script type="text/default-meta-elements">[[,"author",,"Abdul Rahman Shabeek Mohamed"],[,"viewport",,"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"],[,"copyright",,"I Love DotNet"],[,"language",,"EN"],[,"robots",,"index,follow"],[,"owner",,"Abdul Rahman Shabeek Mohamed"],[,,"Content-Security-Policy","base-uri \u0027self\u0027;\n               block-all-mixed-content;\n               img-src data: \u0027self\u0027;\n               object-src \u0027none\u0027;\n               script-src \u0027self\u0027\n                          https://gist.github.com\n                          \u0027unsafe-eval\u0027\n                          \u0027unsafe-inline\u0027\n                          data:;\n               style-src \u0027self\u0027\n                         https://github.githubassets.com\n                         \u0027unsafe-inline\u0027;\n               upgrade-insecure-requests;"]]</script>
+    <meta property="description" content="In this post I will teach you the importance of status code in Web API. All with live working demo."/>
+    <meta property="keywords" content=".NET, DotNet, I Love DotNet, I ❤️ DotNet, Blazor, Blazor (WebAssembly), Blazor Wasm, C#, Entity Framework Core, LINQ, ML.NET, Web API, Status Code"/>
+    <meta property="url" content="https://www.ilovedotnet.org/blogs/webapi-importance-of-status-code/"/>
+    <meta property="identifier-URL" content="https://www.ilovedotnet.org/blogs/webapi-importance-of-status-code/"/>
+    <meta property="og:site_name" content="I Love DotNet"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="Importance of Status Code in Web API"/>
+    <meta property="og:image" content="https://www.ilovedotnet.org/image/brand/mini-logo.png"/>
+    <meta property="og:image:alt" content="DotNet bot with heart and DotNet brand"/>
+    <meta property="og:description" content="In this post I will teach you the importance of status code in Web API. All with live working demo."/>
+    <meta property="og:url" content="https://www.ilovedotnet.org/blogs/webapi-importance-of-status-code/"/>
+    <meta property="twitter:card" content="summary_large_image"/>
+    <meta property="twitter:title" content="Importance of Status Code in Web API"/>
+    <meta property="twitter:image" content="https://www.ilovedotnet.org/image/brand/mini-logo.png"/>
+    <meta property="twitter:image:alt" content="DotNet bot with heart and DotNet brand"/>
+    <meta property="twitter:description" content="In this post I will teach you the importance of status code in Web API. All with live working demo."/>
+    <meta property="twitter:url" content="https://www.ilovedotnet.org/blogs/webapi-importance-of-status-code/"/>
+    <meta property="article:published_time" content="2022-02-20T22:30:00.000Z"/>
+    <meta property="article:modified_time" content="2022-02-20T22:30:00.000Z"/>
+    <meta property="article:tag" content="Status Code"/>
+    <script type="text/default-link-elements">[["stylesheet","css/app.min.css"],["manifest","manifest.json"],["icon","favicon.ico",,"image/x-icon"],["me","https://www.linkedin.com/in/fingers10",,"text/html"],["apple-touch-icon-precomposed","appicons/apple-touch-icon-144x144.png","144x144"],["apple-touch-icon-precomposed","appicons/apple-touch-icon-152x152.png","152x152"],["icon","appicons/favicon-196x196.png","196x196","image/png"],["icon","appicons/favicon-128.png","128x128","image/png"]]</script>
+    <link rel="sitemap" href="https://www.ilovedotnet.org/sitemap.xml" type="application/xml" title="Sitemap"/>
+    <link rel="alternate" href="https://www.ilovedotnet.org/atom.xml" type="application/rss+xml"/>
+    <link rel="alternate" href="https://www.ilovedotnet.org/blogs/webapi-importance-of-status-code/" hreflang="en"/>
+    <link rel="alternate" href="https://www.ilovedotnet.org/blogs/webapi-importance-of-status-code/" hreflang="x-default"/>
+    <link rel="canonical" href="https://www.ilovedotnet.org/blogs/webapi-importance-of-status-code/"/>
+    <link rel="index" href="https://www.ilovedotnet.org/blogs/webapi-importance-of-status-code/" title="Importance of Status Code in Web API - I ❤️ DotNet"/>
+</head>
+
+<body class="[ m-0 ] [ h-full ] [ dark:bg-stone-900 ] [ bg-gray-100 ]">
+    <div id="app" class="[ dark:text-white ]">
+        <div class="[ fixed ] [ inset-0 ] [ w-full ] [ h-full ] [ flex items-center justify-center ] [ text-4xl md:text-9xl ]">
+            <span class="[ dark:text-white ]">I</span>
+            <span class="animate-pulse">❤️</span>
+            <span class="[ text-indigo-600 ] [ dark:text-white ]">.NET</span>
+        </div>
+    
+<!-- %%-PRERENDERING-BEGIN-%% -->
+<div style="opacity: 0; position: fixed; z-index: -1; top: 0; left: 0; bottom: 0; right: 0;">
+    <header id="header" class="[ flex items-center justify-between ] [ bg-white ] [ px-5 ] [ dark:bg-gray-800 dark:bg-gray-800/80 ] [ h-14 ] [ sticky top-0 ] [ backdrop-blur-sm bg-white/30 ]"><h1 id="brand" class="[  ]"><a href="/" class="[ font-bold ] [ flex items-center justify-between space-x-1 ] active"><span class="[ dark:text-white ]">I</span>
+            <span class="animate-pulse">❤️</span>
+            <span class="[ text-indigo-600 ] [ dark:text-white ]">.NET</span></a></h1>
+    <section id="search" class="[ flex grow justify-center ]"><button type="button" aria-label="Exit Search" class="[ hidden ] [ bg-white ] [ h-10 w-10 ] [ border-2 ] [ dark:bg-gray-800 dark:border-gray-800 ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-arrow-left ] [ inline ] [ text-gray-500 ] [ stroke-1 ] [ dark:text-white ]" width="25" height="25" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <line x1="5" y1="12" x2="11" y2="18"></line>
+            <line x1="5" y1="12" x2="11" y2="6"></line></svg></button>
+    <div class="[ dropdown ] [  ] [ w-1/2 ] [  ] [  ]"><div class="[ dropdown-trigger ] [ w-full ]"><input type="search" placeholder="Search" class="[ w-full h-full ] [ px-4 ] [ border-2 ] [ focus:outline-none focus:border-gray-400 ] [ dark:bg-black dark:border-gray-800 dark:focus:border-b-white dark:md:focus:border-blue-800 dark:caret-white dark:text-white  ]" autocapitalize="none" autocomplete="off" autocorrect="off" aria-haspopup="true" aria-controls="dropdown-menu" value=""/></div>
+        <div class="[ dropdown-menu ] [ w-full ]" id="dropdown-menu" role="menu"><div class="[ dropdown-content ] [ dark:bg-black ]"></div></div></div>
+    <button type="button" aria-label="Search" class="[ bg-white ] [ h-10 w-10 ] [ border-2 border-l-0 ] [ dark:bg-gray-700 dark:border-gray-700 ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-search ] [ inline ] [ text-gray-500 ] [ stroke-1 ] [ dark:text-white ]" width="25" height="25" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <circle cx="10" cy="10" r="7"></circle>
+            <line x1="21" y1="21" x2="15" y2="15"></line></svg></button></section>
+    <section id="display-and-social" class="[  ] [ flex items-center space-x-1.5 ]"><section id="displaymode"><div class="dropdown is-right "><div class="dropdown-trigger"><button class="button [ flex items-center ]" aria-haspopup="true" aria-controls="displaymode-menu"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-brightness-up ] [ dark:text-white ]" width="25" height="25" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                        <line x1="12" y1="5" x2="12" y2="3"></line>
+                        <line x1="17" y1="7" x2="18.4" y2="5.6"></line>
+                        <line x1="19" y1="12" x2="21" y2="12"></line>
+                        <line x1="17" y1="17" x2="18.4" y2="18.4"></line>
+                        <line x1="12" y1="19" x2="12" y2="21"></line>
+                        <line x1="7" y1="17" x2="5.6" y2="18.4"></line>
+                        <line x1="6" y1="12" x2="4" y2="12"></line>
+                        <line x1="7" y1="7" x2="5.6" y2="5.6"></line></svg></button></div>
+        <div class="dropdown-menu" id="displaymode-menu" role="menu"><div class="dropdown-content [ dark:bg-black ]"><button type="button" class="dropdown-item [ flex items-center space-x-1 ] [ dark:hover:bg-gray-700 ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-brightness-up ] [ dark:text-white ]" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                        <line x1="12" y1="5" x2="12" y2="3"></line>
+                        <line x1="17" y1="7" x2="18.4" y2="5.6"></line>
+                        <line x1="19" y1="12" x2="21" y2="12"></line>
+                        <line x1="17" y1="17" x2="18.4" y2="18.4"></line>
+                        <line x1="12" y1="19" x2="12" y2="21"></line>
+                        <line x1="7" y1="17" x2="5.6" y2="18.4"></line>
+                        <line x1="6" y1="12" x2="4" y2="12"></line>
+                        <line x1="7" y1="7" x2="5.6" y2="5.6"></line></svg>
+                    <p class="[ dark:text-white ]">Light</p></button>
+                <button type="button" class="dropdown-item [ flex items-center space-x-1 ] [ dark:hover:bg-gray-700 ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-moon ] [ dark:text-white ]" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"></path></svg>
+                    <p class="[ dark:text-white ]">Dark</p></button>
+                <button type="button" class="dropdown-item [ flex items-center space-x-1 ] [ dark:hover:bg-gray-700 ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-device-desktop ] [ dark:text-white ]" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <rect x="3" y="4" width="18" height="12" rx="1"></rect>
+                        <line x1="7" y1="20" x2="17" y2="20"></line>
+                        <line x1="9" y1="16" x2="9" y2="20"></line>
+                        <line x1="15" y1="16" x2="15" y2="20"></line></svg>
+                    <p class="[ dark:text-white ]">System</p></button></div></div></div></section>
+        <section id="social" class="[ flex justify-between ]"><a href="https://stackoverflow.com/users/10851213/fingers10" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-brand-stackoverflow ] [ text-yellow-500 ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M4 17v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-1"></path>
+            <path d="M8 16h8"></path>
+            <path d="M8.322 12.582l7.956 .836"></path>
+            <path d="M8.787 9.168l7.826 1.664"></path>
+            <path d="M10.096 5.764l7.608 2.472"></path></svg></a>
+    <a href="https://lnkd.in/g4-f-dcN" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-brand-linkedin ] [ text-blue-500 ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <rect x="4" y="4" width="16" height="16" rx="2"></rect>
+            <line x1="8" y1="11" x2="8" y2="16"></line>
+            <line x1="8" y1="8" x2="8" y2="8.01"></line>
+            <line x1="12" y1="16" x2="12" y2="11"></line>
+            <path d="M16 16v-3a2 2 0 0 0 -4 0"></path></svg></a>
+    <a href="https://github.com/ILoveDotNet" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-brand-github ] [ text-black ] [ dark:text-white ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path></svg></a>
+    <a href="https://www.youtube.com/channel/UCOS3wCw7SVXjXXffMPqid7A" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-brand-youtube ] [ text-red-500 ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <rect x="3" y="5" width="18" height="14" rx="4"></rect>
+            <path d="M10 9l5 3l-5 3z"></path></svg></a></section></section></header>
+<main id="main">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="[ flex flex-col md:flex-row ] [ p-5 md:px-20 ] [ md:space-x-5 space-y-5 md:space-y-0 ]"><article class="[ md:basis-4/5 ] [ space-y-5 ]"><header class="[ space-y-2 ]"><figure><img srcset="image/blogs/webapi/webapi-importance-of-status-code-400w.svg 400w,image/blogs/webapi/webapi-importance-of-status-code-1200w.svg 1200w" sizes="(max-width: 400px) 480px,1200px" alt="Importance of Status Code in Web API" class="[ w-full ]" loading="lazy"/></figure>
+    <h2 class="[ dark:text-white ] [ font-semibold text-xl ]">Importance of Status Code in Web API</h2>
+    <section class="[ flex flex-col md:flex-row justify-between ] [ space-y-1 md:space-y-0 ] [ dark:text-white ] [ font-bold ]"><div><p>Authors - <a href="https://www.linkedin.com/in/fingers10" class="[ underline ]" target="_blank">Abdul Rahman (Content Writer)</a>, <a href="https://www.linkedin.com/in/regina-sharon" class="[ underline ]" target="_blank">Regina Sharon (Graphic Designer)</a></p>
+            <time datetime="2022-02-20 22:30:00">Last updated 13 days ago</time></div>
+        <div><section class="[ flex justify-between md:justify-start ]"><a href="https://api.whatsapp.com/send?text=Importance of Status Code in Web API%20https%3a%2f%2fwww.ilovedotnet.org%2fblogs%2fwebapi-importance-of-status-code%2f" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-brand-whatsapp ] [ text-emerald-500 dark:text-emerald-300 ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9"></path>
+            <path d="M9 10a0.5 .5 0 0 0 1 0v-1a0.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a0.5 .5 0 0 0 0 -1h-1a0.5 .5 0 0 0 0 1"></path></svg></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fwww.ilovedotnet.org%2fblogs%2fwebapi-importance-of-status-code%2f" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-brand-linkedin ] [ text-blue-500 ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <rect x="4" y="4" width="16" height="16" rx="2"></rect>
+            <line x1="8" y1="11" x2="8" y2="16"></line>
+            <line x1="8" y1="8" x2="8" y2="8.01"></line>
+            <line x1="12" y1="16" x2="12" y2="11"></line>
+            <path d="M16 16v-3a2 2 0 0 0 -4 0"></path></svg></a>
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fwww.ilovedotnet.org%2fblogs%2fwebapi-importance-of-status-code%2f" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-brand-facebook ] [ text-blue-400 ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"></path></svg></a>
+    <a href="https://twitter.com/intent/tweet?url=https%3a%2f%2fwww.ilovedotnet.org%2fblogs%2fwebapi-importance-of-status-code%2f&amp;text=Importance of Status Code in Web API" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-brand-twitter ] [ text-blue-700 ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z"></path></svg></a></section></div></section>
+    <hr class="[ dark:text-white my-1.5 ]"/></header>
+        <section class="[ dark:text-white ] [ space-y-2 ] [ leading-relaxed ]"><h3 class="[ font-semibold text-lg ]">What is HTTP Status Code?</h3>
+
+        <p>
+            (<abbr title="Hyper Text Transfer Protocol">HTTP</abbr>) Status code is issued by a server in response to a client's request made
+            to server.The first digit of the status code defines the class of response, while the last two digits do not have any classifying
+            or categorization role.HTTP status codes are especially important for Search Engine Optimization (SEO.) They provide direct
+            information on the health of a website and help pinpoint possible problems with requested content.
+        </p>
+
+        <h3 class="[ font-semibold text-lg ]">Why do we need HTTP Status Code?</h3>
+
+        <ul class="[ list-disc ] [ ml-3.5 ]"><li>Whether the request worked out as expected</li>
+            <li>What is responsible for failed request</li></ul>
+
+        <h3 class="[ font-semibold text-lg ]">Common Mistakes !!</h3>
+
+        <ul class="[ list-disc ] [ ml-3.5 ]"><li>Don't send back 200 Ok when something is wrong</li>
+            <li>Don't send back 500 InternalServerError when the client makes a mistake</li></ul>
+
+        <p>
+            There are different levels of status code. Let's look at the most commonly used one's in web API.
+        </p>
+
+        <table class="[ table-fixed border-collapse ] [ bg-white ] [ border-2 ] [ dark:bg-black dark:border-slate-500 ]"><thead><tr class="[ bg-gray-100 ] [ dark:bg-slate-500 ]"><th class="[ border-2 ] [ dark:border-slate-600 ] [ p-2 ]">Level</th>
+                    <th class="[ border-2 ] [ dark:border-slate-600 ] [ p-2 ]">Description</th>
+                    <th class="[ border-2 ] [ dark:border-slate-600 ] [ p-2 ]">Usage</th></tr></thead>
+            <tbody><tr class="[ bg-yellow-100 ] [ dark:bg-yellow-600 ]"><td class="[ border-2 ] [ dark:border-slate-700 ] [ p-2 ]">1xx</td>
+                    <td class="[ border-2 ] [ dark:border-slate-700 ] [ p-2 ]">Informational ⚠️</td>
+                    <td class="[ border-2 ] [ dark:border-slate-700 ] [ p-2 ]">I haven't used this so far in my API's</td></tr>
+                <tr class="[ bg-green-100 ] [ dark:bg-green-600 ]"><td class="[ border-2 ] [ dark:border-slate-700 ] [ p-2 ]">2xx</td>
+                    <td class="[ border-2 ] [ dark:border-slate-700 ] [ p-2 ]">Success ✅</td>
+                    <td class="[ border-2 ] [ dark:border-slate-700 ] [ p-2 ]">This can be used in GET, POST, PUT, PATCH and DELETE endpoints</td></tr>
+                <tr><td class="[ border-2 ] [ dark:border-slate-700 ] [ p-2 ]">200</td>
+                    <td class="[ border-2 ] [ dark:border-slate-700 ] [ p-2 ]">Success</td>
+                    <td class="[ border-2 ] [ dark:border-slate-700 ] [ p-2 ]">Ok() - Get Request</td></tr>
+                <tr><td class="[ border-2 ] [ dark:border-slate-700 ] [ p-2 ]">201</td>
+                    <td class="[ border-2 ] [ dark:border-slate-700 ] [ p-2 ]">Created</td>
+                    <td class="[ border-2 ] [ dark:border-slate-700 ] [ p-2 ]">Created() - Post Request</td></tr>
+                <tr><td class="[ border-2 ] [ dark:border-slate-700 ] [ p-2 ]">204</td>
+                    <td class="[ border-2 ] [ dark:border-slate-700 ] [ p-2 ]">No Content</td>
+                    <td class="[ border-2 ] [ dark:border-slate-700 ] [ p-2 ]">NoContent() - Put / Patch / Delete Request</td></tr>
+                <tr class="[ bg-fuchsia-100 ] [ dark:bg-fuchsia-600 ]"><td class="[ border-2 ] [ dark:border-slate-700 ] [ p-2 ]">3xx</td>
+                    <td class="[ border-2 ] [ dark:border-slate-700 ] [ p-2 ]">Redirects 🔃</td>
+                    <td class="[ border-2 ] [ dark:border-slate-700 ] [ p-2 ]">I haven't used this so far in my API's. But noticed this in browser network tab when redirect happens from http to https</td></tr>
+                <tr class="[ bg-blue-100 ] [ dark:bg-blue-600 ]"><td class="[ border-2 ] [ dark:border-slate-700 ] [ p-2 ]">4xx</td>
+                    <td class="[ border-2 ] [ dark:border-slate-700 ] [ p-2 ]">Client Mistake ❌</td>
+                    <td class="[ border-2 ] [ dark:border-slate-700 ] [ p-2 ]">This can be used to indicate the mistakes made by consumer of the API</td></tr>
+                <tr><td class="[ border-2 ] [ dark:border-slate-700 ] [ p-2 ]">400</td>
+                    <td class="[ border-2 ] [ dark:border-slate-700 ] [ p-2 ]">Bad Request</td>
+                    <td class="[ border-2 ] [ dark:border-slate-700 ] [ p-2 ]">BadRequest() - Wrong data input by client</td></tr>
+                <tr><td class="[ border-2 ] [ dark:border-slate-700 ] [ p-2 ]">401</td>
+                    <td class="[ border-2 ] [ dark:border-slate-700 ] [ p-2 ]">Not Authenticated</td>
+                    <td class="[ border-2 ] [ dark:border-slate-700 ] [ p-2 ]">Unauthorized() - Not signed in</td></tr>
+                <tr><td class="[ border-2 ] [ dark:border-slate-700 ] [ p-2 ]">403</td>
+                    <td class="[ border-2 ] [ dark:border-slate-700 ] [ p-2 ]">Not Authorized</td>
+                    <td class="[ border-2 ] [ dark:border-slate-700 ] [ p-2 ]">Forbid() - Signed in but dont have permission</td></tr>
+                <tr><td class="[ border-2 ] [ dark:border-slate-700 ] [ p-2 ]">404</td>
+                    <td class="[ border-2 ] [ dark:border-slate-700 ] [ p-2 ]">Not Found</td>
+                    <td class="[ border-2 ] [ dark:border-slate-700 ] [ p-2 ]">NotFound() - Resource not found</td></tr>
+                <tr><td class="[ border-2 ] [ dark:border-slate-700 ] [ p-2 ]">409</td>
+                    <td class="[ border-2 ] [ dark:border-slate-700 ] [ p-2 ]">Conflict</td>
+                    <td class="[ border-2 ] [ dark:border-slate-700 ] [ p-2 ]">Conflict() - Error on simultaneous update</td></tr>
+                <tr><td class="[ border-2 ] [ dark:border-slate-700 ] [ p-2 ]">422</td>
+                    <td class="[ border-2 ] [ dark:border-slate-700 ] [ p-2 ]">Unprocessable Entity</td>
+                    <td class="[ border-2 ] [ dark:border-slate-700 ] [ p-2 ]">UnprocessableEntity() - Error on data validation failures</td></tr>
+                <tr class="[ bg-red-100 ] [ dark:bg-red-600 ]"><td class="[ border-2 ] [ dark:border-slate-700 ] [ p-2 ]">5xx</td>
+                    <td class="[ border-2 ] [ dark:border-slate-700 ] [ p-2 ]">Internal Server Error 💥</td>
+                    <td class="[ border-2 ] [ dark:border-slate-700 ] [ p-2 ]">This can be used to indicate server faults and consumer can only retry later</td></tr></tbody></table></section>
+        <footer class="[ max-w-full ]"><ul class="[ list-none ] [ flex items-center justify-center ] [ space-x-3 ] [ overflow-hidden overflow-x-auto ]"><li class="[ px-3 py-1 ] [ rounded-full ] [ bg-black text-white dark:bg-white dark:text-black ]">Status Code</li></ul></footer>
+        <hr class="[ dark:text-white my-1.5 ]"/></article>
+    <aside class="[ flex flex-col md:basis-1/5 ] [ space-y-2 ]"><a href="blogs/blazor-wasm-exception-handling-and-error-boundary"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-exception-handling-and-error-boundary-1200w.svg" alt="Blazor WASM Exception Handling and Error Boundary" loading="lazy"/></figure></header>
+                    <div class="[ basis-3/5 ]"><article class="[ flex flex-col ] [ dark:text-white ]"><h2 class="[ font-medium text-sm break-words leading-tight ]">Blazor WASM Exception Handling and Error Boundary</h2>
+                            <section class="[ flex flex-col ]"><p class="[ text-xs dark:text-neutral-400 ]">Abdul Rahman</p>
+                                <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-01-16 22-30-00">one month ago</time></section></article></div></section></a><a href="blogs/blazor-wasm-error-logging"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-error-logging-1200w.svg" alt="Blazor WASM Error Logging" loading="lazy"/></figure></header>
+                    <div class="[ basis-3/5 ]"><article class="[ flex flex-col ] [ dark:text-white ]"><h2 class="[ font-medium text-sm break-words leading-tight ]">Blazor WASM Error Logging</h2>
+                            <section class="[ flex flex-col ]"><p class="[ text-xs dark:text-neutral-400 ]">Abdul Rahman</p>
+                                <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-01-23 22-30-00">one month ago</time></section></article></div></section></a><a href="blogs/blazor-wasm-dark-theme-and-light-theme"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-dark-theme-and-light-theme-1200w.svg" alt="Blazor WASM Dark Theme and Light Theme" loading="lazy"/></figure></header>
+                    <div class="[ basis-3/5 ]"><article class="[ flex flex-col ] [ dark:text-white ]"><h2 class="[ font-medium text-sm break-words leading-tight ]">Blazor WASM Dark Theme and Light Theme</h2>
+                            <section class="[ flex flex-col ]"><p class="[ text-xs dark:text-neutral-400 ]">Abdul Rahman</p>
+                                <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-01-30 22-30-00">one month ago</time></section></article></div></section></a><a href="blogs/blazor-wasm-javascript-interop-and-isolation"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-javascript-interop-and-isolation-1200w.svg" alt="Blazor WASM Javascript Interop and Isolation" loading="lazy"/></figure></header>
+                    <div class="[ basis-3/5 ]"><article class="[ flex flex-col ] [ dark:text-white ]"><h2 class="[ font-medium text-sm break-words leading-tight ]">Blazor WASM Javascript Interop and Isolation</h2>
+                            <section class="[ flex flex-col ]"><p class="[ text-xs dark:text-neutral-400 ]">Abdul Rahman</p>
+                                <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-02-06 22-30-00">27 days ago</time></section></article></div></section></a><a href="blogs/blazor-wasm-styles-and-css-isolation"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-styles-and-css-isolation-1200w.svg" alt="Blazor WASM Styles and CSS Isolation" loading="lazy"/></figure></header>
+                    <div class="[ basis-3/5 ]"><article class="[ flex flex-col ] [ dark:text-white ]"><h2 class="[ font-medium text-sm break-words leading-tight ]">Blazor WASM Styles and CSS Isolation</h2>
+                            <section class="[ flex flex-col ]"><p class="[ text-xs dark:text-neutral-400 ]">Abdul Rahman</p>
+                                <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-02-13 22-30-00">20 days ago</time></section></article></div></section></a><a href="blogs/blazor-wasm-lazy-loading"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-lazy-loading-1200w.svg" alt="Blazor WASM Lazy Loading" loading="lazy"/></figure></header>
+                    <div class="[ basis-3/5 ]"><article class="[ flex flex-col ] [ dark:text-white ]"><h2 class="[ font-medium text-sm break-words leading-tight ]">Blazor WASM Lazy Loading</h2>
+                            <section class="[ flex flex-col ]"><p class="[ text-xs dark:text-neutral-400 ]">Abdul Rahman</p>
+                                <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-02-20 22-30-00">13 days ago</time></section></article></div></section></a><a href="blogs/blazor-wasm-app-settings"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-app-settings-1200w.svg" alt="Blazor WASM App Settings" loading="lazy"/></figure></header>
+                    <div class="[ basis-3/5 ]"><article class="[ flex flex-col ] [ dark:text-white ]"><h2 class="[ font-medium text-sm break-words leading-tight ]">Blazor WASM App Settings</h2>
+                            <section class="[ flex flex-col ]"><p class="[ text-xs dark:text-neutral-400 ]">Abdul Rahman</p>
+                                <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-02-27 22-30-00">6 days ago</time></section></article></div></section></a></aside></section></main>
+            
+
+</div>
+<!-- %%-PRERENDERING-END-%% -->
+</div>
+
+    <div id="blazor-error-ui" class="[ bg-red-500 ] [ text-white ] [ fixed bottom-0 ] [ w-full ] [ p-2 ]" style="display: none;">
+        An unhandled error has occurred. Please click on
+        <a href="javascript: void(0)" class="[ inline-block ] [ underline ] [ hover\:text-white ]" onclick="location.reload()">Reload</a>
+        to proceed.
+        <button class="[ dismiss ] [ fixed right-5 bottom-2 ]">
+            <svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-x ] [ text-white ]" width="25" height="25" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+        </button>
+    </div>
+
+    <script src="_framework/blazor.webassembly.js"></script>
+    <script src="_content/BlazorDemoComponents/jsinterop.js"></script>
+    <!--<script>navigator.serviceWorker.register('service-worker.js', { updateViaCache: 'none' });</script>-->
+
+
+
+</body></html>
