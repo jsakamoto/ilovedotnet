@@ -54,12 +54,12 @@
       "Toolbelt.Blazor.HeadElement.Abstractions.dll": "sha256-o\/txvIH8067j4d0xC3y9cBmfulmBWAUF1v9OOgMg64Y=",
       "Toolbelt.Blazor.HeadElement.dll": "sha256-f\/BcyG\/W5SyhNF9nhgyNDSsi2NU9Jc6vie4gzMQHBxY=",
       "Toolbelt.Blazor.HeadElement.Services.dll": "sha256-0Er+DUvPKDelpiWVezwo+uOz2n5\/vy4LR+GHo8o\/wn8=",
-      "Web.dll": "sha256-I6k4kXSsNeywDO9FJ\/wf+cmZN\/lX1D1V4wW8qu0XYkI="
+      "Web.dll": "sha256-3Pk3czjkwyod4XZyCr5naNYlh7X8fM9E1rIAUCR0OuY="
     },
     "extensions": null,
     "lazyAssembly": {
       "BlazorDemoComponents.dll": "sha256-noyNyfFGATguh01Y+k8yqsBRFPJfZb7hSZmpPNNzlUQ=",
-      "Components.dll": "sha256-e\/TZxbAkC4Kaad93Bb+HQjHKKOsJD9W0Hu5fKklKNog="
+      "Components.dll": "sha256-QEzgu8R9x5jeyfJYJwy88w0G5D8ag\/Iodiaa9LDJYu4="
     },
     "libraryInitializers": null,
     "pdb": null,

@@ -25,7 +25,7 @@
       "url": "atom.xml"
     },
     {
-      "hash": "sha256-dvuffCGyPcUoVAcBCxBFCJjsIXA7i0Pu4JFv9x9Ev\/4=",
+      "hash": "sha256-jinSPk4eDkVzp2I8hrnKtqGv79d8o980umGz81R6Y8o=",
       "url": "css\/app.min.css"
     },
     {
@@ -33,32 +33,64 @@
       "url": "favicon.ico"
     },
     {
+      "hash": "sha256-YW58lQt96OIWJsy7y\/dpQ31\/RF2brKHUStD1PC7PZGs=",
+      "url": "image\/blogs\/blazor\/wasm\/blazor-wasm-app-settings.png"
+    },
+    {
       "hash": "sha256-7xDPYNOExZFLuNtve8W7rluowikiWTMfk\/\/SNfOI6mo=",
       "url": "image\/blogs\/blazor\/wasm\/blazor-wasm-app-settings.svg"
+    },
+    {
+      "hash": "sha256-mAO83kvwKWu316lb+Iiw6uqqmd2FkjUZCkUsdCAzERo=",
+      "url": "image\/blogs\/blazor\/wasm\/blazor-wasm-dark-theme-and-light-theme.png"
     },
     {
       "hash": "sha256-IRzWpi3+lWK7z5Bxk7j\/c419RGcSpepYtqV6Gthr8MI=",
       "url": "image\/blogs\/blazor\/wasm\/blazor-wasm-dark-theme-and-light-theme.svg"
     },
     {
+      "hash": "sha256-TRUXst32g\/oVwVV9DJG9+S71GVn5TWANhi81CoLoweU=",
+      "url": "image\/blogs\/blazor\/wasm\/blazor-wasm-error-logging.png"
+    },
+    {
       "hash": "sha256-OejC2syKB\/2op8l\/PvgfdPyb92UOGjhdiFziCwPjHSo=",
       "url": "image\/blogs\/blazor\/wasm\/blazor-wasm-error-logging.svg"
+    },
+    {
+      "hash": "sha256-jBBtE5sHTzcMGD2vXzh9SKj8dIH6M7a7xuWx8hUe4V8=",
+      "url": "image\/blogs\/blazor\/wasm\/blazor-wasm-exception-handling-and-error-boundary.png"
     },
     {
       "hash": "sha256-tZCFfyF28elM1UPd69K5FoDDcP6iNStbSsoVxPaGSw8=",
       "url": "image\/blogs\/blazor\/wasm\/blazor-wasm-exception-handling-and-error-boundary.svg"
     },
     {
+      "hash": "sha256-lD6ykYRkvcqupoYVxV7EmwPQ8PAVlzYqiRarxKBkGGo=",
+      "url": "image\/blogs\/blazor\/wasm\/blazor-wasm-javascript-interop-and-isolation.png"
+    },
+    {
       "hash": "sha256-FKE8m3LNuAmd9r\/igOj4WaExIhQ63MpMkYruU+i+DIM=",
       "url": "image\/blogs\/blazor\/wasm\/blazor-wasm-javascript-interop-and-isolation.svg"
+    },
+    {
+      "hash": "sha256-XUlRaLm4j9bMNDUVR3u\/yZYXEkQjpEVbXF249spdxrI=",
+      "url": "image\/blogs\/blazor\/wasm\/blazor-wasm-lazy-loading.png"
     },
     {
       "hash": "sha256-xYmTjVKlD\/YSGsRy3Yci\/ji+DKovrTZM2vTKlhKcKKY=",
       "url": "image\/blogs\/blazor\/wasm\/blazor-wasm-lazy-loading.svg"
     },
     {
+      "hash": "sha256-fJa+5eGFBtq0a0NTRuRy4zhN8B2EwSyZsuj354YbKQw=",
+      "url": "image\/blogs\/blazor\/wasm\/blazor-wasm-styles-and-css-isolation.png"
+    },
+    {
       "hash": "sha256-XaEl0t383J+HcQcEj\/0vbgph95qnpenPRJIVepezBPg=",
       "url": "image\/blogs\/blazor\/wasm\/blazor-wasm-styles-and-css-isolation.svg"
+    },
+    {
+      "hash": "sha256-HcXHyTvDWgu9Td5AhVTzE54ttTGW8YmYt0mP28kmmJk=",
+      "url": "image\/blogs\/webapi\/webapi-importance-of-status-code.png"
     },
     {
       "hash": "sha256-7rp+fwYlxyJqh7CeC7Ot24ar8EC4fMZuxK1G5OIKkBg=",
@@ -89,11 +121,15 @@
       "url": "image\/icons\/webapi.png"
     },
     {
+      "hash": "sha256-tw3IBTMMaZVX7u6\/sWZe6zAJ+cLIqxAbWnKpw21UwD4=",
+      "url": "image\/talks\/blazor-spa-from-aspnet-family.png"
+    },
+    {
       "hash": "sha256-9GYPvoniWcqcdeeAR69COfluzrOwjrpHxk44PB6kc1E=",
       "url": "image\/talks\/blazor-spa-from-aspnet-family.svg"
     },
     {
-      "hash": "sha256-dBp9+hq6JUF1+q\/az\/9d\/SbN13wvJhnUENmAGmhj5\/U=",
+      "hash": "sha256-6d\/DrRZ\/uzkIXq0SJW4KguBPYUjjUzPhPuUeH5ljhWo=",
       "url": "index.html"
     },
     {
@@ -161,7 +197,7 @@
       "url": "_framework\/icudt.dat"
     },
     {
-      "hash": "sha256-W3ZUNlLB5rJtyFqpbN79AV74aBzMr12w55g\/4+TdFIk=",
+      "hash": "sha256-jWExkOGAOZm4Llxx2Ut8X7YBgo7pH5yC7STZyNGgc4A=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -169,7 +205,7 @@
       "url": "_framework\/BlazorDemoComponents.dll"
     },
     {
-      "hash": "sha256-e\/TZxbAkC4Kaad93Bb+HQjHKKOsJD9W0Hu5fKklKNog=",
+      "hash": "sha256-QEzgu8R9x5jeyfJYJwy88w0G5D8ag\/Iodiaa9LDJYu4=",
       "url": "_framework\/Components.dll"
     },
     {
@@ -353,7 +389,7 @@
       "url": "_framework\/Toolbelt.Blazor.HeadElement.Services.dll"
     },
     {
-      "hash": "sha256-I6k4kXSsNeywDO9FJ\/wf+cmZN\/lX1D1V4wW8qu0XYkI=",
+      "hash": "sha256-3Pk3czjkwyod4XZyCr5naNYlh7X8fM9E1rIAUCR0OuY=",
       "url": "_framework\/Web.dll"
     },
     {
@@ -393,5 +429,5 @@
       "url": "_content\/Components\/githubgist.js"
     }
   ],
-  "version": "fM4rnn4u"
+  "version": "NVcHVoea"
 };
