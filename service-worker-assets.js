@@ -129,7 +129,7 @@
       "url": "image\/talks\/blazor-spa-from-aspnet-family.svg"
     },
     {
-      "hash": "sha256-yCIiiCXCFkZgEBMizYtZvc2O30zUSyepwGopVXt\/r+g=",
+      "hash": "sha256-nedFiYO7LyvyAf8Pm5IE9SgX5Uo16YE5iozGlfqm0bY=",
       "url": "index.html"
     },
     {
