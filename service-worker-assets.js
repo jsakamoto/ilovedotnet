@@ -21,11 +21,11 @@
       "url": "appicons\/favicon-196x196.png"
     },
     {
-      "hash": "sha256-q5KQhk6d1pWMWmtH9uBV5Z7JG7K3iBB47spPiIvhTdA=",
+      "hash": "sha256-a5Di2ecZY9F0oeSMDuKDqb3GG5qp7\/6Daq63utMdrLU=",
       "url": "atom.xml"
     },
     {
-      "hash": "sha256-jinSPk4eDkVzp2I8hrnKtqGv79d8o980umGz81R6Y8o=",
+      "hash": "sha256-EEX\/5PBdYOIomKfdIRhtAdRN2XpLFRI0Vl4CKyaU\/AY=",
       "url": "css\/app.min.css"
     },
     {
@@ -65,6 +65,14 @@
       "url": "image\/blogs\/blazor\/wasm\/blazor-wasm-exception-handling-and-error-boundary.svg"
     },
     {
+      "hash": "sha256-o1Z\/qjM1sz6sQIm\/q+wBM1MDae98xY9+1ryKQ3UzveU=",
+      "url": "image\/blogs\/blazor\/wasm\/blazor-wasm-introduction.png"
+    },
+    {
+      "hash": "sha256-POz+1rBxTFZwJhoDm3YCvv6S9V4XMTAz4auU8HNXG70=",
+      "url": "image\/blogs\/blazor\/wasm\/blazor-wasm-introduction.svg"
+    },
+    {
       "hash": "sha256-lD6ykYRkvcqupoYVxV7EmwPQ8PAVlzYqiRarxKBkGGo=",
       "url": "image\/blogs\/blazor\/wasm\/blazor-wasm-javascript-interop-and-isolation.png"
     },
@@ -87,6 +95,46 @@
     {
       "hash": "sha256-XaEl0t383J+HcQcEj\/0vbgph95qnpenPRJIVepezBPg=",
       "url": "image\/blogs\/blazor\/wasm\/blazor-wasm-styles-and-css-isolation.svg"
+    },
+    {
+      "hash": "sha256-OD42m9XOZHJi+jcP2xR1WaeRSIWBxgHf1jmy8TKb0Y4=",
+      "url": "image\/blogs\/blazor\/wasm\/introduction\/benefits and drawbacks of blazor web assembly.png"
+    },
+    {
+      "hash": "sha256-XNZVw9VM8JbNlNrw86r4d9mIGMxY7KuPv8GXEa+a77U=",
+      "url": "image\/blogs\/blazor\/wasm\/introduction\/how blazor.png"
+    },
+    {
+      "hash": "sha256-kVGwUaw8WqYjuAFC03qQdjpTfu46hA1I6vFkveXDLLA=",
+      "url": "image\/blogs\/blazor\/wasm\/introduction\/how web applications work.png"
+    },
+    {
+      "hash": "sha256-x6vGq6qjD9NBuOHJoQPGvz83b\/oMJg4c2PgB0AFK5G8=",
+      "url": "image\/blogs\/blazor\/wasm\/introduction\/running any code in browser.png"
+    },
+    {
+      "hash": "sha256-lzGUlpy9kjPYPLGcQRT4+JpgWvONiTbG6AfOieS8MMc=",
+      "url": "image\/blogs\/blazor\/wasm\/introduction\/ways to develop blazor application.png"
+    },
+    {
+      "hash": "sha256-FB+gObpU5X2zsBc6RvlpsAXsNxvu1gLW6rj5Mvi5hlc=",
+      "url": "image\/blogs\/blazor\/wasm\/introduction\/what is blazor 1.png"
+    },
+    {
+      "hash": "sha256-lxxfXnVRT4w6wiaY4qADj5ldlewqY0IglePI3+4pwy0=",
+      "url": "image\/blogs\/blazor\/wasm\/introduction\/what is blazor 2.png"
+    },
+    {
+      "hash": "sha256-xyVcrOB7TcAN81u9s+Cw8bDnxDqMRlgeM1BeJ4607No=",
+      "url": "image\/blogs\/blazor\/wasm\/introduction\/what is blazor 3.png"
+    },
+    {
+      "hash": "sha256-31cnjNzoew\/N6I3f0IVuBhJF+hLjWp2kxGGOxgaMEmY=",
+      "url": "image\/blogs\/blazor\/wasm\/introduction\/what is blazor web assembly.png"
+    },
+    {
+      "hash": "sha256-hupx53PygFgd5KFFaj+mGR82j8h44GadDAcA9g\/+tS0=",
+      "url": "image\/blogs\/blazor\/wasm\/introduction\/why use blazor.png"
     },
     {
       "hash": "sha256-HcXHyTvDWgu9Td5AhVTzE54ttTGW8YmYt0mP28kmmJk=",
@@ -129,7 +177,7 @@
       "url": "image\/talks\/blazor-spa-from-aspnet-family.svg"
     },
     {
-      "hash": "sha256-nedFiYO7LyvyAf8Pm5IE9SgX5Uo16YE5iozGlfqm0bY=",
+      "hash": "sha256-1vuRNTjxiLnvwwhY6QUAEU4mDtgyh0Dc9IDAOF8aB6E=",
       "url": "index.html"
     },
     {
@@ -157,7 +205,7 @@
       "url": "robots.txt"
     },
     {
-      "hash": "sha256-QYHWDHhDtEMaMxSmxvNe3ppq28rpfnuZMYsRClq2LJQ=",
+      "hash": "sha256-586zExM0SBfcNTmv0kCnTfFOdylKZaEgeWrde0T0egM=",
       "url": "sitemap-blog-blazor-wasm.xml"
     },
     {
@@ -197,7 +245,7 @@
       "url": "_framework\/icudt.dat"
     },
     {
-      "hash": "sha256-Js0wiWkR6yJNlUMVsNh2B8rVDmwAPhsbjB4DI4MclQ4=",
+      "hash": "sha256-tn2tGaR98Twieb\/ECVuWx\/VWMlVuGLR4705mjEUR9BA=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -205,7 +253,7 @@
       "url": "_framework\/BlazorDemoComponents.dll"
     },
     {
-      "hash": "sha256-Zc1iSy6\/tCODOjk\/n2fpHBtu27o3IDBSqlAtI4+FLtc=",
+      "hash": "sha256-p2Pcd0Pspbquq5G1a\/gZQJUm42UdgICDG4ExWvlisK8=",
       "url": "_framework\/Components.dll"
     },
     {
@@ -213,7 +261,7 @@
       "url": "_framework\/Humanizer.dll"
     },
     {
-      "hash": "sha256-hS4+DtbMNoS04mItIlXEDj+zO8bmdXQvl\/3OMHYvY24=",
+      "hash": "sha256-vqtm5VGq7xYf+YKqwrhhIZooYl0bZepYZtxi5\/EmP2k=",
       "url": "_framework\/Microsoft.AspNetCore.Components.dll"
     },
     {
@@ -277,7 +325,7 @@
       "url": "_framework\/netstandard.dll"
     },
     {
-      "hash": "sha256-b3\/mnMQyT0eiqMnmir15G11E4EvJgvv0iYBsZEHW+Kk=",
+      "hash": "sha256-Ku01RTC39vKv0Zf+Cnk4mDxxIftoLF5YDzfRDLG55GM=",
       "url": "_framework\/SharedModels.dll"
     },
     {
@@ -389,7 +437,7 @@
       "url": "_framework\/Toolbelt.Blazor.HeadElement.Services.dll"
     },
     {
-      "hash": "sha256-3Pk3czjkwyod4XZyCr5naNYlh7X8fM9E1rIAUCR0OuY=",
+      "hash": "sha256-pJAxntRm5S8ckIlZiSMvaUXu\/\/inule\/6NyKk4GGhbg=",
       "url": "_framework\/Web.dll"
     },
     {
@@ -429,5 +477,5 @@
       "url": "_content\/Components\/githubgist.js"
     }
   ],
-  "version": "u6Yefucl"
+  "version": "ijYkXqoN"
 };
