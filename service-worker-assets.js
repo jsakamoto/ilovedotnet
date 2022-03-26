@@ -21,11 +21,11 @@
       "url": "appicons\/favicon-196x196.png"
     },
     {
-      "hash": "sha256-a5Di2ecZY9F0oeSMDuKDqb3GG5qp7\/6Daq63utMdrLU=",
+      "hash": "sha256-C3sxxp1yfllgtAJVztYpRSDjqkd\/aYPiax28J0q8oNM=",
       "url": "atom.xml"
     },
     {
-      "hash": "sha256-EEX\/5PBdYOIomKfdIRhtAdRN2XpLFRI0Vl4CKyaU\/AY=",
+      "hash": "sha256-5Q20hAH4WgyAn9fH9VH6USpQcAU58GouijIRDHvkd+Y=",
       "url": "css\/app.min.css"
     },
     {
@@ -137,6 +137,26 @@
       "url": "image\/blogs\/blazor\/wasm\/introduction\/why use blazor.png"
     },
     {
+      "hash": "sha256-2tO2TfgJMS5Q+LKALPOwrUp60ZnPlJfycb06sYKyUI4=",
+      "url": "image\/blogs\/tdd\/introducing-tdd-in-csharp-dotnet.png"
+    },
+    {
+      "hash": "sha256-WcMju7CKxX8OJX7vAtUOCMeBnwnzTqXPCaQGK\/lPPlk=",
+      "url": "image\/blogs\/tdd\/introducing-tdd-in-csharp-dotnet.svg"
+    },
+    {
+      "hash": "sha256-OivmHJNbuctwCcdf3MUeQtlCQ++Q1wzGYW+N\/H9cTYU=",
+      "url": "image\/blogs\/tdd\/introduction\/advantages.jpg"
+    },
+    {
+      "hash": "sha256-r9RDw5FMp3Gl9N74AA6i4dJ70BQ7QseKR4lgp4\/B9dw=",
+      "url": "image\/blogs\/tdd\/introduction\/red green refactor.jpg"
+    },
+    {
+      "hash": "sha256-ijXyG0VbSGK\/3vxq\/wqxiO4BGhFcHWN8X32FibOUkPQ=",
+      "url": "image\/blogs\/tdd\/introduction\/requirements.jpg"
+    },
+    {
       "hash": "sha256-HcXHyTvDWgu9Td5AhVTzE54ttTGW8YmYt0mP28kmmJk=",
       "url": "image\/blogs\/webapi\/webapi-importance-of-status-code.png"
     },
@@ -165,6 +185,10 @@
       "url": "image\/icons\/talk.png"
     },
     {
+      "hash": "sha256-VcGA3vn5hpSChcxmXIodXexhFpARvXEGqVd3WNazINM=",
+      "url": "image\/icons\/tdd.png"
+    },
+    {
       "hash": "sha256-PzEuzZlpHE63anRTubWnCpErYcH4SHZRYbBFTSgk3Mk=",
       "url": "image\/icons\/webapi.png"
     },
@@ -177,7 +201,7 @@
       "url": "image\/talks\/blazor-spa-from-aspnet-family.svg"
     },
     {
-      "hash": "sha256-1vuRNTjxiLnvwwhY6QUAEU4mDtgyh0Dc9IDAOF8aB6E=",
+      "hash": "sha256-VlnaYnu2zS+uutcaEmHshcOwkmlcLJnh40+WL8PpwSs=",
       "url": "index.html"
     },
     {
@@ -209,6 +233,10 @@
       "url": "sitemap-blog-blazor-wasm.xml"
     },
     {
+      "hash": "sha256-nljaIkzC1PFzT2TxQR45FhrnB0+u\/kG0QRn17AA+zlU=",
+      "url": "sitemap-blog-tdd.xml"
+    },
+    {
       "hash": "sha256-foQ6jl9XFnJ92B46OPpouez+oxg8AhaAGOkgWkGQjxo=",
       "url": "sitemap-blog-webapi.xml"
     },
@@ -221,7 +249,7 @@
       "url": "sitemap-talk.xml"
     },
     {
-      "hash": "sha256-HDZFduNTXrqzrkPLnmb13VcVTDKvByMuTCdAtsBJU0Q=",
+      "hash": "sha256-hZUh6pe30gYT2EREUg0\/AOuqLV3RY06QvX70Squ6nFQ=",
       "url": "sitemap.xml"
     },
     {
@@ -245,7 +273,7 @@
       "url": "_framework\/icudt.dat"
     },
     {
-      "hash": "sha256-tn2tGaR98Twieb\/ECVuWx\/VWMlVuGLR4705mjEUR9BA=",
+      "hash": "sha256-cuZWcAWD27E2wJcMKf4JKsnouV7JGmcp2cjI3zsgnyE=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -253,7 +281,7 @@
       "url": "_framework\/BlazorDemoComponents.dll"
     },
     {
-      "hash": "sha256-p2Pcd0Pspbquq5G1a\/gZQJUm42UdgICDG4ExWvlisK8=",
+      "hash": "sha256-11qz+sS8N\/c9x8NEeTPUoyOljUhO+n7X6IMN4z2HnSc=",
       "url": "_framework\/Components.dll"
     },
     {
@@ -325,7 +353,7 @@
       "url": "_framework\/netstandard.dll"
     },
     {
-      "hash": "sha256-Ku01RTC39vKv0Zf+Cnk4mDxxIftoLF5YDzfRDLG55GM=",
+      "hash": "sha256-NLaKbWowEWV0hLV8D9phPklqKLUzrCswHfgTfqu1Q1s=",
       "url": "_framework\/SharedModels.dll"
     },
     {
@@ -437,7 +465,7 @@
       "url": "_framework\/Toolbelt.Blazor.HeadElement.Services.dll"
     },
     {
-      "hash": "sha256-pJAxntRm5S8ckIlZiSMvaUXu\/\/inule\/6NyKk4GGhbg=",
+      "hash": "sha256-NLYuKbdg9Ge\/hZcg+mgrwdSHVb6FF6nFqG+0jjw7U94=",
       "url": "_framework\/Web.dll"
     },
     {
@@ -477,5 +505,5 @@
       "url": "_content\/Components\/githubgist.js"
     }
   ],
-  "version": "ijYkXqoN"
+  "version": "DP9EQkCV"
 };
