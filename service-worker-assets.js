@@ -21,11 +21,11 @@
       "url": "appicons\/favicon-196x196.png"
     },
     {
-      "hash": "sha256-C3sxxp1yfllgtAJVztYpRSDjqkd\/aYPiax28J0q8oNM=",
+      "hash": "sha256-O0gpBe2LaIjn4IcDS0SsWPxmeouVYJRc2gGCjM12c+c=",
       "url": "atom.xml"
     },
     {
-      "hash": "sha256-5Q20hAH4WgyAn9fH9VH6USpQcAU58GouijIRDHvkd+Y=",
+      "hash": "sha256-RY2blQSeb+3cvJOOZ6Z3BrfZKlZf1YPVRKPv0WM92jc=",
       "url": "css\/app.min.css"
     },
     {
@@ -137,6 +137,62 @@
       "url": "image\/blogs\/blazor\/wasm\/introduction\/why use blazor.png"
     },
     {
+      "hash": "sha256-E+dEmnigwDn0isO+jfs9+9JMYpDn\/SKR5eEimbNXQwc=",
+      "url": "image\/blogs\/tdd\/implementation\/all green test.jpg"
+    },
+    {
+      "hash": "sha256-wMnYp1DnRB8iAon22DQLx26R35KO1gCQ1rToJRv5sHQ=",
+      "url": "image\/blogs\/tdd\/implementation\/first green test.jpg"
+    },
+    {
+      "hash": "sha256-JIR9hOwHSPdfuv4vAE4m3FGmE+s5xeF69Rxzb3+cLkg=",
+      "url": "image\/blogs\/tdd\/implementation\/first red test.jpg"
+    },
+    {
+      "hash": "sha256-LWQlrtCbOTxhwzWw21hjzmUU3GERjT561h7GCNXFPog=",
+      "url": "image\/blogs\/tdd\/implementation\/first requirement.jpg"
+    },
+    {
+      "hash": "sha256-EHXlWO0M96RjWmOKohDAuiPpEVgWtD7VIqniSUTqTj0=",
+      "url": "image\/blogs\/tdd\/implementation\/save abstraction.jpg"
+    },
+    {
+      "hash": "sha256-DB4VTZCv2T5ROgdTFrC23kffWrXjUMF\/rgMvsOb1G\/w=",
+      "url": "image\/blogs\/tdd\/implementation\/save concrete.jpg"
+    },
+    {
+      "hash": "sha256-zWZKOWKhsJ5cKUgwd4cKq3IGAbwKl7ZRZ6R4uYtSD8U=",
+      "url": "image\/blogs\/tdd\/implementation\/second green test.jpg"
+    },
+    {
+      "hash": "sha256-A3rYNVCmvxxvjQaItY1bQe+3c8nvJJeEU12JmIAiwc0=",
+      "url": "image\/blogs\/tdd\/implementation\/second red test.jpg"
+    },
+    {
+      "hash": "sha256-SY+dWe2KTQNyO5yE\/5hHwdGz5UOHxAjAeG4cxoqnLEQ=",
+      "url": "image\/blogs\/tdd\/implementation\/second requirement.jpg"
+    },
+    {
+      "hash": "sha256-IT0rSVvOwZyI9zPisZpoRGcVjvl6Aj6zqW31sTAcgXQ=",
+      "url": "image\/blogs\/tdd\/implementation\/solution explorer.jpg"
+    },
+    {
+      "hash": "sha256-GxxYqgk6pOAb5\/\/zydwkj+zFFxoNYIR6Azy9RPRUWBA=",
+      "url": "image\/blogs\/tdd\/implementation\/third green test.jpg"
+    },
+    {
+      "hash": "sha256-4qaFj7DoXD+JfiPRmeSPmydiLCsIBxPm7LVrmfsIL9A=",
+      "url": "image\/blogs\/tdd\/implementation\/third red test.jpg"
+    },
+    {
+      "hash": "sha256-QmCPvt4QkjDAxdc1Uj4GKzz60chfyeie5UuoQ3MKclY=",
+      "url": "image\/blogs\/tdd\/implementing-tdd-in-csharp-dotnet.png"
+    },
+    {
+      "hash": "sha256-gLUtDuhrVv2qFEEUef\/S69vIa7AzaHq7KbYKUSy616I=",
+      "url": "image\/blogs\/tdd\/implementing-tdd-in-csharp-dotnet.svg"
+    },
+    {
       "hash": "sha256-2tO2TfgJMS5Q+LKALPOwrUp60ZnPlJfycb06sYKyUI4=",
       "url": "image\/blogs\/tdd\/introducing-tdd-in-csharp-dotnet.png"
     },
@@ -201,7 +257,7 @@
       "url": "image\/talks\/blazor-spa-from-aspnet-family.svg"
     },
     {
-      "hash": "sha256-VlnaYnu2zS+uutcaEmHshcOwkmlcLJnh40+WL8PpwSs=",
+      "hash": "sha256-IRaoZB+xtRWj\/qLIEj6gVzaHBYMq7xdMfY7st\/34XmQ=",
       "url": "index.html"
     },
     {
@@ -233,7 +289,7 @@
       "url": "sitemap-blog-blazor-wasm.xml"
     },
     {
-      "hash": "sha256-nljaIkzC1PFzT2TxQR45FhrnB0+u\/kG0QRn17AA+zlU=",
+      "hash": "sha256-\/nn2MJo0MWCJQ2fF8GYPS5JHH5pFt0CpwRbxSGomZrw=",
       "url": "sitemap-blog-tdd.xml"
     },
     {
@@ -273,15 +329,15 @@
       "url": "_framework\/icudt.dat"
     },
     {
-      "hash": "sha256-cuZWcAWD27E2wJcMKf4JKsnouV7JGmcp2cjI3zsgnyE=",
+      "hash": "sha256-nYzhL0EhvFb\/TdF5ywvnXTjK2YAXhngr5iMYRmgzN1w=",
       "url": "_framework\/blazor.boot.json"
     },
     {
-      "hash": "sha256-noyNyfFGATguh01Y+k8yqsBRFPJfZb7hSZmpPNNzlUQ=",
+      "hash": "sha256-jEu+ohA7tNIOwZfc6repS2TB7UOhYf+pJAK72KRzQ8c=",
       "url": "_framework\/BlazorDemoComponents.dll"
     },
     {
-      "hash": "sha256-11qz+sS8N\/c9x8NEeTPUoyOljUhO+n7X6IMN4z2HnSc=",
+      "hash": "sha256-BZWUGXyT3MMIgXrRv1I9rakT\/+FDPSA9aShrq1Xb3vw=",
       "url": "_framework\/Components.dll"
     },
     {
@@ -309,7 +365,7 @@
       "url": "_framework\/Microsoft.Extensions.Configuration.Binder.dll"
     },
     {
-      "hash": "sha256-dvb9kX75WyJbp6q7S359zKdmkcU5f7q9b38Kpv9auQM=",
+      "hash": "sha256-5iX1J8bink+qB50JQd9DZwAt4GGeFQ5kbLDz9cbx0i4=",
       "url": "_framework\/Microsoft.Extensions.Configuration.dll"
     },
     {
@@ -353,7 +409,7 @@
       "url": "_framework\/netstandard.dll"
     },
     {
-      "hash": "sha256-NLaKbWowEWV0hLV8D9phPklqKLUzrCswHfgTfqu1Q1s=",
+      "hash": "sha256-ol\/nOXmyDipQj505mQIX\/rWWZ8WZKBa+IB45BwX5DeU=",
       "url": "_framework\/SharedModels.dll"
     },
     {
@@ -453,19 +509,19 @@
       "url": "_framework\/System.Web.HttpUtility.dll"
     },
     {
-      "hash": "sha256-o\/txvIH8067j4d0xC3y9cBmfulmBWAUF1v9OOgMg64Y=",
+      "hash": "sha256-CGf+mNF+VXVtxxm+PFFII0eZNFTCbw5Xj8XppFAS5Ks=",
       "url": "_framework\/Toolbelt.Blazor.HeadElement.Abstractions.dll"
     },
     {
-      "hash": "sha256-f\/BcyG\/W5SyhNF9nhgyNDSsi2NU9Jc6vie4gzMQHBxY=",
+      "hash": "sha256-GKDtWTd5cILRS\/+YhFl2QTpAItVrEknsPO+xy8KvXB8=",
       "url": "_framework\/Toolbelt.Blazor.HeadElement.dll"
     },
     {
-      "hash": "sha256-0Er+DUvPKDelpiWVezwo+uOz2n5\/vy4LR+GHo8o\/wn8=",
+      "hash": "sha256-5PC639zBEWtJdyS6NUKa8aOf5cD5Ul1twtCfveTQgGg=",
       "url": "_framework\/Toolbelt.Blazor.HeadElement.Services.dll"
     },
     {
-      "hash": "sha256-NLYuKbdg9Ge\/hZcg+mgrwdSHVb6FF6nFqG+0jjw7U94=",
+      "hash": "sha256-y9BUcd3PNFw37iydjCe75xEPZUep\/Yytm0hd2B3Gvvw=",
       "url": "_framework\/Web.dll"
     },
     {
@@ -485,7 +541,7 @@
       "url": "_content\/Toolbelt.Blazor.HeadElement.Services\/script.min.js"
     },
     {
-      "hash": "sha256-Jsk8i7jgkVI2MfV27fVACfjB18pfN7yITfWpYDhnPpI=",
+      "hash": "sha256-1Z\/c3EsO6y1ZjoI3DE4rHVFDs\/Ej06ny95crBTuGoO0=",
       "url": "_content\/Toolbelt.Blazor.HeadElement.Services\/script.module.min.js"
     },
     {
@@ -505,5 +561,5 @@
       "url": "_content\/Components\/githubgist.js"
     }
   ],
-  "version": "DP9EQkCV"
+  "version": "M46WJ6w1"
 };
