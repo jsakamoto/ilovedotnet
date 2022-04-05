@@ -41,11 +41,11 @@
       "url": "image\/blogs\/blazor\/wasm\/blazor-wasm-app-settings.svg"
     },
     {
-      "hash": "sha256-mAO83kvwKWu316lb+Iiw6uqqmd2FkjUZCkUsdCAzERo=",
+      "hash": "sha256-XsIaZhRspWJtBRjXGJII5R4GSWNLIGhBUs1xhwjxMkE=",
       "url": "image\/blogs\/blazor\/wasm\/blazor-wasm-dark-theme-and-light-theme.png"
     },
     {
-      "hash": "sha256-IRzWpi3+lWK7z5Bxk7j\/c419RGcSpepYtqV6Gthr8MI=",
+      "hash": "sha256-L3cIlQqERjIdaIxT6G+GYmwioiMUdnfC+EzYMlzcA\/c=",
       "url": "image\/blogs\/blazor\/wasm\/blazor-wasm-dark-theme-and-light-theme.svg"
     },
     {
@@ -57,11 +57,11 @@
       "url": "image\/blogs\/blazor\/wasm\/blazor-wasm-error-logging.svg"
     },
     {
-      "hash": "sha256-jBBtE5sHTzcMGD2vXzh9SKj8dIH6M7a7xuWx8hUe4V8=",
+      "hash": "sha256-txkcOega\/tNeWFxofwkhE6oP+lsvyQD8n5w3dM4Wqi4=",
       "url": "image\/blogs\/blazor\/wasm\/blazor-wasm-exception-handling-and-error-boundary.png"
     },
     {
-      "hash": "sha256-tZCFfyF28elM1UPd69K5FoDDcP6iNStbSsoVxPaGSw8=",
+      "hash": "sha256-RDMnnNWCjXhqYuPs1c3x6nkemmcm8pGrax4vdeE9J38=",
       "url": "image\/blogs\/blazor\/wasm\/blazor-wasm-exception-handling-and-error-boundary.svg"
     },
     {
@@ -257,7 +257,7 @@
       "url": "image\/talks\/blazor-spa-from-aspnet-family.svg"
     },
     {
-      "hash": "sha256-IRaoZB+xtRWj\/qLIEj6gVzaHBYMq7xdMfY7st\/34XmQ=",
+      "hash": "sha256-zNM1WoYdg\/UqwjY9w\/bTeOamBYRkeX+\/yHSXIal5ai8=",
       "url": "index.html"
     },
     {
@@ -561,5 +561,5 @@
       "url": "_content\/Components\/githubgist.js"
     }
   ],
-  "version": "M46WJ6w1"
+  "version": "ND\/xcdDl"
 };
