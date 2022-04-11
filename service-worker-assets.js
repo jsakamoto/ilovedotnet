@@ -269,7 +269,7 @@
       "url": "image\/talks\/blazor-spa-from-aspnet-family.svg"
     },
     {
-      "hash": "sha256-E+hp1qpDvyD1ioynIseySaMJJXT99gRTafMGCIpm7WY=",
+      "hash": "sha256-1dPPdX4P3C1Duca2+Gme6+rMqoyH0YJsDMMmiKXrqkI=",
       "url": "index.html"
     },
     {
@@ -341,7 +341,7 @@
       "url": "_framework\/icudt.dat"
     },
     {
-      "hash": "sha256-qFwnUw\/Kr4fJ7W1CRmWRDqLpM1cJ8n6ovo4eOuBz4Bk=",
+      "hash": "sha256-6cPN2QYcu+KGosA17M8TAKoAJfEgNts2SumyzsLUG\/A=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -349,7 +349,7 @@
       "url": "_framework\/BlazorDemoComponents.dll"
     },
     {
-      "hash": "sha256-BZWUGXyT3MMIgXrRv1I9rakT\/+FDPSA9aShrq1Xb3vw=",
+      "hash": "sha256-+K6mVNGIz1JRBpLlJ7YWOonv3z9+2AX6UywghR7SAlg=",
       "url": "_framework\/Components.dll"
     },
     {
@@ -521,19 +521,19 @@
       "url": "_framework\/System.Web.HttpUtility.dll"
     },
     {
-      "hash": "sha256-CGf+mNF+VXVtxxm+PFFII0eZNFTCbw5Xj8XppFAS5Ks=",
+      "hash": "sha256-o\/txvIH8067j4d0xC3y9cBmfulmBWAUF1v9OOgMg64Y=",
       "url": "_framework\/Toolbelt.Blazor.HeadElement.Abstractions.dll"
     },
     {
-      "hash": "sha256-GKDtWTd5cILRS\/+YhFl2QTpAItVrEknsPO+xy8KvXB8=",
+      "hash": "sha256-f\/BcyG\/W5SyhNF9nhgyNDSsi2NU9Jc6vie4gzMQHBxY=",
       "url": "_framework\/Toolbelt.Blazor.HeadElement.dll"
     },
     {
-      "hash": "sha256-5PC639zBEWtJdyS6NUKa8aOf5cD5Ul1twtCfveTQgGg=",
+      "hash": "sha256-0Er+DUvPKDelpiWVezwo+uOz2n5\/vy4LR+GHo8o\/wn8=",
       "url": "_framework\/Toolbelt.Blazor.HeadElement.Services.dll"
     },
     {
-      "hash": "sha256-FFFo1PEEEZ\/g5lEbEDESOrvNQhefluy1et\/A0RgYhb8=",
+      "hash": "sha256-VrDsoWjjFNc9HhrkfagxTLoZJE+TgO3I28JHWM6QR2o=",
       "url": "_framework\/Web.dll"
     },
     {
@@ -553,7 +553,7 @@
       "url": "_content\/Toolbelt.Blazor.HeadElement.Services\/script.min.js"
     },
     {
-      "hash": "sha256-1Z\/c3EsO6y1ZjoI3DE4rHVFDs\/Ej06ny95crBTuGoO0=",
+      "hash": "sha256-Jsk8i7jgkVI2MfV27fVACfjB18pfN7yITfWpYDhnPpI=",
       "url": "_content\/Toolbelt.Blazor.HeadElement.Services\/script.module.min.js"
     },
     {
@@ -577,5 +577,5 @@
       "url": "_content\/Components\/githubgist.js"
     }
   ],
-  "version": "FQKTBZAr"
+  "version": "nGuviwR8"
 };
