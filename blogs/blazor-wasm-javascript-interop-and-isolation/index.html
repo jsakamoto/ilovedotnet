@@ -90,9 +90,8 @@
     </script>
 <!-- %%-PRERENDERING-HEADOUTLET-END-%% -->
 <script src="data:text/javascript;base64,KGZ1bmN0aW9uKG4sdCxpKXtmb3IodmFyIGY9bi5jcmVhdGVOb2RlSXRlcmF0b3IobiwxMjgpLHIsZSx1O2YubmV4dE5vZGUoKTspaWYocj1mLnJlZmVyZW5jZU5vZGUsdC50ZXN0KHIudGV4dENvbnRlbnQudHJpbSgpKSl7d2hpbGUoaT1yLm5leHRTaWJsaW5nKWlmKGU9aS50ZXh0Q29udGVudC50cmltKCksaS5yZW1vdmUoKSx0LnRlc3QoZSkpYnJlYWs7ci5yZW1vdmUoKTticmVha311PUFycmF5LmZyb20obi5xdWVyeVNlbGVjdG9yQWxsKCJzY3JpcHQiKSkucG9wKCk7dSYmdS5yZW1vdmUoKX0pKGRvY3VtZW50LC9eJSUtUFJFUkVOREVSSU5HLUhFQURPVVRMRVQtKEJFR0lOfEVORCktJSUkLyk7"></script>
-
     <script type="text/default-title">I ❤️ DotNet</script>
-    <script type="text/default-meta-elements">[[,"author",,"Abdul Rahman Shabeek Mohamed"],[,"viewport",,"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"],[,"copyright",,"I Love DotNet"],[,"language",,"EN"],[,"robots",,"index,follow"],[,"owner",,"Abdul Rahman Shabeek Mohamed"],[,,"Content-Security-Policy","base-uri \u0027self\u0027;\n               block-all-mixed-content;\n               img-src data: \u0027self\u0027;\n               object-src \u0027none\u0027;\n               script-src \u0027self\u0027\n                          https://gist.github.com\n                          \u0027unsafe-eval\u0027\n                          \u0027unsafe-inline\u0027\n                          data:;\n               style-src \u0027self\u0027\n                         https://github.githubassets.com\n                         \u0027unsafe-inline\u0027;\n               upgrade-insecure-requests;"]]</script>
+    <script type="text/default-meta-elements">[[,"author",,,"Abdul Rahman Shabeek Mohamed"],[,"viewport",,,"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"],[,"copyright",,,"I Love DotNet"],[,"language",,,"EN"],[,"robots",,,"index,follow"],[,"owner",,,"Abdul Rahman Shabeek Mohamed"],[,,"Content-Security-Policy",,"base-uri \u0027self\u0027;\n               block-all-mixed-content;\n               img-src data: \u0027self\u0027;\n               object-src \u0027none\u0027;\n               script-src \u0027self\u0027\n                          https://gist.github.com\n                          \u0027unsafe-eval\u0027\n                          \u0027unsafe-inline\u0027\n                          data:;\n               style-src \u0027self\u0027\n                         https://github.githubassets.com\n                         \u0027unsafe-inline\u0027;\n               upgrade-insecure-requests;"]]</script>
     <meta property="description" content="In this post I will teach you how to interact with javascript and isolate javascript in your Blazor applications. All with live working demo."/>
     <meta property="keywords" content=".NET, DotNet, I Love DotNet, I ❤️ DotNet, Blazor, Blazor (WebAssembly), Blazor Wasm, C#, Entity Framework Core, LINQ, ML.NET, Web API, TDD, Javascript, Javascript Interop, Javascript Isolation"/>
     <meta property="url" content="https://www.ilovedotnet.org/blogs/blazor-wasm-javascript-interop-and-isolation/"/>
@@ -132,7 +131,7 @@
             <line x1="5" y1="12" x2="19" y2="12"></line>
             <line x1="5" y1="12" x2="11" y2="18"></line>
             <line x1="5" y1="12" x2="11" y2="6"></line></svg></button>
-    <div class="[ dropdown ] [  ] [ w-1/2 ] [  ] [  ]"><div class="[ dropdown-trigger ] [ w-full ]"><input type="search" placeholder="Search" class="[ w-full h-full ] [ px-4 ] [ border-2 ] [ focus:outline-none focus:border-gray-400 ] [ dark:bg-black dark:border-gray-800 dark:focus:border-b-white dark:md:focus:border-blue-800 dark:caret-white dark:text-white  ]" autocapitalize="none" autocomplete="off" autocorrect="off" aria-haspopup="true" aria-controls="dropdown-menu" value=""/></div>
+    <div class="[ dropdown ] [  ] [ w-1/2 ] [  ] [  ]"><div class="[ dropdown-trigger ] [ w-full ]"><input type="search" placeholder="Search" class="[ w-full h-full ] [ px-4 ] [ border-2 ] [ focus:outline-none focus:border-gray-400 ] [ dark:bg-black dark:border-gray-800 dark:focus:border-b-white dark:md:focus:border-blue-800 dark:caret-white dark:text-white ]" autocapitalize="none" autocomplete="off" autocorrect="off" aria-haspopup="true" aria-controls="dropdown-menu" value=""/></div>
         <div class="[ dropdown-menu ] [ w-full ]" id="dropdown-menu" role="menu"><div class="[ dropdown-content ] [ dark:bg-black ]"></div></div></div>
     <button type="button" aria-label="Search" class="[ bg-white ] [ h-10 w-10 ] [ border-2 border-l-0 ] [ dark:bg-gray-700 dark:border-gray-700 ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-search ] [ inline ] [ text-gray-500 ] [ stroke-1 ] [ dark:text-white ]" width="25" height="25" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
             <circle cx="10" cy="10" r="7"></circle>
@@ -243,7 +242,7 @@
             <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z"></path></svg></a></section></div></section>
     <section class="[ flex items-center justify-between ]"><a href="channels/blazor" class="[ flex ]"><aside><figure class="[ mt-2 mr-2 ]"><img src="/image/icons/blazor.png" alt="blazor" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></aside>
             <article class="[ flex flex-col justify-between ] [ dark:text-white ] [ mt-2 ]"><h2 class="[ font-medium break-words ] [ uppercase ]">blazor</h2>
-                <section class="[ flex justify-between ]"><p>9 Articles</p></section></article></a>
+                <section class="[ flex justify-between ]"><p>10 Articles</p></section></article></a>
         <a href="https://github.com/ILoveDotNet/ilovedotnet" target="_blank" class="[ md:bg-red-700 ] [ text-red-500 md:text-white uppercase ] [ px-2.5 py-1.5 ] [ font-semibold ]">Improve</a></section>
     <hr class="[ dark:text-white my-1.5 ]"/></header>
         <section class="[ dark:text-white ] [ space-y-2 ] [ leading-relaxed ]"><p>
@@ -288,7 +287,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - JS function to be called from .NET which returns no value</h4>
-    <article id="e62ecab7-90fc-4093-b731-d8e9a2fbe102" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="47e98b97-c192-4d01-abce-4bded6af8c39" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <h4 id="javascript-interop-js-from-dotnet" class="[ font-semibold text-base ]">Calling JS from .Net</h4>
 
@@ -304,7 +303,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - Alert Component to call JS from .NET which returns no value</h4>
-    <article id="bfb5b3b8-caac-489c-a046-efcdc6ba1c5d" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="651147d2-407c-4f75-a315-85f877701225" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <section class="[ flex flex-col ]"><h4 class="[ bg-gray-200 ] [ p-2 ] [ font-semibold ] [ text-black ] [ flex items-center ] [ dark:bg-gray-800 dark:bg-gray-800/80 dark:text-white ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-caret-right ] [ text-lime-700 ] [ fill-lime-500 ]" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
             <path d="M18 15l-6 -6l-6 6h12" transform="rotate(90 12 12)"></path></svg> Demo - Javascript Interop - Displaying Alert</h4>
@@ -325,13 +324,13 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - JS function to be called from .NET which returns value</h4>
-    <article id="b9df9762-3a57-4178-b4c6-9e0f9778b826" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="045578b2-b39b-4a23-9c0b-744a99d54c20" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <section class="[ flex flex-col ]"><h4 class="[ bg-gray-200 ] [ p-2 ] [ font-semibold ] [ text-black ] [ flex items-center ] [ dark:bg-gray-800 dark:bg-gray-800/80 dark:text-white ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-code ] [ text-purple-700 ] [ fill-purple-500 ]" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - JS function to be called from .NET which returns value</h4>
-    <article id="59ed597f-f67b-403a-8f25-110eedca8224" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="3a9a9f10-0296-4594-8d1c-e020939d59c9" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <section class="[ flex flex-col ]"><h4 class="[ bg-gray-200 ] [ p-2 ] [ font-semibold ] [ text-black ] [ flex items-center ] [ dark:bg-gray-800 dark:bg-gray-800/80 dark:text-white ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-caret-right ] [ text-lime-700 ] [ fill-lime-500 ]" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
             <path d="M18 15l-6 -6l-6 6h12" transform="rotate(90 12 12)"></path></svg> Demo - Javascript Interop - Finding Viewport Dimensions</h4>
@@ -372,13 +371,13 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - .NET static method to be called from JS</h4>
-    <article id="58b02d9d-e45b-47bd-b37d-ac0be2f155ef" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="58b7e2a3-85af-4764-b582-221f01c402d8" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <section class="[ flex flex-col ]"><h4 class="[ bg-gray-200 ] [ p-2 ] [ font-semibold ] [ text-black ] [ flex items-center ] [ dark:bg-gray-800 dark:bg-gray-800/80 dark:text-white ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-code ] [ text-purple-700 ] [ fill-purple-500 ]" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - .NET static method to be called from JS</h4>
-    <article id="193a889a-cd4b-4f35-9dc6-287e6f8354b2" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="45f86668-c8bf-4b42-9465-1b452c535970" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <section class="[ flex flex-col ]"><h4 class="[ bg-gray-200 ] [ p-2 ] [ font-semibold ] [ text-black ] [ flex items-center ] [ dark:bg-gray-800 dark:bg-gray-800/80 dark:text-white ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-caret-right ] [ text-lime-700 ] [ fill-lime-500 ]" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
             <path d="M18 15l-6 -6l-6 6h12" transform="rotate(90 12 12)"></path></svg> Demo - Javascript Interop - Calling .Net Static Method From JS</h4>
@@ -404,13 +403,13 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - .NET instance method to be called from JS</h4>
-    <article id="38f554e0-1c5b-4bb5-864f-8d3b505b1f78" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="a62e163b-a579-432f-8f1b-a023f647f321" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <section class="[ flex flex-col ]"><h4 class="[ bg-gray-200 ] [ p-2 ] [ font-semibold ] [ text-black ] [ flex items-center ] [ dark:bg-gray-800 dark:bg-gray-800/80 dark:text-white ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-code ] [ text-purple-700 ] [ fill-purple-500 ]" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - .NET instance method to be called from JS</h4>
-    <article id="769b2e5f-032c-4c5b-9b4f-004143d4a7ef" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="24bd1e62-1586-4836-bf6d-b8ab625748f7" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <section class="[ flex flex-col ]"><h4 class="[ bg-gray-200 ] [ p-2 ] [ font-semibold ] [ text-black ] [ flex items-center ] [ dark:bg-gray-800 dark:bg-gray-800/80 dark:text-white ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-caret-right ] [ text-lime-700 ] [ fill-lime-500 ]" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
             <path d="M18 15l-6 -6l-6 6h12" transform="rotate(90 12 12)"></path></svg> Demo - Javascript Interop - Calling .Net Instance Method From JS</h4>
@@ -442,13 +441,13 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - .NET instance method to be called from JS Module</h4>
-    <article id="e1c2554a-002c-4bca-8cfe-9f63d628331c" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="9eb23933-f674-4469-b804-e856ed542d76" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <section class="[ flex flex-col ]"><h4 class="[ bg-gray-200 ] [ p-2 ] [ font-semibold ] [ text-black ] [ flex items-center ] [ dark:bg-gray-800 dark:bg-gray-800/80 dark:text-white ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-code ] [ text-purple-700 ] [ fill-purple-500 ]" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - .NET instance method to be called from JS Module</h4>
-    <article id="5862fe8d-080e-4a0b-bb73-3475a5bdb263" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="7b6270bc-d51b-4766-815e-2f888ee96834" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <section class="[ flex flex-col ]"><h4 class="[ bg-gray-200 ] [ p-2 ] [ font-semibold ] [ text-black ] [ flex items-center ] [ dark:bg-gray-800 dark:bg-gray-800/80 dark:text-white ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-caret-right ] [ text-lime-700 ] [ fill-lime-500 ]" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
             <path d="M18 15l-6 -6l-6 6h12" transform="rotate(90 12 12)"></path></svg> Demo - Javascript Isolation - Calling Javascript prompt from JS Module</h4>
@@ -464,7 +463,7 @@
     <aside class="[ flex flex-col md:basis-1/4 ] [ space-y-2 ]"><a href="blogs/blazor-wasm-exception-handling-and-error-boundary"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-exception-handling-and-error-boundary.svg" alt="Blazor WASM Exception Handling and Error Boundary" loading="lazy"/></figure></header>
                     <div class="[ basis-3/5 ]"><article class="[ flex flex-col ] [ dark:text-white ]"><h2 class="[ font-medium text-sm break-words leading-tight ]">Blazor WASM Exception Handling and Error Boundary</h2>
                             <section class="[ flex flex-col ]"><p class="[ text-xs dark:text-neutral-400 ]">Abdul Rahman</p>
-                                <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-01-16 22-30-00">2 months ago</time></section></article></div></section></a><a href="blogs/blazor-wasm-error-logging"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-error-logging.svg" alt="Blazor WASM Error Logging" loading="lazy"/></figure></header>
+                                <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-01-16 22-30-00">3 months ago</time></section></article></div></section></a><a href="blogs/blazor-wasm-error-logging"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-error-logging.svg" alt="Blazor WASM Error Logging" loading="lazy"/></figure></header>
                     <div class="[ basis-3/5 ]"><article class="[ flex flex-col ] [ dark:text-white ]"><h2 class="[ font-medium text-sm break-words leading-tight ]">Blazor WASM Error Logging</h2>
                             <section class="[ flex flex-col ]"><p class="[ text-xs dark:text-neutral-400 ]">Abdul Rahman</p>
                                 <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-01-23 22-30-00">2 months ago</time></section></article></div></section></a><a href="blogs/blazor-wasm-dark-theme-and-light-theme"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-dark-theme-and-light-theme.svg" alt="Blazor WASM Dark Theme and Light Theme" loading="lazy"/></figure></header>
@@ -473,7 +472,7 @@
                                 <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-01-30 22-30-00">2 months ago</time></section></article></div></section></a><a href="blogs/blazor-wasm-styles-and-css-isolation"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-styles-and-css-isolation.svg" alt="Blazor WASM Styles and CSS Isolation" loading="lazy"/></figure></header>
                     <div class="[ basis-3/5 ]"><article class="[ flex flex-col ] [ dark:text-white ]"><h2 class="[ font-medium text-sm break-words leading-tight ]">Blazor WASM Styles and CSS Isolation</h2>
                             <section class="[ flex flex-col ]"><p class="[ text-xs dark:text-neutral-400 ]">Abdul Rahman</p>
-                                <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-02-13 22-30-00">one month ago</time></section></article></div></section></a><a href="blogs/blazor-wasm-lazy-loading"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-lazy-loading.svg" alt="Blazor WASM Lazy Loading" loading="lazy"/></figure></header>
+                                <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-02-13 22-30-00">2 months ago</time></section></article></div></section></a><a href="blogs/blazor-wasm-lazy-loading"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-lazy-loading.svg" alt="Blazor WASM Lazy Loading" loading="lazy"/></figure></header>
                     <div class="[ basis-3/5 ]"><article class="[ flex flex-col ] [ dark:text-white ]"><h2 class="[ font-medium text-sm break-words leading-tight ]">Blazor WASM Lazy Loading</h2>
                             <section class="[ flex flex-col ]"><p class="[ text-xs dark:text-neutral-400 ]">Abdul Rahman</p>
                                 <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-02-20 22-30-00">one month ago</time></section></article></div></section></a><a href="blogs/blazor-wasm-app-settings"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-app-settings.svg" alt="Blazor WASM App Settings" loading="lazy"/></figure></header>
@@ -485,19 +484,22 @@
                                 <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-03-06 22-30-00">one month ago</time></section></article></div></section></a><a href="talks/blazor-spa-from-aspnet-family"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/talks/blazor-spa-from-aspnet-family.svg" alt="Blazor - SPA from ASP.NET Family" loading="lazy"/></figure></header>
                     <div class="[ basis-3/5 ]"><article class="[ flex flex-col ] [ dark:text-white ]"><h2 class="[ font-medium text-sm break-words leading-tight ]">Blazor - SPA from ASP.NET Family</h2>
                             <section class="[ flex flex-col ]"><p class="[ text-xs dark:text-neutral-400 ]">Abdul Rahman</p>
-                                <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-03-13 22-30-00">28 days ago</time></section></article></div></section></a><a href="blogs/blazor-wasm-introduction"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-introduction.svg" alt="Blazor WASM Introduction" loading="lazy"/></figure></header>
+                                <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-03-13 22-30-00">one month ago</time></section></article></div></section></a><a href="blogs/blazor-wasm-introduction"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-introduction.svg" alt="Blazor WASM Introduction" loading="lazy"/></figure></header>
                     <div class="[ basis-3/5 ]"><article class="[ flex flex-col ] [ dark:text-white ]"><h2 class="[ font-medium text-sm break-words leading-tight ]">Blazor WASM Introduction</h2>
                             <section class="[ flex flex-col ]"><p class="[ text-xs dark:text-neutral-400 ]">Abdul Rahman</p>
-                                <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-03-20 22-30-00">21 days ago</time></section></article></div></section></a><a href="blogs/introducing-tdd-in-csharp-dotnet"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/tdd/introducing-tdd-in-csharp-dotnet.svg" alt="Introducing TDD in C# .Net" loading="lazy"/></figure></header>
+                                <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-03-20 22-30-00">27 days ago</time></section></article></div></section></a><a href="blogs/introducing-tdd-in-csharp-dotnet"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/tdd/introducing-tdd-in-csharp-dotnet.svg" alt="Introducing TDD in C# .Net" loading="lazy"/></figure></header>
                     <div class="[ basis-3/5 ]"><article class="[ flex flex-col ] [ dark:text-white ]"><h2 class="[ font-medium text-sm break-words leading-tight ]">Introducing TDD in C# .Net</h2>
                             <section class="[ flex flex-col ]"><p class="[ text-xs dark:text-neutral-400 ]">Abdul Rahman</p>
-                                <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-03-27 22-30-00">14 days ago</time></section></article></div></section></a><a href="blogs/implementing-tdd-in-csharp-dotnet"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/tdd/implementing-tdd-in-csharp-dotnet.svg" alt="Implementing TDD in C# .Net" loading="lazy"/></figure></header>
+                                <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-03-27 22-30-00">20 days ago</time></section></article></div></section></a><a href="blogs/implementing-tdd-in-csharp-dotnet"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/tdd/implementing-tdd-in-csharp-dotnet.svg" alt="Implementing TDD in C# .Net" loading="lazy"/></figure></header>
                     <div class="[ basis-3/5 ]"><article class="[ flex flex-col ] [ dark:text-white ]"><h2 class="[ font-medium text-sm break-words leading-tight ]">Implementing TDD in C# .Net</h2>
                             <section class="[ flex flex-col ]"><p class="[ text-xs dark:text-neutral-400 ]">Abdul Rahman</p>
-                                <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-04-03 22-30-00">7 days ago</time></section></article></div></section></a><a href="blogs/blazor-wasm-components"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-components.svg" alt="Blazor WASM Components" loading="lazy"/></figure></header>
+                                <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-04-03 22-30-00">13 days ago</time></section></article></div></section></a><a href="blogs/blazor-wasm-components"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-components.svg" alt="Blazor WASM Components" loading="lazy"/></figure></header>
                     <div class="[ basis-3/5 ]"><article class="[ flex flex-col ] [ dark:text-white ]"><h2 class="[ font-medium text-sm break-words leading-tight ]">Blazor WASM Components</h2>
                             <section class="[ flex flex-col ]"><p class="[ text-xs dark:text-neutral-400 ]">Abdul Rahman</p>
-                                <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-04-10 22-30-00">3 hours ago</time></section></article></div></section></a></aside></section></main>
+                                <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-04-10 22-30-00">6 days ago</time></section></article></div></section></a><a href="blogs/blazor-wasm-event-handling-and-event-arguments"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-event-handling-and-event-arguments.svg" alt="Blazor WASM Event Handling And Event Arguments" loading="lazy"/></figure></header>
+                    <div class="[ basis-3/5 ]"><article class="[ flex flex-col ] [ dark:text-white ]"><h2 class="[ font-medium text-sm break-words leading-tight ]">Blazor WASM Event Handling And Event Arguments</h2>
+                            <section class="[ flex flex-col ]"><p class="[ text-xs dark:text-neutral-400 ]">Abdul Rahman</p>
+                                <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-04-17 22-30-00">18 hours from now</time></section></article></div></section></a></aside></section></main>
             
 <!-- %%-PRERENDERING-END-%% -->
 </div>
