@@ -11,6 +11,7 @@
                img-src data: 'self';
                object-src 'none';
                script-src 'self'
+                          https://www.googletagmanager.com
                           https://gist.github.com
                           'unsafe-eval'
                           'unsafe-inline'
@@ -91,7 +92,7 @@
 <!-- %%-PRERENDERING-HEADOUTLET-END-%% -->
 <script src="data:text/javascript;base64,KGZ1bmN0aW9uKG4sdCxpKXtmb3IodmFyIGY9bi5jcmVhdGVOb2RlSXRlcmF0b3IobiwxMjgpLHIsZSx1O2YubmV4dE5vZGUoKTspaWYocj1mLnJlZmVyZW5jZU5vZGUsdC50ZXN0KHIudGV4dENvbnRlbnQudHJpbSgpKSl7d2hpbGUoaT1yLm5leHRTaWJsaW5nKWlmKGU9aS50ZXh0Q29udGVudC50cmltKCksaS5yZW1vdmUoKSx0LnRlc3QoZSkpYnJlYWs7ci5yZW1vdmUoKTticmVha311PUFycmF5LmZyb20obi5xdWVyeVNlbGVjdG9yQWxsKCJzY3JpcHQiKSkucG9wKCk7dSYmdS5yZW1vdmUoKX0pKGRvY3VtZW50LC9eJSUtUFJFUkVOREVSSU5HLUhFQURPVVRMRVQtKEJFR0lOfEVORCktJSUkLyk7"></script>
     <script type="text/default-title">I ❤️ DotNet</script>
-    <script type="text/default-meta-elements">[[,"author",,,"Abdul Rahman Shabeek Mohamed"],[,"viewport",,,"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"],[,"copyright",,,"I Love DotNet"],[,"language",,,"EN"],[,"robots",,,"index,follow"],[,"owner",,,"Abdul Rahman Shabeek Mohamed"],[,,"Content-Security-Policy",,"base-uri \u0027self\u0027;\n               block-all-mixed-content;\n               img-src data: \u0027self\u0027;\n               object-src \u0027none\u0027;\n               script-src \u0027self\u0027\n                          https://gist.github.com\n                          \u0027unsafe-eval\u0027\n                          \u0027unsafe-inline\u0027\n                          data:;\n               style-src \u0027self\u0027\n                         https://github.githubassets.com\n                         \u0027unsafe-inline\u0027;\n               upgrade-insecure-requests;"]]</script>
+    <script type="text/default-meta-elements">[[,"author",,,"Abdul Rahman Shabeek Mohamed"],[,"viewport",,,"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"],[,"copyright",,,"I Love DotNet"],[,"language",,,"EN"],[,"robots",,,"index,follow"],[,"owner",,,"Abdul Rahman Shabeek Mohamed"],[,,"Content-Security-Policy",,"base-uri \u0027self\u0027;\n               block-all-mixed-content;\n               img-src data: \u0027self\u0027;\n               object-src \u0027none\u0027;\n               script-src \u0027self\u0027\n                          https://www.googletagmanager.com\n                          https://gist.github.com\n                          \u0027unsafe-eval\u0027\n                          \u0027unsafe-inline\u0027\n                          data:;\n               style-src \u0027self\u0027\n                         https://github.githubassets.com\n                         \u0027unsafe-inline\u0027;\n               upgrade-insecure-requests;"]]</script>
     <meta property="description" content="In this post I will teach what is abstraction in object oriented programming. All with live working demo."/>
     <meta property="keywords" content=".NET, DotNet, I Love DotNet, I ❤️ DotNet, Blazor, Blazor (WebAssembly), Blazor Wasm, C#, Entity Framework Core, LINQ, ML.NET, Web API, TDD, OOPS, Abstraction"/>
     <meta property="url" content="https://www.ilovedotnet.org/blogs/oops-abstraction/"/>
@@ -226,7 +227,7 @@
 
 <section class="[ flex flex-col md:flex-row ] [ p-5 md:px-20 ] [ md:space-x-5 space-y-5 md:space-y-0 ]"><article class="[ md:basis-3/4 ] [ space-y-5 ]"><header class="[ space-y-2 ]"><figure><img src="image/blogs/oops/oops-abstraction.svg" alt="OOPS Abstraction" class="[ w-full ]" loading="lazy"/></figure><h2 class="[ dark:text-white ] [ font-semibold text-xl ]">OOPS Abstraction</h2>
     <section class="[ flex flex-col md:flex-row justify-between ] [ space-y-1 md:space-y-0 ] [ dark:text-white ] [ font-bold ]"><div><p>Authors - <a href="https://www.linkedin.com/in/fingers10" class="[ underline ]" target="_blank">Abdul Rahman (Content Writer)</a>, <a href="https://www.linkedin.com/in/regina-sharon" class="[ underline ]" target="_blank">Regina Sharon (Graphic Designer)</a></p>
-            <time datetime="2022-05-08 22:30:00">Last updated 7 days from now</time></div>
+            <time datetime="2022-05-08 22:30:00">Last updated 7 hours from now</time></div>
         <div><section class="[ flex justify-between md:justify-start ]"><a href="https://api.whatsapp.com/send?text=OOPS Abstraction%20https%3a%2f%2fwww.ilovedotnet.org%2fblogs%2foops-abstraction%2f" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-brand-whatsapp ] [ text-emerald-500 dark:text-emerald-300 ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
             <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9"></path>
             <path d="M9 10a0.5 .5 0 0 0 1 0v-1a0.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a0.5 .5 0 0 0 0 -1h-1a0.5 .5 0 0 0 0 1"></path></svg></a>
@@ -271,7 +272,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - OOPS Abstraction Unlimited Ways to Write Code</h4>
-    <article id="f612ca0f-5df5-498a-8ed3-d371b9da197b" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="6655e155-7fe6-46ad-8e4b-34ffa758065d" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <p>
             So its better to avoid <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">freestyle</code> mode and thats why all guidelines and structure for programming exists.
@@ -319,7 +320,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - OOPS Abstraction Hierarchy</h4>
-    <article id="2b1978ed-7e67-4603-9728-1ef8c27dc40d" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="68907878-e5b4-4937-a319-8946e365f13d" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
         
         <p>
             Here to focus on single task, the trimming functionality is abstracted to new method so that this code doesn't needs to be repeated and called at 
@@ -343,7 +344,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - OOPS Abstraction Hierarchy</h4>
-    <article id="9120d057-2075-4c02-9fc8-f47718f7763d" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="08ab23db-f9ca-4e73-8406-bb3bda9a3e39" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <p>
             This class represents Email Address and it has hierarchy of abstractions. It abstracts away the work with strings and creates its own higher order 
@@ -367,7 +368,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - OOPS Abstraction Benefits</h4>
-    <article id="b0587490-6b78-4257-a91f-49d021c17512" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="90392100-24db-4fe4-a05d-da1b30e966a8" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
         
         <h3 class="[ font-semibold text-lg ]">Summary</h3>
 
@@ -384,22 +385,25 @@
         </p></section>
         <footer class="[ max-w-full ]"><ul class="[ list-none ] [ flex items-center justify-center ] [ space-x-3 ] [ overflow-hidden overflow-x-auto ]"><li class="[ px-3 py-1 ] [ rounded-full ] [ bg-black text-white dark:bg-white dark:text-black ]">Abstraction</li></ul></footer>
         <hr class="[ dark:text-white my-1.5 ]"/></article>
-    <aside class="[ flex flex-col md:basis-1/4 ] [ space-y-2 ]"><a href="blogs/oops-encapsulation"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/oops/oops-encapsulation.svg" alt="OOPS Encapsulation" loading="lazy"/></figure></header>
+    <aside class="[ flex flex-col md:basis-1/4 ] [ space-y-2 ]"><a href="blogs/blazor-wasm-controlling-head-content"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-controlling-head-content.svg" alt="Blazor WASM Controlling Head Content" loading="lazy"/></figure></header>
+                    <div class="[ basis-3/5 ]"><article class="[ flex flex-col ] [ dark:text-white ]"><h2 class="[ font-medium text-sm break-words leading-tight ]">Blazor WASM Controlling Head Content</h2>
+                            <section class="[ flex flex-col ]"><p class="[ text-xs dark:text-neutral-400 ]">Abdul Rahman</p>
+                                <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-05-08 22-30-00">7 hours from now</time></section></article></div></section></a><a href="blogs/oops-encapsulation"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/oops/oops-encapsulation.svg" alt="OOPS Encapsulation" loading="lazy"/></figure></header>
                     <div class="[ basis-3/5 ]"><article class="[ flex flex-col ] [ dark:text-white ]"><h2 class="[ font-medium text-sm break-words leading-tight ]">OOPS Encapsulation</h2>
                             <section class="[ flex flex-col ]"><p class="[ text-xs dark:text-neutral-400 ]">Abdul Rahman</p>
-                                <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-05-01 22-30-00">18 hours from now</time></section></article></div></section></a><a href="blogs/blazor-wasm-data-binding"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-data-binding.svg" alt="Blazor WASM Data Binding" loading="lazy"/></figure></header>
+                                <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-05-01 22-30-00">6 days ago</time></section></article></div></section></a><a href="blogs/blazor-wasm-data-binding"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-data-binding.svg" alt="Blazor WASM Data Binding" loading="lazy"/></figure></header>
                     <div class="[ basis-3/5 ]"><article class="[ flex flex-col ] [ dark:text-white ]"><h2 class="[ font-medium text-sm break-words leading-tight ]">Blazor WASM Data Binding</h2>
                             <section class="[ flex flex-col ]"><p class="[ text-xs dark:text-neutral-400 ]">Abdul Rahman</p>
-                                <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-04-24 22-30-00">6 days ago</time></section></article></div></section></a><a href="blogs/blazor-wasm-event-handling-and-event-arguments"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-event-handling-and-event-arguments.svg" alt="Blazor WASM Event Handling And Event Arguments" loading="lazy"/></figure></header>
+                                <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-04-24 22-30-00">13 days ago</time></section></article></div></section></a><a href="blogs/blazor-wasm-event-handling-and-event-arguments"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-event-handling-and-event-arguments.svg" alt="Blazor WASM Event Handling And Event Arguments" loading="lazy"/></figure></header>
                     <div class="[ basis-3/5 ]"><article class="[ flex flex-col ] [ dark:text-white ]"><h2 class="[ font-medium text-sm break-words leading-tight ]">Blazor WASM Event Handling And Event Arguments</h2>
                             <section class="[ flex flex-col ]"><p class="[ text-xs dark:text-neutral-400 ]">Abdul Rahman</p>
-                                <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-04-17 22-30-00">13 days ago</time></section></article></div></section></a><a href="blogs/blazor-wasm-components"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-components.svg" alt="Blazor WASM Components" loading="lazy"/></figure></header>
+                                <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-04-17 22-30-00">20 days ago</time></section></article></div></section></a><a href="blogs/blazor-wasm-components"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-components.svg" alt="Blazor WASM Components" loading="lazy"/></figure></header>
                     <div class="[ basis-3/5 ]"><article class="[ flex flex-col ] [ dark:text-white ]"><h2 class="[ font-medium text-sm break-words leading-tight ]">Blazor WASM Components</h2>
                             <section class="[ flex flex-col ]"><p class="[ text-xs dark:text-neutral-400 ]">Abdul Rahman</p>
-                                <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-04-10 22-30-00">20 days ago</time></section></article></div></section></a><a href="blogs/implementing-tdd-in-csharp-dotnet"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/tdd/implementing-tdd-in-csharp-dotnet.svg" alt="Implementing TDD in C# .Net" loading="lazy"/></figure></header>
+                                <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-04-10 22-30-00">27 days ago</time></section></article></div></section></a><a href="blogs/implementing-tdd-in-csharp-dotnet"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/tdd/implementing-tdd-in-csharp-dotnet.svg" alt="Implementing TDD in C# .Net" loading="lazy"/></figure></header>
                     <div class="[ basis-3/5 ]"><article class="[ flex flex-col ] [ dark:text-white ]"><h2 class="[ font-medium text-sm break-words leading-tight ]">Implementing TDD in C# .Net</h2>
                             <section class="[ flex flex-col ]"><p class="[ text-xs dark:text-neutral-400 ]">Abdul Rahman</p>
-                                <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-04-03 22-30-00">27 days ago</time></section></article></div></section></a><a href="blogs/introducing-tdd-in-csharp-dotnet"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/tdd/introducing-tdd-in-csharp-dotnet.svg" alt="Introducing TDD in C# .Net" loading="lazy"/></figure></header>
+                                <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-04-03 22-30-00">one month ago</time></section></article></div></section></a><a href="blogs/introducing-tdd-in-csharp-dotnet"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/tdd/introducing-tdd-in-csharp-dotnet.svg" alt="Introducing TDD in C# .Net" loading="lazy"/></figure></header>
                     <div class="[ basis-3/5 ]"><article class="[ flex flex-col ] [ dark:text-white ]"><h2 class="[ font-medium text-sm break-words leading-tight ]">Introducing TDD in C# .Net</h2>
                             <section class="[ flex flex-col ]"><p class="[ text-xs dark:text-neutral-400 ]">Abdul Rahman</p>
                                 <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-03-27 22-30-00">one month ago</time></section></article></div></section></a><a href="blogs/blazor-wasm-introduction"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-introduction.svg" alt="Blazor WASM Introduction" loading="lazy"/></figure></header>
@@ -411,7 +415,7 @@
                                 <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-03-13 22-30-00">one month ago</time></section></article></div></section></a><a href="blogs/webapi-importance-of-status-code"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/webapi/webapi-importance-of-status-code.svg" alt="Importance of Status Code in Web API" loading="lazy"/></figure></header>
                     <div class="[ basis-3/5 ]"><article class="[ flex flex-col ] [ dark:text-white ]"><h2 class="[ font-medium text-sm break-words leading-tight ]">Importance of Status Code in Web API</h2>
                             <section class="[ flex flex-col ]"><p class="[ text-xs dark:text-neutral-400 ]">Abdul Rahman</p>
-                                <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-03-06 22-30-00">one month ago</time></section></article></div></section></a><a href="blogs/blazor-wasm-app-settings"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-app-settings.svg" alt="Blazor WASM App Settings" loading="lazy"/></figure></header>
+                                <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-03-06 22-30-00">2 months ago</time></section></article></div></section></a><a href="blogs/blazor-wasm-app-settings"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-app-settings.svg" alt="Blazor WASM App Settings" loading="lazy"/></figure></header>
                     <div class="[ basis-3/5 ]"><article class="[ flex flex-col ] [ dark:text-white ]"><h2 class="[ font-medium text-sm break-words leading-tight ]">Blazor WASM App Settings</h2>
                             <section class="[ flex flex-col ]"><p class="[ text-xs dark:text-neutral-400 ]">Abdul Rahman</p>
                                 <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-02-27 22-30-00">2 months ago</time></section></article></div></section></a><a href="blogs/blazor-wasm-lazy-loading"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-lazy-loading.svg" alt="Blazor WASM Lazy Loading" loading="lazy"/></figure></header>
@@ -423,7 +427,7 @@
                                 <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-02-13 22-30-00">2 months ago</time></section></article></div></section></a><a href="blogs/blazor-wasm-javascript-interop-and-isolation"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-javascript-interop-and-isolation.svg" alt="Blazor WASM Javascript Interop and Isolation" loading="lazy"/></figure></header>
                     <div class="[ basis-3/5 ]"><article class="[ flex flex-col ] [ dark:text-white ]"><h2 class="[ font-medium text-sm break-words leading-tight ]">Blazor WASM Javascript Interop and Isolation</h2>
                             <section class="[ flex flex-col ]"><p class="[ text-xs dark:text-neutral-400 ]">Abdul Rahman</p>
-                                <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-02-06 22-30-00">2 months ago</time></section></article></div></section></a><a href="blogs/blazor-wasm-dark-theme-and-light-theme"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-dark-theme-and-light-theme.svg" alt="Blazor WASM Dark Theme and Light Theme" loading="lazy"/></figure></header>
+                                <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-02-06 22-30-00">3 months ago</time></section></article></div></section></a><a href="blogs/blazor-wasm-dark-theme-and-light-theme"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-dark-theme-and-light-theme.svg" alt="Blazor WASM Dark Theme and Light Theme" loading="lazy"/></figure></header>
                     <div class="[ basis-3/5 ]"><article class="[ flex flex-col ] [ dark:text-white ]"><h2 class="[ font-medium text-sm break-words leading-tight ]">Blazor WASM Dark Theme and Light Theme</h2>
                             <section class="[ flex flex-col ]"><p class="[ text-xs dark:text-neutral-400 ]">Abdul Rahman</p>
                                 <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-01-30 22-30-00">3 months ago</time></section></article></div></section></a><a href="blogs/blazor-wasm-error-logging"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-error-logging.svg" alt="Blazor WASM Error Logging" loading="lazy"/></figure></header>
@@ -434,6 +438,7 @@
                             <section class="[ flex flex-col ]"><p class="[ text-xs dark:text-neutral-400 ]">Abdul Rahman</p>
                                 <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-01-16 22-30-00">3 months ago</time></section></article></div></section></a></aside></section></main>
             
+    
 <!-- %%-PRERENDERING-END-%% -->
 </div>
 
@@ -451,6 +456,7 @@
     </div>
 
     <script src="_framework/blazor.webassembly.js"></script>
+    <script src="_content/Blazor-Analytics/blazor-analytics.js"></script>
     <script src="_content/BlazorDemoComponents/jsinterop.js"></script>
     <!--<script>navigator.serviceWorker.register('service-worker.js', { updateViaCache: 'none' });</script>-->
 
