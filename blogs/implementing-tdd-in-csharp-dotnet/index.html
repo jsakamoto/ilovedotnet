@@ -132,9 +132,9 @@
             <line x1="5" y1="12" x2="19" y2="12"></line>
             <line x1="5" y1="12" x2="11" y2="18"></line>
             <line x1="5" y1="12" x2="11" y2="6"></line></svg></button>
-    <div class="[ dropdown ] [  ] [ w-1/2 ] [  ] [  ]"><div class="[ dropdown-trigger ] [ w-full ]"><input type="search" placeholder="Search" class="[ w-full h-full ] [ px-4 ] [ border-2 ] [ focus:outline-none focus:border-gray-400 ] [ dark:bg-black dark:border-gray-800 dark:focus:border-b-white dark:md:focus:border-blue-800 dark:caret-white dark:text-white ]" autocapitalize="none" autocomplete="off" autocorrect="off" aria-haspopup="true" aria-controls="dropdown-menu" value=""/></div>
+    <div class="[ dropdown ] [  ] [ w-1/2 ] [ hidden ] [  ]"><div class="[ dropdown-trigger ] [ w-full ]"><input type="search" placeholder="Search" class="[ w-full h-full ] [ px-4 ] [ border-2 ] [ focus:outline-none focus:border-gray-400 ] [ dark:bg-black dark:border-gray-800 dark:focus:border-b-white dark:md:focus:border-blue-800 dark:caret-white dark:text-white ]" autocapitalize="none" autocomplete="off" autocorrect="off" aria-haspopup="true" aria-controls="dropdown-menu" value=""/></div>
         <div class="[ dropdown-menu ] [ w-full ]" id="dropdown-menu" role="menu"><div class="[ dropdown-content ] [ dark:bg-black ]"></div></div></div>
-    <button type="button" aria-label="Search" class="[ bg-white ] [ h-10 w-10 ] [ border-2 border-l-0 ] [ dark:bg-gray-700 dark:border-gray-700 ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-search ] [ inline ] [ text-gray-500 ] [ stroke-1 ] [ dark:text-white ]" width="25" height="25" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+    <button type="button" aria-label="Search" class="[ bg-white ] [ h-10 w-10 ] [ border-2  ] [ dark:bg-gray-700 dark:border-gray-700 ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-search ] [ inline ] [ text-gray-500 ] [ stroke-1 ] [ dark:text-white ]" width="25" height="25" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
             <circle cx="10" cy="10" r="7"></circle>
             <line x1="21" y1="21" x2="15" y2="15"></line></svg></button></section>
     <section id="display-and-social" class="[  ] [ flex items-center space-x-1.5 ]"><section id="displaymode"><div class="dropdown is-right "><div class="dropdown-trigger"><button class="button [ flex items-center ]" aria-haspopup="true" aria-controls="displaymode-menu"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-brightness-up ] [ dark:text-white ]" width="25" height="25" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -263,7 +263,7 @@
             <li>TicketBookingCore (TicketBookingRequestProcessor) (.Net Core Class Library)</li>
             <li>TicketBookingCore.Tests (TicketBookingRequestProcessorTests) (XUnit test project)</li></ul>
         
-        <ul class="[ list-disc ] [ ml-3.5 ]"><li>Getting started with TDD.</li>
+        <ul class="[ list-disc ] [ ml-4 ]"><li>Getting started with TDD.</li>
             <li>Testing and implementing business logic.</li>
             <li>Adding features in asp.net core app.</li></ul>
         
@@ -283,7 +283,7 @@
 
         <h4 class="[ font-semibold text-base ]">Requirements</h4>
         
-        <ol class="[ list-decimal ] [ ml-3.5 ]"><li>Response should contain the same values as request after booking.</li>
+        <ol class="[ list-decimal ] [ ml-4 ]"><li>Response should contain the same values as request after booking.</li>
             <li>Booking should be saved to database.</li></ol>
         
         <h3 class="[ font-semibold text-lg ]">Understand the First Requirement</h3>
@@ -303,7 +303,7 @@
 
         <h3 class="[ font-semibold text-lg ]">Create a Red unit test</h3>
 
-        <ol class="[ list-decimal ] [ ml-3.5 ]"><li>Create a new C# XUnit test project named TicketBookingCore.Tests.</li>
+        <ol class="[ list-decimal ] [ ml-4 ]"><li>Create a new C# XUnit test project named TicketBookingCore.Tests.</li>
             <li>As you need to test TicketBookingProcessor Class, create a new class named TicketBookingRequestProcessorTests.</li>
             <li>Create a first test method as ShouldReturnTicketBookingResultWithRequestValues.</li>
             <li>Mark the method with [Fact] attribute to indicate it as a test.</li>
@@ -313,7 +313,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - TDD Red Phase - First Requirement - New Unit Test</h4>
-    <article id="9fddd237-b72b-45d6-88c9-788a72caf866" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="31126ee0-2085-4907-9367-31b8cedce26d" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
         
         <p>
             Create a TicketBookingRequest with FirstName, LastName and Email properties and set the values and again press Ctrl + . 
@@ -324,7 +324,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - TDD Red Phase - First Requirement - Creating Request Class</h4>
-    <article id="3f2146c8-09d7-4250-b305-7295da3f236b" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="e39e6348-35ad-442f-a8ac-ed9f450c85d1" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <p>
             Add the following line TicketBookingResponse response = processor.Book(request); and press Ctrl + . to generate the Book 
@@ -347,7 +347,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - TDD Red Phase - First Requirement - Creating Response Class</h4>
-    <article id="40d8f19c-e493-46c0-bdeb-097f3ccbcbbe" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="75d589cc-5ecd-44a1-b028-db80a48670d7" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
         
         <p>
             We are all set with AAA (Arrange, Act, and Assert) of unit tests.
@@ -357,7 +357,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - TDD Red Phase - First Requriement - Arrange Assert Act</h4>
-    <article id="95e564d7-ca7d-4d2f-b374-76e193302b47" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="b9a528c9-6254-4d34-8410-c88627b37472" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <p>
             Press Ctrl + E, T to open Test Explorer. You can now see the test is listed in the test explorer. Now Click on the Run 
@@ -384,7 +384,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - TDD Green Phase - First Requirement - Adding Minimal Requried Code</h4>
-    <article id="292f166d-b97d-4076-b441-a917bca6f59f" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="a485ace7-31be-4f2f-ab63-eb364761ba4c" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <p>
             That’s it. Now again run the test. The test passes and turns green.
@@ -402,7 +402,7 @@
             Now we are in the 3rd step of TDD (Refactor Phase). We can refactor and improve the code as follows,
         </p>
 
-        <ol class="[ list-decimal ] [ ml-3.5 ]"><li>
+        <ol class="[ list-decimal ] [ ml-4 ]"><li>
                 Create New .Net Core Class Library Named TicketBookingCore and move TicketBookingRequest, TicketBookingRequestProcessor and 
                 TicketBookingResponse into this project.
             </li>
@@ -434,7 +434,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - TDD Red Phase - First Requirement - Another Unit Test</h4>
-    <article id="f143eb23-e1bb-4def-819b-2a65d1b41940" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="21b574b3-163a-4f84-9528-19799637b068" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <p>
             Now if you run the above from test explorer, the test will fail with NullReferenceException instead of ArgumentNullException, as shown below:
@@ -450,7 +450,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - TDD Green Phase - First Requriement - Minimal Required Code to Make Test Pass</h4>
-    <article id="e3042bb7-29ff-41b2-9b7f-558490d892cc" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="60456436-8059-4ba7-b7b0-acad67018c16" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <p>
             Now run the test again and the test will pass.
@@ -472,7 +472,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - TDD Refactor Phase - First Requriement - Refactoring Tests</h4>
-    <article id="63c2421c-6923-41a5-bdda-e52e21b8d35e" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="a9cf6c3d-8bde-4d50-931d-afafb2db4aa2" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <h3 class="[ font-semibold text-lg ]">Understand the second Requirement</h3>
 
@@ -517,20 +517,20 @@
             Now let’s create a failing Red unit test,
         </p>
 
-        <ol class="[ list-decimal ] [ ml-3.5 ]"><li>Create a new test method ShouldSaveToDatabase.</li>
+        <ol class="[ list-decimal ] [ ml-4 ]"><li>Create a new test method ShouldSaveToDatabase.</li>
             <li>Create a request object and pass it to the processor save method.</li></ol>
 
         <section class="[ flex flex-col ]"><h4 class="[ bg-gray-200 ] [ p-2 ] [ font-semibold ] [ text-black ] [ flex items-center ] [ dark:bg-gray-800 dark:bg-gray-800/80 dark:text-white ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-code ] [ text-purple-700 ] [ fill-purple-500 ]" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - TDD Red Phase - Second Requirement - New Failing Test</h4>
-    <article id="c0046198-73b7-4996-a000-0b16658c0285" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="3c951523-1e9f-4fdb-8734-192c69668dec" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <p>
             Now to save to database, we need ITicketBookingRepository and that needs to be injected to TicketBookingRequestProcessor.
         </p>
 
-        <ol class="[ list-decimal ] [ ml-3.5 ]"><li>Add ITicketBookingRepository to TicketBookingCore project</li>
+        <ol class="[ list-decimal ] [ ml-4 ]"><li>Add ITicketBookingRepository to TicketBookingCore project</li>
             <li>Add Save() method with TicketBooking object as a parameter.</li>
             <li>Press Ctrl + . to create a TicketBooking class and inherit from the TicketBookingBase class.</li></ol>
 
@@ -538,13 +538,13 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - TDD Red Phase - Second Requirement - New Failing Test Compilation Fix</h4>
-    <article id="b1923793-cd1e-43ea-9668-720a38c79e5f" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="f4c093b0-fecb-45d5-b251-9a5e65bc69ed" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <p>
             Now we need a mock object for ITicketBookingRepository. We can use the mock library to fake the repository.
         </p>
 
-        <ol class="[ list-decimal ] [ ml-3.5 ]"><li>Add _ticketBookingRepositoryMock = new Mock&lt;ITicketBookingRepository&gt;(); to TicketBookingRequestProcessorTests constructor.</li>
+        <ol class="[ list-decimal ] [ ml-4 ]"><li>Add _ticketBookingRepositoryMock = new Mock&lt;ITicketBookingRepository&gt;(); to TicketBookingRequestProcessorTests constructor.</li>
             <li>
                 Press Ctrl + . to download install Moq nuget package and repeat to add a private readonly field 
                 Mock&lt;ITicketBookingRepository&gt; _ticketBookingRepositoryMock for that repository.
@@ -558,7 +558,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - TDD Red Phase - Second Requirement - New Failing Test Mocking Dependencies</h4>
-    <article id="0578310d-3bae-4fdd-9cef-73e3363b6662" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="8d3fcd4a-eab3-4a65-b982-043a392491cf" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <p>
             Now we need to write a setup in mock repository to make a callback when Save is called in that repository. And we need to assert that 
@@ -569,7 +569,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - TDD Red Phase - Second Requirement - New Failing Test Asserting</h4>
-    <article id="6c423e01-f86f-4453-b237-4c21faafcab8" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="e1ce4ec3-d6a3-4939-9745-53174e61f743" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <p>Now we are done with test setup. Run the test and the test should fail.</p>
 
@@ -586,7 +586,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - TDD Green Phase - Second Requirement - Minimal Requried Code</h4>
-    <article id="3494058a-3e73-4df9-981b-879fee0f2fc8" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="176dff6d-3a54-4eb1-b000-cbe5f0d8c033" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <p>Now if you run the test, the test will pass.</p>
 
@@ -596,7 +596,7 @@
 
         <p>Now we can improve the code by doing some refactoring.</p>
 
-        <ol class="[ list-decimal ] [ ml-3.5 ]"><li>According to Do Not Repeat Principle (DRY), we should avoid repeating the same code.</li>
+        <ol class="[ list-decimal ] [ ml-4 ]"><li>According to Do Not Repeat Principle (DRY), we should avoid repeating the same code.</li>
             <li>
                 In the TicketBookingRequestProcessorTests class, the same TicketBookingRequest object is constructed and used in two methods. This 
                 can be moved to the TicketBookingRequestProcessorTests constructor and can be made as a private readonly field.
@@ -614,7 +614,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - TDD Complete Code</h4>
-    <article id="c1614578-315c-4b04-ab46-77bec7da4c9c" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="cb04ddf8-e376-4a8d-ae89-3c943c48aa8d" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <p>Now run all the tests. All the tests should pass.</p>
 
@@ -630,55 +630,75 @@
         </p></section>
         <footer class="[ max-w-full ]"><ul class="[ list-none ] [ flex items-center justify-center ] [ space-x-3 ] [ overflow-hidden overflow-x-auto ]"><li class="[ px-3 py-1 ] [ rounded-full ] [ bg-black text-white dark:bg-white dark:text-black ]">Test Driven Development</li></ul></footer>
         <hr class="[ dark:text-white my-1.5 ]"/></article>
-    <aside class="[ flex flex-col md:basis-1/4 ] [ space-y-2 ]"><a href="blogs/blazor-wasm-controlling-head-content"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-controlling-head-content.svg" alt="Blazor WASM Controlling Head Content" loading="lazy"/></figure></header>
-                    <div class="[ basis-3/5 ]"><article class="[ flex flex-col ] [ dark:text-white ]"><h2 class="[ font-medium text-sm break-words leading-tight ]">Blazor WASM Controlling Head Content</h2>
-                            <section class="[ flex flex-col ]"><p class="[ text-xs dark:text-neutral-400 ]">Abdul Rahman</p>
-                                <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-05-08 22-30-00">7 hours from now</time></section></article></div></section></a><a href="blogs/oops-encapsulation"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/oops/oops-encapsulation.svg" alt="OOPS Encapsulation" loading="lazy"/></figure></header>
-                    <div class="[ basis-3/5 ]"><article class="[ flex flex-col ] [ dark:text-white ]"><h2 class="[ font-medium text-sm break-words leading-tight ]">OOPS Encapsulation</h2>
-                            <section class="[ flex flex-col ]"><p class="[ text-xs dark:text-neutral-400 ]">Abdul Rahman</p>
-                                <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-05-01 22-30-00">6 days ago</time></section></article></div></section></a><a href="blogs/blazor-wasm-data-binding"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-data-binding.svg" alt="Blazor WASM Data Binding" loading="lazy"/></figure></header>
-                    <div class="[ basis-3/5 ]"><article class="[ flex flex-col ] [ dark:text-white ]"><h2 class="[ font-medium text-sm break-words leading-tight ]">Blazor WASM Data Binding</h2>
-                            <section class="[ flex flex-col ]"><p class="[ text-xs dark:text-neutral-400 ]">Abdul Rahman</p>
-                                <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-04-24 22-30-00">13 days ago</time></section></article></div></section></a><a href="blogs/blazor-wasm-event-handling-and-event-arguments"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-event-handling-and-event-arguments.svg" alt="Blazor WASM Event Handling And Event Arguments" loading="lazy"/></figure></header>
-                    <div class="[ basis-3/5 ]"><article class="[ flex flex-col ] [ dark:text-white ]"><h2 class="[ font-medium text-sm break-words leading-tight ]">Blazor WASM Event Handling And Event Arguments</h2>
-                            <section class="[ flex flex-col ]"><p class="[ text-xs dark:text-neutral-400 ]">Abdul Rahman</p>
-                                <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-04-17 22-30-00">20 days ago</time></section></article></div></section></a><a href="blogs/blazor-wasm-components"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-components.svg" alt="Blazor WASM Components" loading="lazy"/></figure></header>
-                    <div class="[ basis-3/5 ]"><article class="[ flex flex-col ] [ dark:text-white ]"><h2 class="[ font-medium text-sm break-words leading-tight ]">Blazor WASM Components</h2>
-                            <section class="[ flex flex-col ]"><p class="[ text-xs dark:text-neutral-400 ]">Abdul Rahman</p>
-                                <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-04-10 22-30-00">27 days ago</time></section></article></div></section></a><a href="blogs/introducing-tdd-in-csharp-dotnet"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/tdd/introducing-tdd-in-csharp-dotnet.svg" alt="Introducing TDD in C# .Net" loading="lazy"/></figure></header>
-                    <div class="[ basis-3/5 ]"><article class="[ flex flex-col ] [ dark:text-white ]"><h2 class="[ font-medium text-sm break-words leading-tight ]">Introducing TDD in C# .Net</h2>
-                            <section class="[ flex flex-col ]"><p class="[ text-xs dark:text-neutral-400 ]">Abdul Rahman</p>
-                                <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-03-27 22-30-00">one month ago</time></section></article></div></section></a><a href="blogs/blazor-wasm-introduction"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-introduction.svg" alt="Blazor WASM Introduction" loading="lazy"/></figure></header>
-                    <div class="[ basis-3/5 ]"><article class="[ flex flex-col ] [ dark:text-white ]"><h2 class="[ font-medium text-sm break-words leading-tight ]">Blazor WASM Introduction</h2>
-                            <section class="[ flex flex-col ]"><p class="[ text-xs dark:text-neutral-400 ]">Abdul Rahman</p>
-                                <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-03-20 22-30-00">one month ago</time></section></article></div></section></a><a href="talks/blazor-spa-from-aspnet-family"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/talks/blazor-spa-from-aspnet-family.svg" alt="Blazor - SPA from ASP.NET Family" loading="lazy"/></figure></header>
-                    <div class="[ basis-3/5 ]"><article class="[ flex flex-col ] [ dark:text-white ]"><h2 class="[ font-medium text-sm break-words leading-tight ]">Blazor - SPA from ASP.NET Family</h2>
-                            <section class="[ flex flex-col ]"><p class="[ text-xs dark:text-neutral-400 ]">Abdul Rahman</p>
-                                <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-03-13 22-30-00">one month ago</time></section></article></div></section></a><a href="blogs/webapi-importance-of-status-code"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/webapi/webapi-importance-of-status-code.svg" alt="Importance of Status Code in Web API" loading="lazy"/></figure></header>
-                    <div class="[ basis-3/5 ]"><article class="[ flex flex-col ] [ dark:text-white ]"><h2 class="[ font-medium text-sm break-words leading-tight ]">Importance of Status Code in Web API</h2>
-                            <section class="[ flex flex-col ]"><p class="[ text-xs dark:text-neutral-400 ]">Abdul Rahman</p>
-                                <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-03-06 22-30-00">2 months ago</time></section></article></div></section></a><a href="blogs/blazor-wasm-app-settings"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-app-settings.svg" alt="Blazor WASM App Settings" loading="lazy"/></figure></header>
-                    <div class="[ basis-3/5 ]"><article class="[ flex flex-col ] [ dark:text-white ]"><h2 class="[ font-medium text-sm break-words leading-tight ]">Blazor WASM App Settings</h2>
-                            <section class="[ flex flex-col ]"><p class="[ text-xs dark:text-neutral-400 ]">Abdul Rahman</p>
-                                <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-02-27 22-30-00">2 months ago</time></section></article></div></section></a><a href="blogs/blazor-wasm-lazy-loading"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-lazy-loading.svg" alt="Blazor WASM Lazy Loading" loading="lazy"/></figure></header>
-                    <div class="[ basis-3/5 ]"><article class="[ flex flex-col ] [ dark:text-white ]"><h2 class="[ font-medium text-sm break-words leading-tight ]">Blazor WASM Lazy Loading</h2>
-                            <section class="[ flex flex-col ]"><p class="[ text-xs dark:text-neutral-400 ]">Abdul Rahman</p>
-                                <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-02-20 22-30-00">2 months ago</time></section></article></div></section></a><a href="blogs/blazor-wasm-styles-and-css-isolation"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-styles-and-css-isolation.svg" alt="Blazor WASM Styles and CSS Isolation" loading="lazy"/></figure></header>
-                    <div class="[ basis-3/5 ]"><article class="[ flex flex-col ] [ dark:text-white ]"><h2 class="[ font-medium text-sm break-words leading-tight ]">Blazor WASM Styles and CSS Isolation</h2>
-                            <section class="[ flex flex-col ]"><p class="[ text-xs dark:text-neutral-400 ]">Abdul Rahman</p>
-                                <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-02-13 22-30-00">2 months ago</time></section></article></div></section></a><a href="blogs/blazor-wasm-javascript-interop-and-isolation"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-javascript-interop-and-isolation.svg" alt="Blazor WASM Javascript Interop and Isolation" loading="lazy"/></figure></header>
-                    <div class="[ basis-3/5 ]"><article class="[ flex flex-col ] [ dark:text-white ]"><h2 class="[ font-medium text-sm break-words leading-tight ]">Blazor WASM Javascript Interop and Isolation</h2>
-                            <section class="[ flex flex-col ]"><p class="[ text-xs dark:text-neutral-400 ]">Abdul Rahman</p>
-                                <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-02-06 22-30-00">3 months ago</time></section></article></div></section></a><a href="blogs/blazor-wasm-dark-theme-and-light-theme"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-dark-theme-and-light-theme.svg" alt="Blazor WASM Dark Theme and Light Theme" loading="lazy"/></figure></header>
-                    <div class="[ basis-3/5 ]"><article class="[ flex flex-col ] [ dark:text-white ]"><h2 class="[ font-medium text-sm break-words leading-tight ]">Blazor WASM Dark Theme and Light Theme</h2>
-                            <section class="[ flex flex-col ]"><p class="[ text-xs dark:text-neutral-400 ]">Abdul Rahman</p>
-                                <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-01-30 22-30-00">3 months ago</time></section></article></div></section></a><a href="blogs/blazor-wasm-error-logging"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-error-logging.svg" alt="Blazor WASM Error Logging" loading="lazy"/></figure></header>
-                    <div class="[ basis-3/5 ]"><article class="[ flex flex-col ] [ dark:text-white ]"><h2 class="[ font-medium text-sm break-words leading-tight ]">Blazor WASM Error Logging</h2>
-                            <section class="[ flex flex-col ]"><p class="[ text-xs dark:text-neutral-400 ]">Abdul Rahman</p>
-                                <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-01-23 22-30-00">3 months ago</time></section></article></div></section></a><a href="blogs/blazor-wasm-exception-handling-and-error-boundary"><section class="[ flex ] [ space-x-2 ]"><header class="[ basis-2/5 ]"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-exception-handling-and-error-boundary.svg" alt="Blazor WASM Exception Handling and Error Boundary" loading="lazy"/></figure></header>
-                    <div class="[ basis-3/5 ]"><article class="[ flex flex-col ] [ dark:text-white ]"><h2 class="[ font-medium text-sm break-words leading-tight ]">Blazor WASM Exception Handling and Error Boundary</h2>
-                            <section class="[ flex flex-col ]"><p class="[ text-xs dark:text-neutral-400 ]">Abdul Rahman</p>
-                                <time class="[ text-xs dark:text-neutral-400 ]" datetime="2022-01-16 22-30-00">3 months ago</time></section></article></div></section></a></aside></section></main>
+    <aside class="[ flex flex-col md:basis-1/4 ] [ space-y-2 ]"><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/oops-abstraction"><figure><img src="image/blogs/oops/oops-abstraction.svg" class="[ w-full ]" alt="OOPS Abstraction" loading="lazy"/></figure></a></header>
+                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/oops"><figure><img src="image/icons/oops.png" alt="OOPS" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
+                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/oops-abstraction"><h2 class="[ font-medium break-words hover:underline ]">OOPS Abstraction</h2></a>
+                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
+                            <time datetime="2022-05-15 22-30-00">21 hours from now</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/blazor-wasm-controlling-head-content"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-controlling-head-content.svg" class="[ w-full ]" alt="Blazor WASM Controlling Head Content" loading="lazy"/></figure></a></header>
+                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/blazor"><figure><img src="image/icons/blazor.png" alt="Blazor" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
+                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/blazor-wasm-controlling-head-content"><h2 class="[ font-medium break-words hover:underline ]">Blazor WASM Controlling Head Content</h2></a>
+                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
+                            <time datetime="2022-05-08 22-30-00">6 days ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/oops-encapsulation"><figure><img src="image/blogs/oops/oops-encapsulation.svg" class="[ w-full ]" alt="OOPS Encapsulation" loading="lazy"/></figure></a></header>
+                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/oops"><figure><img src="image/icons/oops.png" alt="OOPS" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
+                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/oops-encapsulation"><h2 class="[ font-medium break-words hover:underline ]">OOPS Encapsulation</h2></a>
+                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
+                            <time datetime="2022-05-01 22-30-00">13 days ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/blazor-wasm-data-binding"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-data-binding.svg" class="[ w-full ]" alt="Blazor WASM Data Binding" loading="lazy"/></figure></a></header>
+                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/blazor"><figure><img src="image/icons/blazor.png" alt="Blazor" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
+                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/blazor-wasm-data-binding"><h2 class="[ font-medium break-words hover:underline ]">Blazor WASM Data Binding</h2></a>
+                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
+                            <time datetime="2022-04-24 22-30-00">20 days ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/blazor-wasm-event-handling-and-event-arguments"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-event-handling-and-event-arguments.svg" class="[ w-full ]" alt="Blazor WASM Event Handling And Event Arguments" loading="lazy"/></figure></a></header>
+                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/blazor"><figure><img src="image/icons/blazor.png" alt="Blazor" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
+                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/blazor-wasm-event-handling-and-event-arguments"><h2 class="[ font-medium break-words hover:underline ]">Blazor WASM Event Handling And Event Arguments</h2></a>
+                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
+                            <time datetime="2022-04-17 22-30-00">27 days ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/blazor-wasm-components"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-components.svg" class="[ w-full ]" alt="Blazor WASM Components" loading="lazy"/></figure></a></header>
+                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/blazor"><figure><img src="image/icons/blazor.png" alt="Blazor" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
+                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/blazor-wasm-components"><h2 class="[ font-medium break-words hover:underline ]">Blazor WASM Components</h2></a>
+                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
+                            <time datetime="2022-04-10 22-30-00">one month ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/introducing-tdd-in-csharp-dotnet"><figure><img src="image/blogs/tdd/introducing-tdd-in-csharp-dotnet.svg" class="[ w-full ]" alt="Introducing TDD in C# .Net" loading="lazy"/></figure></a></header>
+                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/tdd"><figure><img src="image/icons/tdd.png" alt="TDD" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
+                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/introducing-tdd-in-csharp-dotnet"><h2 class="[ font-medium break-words hover:underline ]">Introducing TDD in C# .Net</h2></a>
+                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
+                            <time datetime="2022-03-27 22-30-00">one month ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/blazor-wasm-introduction"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-introduction.svg" class="[ w-full ]" alt="Blazor WASM Introduction" loading="lazy"/></figure></a></header>
+                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/blazor"><figure><img src="image/icons/blazor.png" alt="Blazor" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
+                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/blazor-wasm-introduction"><h2 class="[ font-medium break-words hover:underline ]">Blazor WASM Introduction</h2></a>
+                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
+                            <time datetime="2022-03-20 22-30-00">one month ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="talks/blazor-spa-from-aspnet-family"><figure><img src="image/talks/blazor-spa-from-aspnet-family.svg" class="[ w-full ]" alt="Blazor - SPA from ASP.NET Family" loading="lazy"/></figure></a></header>
+                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/talk"><figure><img src="image/icons/talk.png" alt="Talk" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
+                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="talks/blazor-spa-from-aspnet-family"><h2 class="[ font-medium break-words hover:underline ]">Blazor - SPA from ASP.NET Family</h2></a>
+                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
+                            <time datetime="2022-03-13 22-30-00">2 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/webapi-importance-of-status-code"><figure><img src="image/blogs/webapi/webapi-importance-of-status-code.svg" class="[ w-full ]" alt="Importance of Status Code in Web API" loading="lazy"/></figure></a></header>
+                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/webapi"><figure><img src="image/icons/webapi.png" alt="WebAPI" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
+                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/webapi-importance-of-status-code"><h2 class="[ font-medium break-words hover:underline ]">Importance of Status Code in Web API</h2></a>
+                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
+                            <time datetime="2022-03-06 22-30-00">2 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/blazor-wasm-app-settings"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-app-settings.svg" class="[ w-full ]" alt="Blazor WASM App Settings" loading="lazy"/></figure></a></header>
+                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/blazor"><figure><img src="image/icons/blazor.png" alt="Blazor" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
+                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/blazor-wasm-app-settings"><h2 class="[ font-medium break-words hover:underline ]">Blazor WASM App Settings</h2></a>
+                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
+                            <time datetime="2022-02-27 22-30-00">2 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/blazor-wasm-lazy-loading"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-lazy-loading.svg" class="[ w-full ]" alt="Blazor WASM Lazy Loading" loading="lazy"/></figure></a></header>
+                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/blazor"><figure><img src="image/icons/blazor.png" alt="Blazor" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
+                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/blazor-wasm-lazy-loading"><h2 class="[ font-medium break-words hover:underline ]">Blazor WASM Lazy Loading</h2></a>
+                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
+                            <time datetime="2022-02-20 22-30-00">2 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/blazor-wasm-styles-and-css-isolation"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-styles-and-css-isolation.svg" class="[ w-full ]" alt="Blazor WASM Styles and CSS Isolation" loading="lazy"/></figure></a></header>
+                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/blazor"><figure><img src="image/icons/blazor.png" alt="Blazor" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
+                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/blazor-wasm-styles-and-css-isolation"><h2 class="[ font-medium break-words hover:underline ]">Blazor WASM Styles and CSS Isolation</h2></a>
+                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
+                            <time datetime="2022-02-13 22-30-00">3 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/blazor-wasm-javascript-interop-and-isolation"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-javascript-interop-and-isolation.svg" class="[ w-full ]" alt="Blazor WASM Javascript Interop and Isolation" loading="lazy"/></figure></a></header>
+                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/blazor"><figure><img src="image/icons/blazor.png" alt="Blazor" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
+                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/blazor-wasm-javascript-interop-and-isolation"><h2 class="[ font-medium break-words hover:underline ]">Blazor WASM Javascript Interop and Isolation</h2></a>
+                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
+                            <time datetime="2022-02-06 22-30-00">3 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/blazor-wasm-dark-theme-and-light-theme"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-dark-theme-and-light-theme.svg" class="[ w-full ]" alt="Blazor WASM Dark Theme and Light Theme" loading="lazy"/></figure></a></header>
+                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/blazor"><figure><img src="image/icons/blazor.png" alt="Blazor" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
+                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/blazor-wasm-dark-theme-and-light-theme"><h2 class="[ font-medium break-words hover:underline ]">Blazor WASM Dark Theme and Light Theme</h2></a>
+                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
+                            <time datetime="2022-01-30 22-30-00">3 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/blazor-wasm-error-logging"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-error-logging.svg" class="[ w-full ]" alt="Blazor WASM Error Logging" loading="lazy"/></figure></a></header>
+                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/blazor"><figure><img src="image/icons/blazor.png" alt="Blazor" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
+                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/blazor-wasm-error-logging"><h2 class="[ font-medium break-words hover:underline ]">Blazor WASM Error Logging</h2></a>
+                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
+                            <time datetime="2022-01-23 22-30-00">3 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/blazor-wasm-exception-handling-and-error-boundary"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-exception-handling-and-error-boundary.svg" class="[ w-full ]" alt="Blazor WASM Exception Handling and Error Boundary" loading="lazy"/></figure></a></header>
+                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/blazor"><figure><img src="image/icons/blazor.png" alt="Blazor" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
+                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/blazor-wasm-exception-handling-and-error-boundary"><h2 class="[ font-medium break-words hover:underline ]">Blazor WASM Exception Handling and Error Boundary</h2></a>
+                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
+                            <time datetime="2022-01-16 22-30-00">4 months ago</time></section></article></div></section></aside></section></main>
             
     
 <!-- %%-PRERENDERING-END-%% -->
