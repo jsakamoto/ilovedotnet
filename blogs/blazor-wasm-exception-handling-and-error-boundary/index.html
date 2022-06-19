@@ -94,7 +94,7 @@
     <script type="text/default-title">I ❤️ DotNet</script>
     <script type="text/default-meta-elements">[[,"author",,,"Abdul Rahman Shabeek Mohamed"],[,"viewport",,,"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"],[,"copyright",,,"I Love DotNet"],[,"language",,,"EN"],[,"robots",,,"index,follow"],[,"owner",,,"Abdul Rahman Shabeek Mohamed"],[,,"Content-Security-Policy",,"base-uri \u0027self\u0027;\n               block-all-mixed-content;\n               img-src data: \u0027self\u0027;\n               object-src \u0027none\u0027;\n               script-src \u0027self\u0027\n                          https://www.googletagmanager.com\n                          https://gist.github.com\n                          \u0027unsafe-eval\u0027\n                          \u0027unsafe-inline\u0027\n                          data:;\n               style-src \u0027self\u0027\n                         https://github.githubassets.com\n                         \u0027unsafe-inline\u0027;\n               upgrade-insecure-requests;"]]</script>
     <meta property="description" content="In this post I will teach you how exception handling works and how to use error boundary in your Blazor applications. All with live working demo."/>
-    <meta property="keywords" content=".NET, DotNet, I Love DotNet, I ❤️ DotNet, Blazor, Blazor (WebAssembly), Blazor Wasm, C#, Entity Framework, LINQ, ML.NET, Web API, TDD, OOPS, Exception Handling, Error Boundary"/>
+    <meta property="keywords" content=".NET, DotNet, I Love DotNet, I ❤️ DotNet, Blazor, Blazor (WebAssembly), Blazor Wasm, C#, Entity Framework, LINQ, ML.NET, Web API, TDD, OOPS, Middleware, JWT, Exception Handling, Error Boundary"/>
     <meta property="url" content="https://www.ilovedotnet.org/blogs/blazor-wasm-exception-handling-and-error-boundary/"/>
     <meta property="identifier-URL" content="https://www.ilovedotnet.org/blogs/blazor-wasm-exception-handling-and-error-boundary/"/>
     <meta property="og:site_name" content="I Love DotNet"/>
@@ -167,7 +167,9 @@
                         <line x1="9" y1="16" x2="9" y2="20"></line>
                         <line x1="15" y1="16" x2="15" y2="20"></line></svg>
                     <p class="[ dark:text-white ]">System</p></button></div></div></div></section>
-        <section id="social" class="[ flex justify-between ]"><a href="https://stackoverflow.com/users/10851213/fingers10" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-brand-stackoverflow ] [ text-yellow-500 ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <section id="social" class="[ flex justify-between ]"><a href="https://github.com/sponsors/fingers10" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-heart ] [ text-red-500 ] [ fill-red-500 ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+           <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"></path></svg></a>
+    <a href="https://stackoverflow.com/users/10851213/fingers10" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-brand-stackoverflow ] [ text-yellow-500 ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
             <path d="M4 17v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-1"></path>
             <path d="M8 16h8"></path>
             <path d="M8.322 12.582l7.956 .836"></path>
@@ -261,7 +263,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - Chat component to simulate exception</h4>
-    <article id="88a4a4a0-fb5c-48cb-83ef-28b9718ec132" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="a09a97eb-8f25-401d-8638-1856106a8c83" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <ol class="[ list-decimal ] [ ml-4 ]"><li><a href="blogs/blazor-wasm-exception-handling-and-error-boundary#global-exception-handling" class="[ underline ]">
                     Global Exception Handling
@@ -286,7 +288,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - Blazor Global Exception Handling</h4>
-    <article id="53709c20-9656-4262-a510-703e8f0a9d59" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="dbdc1cd8-0492-4f1f-bf3f-23c80244bfe1" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <section class="[ flex flex-col ]"><h4 class="[ bg-gray-200 ] [ p-2 ] [ font-semibold ] [ text-black ] [ flex items-center ] [ dark:bg-gray-800 dark:bg-gray-800/80 dark:text-white ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-caret-right ] [ text-lime-700 ] [ fill-lime-500 ]" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
             <path d="M18 15l-6 -6l-6 6h12" transform="rotate(90 12 12)"></path></svg> Demo - Global Exception Handling</h4>
@@ -311,7 +313,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - Blazor Error Boundary</h4>
-    <article id="7fd205ea-27e5-44a8-84db-863a9daa3012" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="0599b959-0d8f-421f-a917-e22f8fd2023c" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <section class="[ flex flex-col ]"><h4 class="[ bg-gray-200 ] [ p-2 ] [ font-semibold ] [ text-black ] [ flex items-center ] [ dark:bg-gray-800 dark:bg-gray-800/80 dark:text-white ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-caret-right ] [ text-lime-700 ] [ fill-lime-500 ]" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
             <path d="M18 15l-6 -6l-6 6h12" transform="rotate(90 12 12)"></path></svg> Demo - Error Boundary</h4>
@@ -332,7 +334,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - Blazor Error Boundary with custom Error UI</h4>
-    <article id="22bfa392-32b7-4f65-9db1-837ccfb8370a" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="e282d6d2-2e48-45dc-a85f-958f392da79a" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <section class="[ flex flex-col ]"><h4 class="[ bg-gray-200 ] [ p-2 ] [ font-semibold ] [ text-black ] [ flex items-center ] [ dark:bg-gray-800 dark:bg-gray-800/80 dark:text-white ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-caret-right ] [ text-lime-700 ] [ fill-lime-500 ]" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
             <path d="M18 15l-6 -6l-6 6h12" transform="rotate(90 12 12)"></path></svg> Demo - Error Boundary with Custom Error UI</h4>
@@ -354,7 +356,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - Blazor Error Boundary with custom Error UI and Recovery</h4>
-    <article id="b80564d5-5075-4f45-b112-e15a802a53f2" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="b9f1f28c-4fe0-4781-848e-0fd8c9ad25ca" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <section class="[ flex flex-col ]"><h4 class="[ bg-gray-200 ] [ p-2 ] [ font-semibold ] [ text-black ] [ flex items-center ] [ dark:bg-gray-800 dark:bg-gray-800/80 dark:text-white ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-caret-right ] [ text-lime-700 ] [ fill-lime-500 ]" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
             <path d="M18 15l-6 -6l-6 6h12" transform="rotate(90 12 12)"></path></svg> Demo - Error Boundary with Custom Error UI and Recovery</h4>
@@ -385,7 +387,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - Error component</h4>
-    <article id="5f4c483e-f338-4274-a416-6ef4b31fc6e1" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="b993a303-d113-4a24-8cdc-ad1fda036fa2" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <p>
             Now in the <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">App</code> component, wrap the
@@ -402,30 +404,34 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - Alternative Global Exception Handling</h4>
-    <article id="6bdf7745-7a37-4773-8fd0-46bebc63e290" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section></section>
-        <footer class="[ max-w-full ]"><ul class="[ list-none ] [ flex items-center justify-center ] [ space-x-3 ] [ overflow-hidden overflow-x-auto ]"><li class="[ px-3 py-1 ] [ rounded-full ] [ bg-black text-white dark:bg-white dark:text-black ]">BLAZOR</li><li class="[ px-3 py-1 ] [ rounded-full ] [ bg-black text-white dark:bg-white dark:text-black ]">Exception Handling</li><li class="[ px-3 py-1 ] [ rounded-full ] [ bg-black text-white dark:bg-white dark:text-black ]">Error Boundary</li></ul></footer>
+    <article id="b5460381-ef60-4553-97a7-a57116199ee8" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section></section>
+        <footer class="[ max-w-full ]"><ul class="[ list-none ] [ flex items-center justify-center ] [ space-x-3 ] [ overflow-hidden overflow-x-auto ]"><li class="[ px-3 py-1 ] [ rounded-full ] [ bg-black text-white dark:bg-white dark:text-black ]">BLAZOR</li><li class="[ px-3 py-1 ] [ rounded-full ] [ bg-black text-white dark:bg-white dark:text-black ] [ whitespace-nowrap ]">Exception Handling</li><li class="[ px-3 py-1 ] [ rounded-full ] [ bg-black text-white dark:bg-white dark:text-black ] [ whitespace-nowrap ]">Error Boundary</li></ul></footer>
         <hr class="[ dark:text-white my-1.5 ]"/></article>
-    <aside class="[ flex flex-col md:basis-1/4 ] [ space-y-2 ]"><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/blazor-wasm-virtualization"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-virtualization.svg" class="[ w-full ]" alt="Blazor WASM Virtualization" loading="lazy"/></figure></a></header>
+    <aside class="[ flex flex-col md:basis-1/4 ] [ space-y-2 ]"><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/introducing-middleware-in-aspnet"><figure><img src="image/blogs/middleware/introducing-middleware-in-aspnet.svg" class="[ w-full ]" alt="Introducing Middleware in ASP.NET" loading="lazy"/></figure></a></header>
+                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/middleware"><figure><img src="image/icons/middleware.png" alt="Middleware" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
+                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/introducing-middleware-in-aspnet"><h2 class="[ font-medium break-words hover:underline ]">Introducing Middleware in ASP.NET</h2></a>
+                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
+                            <time datetime="2022-06-19 22-30-00">4 hours from now</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/blazor-wasm-virtualization"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-virtualization.svg" class="[ w-full ]" alt="Blazor WASM Virtualization" loading="lazy"/></figure></a></header>
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/blazor"><figure><img src="image/icons/blazor.png" alt="Blazor" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/blazor-wasm-virtualization"><h2 class="[ font-medium break-words hover:underline ]">Blazor WASM Virtualization</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-06-12 22-30-00">6 hours from now</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/blazor-wasm-forms-validation"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-forms-validation.svg" class="[ w-full ]" alt="Blazor WASM Forms Validation" loading="lazy"/></figure></a></header>
+                            <time datetime="2022-06-12 22-30-00">6 days ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/blazor-wasm-forms-validation"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-forms-validation.svg" class="[ w-full ]" alt="Blazor WASM Forms Validation" loading="lazy"/></figure></a></header>
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/blazor"><figure><img src="image/icons/blazor.png" alt="Blazor" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/blazor-wasm-forms-validation"><h2 class="[ font-medium break-words hover:underline ]">Blazor WASM Forms Validation</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-06-05 22-30-00">6 days ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/blazor-wasm-forms"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-forms.svg" class="[ w-full ]" alt="Blazor WASM Forms" loading="lazy"/></figure></a></header>
+                            <time datetime="2022-06-05 22-30-00">13 days ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/blazor-wasm-forms"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-forms.svg" class="[ w-full ]" alt="Blazor WASM Forms" loading="lazy"/></figure></a></header>
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/blazor"><figure><img src="image/icons/blazor.png" alt="Blazor" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/blazor-wasm-forms"><h2 class="[ font-medium break-words hover:underline ]">Blazor WASM Forms</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-05-29 22-30-00">13 days ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/blazor-wasm-communication-between-components"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-communication-between-components.svg" class="[ w-full ]" alt="Blazor WASM Communication Between Components" loading="lazy"/></figure></a></header>
+                            <time datetime="2022-05-29 22-30-00">20 days ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/blazor-wasm-communication-between-components"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-communication-between-components.svg" class="[ w-full ]" alt="Blazor WASM Communication Between Components" loading="lazy"/></figure></a></header>
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/blazor"><figure><img src="image/icons/blazor.png" alt="Blazor" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/blazor-wasm-communication-between-components"><h2 class="[ font-medium break-words hover:underline ]">Blazor WASM Communication Between Components</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-05-22 22-30-00">20 days ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/oops-abstraction"><figure><img src="image/blogs/oops/oops-abstraction.svg" class="[ w-full ]" alt="OOPS Abstraction" loading="lazy"/></figure></a></header>
+                            <time datetime="2022-05-22 22-30-00">27 days ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/oops-abstraction"><figure><img src="image/blogs/oops/oops-abstraction.svg" class="[ w-full ]" alt="OOPS Abstraction" loading="lazy"/></figure></a></header>
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/oops"><figure><img src="image/icons/oops.png" alt="OOPS" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/oops-abstraction"><h2 class="[ font-medium break-words hover:underline ]">OOPS Abstraction</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-05-15 22-30-00">27 days ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/blazor-wasm-controlling-head-content"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-controlling-head-content.svg" class="[ w-full ]" alt="Blazor WASM Controlling Head Content" loading="lazy"/></figure></a></header>
+                            <time datetime="2022-05-15 22-30-00">one month ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/blazor-wasm-controlling-head-content"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-controlling-head-content.svg" class="[ w-full ]" alt="Blazor WASM Controlling Head Content" loading="lazy"/></figure></a></header>
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/blazor"><figure><img src="image/icons/blazor.png" alt="Blazor" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/blazor-wasm-controlling-head-content"><h2 class="[ font-medium break-words hover:underline ]">Blazor WASM Controlling Head Content</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
@@ -441,7 +447,7 @@
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/blazor"><figure><img src="image/icons/blazor.png" alt="Blazor" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/blazor-wasm-event-handling-and-event-arguments"><h2 class="[ font-medium break-words hover:underline ]">Blazor WASM Event Handling And Event Arguments</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-04-17 22-30-00">one month ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/blazor-wasm-components"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-components.svg" class="[ w-full ]" alt="Blazor WASM Components" loading="lazy"/></figure></a></header>
+                            <time datetime="2022-04-17 22-30-00">2 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/blazor-wasm-components"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-components.svg" class="[ w-full ]" alt="Blazor WASM Components" loading="lazy"/></figure></a></header>
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/blazor"><figure><img src="image/icons/blazor.png" alt="Blazor" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/blazor-wasm-components"><h2 class="[ font-medium break-words hover:underline ]">Blazor WASM Components</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
@@ -457,7 +463,7 @@
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/blazor"><figure><img src="image/icons/blazor.png" alt="Blazor" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/blazor-wasm-introduction"><h2 class="[ font-medium break-words hover:underline ]">Blazor WASM Introduction</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-03-20 22-30-00">2 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="talks/blazor-spa-from-aspnet-family"><figure><img src="image/talks/blazor-spa-from-aspnet-family.svg" class="[ w-full ]" alt="Blazor - SPA from ASP.NET Family" loading="lazy"/></figure></a></header>
+                            <time datetime="2022-03-20 22-30-00">3 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="talks/blazor-spa-from-aspnet-family"><figure><img src="image/talks/blazor-spa-from-aspnet-family.svg" class="[ w-full ]" alt="Blazor - SPA from ASP.NET Family" loading="lazy"/></figure></a></header>
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/talk"><figure><img src="image/icons/talk.png" alt="Talk" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="talks/blazor-spa-from-aspnet-family"><h2 class="[ font-medium break-words hover:underline ]">Blazor - SPA from ASP.NET Family</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
@@ -473,7 +479,7 @@
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/blazor"><figure><img src="image/icons/blazor.png" alt="Blazor" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/blazor-wasm-lazy-loading"><h2 class="[ font-medium break-words hover:underline ]">Blazor WASM Lazy Loading</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-02-20 22-30-00">3 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/blazor-wasm-styles-and-css-isolation"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-styles-and-css-isolation.svg" class="[ w-full ]" alt="Blazor WASM Styles and CSS Isolation" loading="lazy"/></figure></a></header>
+                            <time datetime="2022-02-20 22-30-00">4 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/blazor-wasm-styles-and-css-isolation"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-styles-and-css-isolation.svg" class="[ w-full ]" alt="Blazor WASM Styles and CSS Isolation" loading="lazy"/></figure></a></header>
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/blazor"><figure><img src="image/icons/blazor.png" alt="Blazor" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/blazor-wasm-styles-and-css-isolation"><h2 class="[ font-medium break-words hover:underline ]">Blazor WASM Styles and CSS Isolation</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
@@ -490,6 +496,19 @@
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/blazor-wasm-error-logging"><h2 class="[ font-medium break-words hover:underline ]">Blazor WASM Error Logging</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
                             <time datetime="2022-01-23 22-30-00">4 months ago</time></section></article></div></section></aside></section></main>
+<nav class="[ md:hidden ] [ sticky bottom-0 ] [ h-14 ] [ bg-white dark:bg-black ] [ flex justify-around items-center ]"><a href="/" class="[ flex flex-col items-center ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-home ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+           <polyline points="5 12 3 12 12 3 21 12 19 12"></polyline>
+           <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7"></path>
+           <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6"></path></svg>
+        <span class="[ text-xs ]">Home</span></a>
+    <a href="/learningpath" class="[ flex flex-col items-center ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-compass ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+           <polyline points="8 16 10 10 16 8 14 14 8 16"></polyline>
+           <circle cx="12" cy="12" r="9"></circle>
+           <line x1="12" y1="3" x2="12" y2="5"></line>
+           <line x1="12" y1="19" x2="12" y2="21"></line>
+           <line x1="3" y1="12" x2="5" y2="12"></line>
+           <line x1="19" y1="12" x2="21" y2="12"></line></svg>
+        <span class="[ text-xs ]">Learning Path</span></a></nav>
             
     
 <!-- %%-PRERENDERING-END-%% -->
