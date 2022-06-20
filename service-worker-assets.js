@@ -213,11 +213,11 @@
       "url": "image\/blogs\/blazor\/wasm\/introduction\/why use blazor.png"
     },
     {
-      "hash": "sha256-W9IlvWRDvTM0fZNCWC+h6W2Fwn8ShuKtr+QFZ0P98Yo=",
+      "hash": "sha256-u+WEb2HCwYJjJvEaeTaZzv35KWbRwxQel2jWAySr6qE=",
       "url": "image\/blogs\/middleware\/introducing-middleware-in-aspnet.png"
     },
     {
-      "hash": "sha256-spwzL\/RXQBN+cHn3B0zzSD8v7vTOHuqYmDzapy1yreE=",
+      "hash": "sha256-+cBR6Kph381PoreVs2Fc95fR1OhZ7LNpZoa7m\/dob8o=",
       "url": "image\/blogs\/middleware\/introducing-middleware-in-aspnet.svg"
     },
     {
@@ -385,7 +385,7 @@
       "url": "image\/talks\/blazor-spa-from-aspnet-family.svg"
     },
     {
-      "hash": "sha256-bBkdPfLaS6bmEiG8\/RvHsAVAB\/NuLQaOQ15XyNJIVMk=",
+      "hash": "sha256-vQxWUGf2zfThDSTMbeABF6SzVPqRddBUHdIyKWUPgqw=",
       "url": "index.html"
     },
     {
@@ -733,5 +733,5 @@
       "url": "_content\/Components\/githubgist.js"
     }
   ],
-  "version": "Vzumt9Xh"
+  "version": "V+sAtmGS"
 };
