@@ -21,7 +21,7 @@
                          'unsafe-inline';
                upgrade-insecure-requests;"/>
     <title>Blazor WASM Introduction - I ❤️ DotNet</title>
-    <base href="/"/>
+    <base href="/ilovedotnet/"/>
     <link href="css/app.min.css" rel="stylesheet"/>
     <link href="manifest.json" rel="manifest"/>
     <link rel="icon" type="image/x-icon" href="favicon.ico"/>
@@ -561,11 +561,13 @@
         </button>
     </div>
 
-    <script src="_framework/blazor.webassembly.js"></script>
+    <script src="_framework/blazor.webassembly.js" autostart="false"></script>
     <script src="_content/Blazor-Analytics/blazor-analytics.js"></script>
     <script src="_content/BlazorDemoComponents/jsinterop.js"></script>
     <!--<script>navigator.serviceWorker.register('service-worker.js', { updateViaCache: 'none' });</script>-->
 
 
 
+    <script src="decode.min.js"></script>
+    <script src="brotliloader.min.js"></script>
 </body></html>
