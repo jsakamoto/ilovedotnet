@@ -25,11 +25,11 @@
       "url": "appicons\/favicon-196x196.png"
     },
     {
-      "hash": "sha256-Za1xgFcBJp06tUWfse49wnS2UGlOxyTU2qW5MoTdJfc=",
+      "hash": "sha256-yP4qNeWk0FLaT5DfHsTZ7lTIyIynnFsu82UutCNoBEs=",
       "url": "atom.xml"
     },
     {
-      "hash": "sha256-RqT+Kwv06uLjdoiTMasgRcPM6GUM21d2Llq106Bzzig=",
+      "hash": "sha256-48Jf26EiHGJmCLCO\/StXSfHtOSUUMamLOwUffkwfoAs=",
       "url": "css\/app.min.css"
     },
     {
@@ -83,6 +83,14 @@
     {
       "hash": "sha256-eAmu4kRrJiM45ZpADX6f0BtGyjzViRvtphhB\/KcZg0o=",
       "url": "image\/blogs\/blazor\/wasm\/blazor-wasm-data-binding.svg"
+    },
+    {
+      "hash": "sha256-hWoKSDP4OP\/55Po7wuWB+BB0NT0wBU3GxyMGQ5vqwHs=",
+      "url": "image\/blogs\/blazor\/wasm\/blazor-wasm-dynamic-component.png"
+    },
+    {
+      "hash": "sha256-qJRfjKlBtIFY68VTdbobRVqt\/hPr52IJxt1lum5dVy0=",
+      "url": "image\/blogs\/blazor\/wasm\/blazor-wasm-dynamic-component.svg"
     },
     {
       "hash": "sha256-sQDMkDpZGGDu1j6KL6fHJHz\/xPOzomhqSP0XO6sGyVs=",
@@ -147,6 +155,14 @@
     {
       "hash": "sha256-l\/llRLIci3LURJg6aryTct5lQWahZnL8rzrY8JS\/8zA=",
       "url": "image\/blogs\/blazor\/wasm\/blazor-wasm-lazy-loading.svg"
+    },
+    {
+      "hash": "sha256-AW2dWtNIg8t8rcYQq5Gq72+\/QqFAGnjIcd9JSv+InsE=",
+      "url": "image\/blogs\/blazor\/wasm\/blazor-wasm-publishing.png"
+    },
+    {
+      "hash": "sha256-0Rq2qYdDNQ4n6upnnOmHGr7eYLsw0RRxKdzq1uMd9b4=",
+      "url": "image\/blogs\/blazor\/wasm\/blazor-wasm-publishing.svg"
     },
     {
       "hash": "sha256-taLndEpQbsihkDEIyKgqotsNfTFxULbyGcOTCE9P53c=",
@@ -385,7 +401,7 @@
       "url": "image\/talks\/blazor-spa-from-aspnet-family.svg"
     },
     {
-      "hash": "sha256-\/1dLp8lIZw08jQiQPsL1lt4sSNpFkDe9mZ2suyse4Ao=",
+      "hash": "sha256-JHeVMQ0V1aNnVLnEq\/hjp3bLd8X7t3JmKks1QT12c8U=",
       "url": "index.html"
     },
     {
@@ -413,7 +429,7 @@
       "url": "robots.txt"
     },
     {
-      "hash": "sha256-snU1XwrruTwW2hl13V2ghw0s+u1Y9VTF8zkcJHdOgws=",
+      "hash": "sha256-wqpZD3lobvD9Amfx4IoJI2Nxv\/u4dGTxMnDPsWzAsRo=",
       "url": "sitemap-blog-blazor-wasm.xml"
     },
     {
@@ -465,7 +481,7 @@
       "url": "_framework\/icudt.dat.br"
     },
     {
-      "hash": "sha256-kXHSETlY18xgAzQDZgOh3\/dF5Yo13KzS\/dt9QQwVV7U=",
+      "hash": "sha256-V6ks2L1x2Mzcd1fGE3EeCCnMTdVxCWoAkaeZZvB8ly8=",
       "url": "_framework\/blazor.boot.json.br"
     },
     {
@@ -473,7 +489,7 @@
       "url": "_framework\/Blazor-Analytics.dll.br"
     },
     {
-      "hash": "sha256-4QcOPwCfJAQ6u31C3Tb6RNuSwRkK6eDroGbCCucWPDI=",
+      "hash": "sha256-Fk+dqYv2NXhiLUjndliUqLEBb1mQ9rqqtoZDbdLECXI=",
       "url": "_framework\/BlazorDemoComponents.dll.br"
     },
     {
@@ -481,7 +497,7 @@
       "url": "_framework\/Components.dll.br"
     },
     {
-      "hash": "sha256-plPjdo2JYGTa25GV9Ehi41bL4\/QaCECEY0YqaSgkVms=",
+      "hash": "sha256-t7kCX8pex3zZMdtzlDMzWPRnV0HSTr7uWHPtgNkjrTc=",
       "url": "_framework\/FluentValidation.dll.br"
     },
     {
@@ -489,7 +505,7 @@
       "url": "_framework\/Humanizer.dll.br"
     },
     {
-      "hash": "sha256-h2XcL7ZrQdAN4Ts9wO091FT02O1kkYSBd0+beyfRVS0=",
+      "hash": "sha256-SgFZMOpqTDb8QYoh8skeONNqsYA\/Y\/qzWW0laBJ3zZw=",
       "url": "_framework\/Microsoft.AspNetCore.Components.dll.br"
     },
     {
@@ -561,7 +577,7 @@
       "url": "_framework\/OOPSDemoComponents.dll.br"
     },
     {
-      "hash": "sha256-ociaBPc73YCwkUyac67kDcujRwrC\/WqKuyD13DXYN7U=",
+      "hash": "sha256-9ghSXNz1q0+9wtU1Bk+zwSKWl76H9uhfrkT0hUMSZII=",
       "url": "_framework\/SharedModels.dll.br"
     },
     {
@@ -605,7 +621,7 @@
       "url": "_framework\/System.dll.br"
     },
     {
-      "hash": "sha256-r2ckLeoOY0MJatweqwZfL1L97rAv9keN\/BEt2PLtxyM=",
+      "hash": "sha256-uTuZoKlJf6ic\/B\/IM1Hv1D7jOXV85tUTPqXByYk9zxM=",
       "url": "_framework\/System.Linq.dll.br"
     },
     {
@@ -685,7 +701,7 @@
       "url": "_framework\/Toolbelt.Blazor.HeadElement.Services.dll.br"
     },
     {
-      "hash": "sha256-Pn23U6Gm3oqrtSIFwTp3IW0kesBLFuDo3kTwLZqj55I=",
+      "hash": "sha256-eG+\/ABnielGlHthAGraaa2juU4xCAs\/vBjzf0ynSc4s=",
       "url": "_framework\/Web.dll.br"
     },
     {
@@ -741,5 +757,5 @@
       "url": "brotliloader.min.js"
     }
   ],
-  "version": "3hn4XQV4"
+  "version": "65ZgsvB+"
 };
