@@ -29,7 +29,7 @@
       "Microsoft.JSInterop.dll": "sha256-qENG\/qUVfU343Td568tMPI9gPTtpeZjGrXuxUDFSdmU=",
       "Microsoft.JSInterop.WebAssembly.dll": "sha256-s2xsgdYKLwwiBtdxUf7w3xifWex\/saizGRq96DOIMF8=",
       "netstandard.dll": "sha256-NdHxpIzC4nJiIPqS68LbgqOCpD+rHHUFgzoLpaj29Ao=",
-      "SharedModels.dll": "sha256-sqeCuKKl7brnOtq0YuoA06M4zlAvfYcK6NH2cvucVY8=",
+      "SharedModels.dll": "sha256-t25q3oiWapwgXccYBxqNMJASRpPedMu7e0Zx8jS+Q7I=",
       "System.Collections.Concurrent.dll": "sha256-Jz0aEX03dHQ3jcnIX1IqpB96tLktM3FxXJhdAppW1BM=",
       "System.Collections.dll": "sha256-zHo+Bv3ZTigYScliqY+OfpK9dr3J7yUDx8rySQ65Ztk=",
       "System.Collections.NonGeneric.dll": "sha256-2vuPXk5rb1pPxifkA+pvQnYHPn01NEpi4pWuxBNoh6Q=",
@@ -60,7 +60,7 @@
       "Toolbelt.Blazor.HeadElement.Abstractions.dll": "sha256-CGf+mNF+VXVtxxm+PFFII0eZNFTCbw5Xj8XppFAS5Ks=",
       "Toolbelt.Blazor.HeadElement.dll": "sha256-b2E8Ql1Eyb4B7DgDC11cfwc4ehKlJxvvOmdxoUyAN5c=",
       "Toolbelt.Blazor.HeadElement.Services.dll": "sha256-5PC639zBEWtJdyS6NUKa8aOf5cD5Ul1twtCfveTQgGg=",
-      "Web.dll": "sha256-wdP9SKk8klDjRiZrPrtNVstcDHHy6fQv+rItUg8d3Ss="
+      "Web.dll": "sha256-xbYgJf5d4x2tWfo67RK7M1rUf+5wkzgn\/mYNKH3aYeU="
     },
     "extensions": null,
     "lazyAssembly": {
