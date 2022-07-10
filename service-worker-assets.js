@@ -497,7 +497,7 @@
       "url": "image\/talks\/blazor-spa-from-aspnet-family.svg"
     },
     {
-      "hash": "sha256-4BsI8MRCx28LlxMg92wmxB0q2IDtZ7twtrB6JnTqiO0=",
+      "hash": "sha256-ouS6DhYclWNrUnfm3mjOVJXonlF+xSzlLwCrvzRltGA=",
       "url": "index.html"
     },
     {
@@ -577,7 +577,7 @@
       "url": "_framework\/icudt.dat.br"
     },
     {
-      "hash": "sha256-PS2nzQCwsucFhQ5aX2DhiZhHmlzZEcEbnE+61K43nYU=",
+      "hash": "sha256-JcHoiKFYimH4a0HJbjjNrdVt1JDYtC6OJJWOOG\/6538=",
       "url": "_framework\/blazor.boot.json.br"
     },
     {
@@ -797,7 +797,7 @@
       "url": "_framework\/Toolbelt.Blazor.HeadElement.Services.dll.br"
     },
     {
-      "hash": "sha256-jplnYXu6r6D\/Dxego7ktJIovZTE6qfgBe7JPNDFEUlY=",
+      "hash": "sha256-2W3hUS6\/O3DrqdMNop3ex5EgPPN\/9eR0AU0PwkOyIAs=",
       "url": "_framework\/Web.dll.br"
     },
     {
@@ -845,143 +845,143 @@
       "url": "_content\/Components\/githubgist.js"
     },
     {
-      "hash": "sha256-rWi5j3RVIoW2zJDOyt\/36TGa3ivc4UcuJT1hiFTFAyI=",
+      "hash": "sha256-4HvDE53eLkom4\/\/EQVkqxiLZN2t1OhEclDMR3+sQ+y4=",
       "url": "blogs\/blazor-wasm-publishing-to-iis\/index.html"
     },
     {
-      "hash": "sha256-2q2mxmpSeeeZICCk9iUqM\/WlqYhB0aseAcVe\/nT3EYU=",
+      "hash": "sha256-hCsXDOw9C9w6xkBN1QL8uH59NRWy85glaeOCfg99DEo=",
       "url": "channels\/blazor\/index.html"
     },
     {
-      "hash": "sha256-DilFUT\/gESWAt+PdxsJF+E6JuqmGUMGAnN8A7TSGBGs=",
+      "hash": "sha256-SIIB9B8hYQZmE\/7vVmCdtHsX0PpPgeIDJKE35w7mZxQ=",
       "url": "blogs\/blazor-wasm-dynamic-component\/index.html"
     },
     {
-      "hash": "sha256-2pC8DeKc5nHQsTijw4khZrL3EGyJXyv\/YIKOUDcLacw=",
+      "hash": "sha256-xn5HWjjepP7ITu2njTb9kuLaifRhU01sddiYHNZRMrE=",
       "url": "blogs\/types-of-middleware-in-aspnet\/index.html"
     },
     {
-      "hash": "sha256-cpHWeOpGJZ4+Z0IZHE7hG\/93D8BZHfSOIFLPFmP6h+0=",
+      "hash": "sha256-2wYSjszCuJvyk1JEr5jMAQRikhSZuyp+vl1YXGbO1Pg=",
       "url": "channels\/middleware\/index.html"
     },
     {
-      "hash": "sha256-p3WeEoYVIqtFmBsrAvk\/Y\/RnU7moXeQjPu5DJjRrjYY=",
+      "hash": "sha256-m7uv9m9kAl0i27eo4rcKRNBnOUGY+cLMX2c6ud\/OLac=",
       "url": "blogs\/introducing-middleware-in-aspnet\/index.html"
     },
     {
-      "hash": "sha256-YSEUtxIfqk1f3cCKvrW7vDBuY2PF\/FRByjJ2ckRmeQY=",
+      "hash": "sha256-KiH7ekK5kYVO3yG8WwnYvdEzJpoJepO1kMY7OUnOX+M=",
       "url": "blogs\/blazor-wasm-virtualization\/index.html"
     },
     {
-      "hash": "sha256-n+JBGUviDXcg8bNSBFjwoi+gj8hMW1qbow31rd8Yq\/E=",
+      "hash": "sha256-WXPTD0\/JKJLon3BMpAqifXpOrYjOrGPa8d\/3wOau25o=",
       "url": "blogs\/blazor-wasm-forms-validation\/index.html"
     },
     {
-      "hash": "sha256-OkYPgVKr+34cYA4m3uuPNpMTPfum22Sz06bgQ7XWjIc=",
+      "hash": "sha256-2pTd3nj3ZKxaXWO4xrNJT58ybcTM2bSj9jHrPZcHcHc=",
       "url": "blogs\/blazor-wasm-forms\/index.html"
     },
     {
-      "hash": "sha256-pupnRejpoJhwVFhskP0c+lu8l1tJ6hT7ub1cxmTqmAM=",
+      "hash": "sha256-CGhXOreeV+EplGeve7ilplI7XtMiTPzrI4hGhIVtUX0=",
       "url": "blogs\/blazor-wasm-data-binding\/index.html"
     },
     {
-      "hash": "sha256-tSL\/TcMvVG3m3wDJ+T0wBllTsJLosZt10GZsYFNfX94=",
+      "hash": "sha256-rjUn6kwxWkxEuF6MusCoLlnNd9NYm3U5JaPvbKCdGsE=",
       "url": "blogs\/blazor-wasm-introduction\/index.html"
     },
     {
-      "hash": "sha256-jIvX9HFGctWlIigd\/CJ+SVn77yiz\/yYdatKoo5xjf20=",
+      "hash": "sha256-1SVd+NxOzaTfNHaX5rcrGs3nOTGheNWcEbOjbGFkOSA=",
       "url": "blogs\/blazor-wasm-communication-between-components\/index.html"
     },
     {
-      "hash": "sha256-xAfPqGQT8c4\/2TYeGcOR2RhdUMfZrQ2A1gpzoOWznRU=",
+      "hash": "sha256-WdqXrMmLhAipXXm8Pxd\/Ptk8VfTv+77kJs92pQtLeYI=",
       "url": "blogs\/oops-abstraction\/index.html"
     },
     {
-      "hash": "sha256-YXnWnKbdatf\/7fcE1GjiQXR4mN2C+fj01Qoq5aU\/2z8=",
+      "hash": "sha256-0NSgTJ5X+tEtzedEChm3BJZn+jsuclMe6VmxaF6qh2k=",
       "url": "channels\/oops\/index.html"
     },
     {
-      "hash": "sha256-FC+E7qzmKfyl9600D0V0hfyMYGtZ6aaewA+ffGh\/C2o=",
+      "hash": "sha256-Cr22C4gwfjdZDgvU1gWmxkD6ut+adD1UlfiyGHdxlzg=",
       "url": "blogs\/oops-encapsulation\/index.html"
     },
     {
-      "hash": "sha256-ykVYQ4jXbhFrTsTl8hnZmLtM2zC5RPnBrfcLvKdSUXc=",
+      "hash": "sha256-3UU759m2NG6qkyikx6QMR3g8hNAYL2mvi1Q7wJLQV3M=",
       "url": "blogs\/blazor-wasm-controlling-head-content\/index.html"
     },
     {
-      "hash": "sha256-V3Q8R48Lkye7ntXU2BYSoB3rQ4j1ymn89WZb7Rg9tRI=",
+      "hash": "sha256-bLWs\/ZKU3rjxhlZDZcnf5qCuwqRE8xdOMT9GpEFAoUY=",
       "url": "blogs\/blazor-wasm-event-handling-and-event-arguments\/index.html"
     },
     {
-      "hash": "sha256-5Zg6wP++GcpeQeHbZ2FQtxzJi\/NSbieyVGt0kOUobQA=",
+      "hash": "sha256-mPL6xOqAWMtyx867Sxp\/osMNSwVQEimdWdSWBv2brQ0=",
       "url": "blogs\/blazor-wasm-components\/index.html"
     },
     {
-      "hash": "sha256-iI\/7U7R+Gti0i+QhhdpCSA\/ZP\/TaEgIoVoUyquNB5F8=",
+      "hash": "sha256-9yrqPt+578s0b+ZMaW9q9m\/TRU7bF1\/R62JzTniSNlE=",
       "url": "blogs\/implementing-tdd-in-csharp-dotnet\/index.html"
     },
     {
-      "hash": "sha256-YFpz9D1D6JlJgflhCbvVuyvmVJJx2LMXKXEh40I\/PnA=",
+      "hash": "sha256-CNLV4zrE1RebkuWdwfFY9OMzsT5ndGM4RprCyh+Imtc=",
       "url": "channels\/tdd\/index.html"
     },
     {
-      "hash": "sha256-YdpSwkOl1a1gmEMziajYhpSR3EAXrMmIv\/vrp2o0oPE=",
+      "hash": "sha256-skxjFy2inD0YKsNMBvRR5T8\/rtrvpqLtSTkI0t0zPlE=",
       "url": "blogs\/introducing-tdd-in-csharp-dotnet\/index.html"
     },
     {
-      "hash": "sha256-uFzbJJtol8XkGqpZLOu2\/egL\/GxbfYodTbd3CITQG6w=",
+      "hash": "sha256-0Zulq9XwJzlR2EFe8GV8vmfqe+vmmrqWGV4VipAf6OE=",
       "url": "talks\/blazor-spa-from-aspnet-family\/index.html"
     },
     {
-      "hash": "sha256-NAINLe565SUeCGAM57EFm2QUd66NytS\/nSNIshe8gLQ=",
+      "hash": "sha256-LtNtT2ylXfELvnEYWECR16sdOzRaricHEnbrR13c4lo=",
       "url": "channels\/talk\/index.html"
     },
     {
-      "hash": "sha256-uR2TLF24uf7ONGSEzU0yG5YNaKmDeyM8JOysa70bSLw=",
+      "hash": "sha256-sw+pAUmSxnV5cSln+gZuwWVT\/2yHs1qvPUtW2em8q+A=",
       "url": "learningpath\/index.html"
     },
     {
-      "hash": "sha256-07d3sV9fDO028SXuPzk+\/KuX7P4x+UUUiQjSEgOjwJs=",
+      "hash": "sha256-pealnubLy+Nw0+kzi8aZS8hGGEbtBKw0tWdzRApwM6g=",
       "url": "blogs\/blazor-wasm-styles-and-css-isolation\/index.html"
     },
     {
-      "hash": "sha256-XArz3jWN9lriSGNNB7O2IuGBs27AnPnA06BPfV7ITKw=",
+      "hash": "sha256-EhVFuJbhYgCwx\/mtdkarw7pBVBT0h36PuDz6ogYWPUM=",
       "url": "blogs\/blazor-wasm-javascript-interop-and-isolation\/index.html"
     },
     {
-      "hash": "sha256-QYZk+9sr0xcOWWYYOEy+ncX\/OLeldUQKj\/i6L8dmD\/Y=",
+      "hash": "sha256-G9fkn8W0XU4dhjFes4Rfegd4bEFqaI+\/TwwBZsSwfy8=",
       "url": "blogs\/webapi-importance-of-status-code\/index.html"
     },
     {
-      "hash": "sha256-7l2k7sU7LxtQfk69HG6jxXg9bTpo0lQh2XeyI9+0jnQ=",
+      "hash": "sha256-HkzFxYAfVaVsiBuUiCy1JBvgq8AF9YEHwQnig32dcIE=",
       "url": "channels\/webapi\/index.html"
     },
     {
-      "hash": "sha256-MsvOFhkALmupGKifnkY17pl\/ccwBx+PtM2Q3LY4b4hQ=",
+      "hash": "sha256-chRAMK4vjJUagk27wNLEC3+CjjHrM0xi8LAHgPtAdD0=",
       "url": "disclaimer\/index.html"
     },
     {
-      "hash": "sha256-K+iqvx72n08hRJl6ZulyGwmnXGch6szEK5FyzxCp3DA=",
+      "hash": "sha256-Ew+D3L+DNY+PF53qT1DdLb5ojLEGVDNy80dmlobfGCU=",
       "url": "privacy\/index.html"
     },
     {
-      "hash": "sha256-HfFABazMhYzSIoPe+A9RCNN6PkJZ7Q0KiApjeIsWj18=",
+      "hash": "sha256-zJjieiTY0dCsPwHeC8gNz0yvKIByg\/ISSjWnWz6bLVo=",
       "url": "blogs\/blazor-wasm-app-settings\/index.html"
     },
     {
-      "hash": "sha256-rf0318E\/TQRr2u77pbp+odkbuFEfZMUVYWCgsCk1irg=",
+      "hash": "sha256-ZvJg+V505ylr8U\/jsQJ5Gcpcpb1b2GK1MDDPIEZQZkQ=",
       "url": "blogs\/blazor-wasm-lazy-loading\/index.html"
     },
     {
-      "hash": "sha256-ZR9weA9fp1ytjzKBCQvFN3tNBSO1N+bsRJjTCRS2DQE=",
+      "hash": "sha256-P7eb8qxRqJ1t2My9qaafVD5oCvLrDm\/WTIY1Offm1rQ=",
       "url": "blogs\/blazor-wasm-dark-theme-and-light-theme\/index.html"
     },
     {
-      "hash": "sha256-tVnm2AdbxwdoYhtNSMC5q1FOMK+MULZK4O1LVj78X9w=",
+      "hash": "sha256-zPejxKwc0EHzgBvkD0pKp4ZeG4fHU+SIf\/P3M9g9JGM=",
       "url": "blogs\/blazor-wasm-error-logging\/index.html"
     },
     {
-      "hash": "sha256-UTDIGj\/UFqJ9TkD6iCyipetZZ9wmJnDZdJe0j1xV6es=",
+      "hash": "sha256-b7ddzzWxD0pWacUgsjtNPQefezc693kte+xss3zKNoE=",
       "url": "blogs\/blazor-wasm-exception-handling-and-error-boundary\/index.html"
     },
     {
@@ -993,5 +993,5 @@
       "url": "brotliloader.min.js"
     }
   ],
-  "version": "oi16CbOm"
+  "version": "dCnPHg\/t"
 };
