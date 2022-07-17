@@ -140,6 +140,11 @@
 			<link>https://www.ilovedotnet.org/blogs/blazor-wasm-publishing-to-github-pages</link>
 			<description>In this post I will teach how to publish your Blazor applications to GitHub Pages. All with live working demo.</description>
 		</item>
+		<item>
+			<title>Introducing Dependency Injection in .NET</title>
+			<link>https://www.ilovedotnet.org/blogs/introducing-dependency-injection-in-dotnet</link>
+			<description>In this post I will introduce you to Dependency Injection in .NET. All with live working demo.</description>
+		</item>
 	</channel>
 
 	<channel>
@@ -182,6 +187,12 @@
 		<title>I ❤️ DotNet Middleware Page</title>
 		<link>https://www.ilovedotnet.org/channels/middleware</link>
 		<description>This is a .NET Middleware knowledge sharing platform with live demos crafted by developers for developers with love.</description>
+	</channel>
+	
+	<channel>
+		<title>I ❤️ DotNet Dependency Injection Page</title>
+		<link>https://www.ilovedotnet.org/channels/dependency-injection</link>
+		<description>This is a .NET Dependency Injection knowledge sharing platform with live demos crafted by developers for developers with love.</description>
 	</channel>
 
 	<channel>
