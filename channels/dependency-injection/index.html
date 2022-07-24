@@ -1,0 +1,262 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="utf-8"/>
+    <meta name="author" content="Abdul Rahman Shabeek Mohamed"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="copyright" content="I Love DotNet"/>
+    <meta name="language" content="EN"/>
+    <meta name="robots" content="index,follow"/>
+    <meta name="owner" content="Abdul Rahman Shabeek Mohamed"/>
+    <meta http-equiv="Content-Security-Policy" content="base-uri 'self';
+               block-all-mixed-content;
+               img-src data: 'self';
+               object-src 'none';
+               script-src 'self'
+                          https://www.googletagmanager.com
+                          https://gist.github.com
+                          'unsafe-eval'
+                          'unsafe-inline'
+                          data:;
+               style-src 'self'
+                         https://github.githubassets.com
+                         'unsafe-inline';
+               upgrade-insecure-requests;"/>
+    <title>Dependency-Injection - I ❤️ DotNet</title>
+    <base href="/"/>
+    <link href="css/app.min.css" rel="stylesheet"/>
+    <link href="manifest.json" rel="manifest"/>
+    <link rel="icon" type="image/x-icon" href="favicon.ico"/>
+    <link rel="me" href="https://www.linkedin.com/in/fingers10" type="text/html"/>
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="appicons/apple-touch-icon-144x144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="appicons/apple-touch-icon-152x152.png"/>
+    <link rel="icon" type="image/png" href="appicons/favicon-196x196.png" sizes="196x196"/>
+    <link rel="icon" type="image/png" href="appicons/favicon-128.png" sizes="128x128"/>
+    <script>
+        if (localStorage.DisplayMode === 'dark' || (!('DisplayMode' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+    </script>
+
+<!-- %%-PRERENDERING-HEADOUTLET-BEGIN-%% -->
+<!--Blazor:{"type":"webassembly","assembly":"Microsoft.AspNetCore.Components.Web","typeName":"Microsoft.AspNetCore.Components.Web.HeadOutlet","parameterDefinitions":"W10=","parameterValues":"W10=","prerenderId":"123a736940244a6daf5179bd60f61c40"}--><script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Dependency-Injection - I ❤️ DotNet",
+            "url": "https://www.ilovedotnet.org/channels/dependency-injection",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://www.ilovedotnet.org/favicon.ico",
+                "width": 16,
+                "height": 16
+            }
+        },
+        "url": "https://www.ilovedotnet.org/channels/dependency-injection",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://www.ilovedotnet.org/channels/dependency-injection"
+        },
+        "description": "This is a .NET Dependency-Injection knowledge sharing channel with live demos crafted by developers for developers with love."
+    }
+    </script><!--Blazor:{"prerenderId":"123a736940244a6daf5179bd60f61c40"}-->
+<!-- %%-PRERENDERING-HEADOUTLET-END-%% -->
+
+    <script type="text/default-title">I ❤️ DotNet</script>
+    <script type="text/default-meta-elements">[[,"author",,,"Abdul Rahman Shabeek Mohamed"],[,"viewport",,,"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"],[,"copyright",,,"I Love DotNet"],[,"language",,,"EN"],[,"robots",,,"index,follow"],[,"owner",,,"Abdul Rahman Shabeek Mohamed"],[,,"Content-Security-Policy",,"base-uri \u0027self\u0027;\n               block-all-mixed-content;\n               img-src data: \u0027self\u0027;\n               object-src \u0027none\u0027;\n               script-src \u0027self\u0027\n                          https://www.googletagmanager.com\n                          https://gist.github.com\n                          \u0027unsafe-eval\u0027\n                          \u0027unsafe-inline\u0027\n                          data:;\n               style-src \u0027self\u0027\n                         https://github.githubassets.com\n                         \u0027unsafe-inline\u0027;\n               upgrade-insecure-requests;"]]</script>
+    <meta property="description" content="This is a .NET Dependency-Injection knowledge sharing channel with live demos crafted by developers for developers with love."/>
+    <meta property="keywords" content=".NET, DotNet, I Love DotNet, I ❤️ DotNet, Blazor, Blazor (WebAssembly), Blazor Wasm, C#, Entity Framework, LINQ, ML.NET, Web API, TDD, OOPS, Middleware, JWT, Dependency Injection"/>
+    <meta property="url" content="https://www.ilovedotnet.org/channels/dependency-injection"/>
+    <meta property="identifier-URL" content="https://www.ilovedotnet.org/channels/dependency-injection"/>
+    <meta property="og:site_name" content="Dependency-Injection - I ❤️ DotNet"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Dependency-Injection - I ❤️ DotNet"/>
+    <meta property="og:image" content="https://www.ilovedotnet.org/image/brand/mini-logo.png"/>
+    <meta property="og:image:alt" content="DotNet bot with heart and DotNet brand"/>
+    <meta property="og:description" content="This is a .NET Dependency-Injection knowledge sharing channel with live demos crafted by developers for developers with love."/>
+    <meta property="og:url" content="https://www.ilovedotnet.org/channels/dependency-injection"/>
+    <meta property="twitter:card" content="summary"/>
+    <meta property="twitter:title" content="Dependency-Injection - I ❤️ DotNet"/>
+    <meta property="twitter:image" content="https://www.ilovedotnet.org/image/brand/mini-logo.png"/>
+    <meta property="twitter:image:alt" content="DotNet bot with heart and DotNet brand"/>
+    <meta property="twitter:description" content="This is a .NET Dependency-Injection knowledge sharing channel with live demos crafted by developers for developers with love."/>
+    <meta property="twitter:url" content="https://www.ilovedotnet.org/channels/dependency-injection"/>
+    <script type="text/default-link-elements">[["stylesheet","css/app.min.css"],["manifest","manifest.json"],["icon","favicon.ico",,"image/x-icon"],["me","https://www.linkedin.com/in/fingers10",,"text/html"],["apple-touch-icon-precomposed","appicons/apple-touch-icon-144x144.png","144x144"],["apple-touch-icon-precomposed","appicons/apple-touch-icon-152x152.png","152x152"],["icon","appicons/favicon-196x196.png","196x196","image/png"],["icon","appicons/favicon-128.png","128x128","image/png"]]</script>
+    <link rel="sitemap" href="https://www.ilovedotnet.org/sitemap.xml" type="application/xml" title="Sitemap"/>
+    <link rel="alternate" href="https://www.ilovedotnet.org/atom.xml" type="application/rss+xml"/>
+    <link rel="alternate" href="https://www.ilovedotnet.org/channels/dependency-injection" hreflang="en"/>
+    <link rel="alternate" href="https://www.ilovedotnet.org/channels/dependency-injection" hreflang="x-default"/>
+    <link rel="canonical" href="https://www.ilovedotnet.org/channels/dependency-injection"/>
+    <link rel="index" href="https://www.ilovedotnet.org/channels/dependency-injection" title="Dependency-Injection - I ❤️ DotNet"/>
+</head>
+
+<body class="[ m-0 ] [ h-full ] [ dark:bg-stone-900 ] [ bg-gray-100 ]">
+    <div id="app" class="[ dark:text-white ]">
+<!-- %%-PRERENDERING-BEGIN-%% -->
+<!--Blazor:{"type":"webassembly","assembly":"Web","typeName":"Web.App","parameterDefinitions":"W10=","parameterValues":"W10=","prerenderId":"a234d463045a4fb7b0beb12467c620b0"}--><header id="header" class="[ flex items-center justify-between ] [ bg-white ] [ px-5 ] [ dark:bg-gray-800 dark:bg-gray-800/80 ] [ h-14 ] [ sticky top-0 ] [ backdrop-blur-sm bg-white/30 ]"><button type="button" class="[ hidden md:block ] [ mr-4 ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-menu-2 ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+           <line x1="4" y1="6" x2="20" y2="6"></line>
+           <line x1="4" y1="12" x2="20" y2="12"></line>
+           <line x1="4" y1="18" x2="20" y2="18"></line></svg></button>
+    <h1 id="brand" class="[  ]"><a href="/" class="[ font-bold ] [ flex items-center justify-between space-x-1 ] active"><span class="[ dark:text-white ]">I</span>
+            <span class="animate-pulse">❤️</span>
+            <span class="[ text-indigo-600 ] [ dark:text-white ]">.NET</span></a></h1>
+    <section id="search" class="[ flex grow justify-center ]"><button type="button" aria-label="Exit Search" class="[ hidden ] [ bg-white ] [ h-10 w-10 ] [ border-2 ] [ dark:bg-gray-800 dark:border-gray-800 ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-arrow-left ] [ inline ] [ text-gray-500 ] [ stroke-1 ] [ dark:text-white ]" width="25" height="25" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <line x1="5" y1="12" x2="11" y2="18"></line>
+            <line x1="5" y1="12" x2="11" y2="6"></line></svg></button>
+    <div class="[ dropdown ] [  ] [ w-1/2 ] [ hidden ] [  ]"><div class="[ dropdown-trigger ] [ w-full ]"><input type="search" placeholder="Search" class="[ w-full h-full ] [ px-4 ] [ border-2 ] [ focus:outline-none focus:border-gray-400 ] [ dark:bg-black dark:border-gray-800 dark:focus:border-b-white dark:md:focus:border-blue-800 dark:caret-white dark:text-white ]" autocapitalize="none" autocomplete="off" autocorrect="off" aria-haspopup="true" aria-controls="dropdown-menu" value=""/></div>
+        <div class="[ dropdown-menu ] [ w-full ]" id="dropdown-menu" role="menu"><div class="[ dropdown-content ] [ dark:bg-black ]"></div></div></div>
+    <button type="button" aria-label="Search" class="[ bg-white ] [ h-10 w-10 ] [ border-2  ] [ dark:bg-gray-700 dark:border-gray-700 ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-search ] [ inline ] [ text-gray-500 ] [ stroke-1 ] [ dark:text-white ]" width="25" height="25" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <circle cx="10" cy="10" r="7"></circle>
+            <line x1="21" y1="21" x2="15" y2="15"></line></svg></button></section>
+    <section id="display-and-social" class="[  ] [ flex items-center space-x-1.5 ]"><section id="displaymode"><div class="dropdown is-right "><div class="dropdown-trigger"><button class="button [ flex items-center ]" aria-haspopup="true" aria-controls="displaymode-menu"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-brightness-up ] [ dark:text-white ]" width="25" height="25" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                        <line x1="12" y1="5" x2="12" y2="3"></line>
+                        <line x1="17" y1="7" x2="18.4" y2="5.6"></line>
+                        <line x1="19" y1="12" x2="21" y2="12"></line>
+                        <line x1="17" y1="17" x2="18.4" y2="18.4"></line>
+                        <line x1="12" y1="19" x2="12" y2="21"></line>
+                        <line x1="7" y1="17" x2="5.6" y2="18.4"></line>
+                        <line x1="6" y1="12" x2="4" y2="12"></line>
+                        <line x1="7" y1="7" x2="5.6" y2="5.6"></line></svg></button></div>
+        <div class="dropdown-menu" id="displaymode-menu" role="menu"><div class="dropdown-content [ dark:bg-black ]"><button type="button" class="dropdown-item [ flex items-center space-x-1 ] [ dark:hover:bg-gray-700 ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-brightness-up ] [ dark:text-white ]" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                        <line x1="12" y1="5" x2="12" y2="3"></line>
+                        <line x1="17" y1="7" x2="18.4" y2="5.6"></line>
+                        <line x1="19" y1="12" x2="21" y2="12"></line>
+                        <line x1="17" y1="17" x2="18.4" y2="18.4"></line>
+                        <line x1="12" y1="19" x2="12" y2="21"></line>
+                        <line x1="7" y1="17" x2="5.6" y2="18.4"></line>
+                        <line x1="6" y1="12" x2="4" y2="12"></line>
+                        <line x1="7" y1="7" x2="5.6" y2="5.6"></line></svg>
+                    <p class="[ dark:text-white ]">Light</p></button>
+                <button type="button" class="dropdown-item [ flex items-center space-x-1 ] [ dark:hover:bg-gray-700 ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-moon ] [ dark:text-white ]" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"></path></svg>
+                    <p class="[ dark:text-white ]">Dark</p></button>
+                <button type="button" class="dropdown-item [ flex items-center space-x-1 ] [ dark:hover:bg-gray-700 ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-device-desktop ] [ dark:text-white ]" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <rect x="3" y="4" width="18" height="12" rx="1"></rect>
+                        <line x1="7" y1="20" x2="17" y2="20"></line>
+                        <line x1="9" y1="16" x2="9" y2="20"></line>
+                        <line x1="15" y1="16" x2="15" y2="20"></line></svg>
+                    <p class="[ dark:text-white ]">System</p></button></div></div></div></section>
+        <section id="social" class="[ flex justify-between ]"><a href="https://github.com/sponsors/fingers10" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-heart ] [ text-red-500 ] [ fill-red-500 ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+           <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"></path></svg></a>
+    <a href="https://stackoverflow.com/users/10851213/fingers10" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-brand-stackoverflow ] [ text-yellow-500 ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M4 17v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-1"></path>
+            <path d="M8 16h8"></path>
+            <path d="M8.322 12.582l7.956 .836"></path>
+            <path d="M8.787 9.168l7.826 1.664"></path>
+            <path d="M10.096 5.764l7.608 2.472"></path></svg></a>
+    <a href="https://lnkd.in/g4-f-dcN" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-brand-linkedin ] [ text-blue-500 ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <rect x="4" y="4" width="16" height="16" rx="2"></rect>
+            <line x1="8" y1="11" x2="8" y2="16"></line>
+            <line x1="8" y1="8" x2="8" y2="8.01"></line>
+            <line x1="12" y1="16" x2="12" y2="11"></line>
+            <path d="M16 16v-3a2 2 0 0 0 -4 0"></path></svg></a>
+    <a href="https://github.com/ILoveDotNet" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-brand-github ] [ text-black ] [ dark:text-white ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path></svg></a>
+    <a href="https://www.youtube.com/channel/UCOS3wCw7SVXjXXffMPqid7A" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-brand-youtube ] [ text-red-500 ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <rect x="3" y="5" width="18" height="14" rx="4"></rect>
+            <path d="M10 9l5 3l-5 3z"></path></svg></a>
+    <a href="https://www.instagram.com/ilovedotnet/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-brand-instagram ] [ text-fuchsia-500 ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <rect x="4" y="4" width="16" height="16" rx="4"></rect>
+            <circle cx="12" cy="12" r="3"></circle>
+            <line x1="16.5" y1="7.5" x2="16.5" y2="7.501"></line></svg></a></section></section></header>
+<main id="main" class="[ md:pl-16 ]">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="[ dark:bg-stone-900 ] [ flex flex-col ] [ space-y-5 ]"><div class="[ flex items-center justify-around ] [ w-full ] [ h-52 ] [ bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 ]"><h2 class="[ text-4xl md:text-9xl uppercase break-words ]">Dependency-Injection</h2></div>
+    <div class="[ mx-auto md:mx-24 ] [ flex flex-col md:flex-row items-center justify-between ] [ space-y-1 md:space-y-0 ]"><main class="[ flex ]"><aside><figure class="[ mt-2 mr-2 ]"><img src="/image/icons/dependency-injection.png" alt="dependency-injection" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></aside>
+            <article class="[ flex flex-col justify-between ] [ dark:text-white ] [ mt-2 ]"><h2 class="[ font-medium break-words ]">Dependency-Injection</h2>
+                <section class="[ flex justify-between ]"><p>1 Articles</p></section></article></main>
+        <a href="https://github.com/ILoveDotNet/ilovedotnet/blob/main/Web/Pages/Channel.razor" target="_blank" class="[ md:bg-red-700 ] [ text-red-500 md:text-white uppercase ] [ px-3 py-2 ] [ font-semibold ]">Improve</a></div>
+    <section class="[ px-5 md:px-24 ]"><ul class="[ flex justify-start ]"><li class="[ p-3 ] [ cursor-pointer ] [ uppercase ] [ border-b-2 text-white font-bold bg-slate-800 ]">Articles</li>
+            <li class="[ p-3 ] [ cursor-pointer ] [ uppercase ] [ text-zinc-400 ]">Learning Path</li></ul>
+        <div><div class="[ grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-2 pt-1 ]"><section class="[ flex flex-col justify-between ] [ transition duration-300 ] [ md:hover:scale-110 ] [ dark:bg-stone-900 ] [ bg-gray-100 ]"><header><a href="blogs/introducing-dependency-injection-in-dotnet"><figure><img src="image/blogs/dependency-injection/introducing-dependency-injection-in-dotnet.svg" class="[ w-full ]" alt="Introducing Dependency Injection in .NET" loading="lazy"/></figure></a></header>
+    <main class="[ grow flex space-x-2 ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/dependency-injection" class="active"><figure class="mt-2"><img src="image/icons/dependency-injection.png" alt="Dependency-Injection" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
+        <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/introducing-dependency-injection-in-dotnet"><h2 class="[ font-medium break-words hover:underline ]">Introducing Dependency Injection in .NET</h2></a>
+            <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
+                <time datetime="2022-07-24 22-30-00">8 hours from now</time></section></article></main></section></div></div>
+        <div class="hidden"><div class="[ grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-2 pt-1 ]"><section class="[ flex flex-col justify-between ] [ transition duration-300 ] [ md:hover:scale-110 ] [ dark:bg-stone-900 ] [ bg-gray-100 ]"><header><a href="blogs/introducing-dependency-injection-in-dotnet"><figure><img src="image/blogs/dependency-injection/introducing-dependency-injection-in-dotnet.svg" class="[ w-full ]" alt="Introducing Dependency Injection in .NET" loading="lazy"/></figure></a></header>
+    <main class="[ grow flex space-x-2 ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/dependency-injection" class="active"><figure class="mt-2"><img src="image/icons/dependency-injection.png" alt="Dependency-Injection" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
+        <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/introducing-dependency-injection-in-dotnet"><h2 class="[ font-medium break-words hover:underline ]">Introducing Dependency Injection in .NET</h2></a>
+            <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
+                <time datetime="2022-07-24 22-30-00">8 hours from now</time></section></article></main></section></div></div></section></section></main><nav class="[ sticky bottom-0 h-14 md:fixed md:top-14 md:left-0 md:h-full md:w-16 ] 
+            [ bg-white ] [ dark:bg-gray-800 dark:bg-gray-800/80 ] [ backdrop-blur-sm bg-white/30 ] [ md:pt-2 ]
+            [ flex justify-around items-center md:flex-col md:justify-start md:space-y-4 ]"><a href="/" class="[ flex flex-col items-center ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-home ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+           <polyline points="5 12 3 12 12 3 21 12 19 12"></polyline>
+           <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7"></path>
+           <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6"></path></svg>
+        <span class="[ text-xs text-center ]">Home</span></a>
+    <a href="/learningpath" class="[ flex flex-col items-center ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-compass ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+           <polyline points="8 16 10 10 16 8 14 14 8 16"></polyline>
+           <circle cx="12" cy="12" r="9"></circle>
+           <line x1="12" y1="3" x2="12" y2="5"></line>
+           <line x1="12" y1="19" x2="12" y2="21"></line>
+           <line x1="3" y1="12" x2="5" y2="12"></line>
+           <line x1="19" y1="12" x2="21" y2="12"></line></svg>
+        <span class="[ text-xs text-center ]">Learning Path</span></a>
+    <a href="/disclaimer" class="[ flex flex-col items-center ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-notes ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+           <rect x="5" y="3" width="14" height="18" rx="2"></rect>
+           <line x1="9" y1="7" x2="15" y2="7"></line>
+           <line x1="9" y1="11" x2="15" y2="11"></line>
+           <line x1="9" y1="15" x2="13" y2="15"></line></svg>
+        <span class="[ text-xs text-center ]">Disclaimer</span></a>
+    <a href="/privacy" class="[ flex flex-col items-center ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-lock ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+           <rect x="5" y="11" width="14" height="10" rx="2"></rect>
+           <circle cx="12" cy="16" r="1"></circle>
+           <path d="M8 11v-4a4 4 0 0 1 8 0v4"></path></svg>
+        <span class="[ text-xs text-center ]">Privacy</span></a></nav>
+            
+    <!--Blazor:{"prerenderId":"a234d463045a4fb7b0beb12467c620b0"}-->
+<!-- %%-PRERENDERING-END-%% -->
+<!--Blazor-Component-State:e30=--></div>
+
+    <div id="blazor-error-ui" class="[ bg-red-500 ] [ text-white ] [ fixed bottom-0 ] [ w-full ] [ p-2 ]" style="display: none;">
+        An unhandled error has occurred. Please click on
+        <a href="javascript: void(0)" class="[ inline-block ] [ underline ] [ hover\:text-white ]" onclick="location.reload()">Reload</a>
+        to proceed.
+        <button class="[ dismiss ] [ fixed right-5 bottom-2 ]">
+            <svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-x ] [ text-white ]" width="25" height="25" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+        </button>
+    </div>
+
+    <script src="_framework/blazor.webassembly.js" autostart="false"></script>
+    <script src="_content/Blazor-Analytics/blazor-analytics.js"></script>
+    <script src="_content/BlazorDemoComponents/jsinterop.js"></script>
+    <script>navigator.serviceWorker.register('service-worker.js');</script>
+
+
+
+    <script src="decode.min.js"></script>
+    <script src="brotliloader.min.js"></script>
+</body></html>
