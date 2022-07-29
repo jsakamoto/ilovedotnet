@@ -29,8 +29,8 @@
       "Microsoft.JSInterop.dll": "sha256-TW9U8o\/Pt32ik3RdyRdE5u9kUgBD9c1D\/xguCbhviEQ=",
       "Microsoft.JSInterop.WebAssembly.dll": "sha256-DI0RkZky47FtF3\/3VasOGjpMhrR+H3kb1cv\/2kzJoBQ=",
       "netstandard.dll": "sha256-EwsdTkXXh08vFaZftbs8aoplE+SfKcd6JAaYnvFh7\/g=",
-      "SharedComponents.dll": "sha256-jtWsPzumf6ChfKKzUunIpp5F5AWMEftaWp1MfCakE9U=",
-      "SharedModels.dll": "sha256-NLM5qkXDRWYGxLr5PIEVnDKDGfSlQkmuhnXokfxE8gw=",
+      "SharedComponents.dll": "sha256-UDebqG54WO4yomI2EvLIMY2AGQdcMnm5yOwt5uOJjkM=",
+      "SharedModels.dll": "sha256-ueK7y7qWN7JTbCBN4WvOkvhWF0wxNm8iy2u0yqDr6y0=",
       "System.Collections.Concurrent.dll": "sha256-Hj1\/pH2W8BihDx\/2CGVA7q0cCynHA5f4FjIQqm4qc20=",
       "System.Collections.dll": "sha256-VJC1Wz87P3qZ5cBgnxXNvVSPAzLMucQSHqg0SsZWvXs=",
       "System.Collections.NonGeneric.dll": "sha256-LCpzRcF93l6bI1HlXN4O8QTuv2A0MW5BjnyN+tF\/wzM=",
@@ -61,13 +61,13 @@
       "Toolbelt.Blazor.HeadElement.Abstractions.dll": "sha256-CGf+mNF+VXVtxxm+PFFII0eZNFTCbw5Xj8XppFAS5Ks=",
       "Toolbelt.Blazor.HeadElement.dll": "sha256-b2E8Ql1Eyb4B7DgDC11cfwc4ehKlJxvvOmdxoUyAN5c=",
       "Toolbelt.Blazor.HeadElement.Services.dll": "sha256-5PC639zBEWtJdyS6NUKa8aOf5cD5Ul1twtCfveTQgGg=",
-      "Web.dll": "sha256-bdcO\/ulmd\/RiU\/+\/6S7iu5RrWYItzqs7yP96p1XfGno="
+      "Web.dll": "sha256-Z8Fhom2YlfQE89nqDF2bEno8yqf+Ior8fMevrFoegec="
     },
     "extensions": null,
     "lazyAssembly": {
-      "BlazorDemoComponents.dll": "sha256-97SdUKdhewWews\/XVQtGMtM\/s4yXhoY5G67u2dnVfcU=",
-      "Components.dll": "sha256-jNLWr+py99dqH4+seYMKZklsmhm0pZYig9W39nEG9Vc=",
-      "DependencyInjectionDemoComponents.dll": "sha256-EwcNfDCMtEKtaUKa5uVBvfOHV6P\/\/dMyDWaVLT91cGc=",
+      "BlazorDemoComponents.dll": "sha256-q1qXNXZJsd+fc3Oy0IZtJrihV2E+ijscBEIIbmftJRc=",
+      "Components.dll": "sha256-6wVOQx6nTyMhi7PAiv8f9F93tL+XUlowItcLb65dFfs=",
+      "DependencyInjectionDemoComponents.dll": "sha256-DrsjkK53nGspKCHye6RDd5wDVRzX1Qkf9VpnPiHaiu4=",
       "OOPSDemoComponents.dll": "sha256-PmKNnnLKFW3cM3CjicXVVCatnAy4Ah+cEPKP6+VVZRc="
     },
     "libraryInitializers": null,
