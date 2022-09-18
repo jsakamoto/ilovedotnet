@@ -30,8 +30,8 @@
       "Microsoft.JSInterop.dll": "sha256-qXH8yjn0PoXX33b3bhuziU1CQ131pypC31hP5t9ozGs=",
       "Microsoft.JSInterop.WebAssembly.dll": "sha256-JnYE3PacT+0TrHdA2lIvLkQwSgtLQlRYc+tzxGVgpOM=",
       "netstandard.dll": "sha256-Ub8QtEL4auT06WZ9smmExWVFbBMK9vDt2GSaQJ3uos0=",
-      "SharedComponents.dll": "sha256-yVt+\/YT8AOosWzsFz7jWBpilicDSArPuC3QTJWs3p+U=",
-      "SharedModels.dll": "sha256-ZaOIVLJuwvtIL6md1871CCpz8Wnmza0hqBKIBctYXzQ=",
+      "SharedComponents.dll": "sha256-++H3MdZ8G47UA5dPGldlKYo7GBOvJTEVYDJqxDl\/abU=",
+      "SharedModels.dll": "sha256-9vs\/0a9vSdaAnnq8QRAJRszcPPp6tMhUfWcs0BPA\/cI=",
       "System.Collections.Concurrent.dll": "sha256-zthAoiof\/wYVWAHFSL4U7MFn2cFxAMdy5KEY1rt\/hlI=",
       "System.Collections.dll": "sha256-4gYiL20SzCkHryykkuxetHfEufaVKZL86wD6k3mWA9c=",
       "System.Collections.NonGeneric.dll": "sha256-QzhpdJwwQzh+w6G5kefIgqT3zFnaU8\/HL0j0z3wV\/+E=",
@@ -70,15 +70,15 @@
       "Toolbelt.Blazor.HeadElement.Abstractions.dll": "sha256-CGf+mNF+VXVtxxm+PFFII0eZNFTCbw5Xj8XppFAS5Ks=",
       "Toolbelt.Blazor.HeadElement.dll": "sha256-b2E8Ql1Eyb4B7DgDC11cfwc4ehKlJxvvOmdxoUyAN5c=",
       "Toolbelt.Blazor.HeadElement.Services.dll": "sha256-5PC639zBEWtJdyS6NUKa8aOf5cD5Ul1twtCfveTQgGg=",
-      "Web.dll": "sha256-I8U2+BnU2\/AyNG5IhUyIS5RUlJWaw3oykH665saujTw="
+      "Web.dll": "sha256-1p5ZDtXMP\/UsM6ai+wFTqKAhhH+bZqWhwjfZBrHyPQ4="
     },
     "extensions": null,
     "lazyAssembly": {
-      "BlazorDemoComponents.dll": "sha256-iBMQ9rCEgBsA4ZqBGvzclhMNoN5C1Z06801pa9\/db6A=",
-      "Components.dll": "sha256-FsHPW2Jkw2NafucWd39xJXdwBTspG2XVlEMbnrDDfu4=",
-      "DependencyInjectionDemoComponents.dll": "sha256-WS9NxEePNypE2k7AvPtiNPqR6ihOM73G\/IDjdd3oE0A=",
-      "LINQDemoComponents.dll": "sha256-8mStJwGtAhZ69WCXvdwA8Wk2E3b3Pop9goQC3z4xi\/w=",
-      "OOPSDemoComponents.dll": "sha256-UWMj2pvMIyivzmngouGMDSXyYzL7bXgazbzOp8vstYw="
+      "BlazorDemoComponents.dll": "sha256-AuidorL4Hgq9GI4TeRZSlE4QrQ3oKInzw4Ujb08otGw=",
+      "Components.dll": "sha256-yEgM+XgR5\/NfH8geuhKT0UKJ1v8zPJOrb4aBARxCqFY=",
+      "DependencyInjectionDemoComponents.dll": "sha256-Gdh0dUe+WGKENQ+YODUEvj5e1CFZ0GMSyI1Q7R5ryTQ=",
+      "LINQDemoComponents.dll": "sha256-Ebgfhu3tBztZMVnJTk2bifDVKfY0y5VyyDsbqxXhMlk=",
+      "OOPSDemoComponents.dll": "sha256-ZaHaqaegby2DY2ARZfhn445w8f522j2mTDIoJ0DMx88="
     },
     "libraryInitializers": null,
     "pdb": null,
