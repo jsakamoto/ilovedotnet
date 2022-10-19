@@ -6,9 +6,11 @@
     <meta name="language" content="EN"/>
     <meta name="robots" content="index,follow"/>
     <meta name="owner" content="Abdul Rahman Shabeek Mohamed"/>
-    <meta http-equiv="Content-Security-Policy" content="base-uri 'self';
+    <!--<meta http-equiv="Content-Security-Policy"
+          content="base-uri 'self';
                block-all-mixed-content;
-               img-src data: 'self';
+               img-src data: 'self'
+                       https://pagead2.googlesyndication.com;
                object-src 'none';
                script-src 'self'
                           https://pagead2.googlesyndication.com
@@ -20,7 +22,7 @@
                style-src 'self'
                          https://github.githubassets.com
                          'unsafe-inline';
-               upgrade-insecure-requests;"/>
+               upgrade-insecure-requests;">-->
     <title>Profiling Web API with Mini Profiler - I ❤️ DotNet</title>
     <base href="/"/>
     <link href="css/app.min.css" rel="stylesheet"/>
@@ -41,7 +43,7 @@
     </script>
 
 <!-- %%-PRERENDERING-HEADOUTLET-BEGIN-%% -->
-<!--Blazor:{"type":"webassembly","assembly":"Microsoft.AspNetCore.Components.Web","typeName":"Microsoft.AspNetCore.Components.Web.HeadOutlet","parameterDefinitions":"W10=","parameterValues":"W10=","prerenderId":"90629d23b66b46f0b2d9ac7a2b9b1218"}--><script type="application/ld+json">
+<!--Blazor:{"type":"webassembly","assembly":"Microsoft.AspNetCore.Components.Web","typeName":"Microsoft.AspNetCore.Components.Web.HeadOutlet","parameterDefinitions":"W10=","parameterValues":"W10=","prerenderId":"ba5f7340a6c14c91be1e76e0eea2f657"}--><script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "Article",
@@ -90,11 +92,11 @@
             "@id": "https://www.ilovedotnet.org/"
         }
     }
-    </script><!--Blazor:{"prerenderId":"90629d23b66b46f0b2d9ac7a2b9b1218"}-->
+    </script><!--Blazor:{"prerenderId":"ba5f7340a6c14c91be1e76e0eea2f657"}-->
 <!-- %%-PRERENDERING-HEADOUTLET-END-%% -->
 
     <script type="text/default-title">I ❤️ DotNet</script>
-    <script type="text/default-meta-elements">[[,"author",,,"Abdul Rahman Shabeek Mohamed"],[,"viewport",,,"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"],[,"copyright",,,"I Love DotNet"],[,"language",,,"EN"],[,"robots",,,"index,follow"],[,"owner",,,"Abdul Rahman Shabeek Mohamed"],[,,"Content-Security-Policy",,"base-uri \u0027self\u0027;\n               block-all-mixed-content;\n               img-src data: \u0027self\u0027;\n               object-src \u0027none\u0027;\n               script-src \u0027self\u0027\n                          https://pagead2.googlesyndication.com\n                          https://www.googletagmanager.com\n                          https://gist.github.com\n                          \u0027unsafe-eval\u0027\n                          \u0027unsafe-inline\u0027\n                          data:;\n               style-src \u0027self\u0027\n                         https://github.githubassets.com\n                         \u0027unsafe-inline\u0027;\n               upgrade-insecure-requests;"]]</script>
+    <script type="text/default-meta-elements">[[,"author",,,"Abdul Rahman Shabeek Mohamed"],[,"viewport",,,"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"],[,"copyright",,,"I Love DotNet"],[,"language",,,"EN"],[,"robots",,,"index,follow"],[,"owner",,,"Abdul Rahman Shabeek Mohamed"]]</script>
     <meta property="description" content="In this post I will teach you how to profile Web API with Mini Profiler. All with live working demo."/>
     <meta property="keywords" content=".NET, DotNet, I Love DotNet, I ❤️ DotNet, Blazor, Blazor (WebAssembly), Blazor Wasm, C#, Entity Framework, LINQ, ML.NET, Web API, TDD, OOPS, Middleware, JWT, Dependency Injection, Profiling, Mini Profiler"/>
     <meta property="url" content="https://www.ilovedotnet.org/blogs/profiling-webapi-with-mini-profiler/"/>
@@ -137,7 +139,7 @@
 <body class="[ m-0 ] [ h-full ] [ dark:bg-stone-900 ] [ bg-gray-100 ]">
     <div id="app" class="[ dark:text-white ]">
 <!-- %%-PRERENDERING-BEGIN-%% -->
-<!--Blazor:{"type":"webassembly","assembly":"Web","typeName":"Web.App","parameterDefinitions":"W10=","parameterValues":"W10=","prerenderId":"a3a543f70b774e4e914639ecd203845a"}--><header id="header" class="[ flex items-center justify-between ] [ bg-white ] [ px-5 ] [ dark:bg-gray-800 dark:bg-gray-800/80 ] [ h-14 ] [ sticky top-0 ] [ backdrop-blur-sm bg-white/30 ]"><button type="button" class="[ hidden md:block ] [ mr-4 ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-menu-2 ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+<!--Blazor:{"type":"webassembly","assembly":"Web","typeName":"Web.App","parameterDefinitions":"W10=","parameterValues":"W10=","prerenderId":"0a8450e7a327452cbd10994f857329f4"}--><header id="header" class="[ flex items-center justify-between ] [ bg-white ] [ px-5 ] [ dark:bg-gray-800 dark:bg-gray-800/80 ] [ h-14 ] [ sticky top-0 ] [ backdrop-blur-sm bg-white/30 ]"><button type="button" class="[ hidden md:block ] [ mr-4 ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-menu-2 ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
            <line x1="4" y1="6" x2="20" y2="6"></line>
            <line x1="4" y1="12" x2="20" y2="12"></line>
            <line x1="4" y1="18" x2="20" y2="18"></line></svg></button>
@@ -336,7 +338,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - WebAPI Mini Profiler Configuration</h4>
-    <article id="206ba63f-b297-422d-99d4-8b85d30061e8" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section></li>
+    <article id="724e1b14-d916-496e-9892-c3faac157586" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section></li>
             <li>Configure <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">app.UseMiniProfiler()</code> to the request pipeline.</li>
             <li>Your project is ready for profiling. Build the project and run it. Call your API via Swagger or any other tools.</li></ol>
 
@@ -371,7 +373,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - WebAPI Mini Profiler with Custom Step</h4>
-    <article id="c7c89c73-f4c1-4e3c-ba4e-b3080d8d15e5" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="a277d650-384d-49aa-aeec-a4f14e15cec3" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <p>
             Now if we again run the app and navigate to profiler results, we can notice the timings recorded for our custom step.
@@ -396,7 +398,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - WebAPI Mini Profiler Persisting Data Configuration</h4>
-    <article id="de7c83e4-894c-4f64-b93d-44d28bc3b09a" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section></li>
+    <article id="21295229-e63e-436b-a8c5-6cab2f78625b" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section></li>
             <li><p>
                     Note that you need to create database tables to store profiling details. This is a manual step. You can get the database scripts using the below code.
                 </p>
@@ -405,7 +407,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - WebAPI Mini Profiler Persisting Data Database Scripts</h4>
-    <article id="21e159c0-d659-4433-bdc8-879e5118755f" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="596b5c72-dc42-47ee-8ee2-4293025088c9" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
                 <figure><img src="./image/blogs/webapi/profiling-webapi-with-mini-profiler/Database Tables.png" alt="Database Tables" class="[ w-full ]"/></figure></li></ol>
 
@@ -432,7 +434,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - WebAPI Mini Profiler Authorization Configuration</h4>
-    <article id="334043e8-3403-44d4-b7cc-da031cec1623" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="c82953f3-774a-4e4b-8a0e-76f1cb9502e0" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <p>
             For simplicity, I have added code only for checking if user is authorized or not, but it can be enhanced to check if user is in certain role or not. thus restricting access to only 
@@ -470,7 +472,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - WebAPI Mini Profiler Complete Configuration</h4>
-    <article id="bb01febf-0927-4269-8435-162b935a9579" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="30e8c410-971a-44f2-ab0f-95c6abdca8da" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <h3 id="summary" class="[ font-semibold text-lg ]">Summary</h3>
 
@@ -663,7 +665,7 @@
            <path d="M8 11v-4a4 4 0 0 1 8 0v4"></path></svg>
         <span class="[ text-xs text-center ]">Privacy</span></a></nav>
             
-    <!--Blazor:{"prerenderId":"a3a543f70b774e4e914639ecd203845a"}-->
+    <!--Blazor:{"prerenderId":"0a8450e7a327452cbd10994f857329f4"}-->
 <!-- %%-PRERENDERING-END-%% -->
 <!--Blazor-Component-State:e30=--></div>
 

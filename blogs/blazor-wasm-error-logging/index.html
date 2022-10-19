@@ -6,9 +6,11 @@
     <meta name="language" content="EN"/>
     <meta name="robots" content="index,follow"/>
     <meta name="owner" content="Abdul Rahman Shabeek Mohamed"/>
-    <meta http-equiv="Content-Security-Policy" content="base-uri 'self';
+    <!--<meta http-equiv="Content-Security-Policy"
+          content="base-uri 'self';
                block-all-mixed-content;
-               img-src data: 'self';
+               img-src data: 'self'
+                       https://pagead2.googlesyndication.com;
                object-src 'none';
                script-src 'self'
                           https://pagead2.googlesyndication.com
@@ -20,7 +22,7 @@
                style-src 'self'
                          https://github.githubassets.com
                          'unsafe-inline';
-               upgrade-insecure-requests;"/>
+               upgrade-insecure-requests;">-->
     <title>Blazor WASM Error Logging - I ❤️ DotNet</title>
     <base href="/"/>
     <link href="css/app.min.css" rel="stylesheet"/>
@@ -41,7 +43,7 @@
     </script>
 
 <!-- %%-PRERENDERING-HEADOUTLET-BEGIN-%% -->
-<!--Blazor:{"type":"webassembly","assembly":"Microsoft.AspNetCore.Components.Web","typeName":"Microsoft.AspNetCore.Components.Web.HeadOutlet","parameterDefinitions":"W10=","parameterValues":"W10=","prerenderId":"35499c269f5143e5ad5fa81d43c988f7"}--><script type="application/ld+json">
+<!--Blazor:{"type":"webassembly","assembly":"Microsoft.AspNetCore.Components.Web","typeName":"Microsoft.AspNetCore.Components.Web.HeadOutlet","parameterDefinitions":"W10=","parameterValues":"W10=","prerenderId":"8439dadfb518467ba28acb2942247bb3"}--><script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "Article",
@@ -90,11 +92,11 @@
             "@id": "https://www.ilovedotnet.org/"
         }
     }
-    </script><!--Blazor:{"prerenderId":"35499c269f5143e5ad5fa81d43c988f7"}-->
+    </script><!--Blazor:{"prerenderId":"8439dadfb518467ba28acb2942247bb3"}-->
 <!-- %%-PRERENDERING-HEADOUTLET-END-%% -->
 
     <script type="text/default-title">I ❤️ DotNet</script>
-    <script type="text/default-meta-elements">[[,"author",,,"Abdul Rahman Shabeek Mohamed"],[,"viewport",,,"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"],[,"copyright",,,"I Love DotNet"],[,"language",,,"EN"],[,"robots",,,"index,follow"],[,"owner",,,"Abdul Rahman Shabeek Mohamed"],[,,"Content-Security-Policy",,"base-uri \u0027self\u0027;\n               block-all-mixed-content;\n               img-src data: \u0027self\u0027;\n               object-src \u0027none\u0027;\n               script-src \u0027self\u0027\n                          https://pagead2.googlesyndication.com\n                          https://www.googletagmanager.com\n                          https://gist.github.com\n                          \u0027unsafe-eval\u0027\n                          \u0027unsafe-inline\u0027\n                          data:;\n               style-src \u0027self\u0027\n                         https://github.githubassets.com\n                         \u0027unsafe-inline\u0027;\n               upgrade-insecure-requests;"]]</script>
+    <script type="text/default-meta-elements">[[,"author",,,"Abdul Rahman Shabeek Mohamed"],[,"viewport",,,"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"],[,"copyright",,,"I Love DotNet"],[,"language",,,"EN"],[,"robots",,,"index,follow"],[,"owner",,,"Abdul Rahman Shabeek Mohamed"]]</script>
     <meta property="description" content="In this post I will teach you how to log error in your Blazor applications. All with live working demo."/>
     <meta property="keywords" content=".NET, DotNet, I Love DotNet, I ❤️ DotNet, Blazor, Blazor (WebAssembly), Blazor Wasm, C#, Entity Framework, LINQ, ML.NET, Web API, TDD, OOPS, Middleware, JWT, Dependency Injection, Exception Logging, Error Logging"/>
     <meta property="url" content="https://www.ilovedotnet.org/blogs/blazor-wasm-error-logging/"/>
@@ -137,7 +139,7 @@
 <body class="[ m-0 ] [ h-full ] [ dark:bg-stone-900 ] [ bg-gray-100 ]">
     <div id="app" class="[ dark:text-white ]">
 <!-- %%-PRERENDERING-BEGIN-%% -->
-<!--Blazor:{"type":"webassembly","assembly":"Web","typeName":"Web.App","parameterDefinitions":"W10=","parameterValues":"W10=","prerenderId":"05f9c9c91fe547c0ae3a2e8ffd10846a"}--><header id="header" class="[ flex items-center justify-between ] [ bg-white ] [ px-5 ] [ dark:bg-gray-800 dark:bg-gray-800/80 ] [ h-14 ] [ sticky top-0 ] [ backdrop-blur-sm bg-white/30 ]"><button type="button" class="[ hidden md:block ] [ mr-4 ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-menu-2 ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+<!--Blazor:{"type":"webassembly","assembly":"Web","typeName":"Web.App","parameterDefinitions":"W10=","parameterValues":"W10=","prerenderId":"d4f5d9062fcc480889bede74b2feded5"}--><header id="header" class="[ flex items-center justify-between ] [ bg-white ] [ px-5 ] [ dark:bg-gray-800 dark:bg-gray-800/80 ] [ h-14 ] [ sticky top-0 ] [ backdrop-blur-sm bg-white/30 ]"><button type="button" class="[ hidden md:block ] [ mr-4 ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-menu-2 ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
            <line x1="4" y1="6" x2="20" y2="6"></line>
            <line x1="4" y1="12" x2="20" y2="12"></line>
            <line x1="4" y1="18" x2="20" y2="18"></line></svg></button>
@@ -296,7 +298,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - Subscribe component to simulate exception</h4>
-    <article id="c16425aa-4085-41de-bce5-536d4255b727" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="e1b7ba66-8d90-4a4c-a41e-98c1402faaa3" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <p>
             To process the error, let's create an <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">Error</code> component.
@@ -310,7 +312,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - Error component to log exception</h4>
-    <article id="f19cff4a-5909-40e6-8696-6770ed2945ed" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="4d79d1d1-5829-49b1-9960-b9a7330e595c" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <p>
             Now lets wrap our <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">Subscription</code> component with
@@ -321,7 +323,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - Blazor Error logging with Error Component</h4>
-    <article id="aa43231b-6957-46fc-94b2-24d7cd8c5507" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="71ae6247-ab29-4d88-ad6a-5d57d22ef222" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <p>
             That's it. Now if any exception occurs, <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">Sunscription</code> component
@@ -525,7 +527,7 @@
            <path d="M8 11v-4a4 4 0 0 1 8 0v4"></path></svg>
         <span class="[ text-xs text-center ]">Privacy</span></a></nav>
             
-    <!--Blazor:{"prerenderId":"05f9c9c91fe547c0ae3a2e8ffd10846a"}-->
+    <!--Blazor:{"prerenderId":"d4f5d9062fcc480889bede74b2feded5"}-->
 <!-- %%-PRERENDERING-END-%% -->
 <!--Blazor-Component-State:e30=--></div>
 

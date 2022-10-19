@@ -6,9 +6,11 @@
     <meta name="language" content="EN"/>
     <meta name="robots" content="index,follow"/>
     <meta name="owner" content="Abdul Rahman Shabeek Mohamed"/>
-    <meta http-equiv="Content-Security-Policy" content="base-uri 'self';
+    <!--<meta http-equiv="Content-Security-Policy"
+          content="base-uri 'self';
                block-all-mixed-content;
-               img-src data: 'self';
+               img-src data: 'self'
+                       https://pagead2.googlesyndication.com;
                object-src 'none';
                script-src 'self'
                           https://pagead2.googlesyndication.com
@@ -20,7 +22,7 @@
                style-src 'self'
                          https://github.githubassets.com
                          'unsafe-inline';
-               upgrade-insecure-requests;"/>
+               upgrade-insecure-requests;">-->
     <title>Python Dynamic Interop with Dotnet - I ❤️ DotNet</title>
     <base href="/"/>
     <link href="css/app.min.css" rel="stylesheet"/>
@@ -41,7 +43,7 @@
     </script>
 
 <!-- %%-PRERENDERING-HEADOUTLET-BEGIN-%% -->
-<!--Blazor:{"type":"webassembly","assembly":"Microsoft.AspNetCore.Components.Web","typeName":"Microsoft.AspNetCore.Components.Web.HeadOutlet","parameterDefinitions":"W10=","parameterValues":"W10=","prerenderId":"f38d779728a148e3b1ab32641861262d"}--><script type="application/ld+json">
+<!--Blazor:{"type":"webassembly","assembly":"Microsoft.AspNetCore.Components.Web","typeName":"Microsoft.AspNetCore.Components.Web.HeadOutlet","parameterDefinitions":"W10=","parameterValues":"W10=","prerenderId":"04004e6292934a96bf62eeed9fdd815f"}--><script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "Article",
@@ -90,11 +92,11 @@
             "@id": "https://www.ilovedotnet.org/"
         }
     }
-    </script><!--Blazor:{"prerenderId":"f38d779728a148e3b1ab32641861262d"}-->
+    </script><!--Blazor:{"prerenderId":"04004e6292934a96bf62eeed9fdd815f"}-->
 <!-- %%-PRERENDERING-HEADOUTLET-END-%% -->
 
     <script type="text/default-title">I ❤️ DotNet</script>
-    <script type="text/default-meta-elements">[[,"author",,,"Abdul Rahman Shabeek Mohamed"],[,"viewport",,,"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"],[,"copyright",,,"I Love DotNet"],[,"language",,,"EN"],[,"robots",,,"index,follow"],[,"owner",,,"Abdul Rahman Shabeek Mohamed"],[,,"Content-Security-Policy",,"base-uri \u0027self\u0027;\n               block-all-mixed-content;\n               img-src data: \u0027self\u0027;\n               object-src \u0027none\u0027;\n               script-src \u0027self\u0027\n                          https://pagead2.googlesyndication.com\n                          https://www.googletagmanager.com\n                          https://gist.github.com\n                          \u0027unsafe-eval\u0027\n                          \u0027unsafe-inline\u0027\n                          data:;\n               style-src \u0027self\u0027\n                         https://github.githubassets.com\n                         \u0027unsafe-inline\u0027;\n               upgrade-insecure-requests;"]]</script>
+    <script type="text/default-meta-elements">[[,"author",,,"Abdul Rahman Shabeek Mohamed"],[,"viewport",,,"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"],[,"copyright",,,"I Love DotNet"],[,"language",,,"EN"],[,"robots",,,"index,follow"],[,"owner",,,"Abdul Rahman Shabeek Mohamed"]]</script>
     <meta property="description" content="In this post I will teach you how to interoperate and run python in .NET. All with live working demo."/>
     <meta property="keywords" content=".NET, DotNet, I Love DotNet, I ❤️ DotNet, Blazor, Blazor (WebAssembly), Blazor Wasm, C#, Entity Framework, LINQ, ML.NET, Web API, TDD, OOPS, Middleware, JWT, Dependency Injection, Interoperating, Iron Python, Python, Dynamic Interop"/>
     <meta property="url" content="https://www.ilovedotnet.org/blogs/python-dynamic-interop-with-dotnet/"/>
@@ -137,7 +139,7 @@
 <body class="[ m-0 ] [ h-full ] [ dark:bg-stone-900 ] [ bg-gray-100 ]">
     <div id="app" class="[ dark:text-white ]">
 <!-- %%-PRERENDERING-BEGIN-%% -->
-<!--Blazor:{"type":"webassembly","assembly":"Web","typeName":"Web.App","parameterDefinitions":"W10=","parameterValues":"W10=","prerenderId":"75344b8ec51e40c8b68df82eee88cc12"}--><header id="header" class="[ flex items-center justify-between ] [ bg-white ] [ px-5 ] [ dark:bg-gray-800 dark:bg-gray-800/80 ] [ h-14 ] [ sticky top-0 ] [ backdrop-blur-sm bg-white/30 ]"><button type="button" class="[ hidden md:block ] [ mr-4 ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-menu-2 ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+<!--Blazor:{"type":"webassembly","assembly":"Web","typeName":"Web.App","parameterDefinitions":"W10=","parameterValues":"W10=","prerenderId":"dc065a7350e149b388125e7d1b7bb756"}--><header id="header" class="[ flex items-center justify-between ] [ bg-white ] [ px-5 ] [ dark:bg-gray-800 dark:bg-gray-800/80 ] [ h-14 ] [ sticky top-0 ] [ backdrop-blur-sm bg-white/30 ]"><button type="button" class="[ hidden md:block ] [ mr-4 ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-menu-2 ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
            <line x1="4" y1="6" x2="20" y2="6"></line>
            <line x1="4" y1="12" x2="20" y2="12"></line>
            <line x1="4" y1="18" x2="20" y2="18"></line></svg></button>
@@ -352,7 +354,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - Python Interoperating - Simple Expression</h4>
-    <article id="9b2a931a-2758-49b7-833c-5b193e27aaaa" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="60682458-d34f-47cb-b717-28c469208877" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <figure><img src="./image/blogs/python/interoperating/Simple Expression.png" alt="Simple Expression.png" class="[ w-full ]"/></figure>
 
@@ -368,7 +370,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - Python Interoperating - Getting Input from User</h4>
-    <article id="7315cc22-2d1f-4ebd-b4dd-925aeda0cca1" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="09c43654-1e17-4c5b-ba6e-3c583f97b919" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <h4 class="[ font-semibold text-base ]">Steps</h4>
 
@@ -403,7 +405,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - Python Interoperating - Single Statement</h4>
-    <article id="2b94c0ba-55b0-478f-9226-da8e144dda11" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="3724a7cb-854f-4184-ad8e-ae65d1afc6be" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <h4 class="[ font-semibold text-base ]">Steps</h4>
 
@@ -435,7 +437,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - Python Interoperating - Interacting with Python Objects</h4>
-    <article id="73371c4e-3315-48f3-8a73-6886da5f2bee" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="169e6201-8073-4e23-ab79-19a2eb13aaf8" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <h4 class="[ font-semibold text-base ]">Steps</h4>
 
@@ -458,7 +460,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - Python Interoperating - Interacting with External Python File</h4>
-    <article id="80527127-62be-4976-b6b0-6be717908859" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="ce0531e3-c940-4b96-8909-265a88bfd839" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <h4 class="[ font-semibold text-base ]">Steps</h4>
 
@@ -668,7 +670,7 @@
            <path d="M8 11v-4a4 4 0 0 1 8 0v4"></path></svg>
         <span class="[ text-xs text-center ]">Privacy</span></a></nav>
             
-    <!--Blazor:{"prerenderId":"75344b8ec51e40c8b68df82eee88cc12"}-->
+    <!--Blazor:{"prerenderId":"dc065a7350e149b388125e7d1b7bb756"}-->
 <!-- %%-PRERENDERING-END-%% -->
 <!--Blazor-Component-State:e30=--></div>
 

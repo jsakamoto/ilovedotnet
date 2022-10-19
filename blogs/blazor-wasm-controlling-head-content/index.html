@@ -6,9 +6,11 @@
     <meta name="language" content="EN"/>
     <meta name="robots" content="index,follow"/>
     <meta name="owner" content="Abdul Rahman Shabeek Mohamed"/>
-    <meta http-equiv="Content-Security-Policy" content="base-uri 'self';
+    <!--<meta http-equiv="Content-Security-Policy"
+          content="base-uri 'self';
                block-all-mixed-content;
-               img-src data: 'self';
+               img-src data: 'self'
+                       https://pagead2.googlesyndication.com;
                object-src 'none';
                script-src 'self'
                           https://pagead2.googlesyndication.com
@@ -20,7 +22,7 @@
                style-src 'self'
                          https://github.githubassets.com
                          'unsafe-inline';
-               upgrade-insecure-requests;"/>
+               upgrade-insecure-requests;">-->
     <title>Blazor WASM Controlling Head Content - I ❤️ DotNet</title>
     <base href="/"/>
     <link href="css/app.min.css" rel="stylesheet"/>
@@ -41,11 +43,11 @@
     </script>
 
 <!-- %%-PRERENDERING-HEADOUTLET-BEGIN-%% -->
-<!--Blazor:{"type":"webassembly","assembly":"Microsoft.AspNetCore.Components.Web","typeName":"Microsoft.AspNetCore.Components.Web.HeadOutlet","parameterDefinitions":"W10=","parameterValues":"W10=","prerenderId":"81830d0abdaf489087cc035ba8d24b01"}--><meta name="Head Content Demo" content="Head Content Demo"/><!--Blazor:{"prerenderId":"81830d0abdaf489087cc035ba8d24b01"}-->
+<!--Blazor:{"type":"webassembly","assembly":"Microsoft.AspNetCore.Components.Web","typeName":"Microsoft.AspNetCore.Components.Web.HeadOutlet","parameterDefinitions":"W10=","parameterValues":"W10=","prerenderId":"9b14501eec8e4902ac08d49844ff7d4f"}--><meta name="Head Content Demo" content="Head Content Demo"/><!--Blazor:{"prerenderId":"9b14501eec8e4902ac08d49844ff7d4f"}-->
 <!-- %%-PRERENDERING-HEADOUTLET-END-%% -->
 
     <script type="text/default-title">I ❤️ DotNet</script>
-    <script type="text/default-meta-elements">[[,"author",,,"Abdul Rahman Shabeek Mohamed"],[,"viewport",,,"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"],[,"copyright",,,"I Love DotNet"],[,"language",,,"EN"],[,"robots",,,"index,follow"],[,"owner",,,"Abdul Rahman Shabeek Mohamed"],[,,"Content-Security-Policy",,"base-uri \u0027self\u0027;\n               block-all-mixed-content;\n               img-src data: \u0027self\u0027;\n               object-src \u0027none\u0027;\n               script-src \u0027self\u0027\n                          https://pagead2.googlesyndication.com\n                          https://www.googletagmanager.com\n                          https://gist.github.com\n                          \u0027unsafe-eval\u0027\n                          \u0027unsafe-inline\u0027\n                          data:;\n               style-src \u0027self\u0027\n                         https://github.githubassets.com\n                         \u0027unsafe-inline\u0027;\n               upgrade-insecure-requests;"],[,"Head Content Demo",,,"Head Content Demo"]]</script>
+    <script type="text/default-meta-elements">[[,"author",,,"Abdul Rahman Shabeek Mohamed"],[,"viewport",,,"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"],[,"copyright",,,"I Love DotNet"],[,"language",,,"EN"],[,"robots",,,"index,follow"],[,"owner",,,"Abdul Rahman Shabeek Mohamed"],[,"Head Content Demo",,,"Head Content Demo"]]</script>
     <meta property="description" content="In this post I will teach how to control head content in your Blazor applications. All with live working demo."/>
     <meta property="keywords" content=".NET, DotNet, I Love DotNet, I ❤️ DotNet, Blazor, Blazor (WebAssembly), Blazor Wasm, C#, Entity Framework, LINQ, ML.NET, Web API, TDD, OOPS, Middleware, JWT, Dependency Injection, Head Outlet, Page Title, Head Content"/>
     <meta property="url" content="https://www.ilovedotnet.org/blogs/blazor-wasm-controlling-head-content/"/>
@@ -88,7 +90,7 @@
 <body class="[ m-0 ] [ h-full ] [ dark:bg-stone-900 ] [ bg-gray-100 ]">
     <div id="app" class="[ dark:text-white ]">
 <!-- %%-PRERENDERING-BEGIN-%% -->
-<!--Blazor:{"type":"webassembly","assembly":"Web","typeName":"Web.App","parameterDefinitions":"W10=","parameterValues":"W10=","prerenderId":"b64f3f4792e9424d98dba8302de6fd2d"}--><header id="header" class="[ flex items-center justify-between ] [ bg-white ] [ px-5 ] [ dark:bg-gray-800 dark:bg-gray-800/80 ] [ h-14 ] [ sticky top-0 ] [ backdrop-blur-sm bg-white/30 ]"><button type="button" class="[ hidden md:block ] [ mr-4 ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-menu-2 ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+<!--Blazor:{"type":"webassembly","assembly":"Web","typeName":"Web.App","parameterDefinitions":"W10=","parameterValues":"W10=","prerenderId":"60fb7333db1646f5abeb1e7124109de9"}--><header id="header" class="[ flex items-center justify-between ] [ bg-white ] [ px-5 ] [ dark:bg-gray-800 dark:bg-gray-800/80 ] [ h-14 ] [ sticky top-0 ] [ backdrop-blur-sm bg-white/30 ]"><button type="button" class="[ hidden md:block ] [ mr-4 ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-menu-2 ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
            <line x1="4" y1="6" x2="20" y2="6"></line>
            <line x1="4" y1="12" x2="20" y2="12"></line>
            <line x1="4" y1="18" x2="20" y2="18"></line></svg></button>
@@ -300,7 +302,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - PageTitle</h4>
-    <article id="d77d3336-fc67-4233-9b64-71592bcfdf7f" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="03c8b403-6a08-48e5-81ea-403ca2e47850" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <section class="[ flex flex-col ]"><h4 class="[ bg-gray-200 ] [ p-2 ] [ font-semibold ] [ text-black ] [ flex items-center ] [ dark:bg-gray-800 dark:bg-gray-800/80 dark:text-white ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-caret-right ] [ text-lime-700 ] [ fill-lime-500 ]" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
             <path d="M18 15l-6 -6l-6 6h12" transform="rotate(90 12 12)"></path></svg> Demo - PageTitle Demo</h4>
@@ -324,7 +326,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - HeadContent</h4>
-    <article id="6d765f7d-8fc5-4203-b4fe-9c1cea8b9d19" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="6e5073e2-dace-4cb6-afb9-e28f7f8e456c" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <section class="[ flex flex-col ]"><h4 class="[ bg-gray-200 ] [ p-2 ] [ font-semibold ] [ text-black ] [ flex items-center ] [ dark:bg-gray-800 dark:bg-gray-800/80 dark:text-white ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-caret-right ] [ text-lime-700 ] [ fill-lime-500 ]" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
             <path d="M18 15l-6 -6l-6 6h12" transform="rotate(90 12 12)"></path></svg> Demo - HeadContent Demo</h4>
@@ -347,7 +349,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - Multiple PageTitle</h4>
-    <article id="ef607440-4814-4dda-9a9f-7b8b5cfa7ab5" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="982a7dfb-fb4a-4c94-9266-d4b6d589bb86" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
             <p>
                 Blazor will not create two title tags inside of the head of your document. Instead, the last PageTitle component to be rendered will be 
                 reflected as the title of your document.
@@ -358,7 +360,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - Page Title in both PageTitle and HeadContent</h4>
-    <article id="a3186a20-465e-4cb2-9c78-627b32f466f4" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="6c13bc5a-237c-46fc-95f2-a8d1c433d1e3" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
             <p>
                 Browser will use second title. But I recommend using <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">PageTitle</code> component for titles as it designed for 
                 that and it takes care of creating and updating.
@@ -369,7 +371,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - Multiple HeadContent</h4>
-    <article id="df4fb44e-ca33-4147-8063-614b54ccf1ee" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="cdcdde5d-d752-41dd-a636-5cd8dd47d21d" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
             <p>
                 Blazor will not merge instead it will replace the contents of last <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">HeadContent</code> and remaining will be lost.
             </p></details>
@@ -392,7 +394,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - Multiple HeadContent</h4>
-    <article id="dbe98394-189d-4792-85f5-ab24cb6f410f" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="d1dacd01-2313-4fa1-b645-e47e0ae7f7fe" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
         
         <h3 id="summary" class="[ font-semibold text-lg ]">Summary</h3>
 
@@ -586,7 +588,7 @@
            <path d="M8 11v-4a4 4 0 0 1 8 0v4"></path></svg>
         <span class="[ text-xs text-center ]">Privacy</span></a></nav>
             
-    <!--Blazor:{"prerenderId":"b64f3f4792e9424d98dba8302de6fd2d"}-->
+    <!--Blazor:{"prerenderId":"60fb7333db1646f5abeb1e7124109de9"}-->
 <!-- %%-PRERENDERING-END-%% -->
 <!--Blazor-Component-State:e30=--></div>
 

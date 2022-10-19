@@ -6,9 +6,11 @@
     <meta name="language" content="EN"/>
     <meta name="robots" content="index,follow"/>
     <meta name="owner" content="Abdul Rahman Shabeek Mohamed"/>
-    <meta http-equiv="Content-Security-Policy" content="base-uri 'self';
+    <!--<meta http-equiv="Content-Security-Policy"
+          content="base-uri 'self';
                block-all-mixed-content;
-               img-src data: 'self';
+               img-src data: 'self'
+                       https://pagead2.googlesyndication.com;
                object-src 'none';
                script-src 'self'
                           https://pagead2.googlesyndication.com
@@ -20,7 +22,7 @@
                style-src 'self'
                          https://github.githubassets.com
                          'unsafe-inline';
-               upgrade-insecure-requests;"/>
+               upgrade-insecure-requests;">-->
     <title>Blazor WASM Publishing to GitHub Pages - I ❤️ DotNet</title>
     <base href="/"/>
     <link href="css/app.min.css" rel="stylesheet"/>
@@ -41,7 +43,7 @@
     </script>
 
 <!-- %%-PRERENDERING-HEADOUTLET-BEGIN-%% -->
-<!--Blazor:{"type":"webassembly","assembly":"Microsoft.AspNetCore.Components.Web","typeName":"Microsoft.AspNetCore.Components.Web.HeadOutlet","parameterDefinitions":"W10=","parameterValues":"W10=","prerenderId":"2e8250394cd84dde98cc92f5100b7702"}--><script type="application/ld+json">
+<!--Blazor:{"type":"webassembly","assembly":"Microsoft.AspNetCore.Components.Web","typeName":"Microsoft.AspNetCore.Components.Web.HeadOutlet","parameterDefinitions":"W10=","parameterValues":"W10=","prerenderId":"97130e2666f94714a035283103525a52"}--><script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "Article",
@@ -90,11 +92,11 @@
             "@id": "https://www.ilovedotnet.org/"
         }
     }
-    </script><!--Blazor:{"prerenderId":"2e8250394cd84dde98cc92f5100b7702"}-->
+    </script><!--Blazor:{"prerenderId":"97130e2666f94714a035283103525a52"}-->
 <!-- %%-PRERENDERING-HEADOUTLET-END-%% -->
 
     <script type="text/default-title">I ❤️ DotNet</script>
-    <script type="text/default-meta-elements">[[,"author",,,"Abdul Rahman Shabeek Mohamed"],[,"viewport",,,"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"],[,"copyright",,,"I Love DotNet"],[,"language",,,"EN"],[,"robots",,,"index,follow"],[,"owner",,,"Abdul Rahman Shabeek Mohamed"],[,,"Content-Security-Policy",,"base-uri \u0027self\u0027;\n               block-all-mixed-content;\n               img-src data: \u0027self\u0027;\n               object-src \u0027none\u0027;\n               script-src \u0027self\u0027\n                          https://pagead2.googlesyndication.com\n                          https://www.googletagmanager.com\n                          https://gist.github.com\n                          \u0027unsafe-eval\u0027\n                          \u0027unsafe-inline\u0027\n                          data:;\n               style-src \u0027self\u0027\n                         https://github.githubassets.com\n                         \u0027unsafe-inline\u0027;\n               upgrade-insecure-requests;"]]</script>
+    <script type="text/default-meta-elements">[[,"author",,,"Abdul Rahman Shabeek Mohamed"],[,"viewport",,,"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"],[,"copyright",,,"I Love DotNet"],[,"language",,,"EN"],[,"robots",,,"index,follow"],[,"owner",,,"Abdul Rahman Shabeek Mohamed"]]</script>
     <meta property="description" content="In this post I will teach how to publish your Blazor applications to GitHub Pages. All with live working demo."/>
     <meta property="keywords" content=".NET, DotNet, I Love DotNet, I ❤️ DotNet, Blazor, Blazor (WebAssembly), Blazor Wasm, C#, Entity Framework, LINQ, ML.NET, Web API, TDD, OOPS, Middleware, JWT, Dependency Injection, Publishing, GitHub Pages, GitHub, CI/CD, Continuous Integration, Continuous Deployment"/>
     <meta property="url" content="https://www.ilovedotnet.org/blogs/blazor-wasm-publishing-to-github-pages/"/>
@@ -137,7 +139,7 @@
 <body class="[ m-0 ] [ h-full ] [ dark:bg-stone-900 ] [ bg-gray-100 ]">
     <div id="app" class="[ dark:text-white ]">
 <!-- %%-PRERENDERING-BEGIN-%% -->
-<!--Blazor:{"type":"webassembly","assembly":"Web","typeName":"Web.App","parameterDefinitions":"W10=","parameterValues":"W10=","prerenderId":"371dbc7957284d15b41d342b4f087c7c"}--><header id="header" class="[ flex items-center justify-between ] [ bg-white ] [ px-5 ] [ dark:bg-gray-800 dark:bg-gray-800/80 ] [ h-14 ] [ sticky top-0 ] [ backdrop-blur-sm bg-white/30 ]"><button type="button" class="[ hidden md:block ] [ mr-4 ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-menu-2 ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+<!--Blazor:{"type":"webassembly","assembly":"Web","typeName":"Web.App","parameterDefinitions":"W10=","parameterValues":"W10=","prerenderId":"4ade4fd7378e42b5894cec9e8874f8f2"}--><header id="header" class="[ flex items-center justify-between ] [ bg-white ] [ px-5 ] [ dark:bg-gray-800 dark:bg-gray-800/80 ] [ h-14 ] [ sticky top-0 ] [ backdrop-blur-sm bg-white/30 ]"><button type="button" class="[ hidden md:block ] [ mr-4 ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-menu-2 ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
            <line x1="4" y1="6" x2="20" y2="6"></line>
            <line x1="4" y1="12" x2="20" y2="12"></line>
            <line x1="4" y1="18" x2="20" y2="18"></line></svg></button>
@@ -311,7 +313,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - Create Local Repository</h4>
-    <article id="25da03f7-b8af-4830-8d72-ee9731e9c703" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section></li></ol>
+    <article id="c46d3cd8-4a0a-4a30-b1bb-32d68d9a2715" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section></li></ol>
 
         <h4 class="[ font-semibold text-base ]">Push Blazor Project to GitHub</h4>
 
@@ -325,7 +327,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - Push to GitHub Repository</h4>
-    <article id="f54acacd-7d8f-4646-ad0c-5b5b3fa20f98" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="d8c09086-4419-4de6-bcf2-2dfe3cd935d4" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <h4 class="[ font-semibold text-base ]">Create a GitHub Actions Workflow</h4>
 
@@ -366,7 +368,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - Give a meaning name</h4>
-    <article id="441a0068-57d6-42e8-812a-0230db696411" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="88d5426f-8b80-4e95-91ca-3bfd3626eb1b" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <p>
             Next, you need to specify what will trigger the workflow. Add the following lines:
@@ -376,7 +378,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - Setup Trigger</h4>
-    <article id="0c47f087-c9ba-44fb-b1e4-67c2d22d439a" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="a6c8b410-76fa-4690-b026-a62ea653a150" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <p>
             These lines instruct GitHub Actions to run your workflow on every <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">git push</code> and 
@@ -396,7 +398,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - Setup Job</h4>
-    <article id="8572a1b6-3d80-4718-a8da-30118e2a5ffc" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="c8f98a25-0ca2-45f7-aed4-5cd1e93ac15f" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <p>
             The first step to add will be using the <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">checkout</code> action provided by GitHub. Without passing any parameters to 
@@ -408,7 +410,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - Setup Job</h4>
-    <article id="d175f0a0-07b9-4a78-9def-040b858d5222" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="3e498e01-4d3b-4509-9b92-a5019c998bb4" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <p>
             Once this action is performed, your code will be available to work with.
@@ -424,7 +426,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - Setup .NET</h4>
-    <article id="ac81e1c6-392f-4081-a00c-69d6cdb332d6" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="710984b4-407f-481b-b192-2ab965c97861" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <p>
             By passing in the <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">dotnet-version</code> parameter, you can specify which version of the .NET SDK you want to install.
@@ -439,7 +441,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - Install WASM Tools Workload</h4>
-    <article id="b5b29060-8591-4c00-973f-386154da6ef7" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="c472765d-e14c-48fe-a4b2-96e0d0305928" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <p>
             Now that the .NET Core SDK is installed, you can run the <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">dotnet publish</code> command to build and deploy your 
@@ -451,7 +453,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - Publish Project</h4>
-    <article id="8d3e1698-9134-4c02-89ab-bed929084a18" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="f12985cc-6905-4b3c-aa92-0d41a1815b17" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <ul class="[ list-disc ] [ ml-4 ]"><li>Using the <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">-c</code> (--configuration) argument, you can tell to build the project using the Release configuration.</li>
             <li>
@@ -475,7 +477,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - Commit to GitHub Pages</h4>
-    <article id="38ecc950-7cf8-4c95-a88f-8b7c4ab4d55a" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="468b8b76-cef6-4752-bfeb-62a88a347a6b" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <ul class="[ list-disc ] [ ml-4 ]"><li>
                 The <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">${{ secrets.GITHUB_TOKEN }}</code> resolves to a <strong>token used for securely communicating with GitHub on 
@@ -536,7 +538,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - Complete GitHub Pages Workflow</h4>
-    <article id="406447ac-310e-46e2-a2a2-a51dd47d1fb8" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="78ee5861-b919-47b1-98ed-4a65b6d90baa" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <h4 class="[ font-semibold text-base ]">Configure CNAME</h4>
 
@@ -742,7 +744,7 @@
            <path d="M8 11v-4a4 4 0 0 1 8 0v4"></path></svg>
         <span class="[ text-xs text-center ]">Privacy</span></a></nav>
             
-    <!--Blazor:{"prerenderId":"371dbc7957284d15b41d342b4f087c7c"}-->
+    <!--Blazor:{"prerenderId":"4ade4fd7378e42b5894cec9e8874f8f2"}-->
 <!-- %%-PRERENDERING-END-%% -->
 <!--Blazor-Component-State:e30=--></div>
 
