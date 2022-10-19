@@ -11,6 +11,7 @@
                img-src data: 'self';
                object-src 'none';
                script-src 'self'
+                          https://pagead2.googlesyndication.com
                           https://www.googletagmanager.com
                           https://gist.github.com
                           'unsafe-eval'
@@ -30,6 +31,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="152x152" href="appicons/apple-touch-icon-152x152.png"/>
     <link rel="icon" type="image/png" href="appicons/favicon-196x196.png" sizes="196x196"/>
     <link rel="icon" type="image/png" href="appicons/favicon-128.png" sizes="128x128"/>
+    <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1536083653226834" crossorigin="anonymous"></script>
     <script>
         if (localStorage.DisplayMode === 'dark' || (!('DisplayMode' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
             document.documentElement.classList.add('dark');
@@ -39,7 +41,7 @@
     </script>
 
 <!-- %%-PRERENDERING-HEADOUTLET-BEGIN-%% -->
-<!--Blazor:{"type":"webassembly","assembly":"Microsoft.AspNetCore.Components.Web","typeName":"Microsoft.AspNetCore.Components.Web.HeadOutlet","parameterDefinitions":"W10=","parameterValues":"W10=","prerenderId":"82f00fc3c21a42a6a7596b4b4372c124"}--><script type="application/ld+json">
+<!--Blazor:{"type":"webassembly","assembly":"Microsoft.AspNetCore.Components.Web","typeName":"Microsoft.AspNetCore.Components.Web.HeadOutlet","parameterDefinitions":"W10=","parameterValues":"W10=","prerenderId":"a9b4b9169f214c24a19b343040dbcf4c"}--><script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "Article",
@@ -88,11 +90,11 @@
             "@id": "https://www.ilovedotnet.org/"
         }
     }
-    </script><!--Blazor:{"prerenderId":"82f00fc3c21a42a6a7596b4b4372c124"}-->
+    </script><!--Blazor:{"prerenderId":"a9b4b9169f214c24a19b343040dbcf4c"}-->
 <!-- %%-PRERENDERING-HEADOUTLET-END-%% -->
 
     <script type="text/default-title">I ❤️ DotNet</script>
-    <script type="text/default-meta-elements">[[,"author",,,"Abdul Rahman Shabeek Mohamed"],[,"viewport",,,"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"],[,"copyright",,,"I Love DotNet"],[,"language",,,"EN"],[,"robots",,,"index,follow"],[,"owner",,,"Abdul Rahman Shabeek Mohamed"],[,,"Content-Security-Policy",,"base-uri \u0027self\u0027;\n               block-all-mixed-content;\n               img-src data: \u0027self\u0027;\n               object-src \u0027none\u0027;\n               script-src \u0027self\u0027\n                          https://www.googletagmanager.com\n                          https://gist.github.com\n                          \u0027unsafe-eval\u0027\n                          \u0027unsafe-inline\u0027\n                          data:;\n               style-src \u0027self\u0027\n                         https://github.githubassets.com\n                         \u0027unsafe-inline\u0027;\n               upgrade-insecure-requests;"]]</script>
+    <script type="text/default-meta-elements">[[,"author",,,"Abdul Rahman Shabeek Mohamed"],[,"viewport",,,"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"],[,"copyright",,,"I Love DotNet"],[,"language",,,"EN"],[,"robots",,,"index,follow"],[,"owner",,,"Abdul Rahman Shabeek Mohamed"],[,,"Content-Security-Policy",,"base-uri \u0027self\u0027;\n               block-all-mixed-content;\n               img-src data: \u0027self\u0027;\n               object-src \u0027none\u0027;\n               script-src \u0027self\u0027\n                          https://pagead2.googlesyndication.com\n                          https://www.googletagmanager.com\n                          https://gist.github.com\n                          \u0027unsafe-eval\u0027\n                          \u0027unsafe-inline\u0027\n                          data:;\n               style-src \u0027self\u0027\n                         https://github.githubassets.com\n                         \u0027unsafe-inline\u0027;\n               upgrade-insecure-requests;"]]</script>
     <meta property="description" content="In this post I will introduce you to Dependency Injection in .NET. All with live working demo."/>
     <meta property="keywords" content=".NET, DotNet, I Love DotNet, I ❤️ DotNet, Blazor, Blazor (WebAssembly), Blazor Wasm, C#, Entity Framework, LINQ, ML.NET, Web API, TDD, OOPS, Middleware, JWT, Dependency Injection, DI, Dependency Inversion, IoC, Inversion of Control"/>
     <meta property="url" content="https://www.ilovedotnet.org/blogs/introducing-dependency-injection-in-dotnet/"/>
@@ -135,7 +137,7 @@
 <body class="[ m-0 ] [ h-full ] [ dark:bg-stone-900 ] [ bg-gray-100 ]">
     <div id="app" class="[ dark:text-white ]">
 <!-- %%-PRERENDERING-BEGIN-%% -->
-<!--Blazor:{"type":"webassembly","assembly":"Web","typeName":"Web.App","parameterDefinitions":"W10=","parameterValues":"W10=","prerenderId":"c362125bad7e45608cdaa3747bb85895"}--><header id="header" class="[ flex items-center justify-between ] [ bg-white ] [ px-5 ] [ dark:bg-gray-800 dark:bg-gray-800/80 ] [ h-14 ] [ sticky top-0 ] [ backdrop-blur-sm bg-white/30 ]"><button type="button" class="[ hidden md:block ] [ mr-4 ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-menu-2 ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+<!--Blazor:{"type":"webassembly","assembly":"Web","typeName":"Web.App","parameterDefinitions":"W10=","parameterValues":"W10=","prerenderId":"eab10ea77ecf43da8a004a65171d5365"}--><header id="header" class="[ flex items-center justify-between ] [ bg-white ] [ px-5 ] [ dark:bg-gray-800 dark:bg-gray-800/80 ] [ h-14 ] [ sticky top-0 ] [ backdrop-blur-sm bg-white/30 ]"><button type="button" class="[ hidden md:block ] [ mr-4 ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-menu-2 ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
            <line x1="4" y1="6" x2="20" y2="6"></line>
            <line x1="4" y1="12" x2="20" y2="12"></line>
            <line x1="4" y1="18" x2="20" y2="18"></line></svg></button>
@@ -313,7 +315,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - Dependency Injection Demo</h4>
-    <article id="d8b624be-5163-468d-9cc6-9ffe3c6a582c" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="37e89132-397f-4dd5-932c-63708023bbbb" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <p>
             A class can create an instance of the <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">ClassB</code> class to make use of it. In the following example, the 
@@ -324,7 +326,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - Dependency Injection Demo</h4>
-    <article id="97c5e164-1434-4449-822d-c38e795bcaa7" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="ef96b4df-54ef-482e-a3f2-8e616c479c27" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <p>
             The class creates and directly depends on the <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">ClassB</code> class. Hard-coded dependencies, such as in the previous 
@@ -350,7 +352,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - Dependency Injection Demo</h4>
-    <article id="1d30d25d-a39c-4a35-a58e-70c7c50bf3a1" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="82444c02-3cda-4b08-9073-b3de7e05cc7d" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <p>
             Here is the complete wire up in <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">Program.cs</code>.
@@ -360,7 +362,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - Before Dependency Injection</h4>
-    <article id="72155c7f-5c77-41d8-b1fa-53ee5f7781d1" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="1951f8d0-c5d2-4df5-b65f-612fdfa0bffe" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <p>
             Dependency injection addresses these problems through:
@@ -380,7 +382,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - After Dependency Injection</h4>
-    <article id="32c3e09d-3701-4d6f-8100-b886a54535c7" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="63ea3b2e-0a7d-495b-8f5c-cbb2b4913587" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <h3 id="dependency-injection-visualization" class="[ font-semibold text-lg ]">Dependency Injection visualization</h3>
 
@@ -409,7 +411,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - Registering Services</h4>
-    <article id="3248d6a7-3566-4851-bfcc-185b679dcbb1" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section></li>
+    <article id="59e59dac-6b34-4fda-81ae-0d0923bbaed7" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section></li>
             <li>Resolve services using <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">Host.Services.GetRequiredService&lt;YourService&gt;();</code></li></ol>
 
         <figure><img src="./image/blogs/dependency-injection/introduction/Working with Dependency Injection in DotNet.png" alt="Working with Dependency Injection in .NET" class="[ w-full ]"/></figure>
@@ -437,7 +439,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - Registering Types</h4>
-    <article id="bf3046d2-c5e9-49bc-ae61-b4bc00c8087a" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="70520f2f-af79-4b60-9bc9-c01d1a952a2e" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <h4 class="[ font-semibold text-base ]">Resolving Phase</h4>
 
@@ -465,7 +467,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - Resolving Types</h4>
-    <article id="90f6b6ab-d641-4e77-b145-bc245e5287c0" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="df14fafa-588a-4346-882d-d836df8b7e46" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <figure><img src="./image/blogs/dependency-injection/introduction/Phases of Dependency Injection in DotNet.png" alt="Phases of Dependency Injection in .NET" class="[ w-full ]"/></figure>
 
@@ -669,7 +671,7 @@
            <path d="M8 11v-4a4 4 0 0 1 8 0v4"></path></svg>
         <span class="[ text-xs text-center ]">Privacy</span></a></nav>
             
-    <!--Blazor:{"prerenderId":"c362125bad7e45608cdaa3747bb85895"}-->
+    <!--Blazor:{"prerenderId":"eab10ea77ecf43da8a004a65171d5365"}-->
 <!-- %%-PRERENDERING-END-%% -->
 <!--Blazor-Component-State:e30=--></div>
 

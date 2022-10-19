@@ -11,6 +11,7 @@
                img-src data: 'self';
                object-src 'none';
                script-src 'self'
+                          https://pagead2.googlesyndication.com
                           https://www.googletagmanager.com
                           https://gist.github.com
                           'unsafe-eval'
@@ -30,6 +31,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="152x152" href="appicons/apple-touch-icon-152x152.png"/>
     <link rel="icon" type="image/png" href="appicons/favicon-196x196.png" sizes="196x196"/>
     <link rel="icon" type="image/png" href="appicons/favicon-128.png" sizes="128x128"/>
+    <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1536083653226834" crossorigin="anonymous"></script>
     <script>
         if (localStorage.DisplayMode === 'dark' || (!('DisplayMode' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
             document.documentElement.classList.add('dark');
@@ -39,7 +41,7 @@
     </script>
 
 <!-- %%-PRERENDERING-HEADOUTLET-BEGIN-%% -->
-<!--Blazor:{"type":"webassembly","assembly":"Microsoft.AspNetCore.Components.Web","typeName":"Microsoft.AspNetCore.Components.Web.HeadOutlet","parameterDefinitions":"W10=","parameterValues":"W10=","prerenderId":"58d322b72e2c4227884f2a8fffe90187"}--><script type="application/ld+json">
+<!--Blazor:{"type":"webassembly","assembly":"Microsoft.AspNetCore.Components.Web","typeName":"Microsoft.AspNetCore.Components.Web.HeadOutlet","parameterDefinitions":"W10=","parameterValues":"W10=","prerenderId":"7f77751bd63541d4bbd39f21ccd7b813"}--><script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "Article",
@@ -88,11 +90,11 @@
             "@id": "https://www.ilovedotnet.org/"
         }
     }
-    </script><!--Blazor:{"prerenderId":"58d322b72e2c4227884f2a8fffe90187"}-->
+    </script><!--Blazor:{"prerenderId":"7f77751bd63541d4bbd39f21ccd7b813"}-->
 <!-- %%-PRERENDERING-HEADOUTLET-END-%% -->
 
     <script type="text/default-title">I ❤️ DotNet</script>
-    <script type="text/default-meta-elements">[[,"author",,,"Abdul Rahman Shabeek Mohamed"],[,"viewport",,,"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"],[,"copyright",,,"I Love DotNet"],[,"language",,,"EN"],[,"robots",,,"index,follow"],[,"owner",,,"Abdul Rahman Shabeek Mohamed"],[,,"Content-Security-Policy",,"base-uri \u0027self\u0027;\n               block-all-mixed-content;\n               img-src data: \u0027self\u0027;\n               object-src \u0027none\u0027;\n               script-src \u0027self\u0027\n                          https://www.googletagmanager.com\n                          https://gist.github.com\n                          \u0027unsafe-eval\u0027\n                          \u0027unsafe-inline\u0027\n                          data:;\n               style-src \u0027self\u0027\n                         https://github.githubassets.com\n                         \u0027unsafe-inline\u0027;\n               upgrade-insecure-requests;"]]</script>
+    <script type="text/default-meta-elements">[[,"author",,,"Abdul Rahman Shabeek Mohamed"],[,"viewport",,,"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"],[,"copyright",,,"I Love DotNet"],[,"language",,,"EN"],[,"robots",,,"index,follow"],[,"owner",,,"Abdul Rahman Shabeek Mohamed"],[,,"Content-Security-Policy",,"base-uri \u0027self\u0027;\n               block-all-mixed-content;\n               img-src data: \u0027self\u0027;\n               object-src \u0027none\u0027;\n               script-src \u0027self\u0027\n                          https://pagead2.googlesyndication.com\n                          https://www.googletagmanager.com\n                          https://gist.github.com\n                          \u0027unsafe-eval\u0027\n                          \u0027unsafe-inline\u0027\n                          data:;\n               style-src \u0027self\u0027\n                         https://github.githubassets.com\n                         \u0027unsafe-inline\u0027;\n               upgrade-insecure-requests;"]]</script>
     <meta property="description" content="In this post I will teach you how to practice and implement TDD in C# .NET. All with live working demo."/>
     <meta property="keywords" content=".NET, DotNet, I Love DotNet, I ❤️ DotNet, Blazor, Blazor (WebAssembly), Blazor Wasm, C#, Entity Framework, LINQ, ML.NET, Web API, TDD, OOPS, Middleware, JWT, Dependency Injection, Test Driven Development"/>
     <meta property="url" content="https://www.ilovedotnet.org/blogs/implementing-tdd-in-csharp-dotnet/"/>
@@ -135,7 +137,7 @@
 <body class="[ m-0 ] [ h-full ] [ dark:bg-stone-900 ] [ bg-gray-100 ]">
     <div id="app" class="[ dark:text-white ]">
 <!-- %%-PRERENDERING-BEGIN-%% -->
-<!--Blazor:{"type":"webassembly","assembly":"Web","typeName":"Web.App","parameterDefinitions":"W10=","parameterValues":"W10=","prerenderId":"f2b0a2dbf5164e22b959502f640814e5"}--><header id="header" class="[ flex items-center justify-between ] [ bg-white ] [ px-5 ] [ dark:bg-gray-800 dark:bg-gray-800/80 ] [ h-14 ] [ sticky top-0 ] [ backdrop-blur-sm bg-white/30 ]"><button type="button" class="[ hidden md:block ] [ mr-4 ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-menu-2 ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+<!--Blazor:{"type":"webassembly","assembly":"Web","typeName":"Web.App","parameterDefinitions":"W10=","parameterValues":"W10=","prerenderId":"89e497aa3db0496aa76b2b8655208fb1"}--><header id="header" class="[ flex items-center justify-between ] [ bg-white ] [ px-5 ] [ dark:bg-gray-800 dark:bg-gray-800/80 ] [ h-14 ] [ sticky top-0 ] [ backdrop-blur-sm bg-white/30 ]"><button type="button" class="[ hidden md:block ] [ mr-4 ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-menu-2 ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
            <line x1="4" y1="6" x2="20" y2="6"></line>
            <line x1="4" y1="12" x2="20" y2="12"></line>
            <line x1="4" y1="18" x2="20" y2="18"></line></svg></button>
@@ -334,7 +336,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - TDD Red Phase - First Requirement - New Unit Test</h4>
-    <article id="c160b851-76bc-4d2b-94a3-0591404ff733" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="9f9ed01d-07a3-4294-abb1-b2a0d728a859" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
         
         <p>
             Create a TicketBookingRequest with FirstName, LastName and Email properties and set the values and again press Ctrl + . 
@@ -345,7 +347,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - TDD Red Phase - First Requirement - Creating Request Class</h4>
-    <article id="7f5606b4-f023-4a59-abd5-69ae18a08ad3" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="2b4ecf17-2ccf-414e-961a-edd02ec1a97a" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <p>
             Add the following line TicketBookingResponse response = processor.Book(request); and press Ctrl + . to generate the Book 
@@ -368,7 +370,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - TDD Red Phase - First Requirement - Creating Response Class</h4>
-    <article id="903917a0-f159-485d-b0f0-786605ac1377" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="ca02f6b0-df29-4fc0-94f7-39693dd53dbc" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
         
         <p>
             We are all set with AAA (Arrange, Act, and Assert) of unit tests.
@@ -378,7 +380,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - TDD Red Phase - First Requriement - Arrange Assert Act</h4>
-    <article id="4dd5a871-4adc-484a-be44-90c7dec37fde" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="116b16ce-20d1-43be-a088-cb4d0ec26cae" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <p>
             Press Ctrl + E, T to open Test Explorer. You can now see the test is listed in the test explorer. Now Click on the Run 
@@ -405,7 +407,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - TDD Green Phase - First Requirement - Adding Minimal Requried Code</h4>
-    <article id="0a9d409d-7d4a-42ba-b00f-7b3ade47d2a8" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="ffd5b7c1-ddf2-4157-a682-14e8dba0cd9a" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <p>
             That’s it. Now again run the test. The test passes and turns green.
@@ -455,7 +457,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - TDD Red Phase - First Requirement - Another Unit Test</h4>
-    <article id="23cb7423-8eb6-48fb-9734-d541ec8177e0" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="9987017a-889d-403e-8d15-4bc15d242dca" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <p>
             Now if you run the above from test explorer, the test will fail with NullReferenceException instead of ArgumentNullException, as shown below:
@@ -471,7 +473,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - TDD Green Phase - First Requriement - Minimal Required Code to Make Test Pass</h4>
-    <article id="e0692045-b9c2-4778-97fb-6dde760f9324" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="444d08bd-a2d6-4528-b953-b2153df045e4" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <p>
             Now run the test again and the test will pass.
@@ -493,7 +495,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - TDD Refactor Phase - First Requriement - Refactoring Tests</h4>
-    <article id="cdae3fde-63a9-454b-b86e-31bdb60798e2" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="03df8fb6-b154-4654-aa84-166eb1c8cd43" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <h3 class="[ font-semibold text-lg ]">Understand the second Requirement</h3>
 
@@ -545,7 +547,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - TDD Red Phase - Second Requirement - New Failing Test</h4>
-    <article id="bf1f9852-ec92-41ad-bb21-51bac11dd70a" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="6824f86f-b1b2-487e-893a-6e91506fd08a" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <p>
             Now to save to database, we need ITicketBookingRepository and that needs to be injected to TicketBookingRequestProcessor.
@@ -559,7 +561,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - TDD Red Phase - Second Requirement - New Failing Test Compilation Fix</h4>
-    <article id="6c6c57cc-7d1f-4410-bbd3-13c1287c5453" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="e844537d-03ef-4ecf-9615-9122df7b0b82" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <p>
             Now we need a mock object for ITicketBookingRepository. We can use the mock library to fake the repository.
@@ -579,7 +581,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - TDD Red Phase - Second Requirement - New Failing Test Mocking Dependencies</h4>
-    <article id="25be98aa-775b-4cac-a843-abb4e2372b41" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="a7060940-020d-49ed-b9c4-a2cea6bf3aa3" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <p>
             Now we need to write a setup in mock repository to make a callback when Save is called in that repository. And we need to assert that 
@@ -590,7 +592,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - TDD Red Phase - Second Requirement - New Failing Test Asserting</h4>
-    <article id="eff8598f-144e-405d-8053-6903fe251298" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="c2fd6804-06c7-42d3-a147-3084be65701b" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <p>Now we are done with test setup. Run the test and the test should fail.</p>
 
@@ -607,7 +609,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - TDD Green Phase - Second Requirement - Minimal Requried Code</h4>
-    <article id="17a64a74-b22f-4584-9398-aefb7c6454f1" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="27f8e62c-b3e3-4839-bbf8-63513c295790" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <p>Now if you run the test, the test will pass.</p>
 
@@ -635,7 +637,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - TDD Complete Code</h4>
-    <article id="fbd7ac20-54f5-4912-9f70-64d452fa6072" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="7b738848-da0f-4f9a-a5d2-5675b287924c" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <p>Now run all the tests. All the tests should pass.</p>
 
@@ -834,7 +836,7 @@
            <path d="M8 11v-4a4 4 0 0 1 8 0v4"></path></svg>
         <span class="[ text-xs text-center ]">Privacy</span></a></nav>
             
-    <!--Blazor:{"prerenderId":"f2b0a2dbf5164e22b959502f640814e5"}-->
+    <!--Blazor:{"prerenderId":"89e497aa3db0496aa76b2b8655208fb1"}-->
 <!-- %%-PRERENDERING-END-%% -->
 <!--Blazor-Component-State:e30=--></div>
 

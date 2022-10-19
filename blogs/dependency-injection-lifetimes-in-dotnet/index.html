@@ -11,6 +11,7 @@
                img-src data: 'self';
                object-src 'none';
                script-src 'self'
+                          https://pagead2.googlesyndication.com
                           https://www.googletagmanager.com
                           https://gist.github.com
                           'unsafe-eval'
@@ -30,6 +31,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="152x152" href="appicons/apple-touch-icon-152x152.png"/>
     <link rel="icon" type="image/png" href="appicons/favicon-196x196.png" sizes="196x196"/>
     <link rel="icon" type="image/png" href="appicons/favicon-128.png" sizes="128x128"/>
+    <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1536083653226834" crossorigin="anonymous"></script>
     <script>
         if (localStorage.DisplayMode === 'dark' || (!('DisplayMode' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
             document.documentElement.classList.add('dark');
@@ -39,7 +41,7 @@
     </script>
 
 <!-- %%-PRERENDERING-HEADOUTLET-BEGIN-%% -->
-<!--Blazor:{"type":"webassembly","assembly":"Microsoft.AspNetCore.Components.Web","typeName":"Microsoft.AspNetCore.Components.Web.HeadOutlet","parameterDefinitions":"W10=","parameterValues":"W10=","prerenderId":"fe197cf04b7249e18e93910d0e8938b5"}--><script type="application/ld+json">
+<!--Blazor:{"type":"webassembly","assembly":"Microsoft.AspNetCore.Components.Web","typeName":"Microsoft.AspNetCore.Components.Web.HeadOutlet","parameterDefinitions":"W10=","parameterValues":"W10=","prerenderId":"440baffa0e2f41a09e7d883f37ec4d60"}--><script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "Article",
@@ -88,11 +90,11 @@
             "@id": "https://www.ilovedotnet.org/"
         }
     }
-    </script><!--Blazor:{"prerenderId":"fe197cf04b7249e18e93910d0e8938b5"}-->
+    </script><!--Blazor:{"prerenderId":"440baffa0e2f41a09e7d883f37ec4d60"}-->
 <!-- %%-PRERENDERING-HEADOUTLET-END-%% -->
 
     <script type="text/default-title">I ❤️ DotNet</script>
-    <script type="text/default-meta-elements">[[,"author",,,"Abdul Rahman Shabeek Mohamed"],[,"viewport",,,"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"],[,"copyright",,,"I Love DotNet"],[,"language",,,"EN"],[,"robots",,,"index,follow"],[,"owner",,,"Abdul Rahman Shabeek Mohamed"],[,,"Content-Security-Policy",,"base-uri \u0027self\u0027;\n               block-all-mixed-content;\n               img-src data: \u0027self\u0027;\n               object-src \u0027none\u0027;\n               script-src \u0027self\u0027\n                          https://www.googletagmanager.com\n                          https://gist.github.com\n                          \u0027unsafe-eval\u0027\n                          \u0027unsafe-inline\u0027\n                          data:;\n               style-src \u0027self\u0027\n                         https://github.githubassets.com\n                         \u0027unsafe-inline\u0027;\n               upgrade-insecure-requests;"]]</script>
+    <script type="text/default-meta-elements">[[,"author",,,"Abdul Rahman Shabeek Mohamed"],[,"viewport",,,"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"],[,"copyright",,,"I Love DotNet"],[,"language",,,"EN"],[,"robots",,,"index,follow"],[,"owner",,,"Abdul Rahman Shabeek Mohamed"],[,,"Content-Security-Policy",,"base-uri \u0027self\u0027;\n               block-all-mixed-content;\n               img-src data: \u0027self\u0027;\n               object-src \u0027none\u0027;\n               script-src \u0027self\u0027\n                          https://pagead2.googlesyndication.com\n                          https://www.googletagmanager.com\n                          https://gist.github.com\n                          \u0027unsafe-eval\u0027\n                          \u0027unsafe-inline\u0027\n                          data:;\n               style-src \u0027self\u0027\n                         https://github.githubassets.com\n                         \u0027unsafe-inline\u0027;\n               upgrade-insecure-requests;"]]</script>
     <meta property="description" content="In this post I will teach you Dependency Injection Lifetimes in .NET. All with live working demo."/>
     <meta property="keywords" content=".NET, DotNet, I Love DotNet, I ❤️ DotNet, Blazor, Blazor (WebAssembly), Blazor Wasm, C#, Entity Framework, LINQ, ML.NET, Web API, TDD, OOPS, Middleware, JWT, Dependency Injection, Lifetimes, Transient, Singleton, Scoped, Dependency Captivity, Captive Dependencies"/>
     <meta property="url" content="https://www.ilovedotnet.org/blogs/dependency-injection-lifetimes-in-dotnet/"/>
@@ -135,7 +137,7 @@
 <body class="[ m-0 ] [ h-full ] [ dark:bg-stone-900 ] [ bg-gray-100 ]">
     <div id="app" class="[ dark:text-white ]">
 <!-- %%-PRERENDERING-BEGIN-%% -->
-<!--Blazor:{"type":"webassembly","assembly":"Web","typeName":"Web.App","parameterDefinitions":"W10=","parameterValues":"W10=","prerenderId":"0e2aded478684ac48351ec6ca26b5091"}--><header id="header" class="[ flex items-center justify-between ] [ bg-white ] [ px-5 ] [ dark:bg-gray-800 dark:bg-gray-800/80 ] [ h-14 ] [ sticky top-0 ] [ backdrop-blur-sm bg-white/30 ]"><button type="button" class="[ hidden md:block ] [ mr-4 ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-menu-2 ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+<!--Blazor:{"type":"webassembly","assembly":"Web","typeName":"Web.App","parameterDefinitions":"W10=","parameterValues":"W10=","prerenderId":"8af1d7ef289746f1be1cbc8596a77af3"}--><header id="header" class="[ flex items-center justify-between ] [ bg-white ] [ px-5 ] [ dark:bg-gray-800 dark:bg-gray-800/80 ] [ h-14 ] [ sticky top-0 ] [ backdrop-blur-sm bg-white/30 ]"><button type="button" class="[ hidden md:block ] [ mr-4 ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-menu-2 ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
            <line x1="4" y1="6" x2="20" y2="6"></line>
            <line x1="4" y1="12" x2="20" y2="12"></line>
            <line x1="4" y1="18" x2="20" y2="18"></line></svg></button>
@@ -324,7 +326,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - Transient Dependency</h4>
-    <article id="b9f2729d-3202-468e-9a40-a8562fef923d" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="866024b2-8d51-4a25-a562-e8b770b20518" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <section class="[ flex flex-col ]"><h4 class="[ bg-gray-200 ] [ p-2 ] [ font-semibold ] [ text-black ] [ flex items-center ] [ dark:bg-gray-800 dark:bg-gray-800/80 dark:text-white ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-caret-right ] [ text-lime-700 ] [ fill-lime-500 ]" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
             <path d="M18 15l-6 -6l-6 6h12" transform="rotate(90 12 12)"></path></svg> Demo - Transient Service Dependency</h4>
@@ -345,8 +347,8 @@
                         <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">False</code>.
                     </li></ol><p></p>
             <br/>
-            <p>Guid from Transient Service 1 : 55158ab9-6047-4442-a67b-4a1297cc2472</p>
-<p>Guid from Transient Service 2 : 1482d99f-98aa-49fa-b14d-5cc3571a1215</p>
+            <p>Guid from Transient Service 1 : 334e098c-361c-4ece-ad4d-52916f827229</p>
+<p>Guid from Transient Service 2 : 1874b768-9033-4a86-9ab8-daac0dbef14c</p>
 
 <p>Transient Dependency TransientService1 Equals TransientService2 : False</p></article></section>
 
@@ -370,7 +372,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - Scoped Dependency</h4>
-    <article id="22b89cde-df61-4c58-8b41-7bdb20d35c4c" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="35ccc769-3339-4f62-9d0e-b71e8a156b79" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <section class="[ flex flex-col ]"><h4 class="[ bg-gray-200 ] [ p-2 ] [ font-semibold ] [ text-black ] [ flex items-center ] [ dark:bg-gray-800 dark:bg-gray-800/80 dark:text-white ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-caret-right ] [ text-lime-700 ] [ fill-lime-500 ]" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
             <path d="M18 15l-6 -6l-6 6h12" transform="rotate(90 12 12)"></path></svg> Demo - Scoped Service Dependency</h4>
@@ -391,8 +393,8 @@
                         <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">True</code>.
                     </li></ol><p></p>
             <br/>
-            <p>Guid from Scoped Service 1 : 285d496d-58e6-427a-8087-5d8c2ca7bd23</p>
-<p>Guid from Scoped Service 2 : 285d496d-58e6-427a-8087-5d8c2ca7bd23</p>
+            <p>Guid from Scoped Service 1 : 16ed8eb3-d165-493e-8145-00db6a7312cc</p>
+<p>Guid from Scoped Service 2 : 16ed8eb3-d165-493e-8145-00db6a7312cc</p>
 
 <p>Scoped Dependency ScopedService1 Equals ScopedService2 : True</p></article></section>
 
@@ -426,7 +428,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - Singleton Dependency</h4>
-    <article id="1f52a98e-5445-4df0-9355-9c77d3d4c618" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="fc6eb2d0-54ca-4815-b86c-c5057a208b76" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <section class="[ flex flex-col ]"><h4 class="[ bg-gray-200 ] [ p-2 ] [ font-semibold ] [ text-black ] [ flex items-center ] [ dark:bg-gray-800 dark:bg-gray-800/80 dark:text-white ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-caret-right ] [ text-lime-700 ] [ fill-lime-500 ]" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
             <path d="M18 15l-6 -6l-6 6h12" transform="rotate(90 12 12)"></path></svg> Demo - Singleton Service Dependency</h4>
@@ -447,8 +449,8 @@
                         <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">True</code>.
                     </li></ol><p></p>
             <br/>
-            <p>Guid from Singleton Service 1 : 0d148125-b236-4c2a-ba7a-4c0672ae4756</p>
-<p>Guid from Singleton Service 2 : 0d148125-b236-4c2a-ba7a-4c0672ae4756</p>
+            <p>Guid from Singleton Service 1 : b2906f10-b4f4-436c-9398-756f1a0a98b3</p>
+<p>Guid from Singleton Service 2 : b2906f10-b4f4-436c-9398-756f1a0a98b3</p>
 
 <p>Singleton Dependency SingletonService1 Equals SingletonService2 : True</p></article></section>
 
@@ -520,7 +522,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - Dependency Injection Scope Validation</h4>
-    <article id="fa8885be-e0dc-426a-b1d8-6f41bd30095a" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="109553ac-6f30-45c0-a451-538ae99629cb" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
         
         <h3 id="summary" class="[ font-semibold text-lg ]">Summary</h3>
 
@@ -713,7 +715,7 @@
            <path d="M8 11v-4a4 4 0 0 1 8 0v4"></path></svg>
         <span class="[ text-xs text-center ]">Privacy</span></a></nav>
             
-    <!--Blazor:{"prerenderId":"0e2aded478684ac48351ec6ca26b5091"}-->
+    <!--Blazor:{"prerenderId":"8af1d7ef289746f1be1cbc8596a77af3"}-->
 <!-- %%-PRERENDERING-END-%% -->
 <!--Blazor-Component-State:e30=--></div>
 
