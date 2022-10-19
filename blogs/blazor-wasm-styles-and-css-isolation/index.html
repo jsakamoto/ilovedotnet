@@ -39,7 +39,7 @@
     </script>
 
 <!-- %%-PRERENDERING-HEADOUTLET-BEGIN-%% -->
-<!--Blazor:{"type":"webassembly","assembly":"Microsoft.AspNetCore.Components.Web","typeName":"Microsoft.AspNetCore.Components.Web.HeadOutlet","parameterDefinitions":"W10=","parameterValues":"W10=","prerenderId":"fda73a3bd2294b57ba6026d113c12e39"}--><script type="application/ld+json">
+<!--Blazor:{"type":"webassembly","assembly":"Microsoft.AspNetCore.Components.Web","typeName":"Microsoft.AspNetCore.Components.Web.HeadOutlet","parameterDefinitions":"W10=","parameterValues":"W10=","prerenderId":"c4166d7432a84ffcbc3d195b0cc9b464"}--><script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "Article",
@@ -74,7 +74,7 @@
         "headline": "Blazor WASM Styles and CSS Isolation",
         "url": "https://www.ilovedotnet.org/blogs/blazor-wasm-styles-and-css-isolation/",
         "datePublished": "2022-02-13T22:30:00.000Z",
-        "dateModified": "2022-02-20T22:30:00.000Z",
+        "dateModified": "2022-10-19T22:30:00.000Z",
         "image": {
             "@type": "ImageObject",
             "url": "https://www.ilovedotnet.org/image/blogs/blazor/wasm/blazor-wasm-styles-and-css-isolation.png",
@@ -88,13 +88,13 @@
             "@id": "https://www.ilovedotnet.org/"
         }
     }
-    </script><!--Blazor:{"prerenderId":"fda73a3bd2294b57ba6026d113c12e39"}-->
+    </script><!--Blazor:{"prerenderId":"c4166d7432a84ffcbc3d195b0cc9b464"}-->
 <!-- %%-PRERENDERING-HEADOUTLET-END-%% -->
 
     <script type="text/default-title">I ❤️ DotNet</script>
     <script type="text/default-meta-elements">[[,"author",,,"Abdul Rahman Shabeek Mohamed"],[,"viewport",,,"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"],[,"copyright",,,"I Love DotNet"],[,"language",,,"EN"],[,"robots",,,"index,follow"],[,"owner",,,"Abdul Rahman Shabeek Mohamed"],[,,"Content-Security-Policy",,"base-uri \u0027self\u0027;\n               block-all-mixed-content;\n               img-src data: \u0027self\u0027;\n               object-src \u0027none\u0027;\n               script-src \u0027self\u0027\n                          https://www.googletagmanager.com\n                          https://gist.github.com\n                          \u0027unsafe-eval\u0027\n                          \u0027unsafe-inline\u0027\n                          data:;\n               style-src \u0027self\u0027\n                         https://github.githubassets.com\n                         \u0027unsafe-inline\u0027;\n               upgrade-insecure-requests;"]]</script>
     <meta property="description" content="In this post I will teach you what is CSS isolation and what factors to consider when styling your Blazor applications. All with live working demo."/>
-    <meta property="keywords" content=".NET, DotNet, I Love DotNet, I ❤️ DotNet, Blazor, Blazor (WebAssembly), Blazor Wasm, C#, Entity Framework, LINQ, ML.NET, Web API, TDD, OOPS, Middleware, JWT, Dependency Injection, CSS, Styles, CSS Isolation, Bootstrap, Bulma, TailwindCSS, Telerik, DevExpress, Syncfusion, Radzen, Infragistics, Grapecity, jQWidgets, Fast Blazor, Awesome Blazor"/>
+    <meta property="keywords" content=".NET, DotNet, I Love DotNet, I ❤️ DotNet, Blazor, Blazor (WebAssembly), Blazor Wasm, C#, Entity Framework, LINQ, ML.NET, Web API, TDD, OOPS, Middleware, JWT, Dependency Injection, CSS, Styles, CSS Isolation"/>
     <meta property="url" content="https://www.ilovedotnet.org/blogs/blazor-wasm-styles-and-css-isolation/"/>
     <meta property="identifier-URL" content="https://www.ilovedotnet.org/blogs/blazor-wasm-styles-and-css-isolation/"/>
     <meta property="og:site_name" content="I Love DotNet"/>
@@ -111,8 +111,8 @@
     <meta property="twitter:description" content="In this post I will teach you what is CSS isolation and what factors to consider when styling your Blazor applications. All with live working demo."/>
     <meta property="twitter:url" content="https://www.ilovedotnet.org/blogs/blazor-wasm-styles-and-css-isolation/"/>
     <meta property="article:published_time" content="2022-02-13T22:30:00.000Z"/>
-    <meta property="article:modified_time" content="2022-02-20T22:30:00.000Z"/>
-    <meta property="article:tag" content="Awesome Blazor"/>
+    <meta property="article:modified_time" content="2022-10-19T22:30:00.000Z"/>
+    <meta property="article:tag" content="CSS Isolation"/>
     <script type="text/default-link-elements">[["stylesheet","css/app.min.css"],["manifest","manifest.json"],["icon","favicon.ico",,"image/x-icon"],["me","https://www.linkedin.com/in/fingers10",,"text/html"],["apple-touch-icon-precomposed","appicons/apple-touch-icon-144x144.png","144x144"],["apple-touch-icon-precomposed","appicons/apple-touch-icon-152x152.png","152x152"],["icon","appicons/favicon-196x196.png","196x196","image/png"],["icon","appicons/favicon-128.png","128x128","image/png"]]</script>
     <link rel="sitemap" href="https://www.ilovedotnet.org/sitemap.xml" type="application/xml" title="Sitemap"/>
     <link rel="sitemap" href="https://www.ilovedotnet.org/sitemap-blog-blazor-wasm.xml" type="application/xml" title="Sitemap"/>
@@ -135,7 +135,7 @@
 <body class="[ m-0 ] [ h-full ] [ dark:bg-stone-900 ] [ bg-gray-100 ]">
     <div id="app" class="[ dark:text-white ]">
 <!-- %%-PRERENDERING-BEGIN-%% -->
-<!--Blazor:{"type":"webassembly","assembly":"Web","typeName":"Web.App","parameterDefinitions":"W10=","parameterValues":"W10=","prerenderId":"62aaf602aa79412aa89270e3d4a49dd5"}--><header id="header" class="[ flex items-center justify-between ] [ bg-white ] [ px-5 ] [ dark:bg-gray-800 dark:bg-gray-800/80 ] [ h-14 ] [ sticky top-0 ] [ backdrop-blur-sm bg-white/30 ]"><button type="button" class="[ hidden md:block ] [ mr-4 ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-menu-2 ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+<!--Blazor:{"type":"webassembly","assembly":"Web","typeName":"Web.App","parameterDefinitions":"W10=","parameterValues":"W10=","prerenderId":"97c458c167504a9d92eb383e25434b33"}--><header id="header" class="[ flex items-center justify-between ] [ bg-white ] [ px-5 ] [ dark:bg-gray-800 dark:bg-gray-800/80 ] [ h-14 ] [ sticky top-0 ] [ backdrop-blur-sm bg-white/30 ]"><button type="button" class="[ hidden md:block ] [ mr-4 ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-menu-2 ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
            <line x1="4" y1="6" x2="20" y2="6"></line>
            <line x1="4" y1="12" x2="20" y2="12"></line>
            <line x1="4" y1="18" x2="20" y2="18"></line></svg></button>
@@ -147,7 +147,7 @@
             <line x1="5" y1="12" x2="11" y2="18"></line>
             <line x1="5" y1="12" x2="11" y2="6"></line></svg></button>
     <div class="[ dropdown ] [  ] [ w-1/2 ] [ hidden ] [  ]"><div class="[ dropdown-trigger ] [ w-full ]"><input type="search" placeholder="Search" class="[ w-full h-full ] [ px-4 ] [ border-2 ] [ focus:outline-none focus:border-gray-400 ] [ dark:bg-black dark:border-gray-800 dark:focus:border-b-white dark:md:focus:border-blue-800 dark:caret-white dark:text-white ]" autocapitalize="none" autocomplete="off" autocorrect="off" aria-haspopup="true" aria-controls="dropdown-menu" value=""/></div>
-        <div class="[ dropdown-menu ] [ w-full ]" id="dropdown-menu" role="menu"><div class="[ dropdown-content ] [ dark:bg-black ]"></div></div></div>
+        <div class="[ dropdown-menu ] [ w-full ]" id="dropdown-menu" role="menu"><div class="[ dropdown-content ] [ dark:bg-black ] [ overflow-y-auto ]" style="max-height:50vh;"></div></div></div>
     <button type="button" aria-label="Search" class="[ bg-white ] [ h-10 w-10 ] [ border-2  ] [ dark:bg-gray-700 dark:border-gray-700 ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-search ] [ inline ] [ text-gray-500 ] [ stroke-1 ] [ dark:text-white ]" width="25" height="25" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
             <circle cx="10" cy="10" r="7"></circle>
             <line x1="21" y1="21" x2="15" y2="15"></line></svg></button></section>
@@ -246,7 +246,7 @@
 
 <section class="[ flex flex-col md:flex-row ] [ p-5 md:px-20 ] [ md:space-x-5 space-y-5 md:space-y-0 ]"><article class="[ md:basis-3/4 ] [ space-y-5 ]"><header class="[ space-y-2 ]"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-styles-and-css-isolation.svg" alt="Blazor WASM Styles and CSS Isolation" class="[ w-full ]" loading="lazy"/></figure><h2 class="[ dark:text-white ] [ font-semibold text-xl ]">Blazor WASM Styles and CSS Isolation</h2>
     <section class="[ flex flex-col md:flex-row justify-between ] [ space-y-1 md:space-y-0 ] [ dark:text-white ] [ font-bold ]"><div><p>Authors - <a href="https://www.linkedin.com/in/fingers10" class="[ underline ]" target="_blank">Abdul Rahman (Content Writer)</a>, <a href="https://www.linkedin.com/in/regina-sharon" class="[ underline ]" target="_blank">Regina Sharon (Graphic Designer)</a></p>
-            <time datetime="2022-02-20 22:30:00">Last updated 8 months ago</time></div>
+            <time datetime="2022-10-19 22:30:00">Last updated 4 hours from now</time></div>
         <div><section class="[ flex justify-between md:justify-start ]"><a href="https://github.com/sponsors/fingers10" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-heart ] [ text-red-500 ] [ fill-red-500 ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
            <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"></path></svg></a>
     <a href="https://api.whatsapp.com/send?text=Blazor WASM Styles and CSS Isolation%20https%3a%2f%2fwww.ilovedotnet.org%2fblogs%2fblazor-wasm-styles-and-css-isolation%2f" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-brand-whatsapp ] [ text-emerald-500 dark:text-emerald-300 ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -271,8 +271,7 @@
             In our previous article <a href="blogs/blazor-wasm-javascript-interop-and-isolation" class="[ underline ]">Blazor WASM Javascript Interop and Isolation</a>,
             we learn't how to use Javascript in blazor wasm and also understood that we should try to keep the Javascript usage to very minimal level.
             This needs to be considered when choosing styling libraries. In this article let's learn about few factors to be considered when
-            <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">styling</code> blazor apps and also learn about what is
-            <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">CSS Isolation</code>.
+            <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">styling</code> blazor apps and also learn about what is <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">CSS Isolation</code>.
         </p>
 
         <ol class="[ list-decimal ] [ ml-4 ]"><li><a href="blogs/blazor-wasm-styles-and-css-isolation#css-frameworks" class="[ underline ]">
@@ -284,7 +283,7 @@
 
         <h3 id="css-frameworks" class="[ font-semibold text-lg ]">Factors to be considered before choosing the styling framework</h3>
 
-        <p><a class="[ underline ]" href="https://getbootstrap.com/" target="_blank"><code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">Bootstrap</code></a>
+        <p><a class="[ underline ]" href="https://getbootstrap.com/" target="_blank"><code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">Bootstrap</code></a>
             has been widely accepted by many of the developers across the globe. Even I have used bootstrap in most of my projects till now and
             also the default blazor wasm project template comes with bootstrap as the default styling toolkit. That's because of it's built in
             responsive nature. But the major drawback of using bootstrap with blazor is the Javascript dependency. Almost all bootstrap components needs
@@ -294,40 +293,40 @@
         </p>
 
         <p>
-            With the new CSS features like <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">Flexbox</code> and
-            <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">Grid</code>, I recommend to write your own CSS for your blazor apps
+            With the new CSS features like <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">Flexbox</code> and
+            <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">Grid</code>, I recommend to write your own CSS for your blazor apps
             as that will give you more control of your styles. This again depends on the team's CSS knowledge and timeline we have for the project that
-            we work on. So the alernatives I suggest would be to go for <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">Bulma</code>
-            or <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">TailwindCSS</code>.
+            we work on. So the alernatives I suggest would be to go for <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">Bulma</code>
+            or <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">TailwindCSS</code>.
         </p>
 
-        <p><a class="[ underline ]" href="https://bulma.io/" target="_blank"><code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">Bulma</code></a>
+        <p><a class="[ underline ]" href="https://bulma.io/" target="_blank"><code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">Bulma</code></a>
             is the only modern pure CSS framework which doesn't require any CSS knowledge. This is 100% responsive and built on top of flexbox and it's modular.
-            We can only import the component's that we need. This being a pure CSS framework we can use <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">C#</code>
-            logics in blazor to write our own event handling like <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">@onclick, @onfocus</code>, etc to
+            We can only import the component's that we need. This being a pure CSS framework we can use <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">C#</code>
+            logics in blazor to write our own event handling like <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">@onclick, @onfocus</code>, etc to
             bring interactivity to components. But the drawback I see is that this doesn't have many components compared to bootstrap. I ❤️ .NET uses
-            <a class="[ underline ]" href="https://bulma.io/documentation/components/dropdown/" target="_blank"><code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">Bulma Dropdown Component</code></a>
+            <a class="[ underline ]" href="https://bulma.io/documentation/components/dropdown/" target="_blank"><code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">Bulma Dropdown Component</code></a>
             for switching between dark mode and light mode. To learn more about how to implement dark mode and light mode in blazor wasm app, refer
             <a href="blogs/blazor-wasm-dark-theme-and-light-theme" class="[ underline ]">Blazor WASM Dark Theme and Light Theme</a>.
         </p>
 
         <p>
             To start using bulma in your blazor wasm app, follow the below steps.
-            </p><ol class="[ list-decimal ] [ ml-4 ]"><li>Install <a class="[ underline ]" href="https://nodejs.org/en/download/"><code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">Node JS</code></a> in your operating system.</li>
-                <li>In your project directory, do an <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">npm init</code> and answer questions. This will create a <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">package.json</code> file in your root directory.</li>
-                <li>Do a <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">npm install node-sass bulma</code></li>
-                <li>Now add <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">Styles.css</code> file in your root directory and import the needed bulma components like follows <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">@import './node_modules/bulma/sass/components/dropdown.sass';</code></li>
-                <li>Add <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">"buildbulma": "node-sass --omit-source-map-url styles.css wwwroot/css/app.css"</code> inside <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">scripts</code> section in <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">package.json</code></li>
-                <li>Finally do <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">npm run buildbulma</code> from your project root directory. This will import and add necessary css and output it in <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">wwwroot/css/app.css</code></li>
-                <li>Make sure to add a reference to <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">app.css</code> in your <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">index.html</code></li></ol><p></p>
+            </p><ol class="[ list-decimal ] [ ml-4 ]"><li>Install <a class="[ underline ]" href="https://nodejs.org/en/download/"><code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">Node JS</code></a> in your operating system.</li>
+                <li>In your project directory, do an <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">npm init</code> and answer questions. This will create a <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">package.json</code> file in your root directory.</li>
+                <li>Do a <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">npm install node-sass bulma</code></li>
+                <li>Now add <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">Styles.css</code> file in your root directory and import the needed bulma components like follows <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] [ break-all ]">@import './node_modules/bulma/sass/components/dropdown.sass';</code></li>
+                <li>Add <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">"buildbulma": "node-sass --omit-source-map-url styles.css wwwroot/css/app.css"</code> inside <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">scripts</code> section in <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">package.json</code></li>
+                <li>Finally do <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">npm run buildbulma</code> from your project root directory. This will import and add necessary css and output it in <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">wwwroot/css/app.css</code></li>
+                <li>Make sure to add a reference to <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">app.css</code> in your <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">index.html</code></li></ol><p></p>
 
         <section class="[ flex flex-col ]"><h4 class="[ bg-gray-200 ] [ p-2 ] [ font-semibold ] [ text-black ] [ flex items-center ] [ dark:bg-gray-800 dark:bg-gray-800/80 dark:text-white ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-code ] [ text-purple-700 ] [ fill-purple-500 ]" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - Blazor WASM Bulma Setup</h4>
-    <article id="bc03374e-7968-48cd-a6b9-83053fe1bf06" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="97c6d6a0-64de-4681-b735-edba2c516f0d" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
-        <p><a class="[ underline ]" href="https://tailwindcss.com/" target="_blank"><code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">TailwindCSS</code></a>
+        <p><a class="[ underline ]" href="https://tailwindcss.com/" target="_blank"><code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">TailwindCSS</code></a>
             is a utility-first CSS framework with lots of predefined utility classes that help us to speed up the CSS development directly from HTML markup.
             You don't need any separate CSS file for your components or you don't need to pollute your global CSS. You can almost find any utility class from
             tailwindcss and it also has configuration available to customise and extend as per own needs. The only limitation here is that you need to be aware
@@ -337,19 +336,19 @@
 
         <p>
             To start using tailwindcss in your blazor wasm app, follow the below steps.
-            </p><ol class="[ list-decimal ] [ ml-4 ]"><li>Install <a class="[ underline ]" href="https://nodejs.org/en/download/"><code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">Node JS</code></a> in your operating system.</li>
-                <li>In your project directory, do an <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">npx tailwindcss init</code>. This will create a <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">package.json</code> and <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">tailwind.config.js</code> file in your root directory.</li>
-                <li>Go to <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">tailwind.config.js</code> and add template files path as follows <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">content: ['../**/*.html', '../**/*.razor', '../**/*.cs']</code></li>
-                <li>Go to <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">app.css</code> file and import tailwind components like <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">@tailwind base;@tailwind components;@tailwind utilities;</code></li>
-                <li>Add <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">"buildcss": "npx tailwindcss -i wwwroot/css/app.css -o wwwroot/css/app.min.css --watch"</code> inside <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">scripts</code> section in <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">package.json</code></li>
-                <li>Finally do <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">npm run buildcss</code> from your project root directory. This will import and add necessary css and output it in <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">wwwroot/css/app.min.css</code></li>
-                <li>Make sure to add a reference to <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">app.min.css</code> in your <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">index.html</code></li></ol><p></p>
+            </p><ol class="[ list-decimal ] [ ml-4 ]"><li>Install <a class="[ underline ]" href="https://nodejs.org/en/download/"><code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">Node JS</code></a> in your operating system.</li>
+                <li>In your project directory, do an <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">npx tailwindcss init</code>. This will create a <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">package.json</code> and <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">tailwind.config.js</code> file in your root directory.</li>
+                <li>Go to <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">tailwind.config.js</code> and add template files path as follows <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">content: ['../**/*.html', '../**/*.razor', '../**/*.cs']</code></li>
+                <li>Go to <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">app.css</code> file and import tailwind components like <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">@tailwind base;@tailwind components;@tailwind utilities;</code></li>
+                <li>Add <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">"buildcss": "npx tailwindcss -i wwwroot/css/app.css -o wwwroot/css/app.min.css --watch"</code> inside <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">scripts</code> section in <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">package.json</code></li>
+                <li>Finally do <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">npm run buildcss</code> from your project root directory. This will import and add necessary css and output it in <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">wwwroot/css/app.min.css</code></li>
+                <li>Make sure to add a reference to <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">app.min.css</code> in your <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">index.html</code></li></ol><p></p>
 
         <section class="[ flex flex-col ]"><h4 class="[ bg-gray-200 ] [ p-2 ] [ font-semibold ] [ text-black ] [ flex items-center ] [ dark:bg-gray-800 dark:bg-gray-800/80 dark:text-white ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-code ] [ text-purple-700 ] [ fill-purple-500 ]" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - Blazor WASM Tailwind CSS Setup</h4>
-    <article id="3e643011-efe4-4f44-a298-35643924d430" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="628c88d1-7f10-4658-8660-868ec3192e78" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <p>
             I ❤️ .NET uses both bulma and tailwindcss together. Here is the complete configuration.
@@ -359,60 +358,60 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - Blazor WASM Bulma &amp; Tailwind CSS Setup</h4>
-    <article id="f039b221-ef38-4d48-80dd-f19abedaf899" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="f0acfa6f-05fc-4915-8e6f-f7c0a990018a" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <section class="[ flex flex-col ]"><h4 class="[ bg-gray-200 ] [ p-2 ] [ font-semibold ] [ text-black ] [ flex items-center ] [ dark:bg-gray-800 dark:bg-gray-800/80 dark:text-white ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-code ] [ text-purple-700 ] [ fill-purple-500 ]" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - Blazor WASM Tailwind Config JS</h4>
-    <article id="298c49c7-a6d7-4512-8573-ba621e200fdb" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="1a98fd88-8845-487d-9f2c-4ed4e4234b37" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <section class="[ flex flex-col ]"><h4 class="[ bg-gray-200 ] [ p-2 ] [ font-semibold ] [ text-black ] [ flex items-center ] [ dark:bg-gray-800 dark:bg-gray-800/80 dark:text-white ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-code ] [ text-purple-700 ] [ fill-purple-500 ]" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - Blazor WASM Purge CSS Config JS</h4>
-    <article id="5ce3c819-ad7f-4e20-95c1-288371aff8fa" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="7deeef3a-82db-4618-b6bf-26bd1932d30c" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <section class="[ flex flex-col ]"><h4 class="[ bg-gray-200 ] [ p-2 ] [ font-semibold ] [ text-black ] [ flex items-center ] [ dark:bg-gray-800 dark:bg-gray-800/80 dark:text-white ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-code ] [ text-purple-700 ] [ fill-purple-500 ]" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - Blazor WASM Styles CSS</h4>
-    <article id="55579eeb-56c1-4311-a871-1c100256c527" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="efa1df83-e425-420b-8518-c95a3419162a" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <p>
-            In development environment, you can do <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">npm run buildcss:dev</code>
-            and continue with <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">development</code> where as for
-            <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">production</code> you can do
-            <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">npm run buildcss</code>. This can be configured in
-            <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">CI/CD Pipline</code> as well. Additionally you can
-            <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">remove app.css</code> file in
-            <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">Release</code> configuration and also configure
-            <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">Compile</code> event for
-            <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">Release</code> configuration as show below.
+            In development environment, you can do <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">npm run buildcss:dev</code>
+            and continue with <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">development</code> where as for
+            <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">production</code> you can do
+            <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">npm run buildcss</code>. This can be configured in
+            <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">CI/CD Pipline</code> as well. Additionally you can
+            <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">remove app.css</code> file in
+            <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">Release</code> configuration and also configure
+            <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">Compile</code> event for
+            <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">Release</code> configuration as show below.
         </p>
 
         <section class="[ flex flex-col ]"><h4 class="[ bg-gray-200 ] [ p-2 ] [ font-semibold ] [ text-black ] [ flex items-center ] [ dark:bg-gray-800 dark:bg-gray-800/80 dark:text-white ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-code ] [ text-purple-700 ] [ fill-purple-500 ]" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - Blazor WASM Project File Configuration</h4>
-    <article id="b0100479-3ada-4f54-85ec-ca8c12d9726a" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="505ec700-a5df-4507-ad25-65ff37363ce2" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <p>
-            If you don't prefer to use <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">TailwindCSS</code>,
-            <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">Bulma</code>,
-            <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">Bootstrap</code> or your
-            <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">own CSS</code>, then you can still Get productive fast with
-            <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">re-usable UI components</code> from top component vendors like
-            <a class="[ underline ]" href="https://www.telerik.com/blazor-ui" target="_blank"><code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">Telerik</code></a>,
-            <a class="[ underline ]" href="https://www.devexpress.com/blazor/" target="_blank"><code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">DevExpress</code></a>,
-            <a class="[ underline ]" href="https://www.syncfusion.com/blazor-components" target="_blank"><code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">Syncfusion</code></a>,
-            <a class="[ underline ]" href="https://blazor.radzen.com/" target="_blank"><code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">Radzen</code></a>,
-            <a class="[ underline ]" href="https://www.infragistics.com/products/ignite-ui-blazor" target="_blank"><code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">Infragistics</code></a>,
-            <a class="[ underline ]" href="https://www.grapecity.com/componentone/blazor-ui-controls" target="_blank"><code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">Grapecity</code></a>,
-            <a class="[ underline ]" href="https://www.htmlelements.com/blazor/" target="_blank"><code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">jQWidgets</code></a>,
-            <a class="[ underline ]" href="https://www.fast.design/docs/integrations/blazor/" target="_blank"><code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">Fast Blazor</code></a> and others.
+            If you don't prefer to use <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">TailwindCSS</code>,
+            <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">Bulma</code>,
+            <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">Bootstrap</code> or your
+            <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">own CSS</code>, then you can still Get productive fast with
+            <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">re-usable UI components</code> from top component vendors like
+            <a class="[ underline ]" href="https://www.telerik.com/blazor-ui" target="_blank"><code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">Telerik</code></a>,
+            <a class="[ underline ]" href="https://www.devexpress.com/blazor/" target="_blank"><code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">DevExpress</code></a>,
+            <a class="[ underline ]" href="https://www.syncfusion.com/blazor-components" target="_blank"><code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">Syncfusion</code></a>,
+            <a class="[ underline ]" href="https://blazor.radzen.com/" target="_blank"><code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">Radzen</code></a>,
+            <a class="[ underline ]" href="https://www.infragistics.com/products/ignite-ui-blazor" target="_blank"><code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">Infragistics</code></a>,
+            <a class="[ underline ]" href="https://www.grapecity.com/componentone/blazor-ui-controls" target="_blank"><code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">Grapecity</code></a>,
+            <a class="[ underline ]" href="https://www.htmlelements.com/blazor/" target="_blank"><code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">jQWidgets</code></a>,
+            <a class="[ underline ]" href="https://www.fast.design/docs/integrations/blazor/" target="_blank"><code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">Fast Blazor</code></a> and others.
             Or use one of the many
-            <a class="[ underline ]" href="https://github.com/AdrienTorris/awesome-blazor?WT.mc_id=dotnet-35129-website#libraries--extensions" target="_blank"><code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">open-source component libraries</code></a>
+            <a class="[ underline ]" href="https://github.com/AdrienTorris/awesome-blazor?WT.mc_id=dotnet-35129-website#libraries--extensions" target="_blank"><code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">open-source component libraries</code></a>
             from the Blazor community. The drawback I see when going for any of the components is that there is lack of modularity. For using a
             simple component you need to refer all packages. This increases the overall app size. They also don't work well when assembly trimming
             is enabled or you need to do additional configurations to make this work perfectly.
@@ -422,40 +421,40 @@
 
         <p>
             CSS Isolation helps to add a CSS file specific to a component. This helps to avoid polluting global CSS file and all CSS related to
-            component gets automatically <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">scoped</code> for that particular component. We don't need to worry about one component CSS affecting other component
+            component gets automatically <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">scoped</code> for that particular component. We don't need to worry about one component CSS affecting other component
             CSS. Blazor WASM takes care of handling these complexities behind the scenes.
         </p>
 
         <p>
-            Let's say you have a component named <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">Chat.razor</code>. Then
-            you need to add CSS file names <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">Chat.razor.css</code>. IDE will
+            Let's say you have a component named <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">Chat.razor</code>. Then
+            you need to add CSS file names <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">Chat.razor.css</code>. IDE will
             automatically collapse the CSS file within component file. And for the CSS to reflect in your app, you need to add a stylesheet
-            reference link to <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">index.html</code> with your assembly name like
-            <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ]">&lt;link href="YourProjectAssemblyName.styles.css" rel="stylesheet" /&gt;</code>.
+            reference link to <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">index.html</code> with your assembly name like
+            <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">&lt;link href="YourProjectAssemblyName.styles.css" rel="stylesheet" /&gt;</code>.
         </p></section>
-        <footer class="[ max-w-full ]"><ul class="[ list-none ] [ flex items-center justify-start md:justify-center ] [ space-x-3 ] [ overflow-hidden overflow-x-auto ]"><li class="[ px-3 py-1 ] [ rounded-full ] [ bg-black text-white dark:bg-white dark:text-black ]">Blazor</li><li class="[ px-3 py-1 ] [ rounded-full ] [ bg-black text-white dark:bg-white dark:text-black ] [ whitespace-nowrap ]">CSS</li><li class="[ px-3 py-1 ] [ rounded-full ] [ bg-black text-white dark:bg-white dark:text-black ] [ whitespace-nowrap ]">Styles</li><li class="[ px-3 py-1 ] [ rounded-full ] [ bg-black text-white dark:bg-white dark:text-black ] [ whitespace-nowrap ]">CSS Isolation</li><li class="[ px-3 py-1 ] [ rounded-full ] [ bg-black text-white dark:bg-white dark:text-black ] [ whitespace-nowrap ]">Bootstrap</li><li class="[ px-3 py-1 ] [ rounded-full ] [ bg-black text-white dark:bg-white dark:text-black ] [ whitespace-nowrap ]">Bulma</li><li class="[ px-3 py-1 ] [ rounded-full ] [ bg-black text-white dark:bg-white dark:text-black ] [ whitespace-nowrap ]">TailwindCSS</li><li class="[ px-3 py-1 ] [ rounded-full ] [ bg-black text-white dark:bg-white dark:text-black ] [ whitespace-nowrap ]">Telerik</li><li class="[ px-3 py-1 ] [ rounded-full ] [ bg-black text-white dark:bg-white dark:text-black ] [ whitespace-nowrap ]">DevExpress</li><li class="[ px-3 py-1 ] [ rounded-full ] [ bg-black text-white dark:bg-white dark:text-black ] [ whitespace-nowrap ]">Syncfusion</li><li class="[ px-3 py-1 ] [ rounded-full ] [ bg-black text-white dark:bg-white dark:text-black ] [ whitespace-nowrap ]">Radzen</li><li class="[ px-3 py-1 ] [ rounded-full ] [ bg-black text-white dark:bg-white dark:text-black ] [ whitespace-nowrap ]">Infragistics</li><li class="[ px-3 py-1 ] [ rounded-full ] [ bg-black text-white dark:bg-white dark:text-black ] [ whitespace-nowrap ]">Grapecity</li><li class="[ px-3 py-1 ] [ rounded-full ] [ bg-black text-white dark:bg-white dark:text-black ] [ whitespace-nowrap ]">jQWidgets</li><li class="[ px-3 py-1 ] [ rounded-full ] [ bg-black text-white dark:bg-white dark:text-black ] [ whitespace-nowrap ]">Fast Blazor</li><li class="[ px-3 py-1 ] [ rounded-full ] [ bg-black text-white dark:bg-white dark:text-black ] [ whitespace-nowrap ]">Awesome Blazor</li></ul></footer>
+        <footer class="[ max-w-full ]"><ul class="[ list-none ] [ flex items-center justify-start md:justify-center ] [ space-x-3 ] [ overflow-hidden overflow-x-auto ]"><li class="[ px-3 py-1 ] [ rounded-full ] [ bg-black text-white dark:bg-white dark:text-black ]">Blazor</li><li class="[ px-3 py-1 ] [ rounded-full ] [ bg-black text-white dark:bg-white dark:text-black ] [ whitespace-nowrap ]">CSS</li><li class="[ px-3 py-1 ] [ rounded-full ] [ bg-black text-white dark:bg-white dark:text-black ] [ whitespace-nowrap ]">Styles</li><li class="[ px-3 py-1 ] [ rounded-full ] [ bg-black text-white dark:bg-white dark:text-black ] [ whitespace-nowrap ]">CSS Isolation</li></ul></footer>
         <hr class="[ dark:text-white my-1.5 ]"/></article>
     <aside class="[ flex flex-col md:basis-1/4 ] [ space-y-2 ]"><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-take-to-select-specific-data"><figure><img src="image/blogs/linq/using-linq-take-to-select-specific-data.svg" class="[ w-full ]" alt="Using LINQ Take to Select Specific Data" loading="lazy"/></figure></a></header>
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/linq"><figure><img src="image/icons/linq.png" alt="LINQ" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/using-linq-take-to-select-specific-data"><h2 class="[ font-medium break-words hover:underline ]">Using LINQ Take to Select Specific Data</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-10-16 22-30-00">3 hours from now</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-single-to-select-single-data"><figure><img src="image/blogs/linq/using-linq-single-to-select-single-data.svg" class="[ w-full ]" alt="Using LINQ Single to Select Single Data" loading="lazy"/></figure></a></header>
+                            <time datetime="2022-10-16 22-30-00">2 days ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-single-to-select-single-data"><figure><img src="image/blogs/linq/using-linq-single-to-select-single-data.svg" class="[ w-full ]" alt="Using LINQ Single to Select Single Data" loading="lazy"/></figure></a></header>
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/linq"><figure><img src="image/icons/linq.png" alt="LINQ" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/using-linq-single-to-select-single-data"><h2 class="[ font-medium break-words hover:underline ]">Using LINQ Single to Select Single Data</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-10-09 22-30-00">6 days ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-last-to-select-single-data"><figure><img src="image/blogs/linq/using-linq-last-to-select-single-data.svg" class="[ w-full ]" alt="Using LINQ Last to Select Single Data" loading="lazy"/></figure></a></header>
+                            <time datetime="2022-10-09 22-30-00">9 days ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-last-to-select-single-data"><figure><img src="image/blogs/linq/using-linq-last-to-select-single-data.svg" class="[ w-full ]" alt="Using LINQ Last to Select Single Data" loading="lazy"/></figure></a></header>
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/linq"><figure><img src="image/icons/linq.png" alt="LINQ" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/using-linq-last-to-select-single-data"><h2 class="[ font-medium break-words hover:underline ]">Using LINQ Last to Select Single Data</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-10-02 22-30-00">13 days ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-first-to-select-single-data"><figure><img src="image/blogs/linq/using-linq-first-to-select-single-data.svg" class="[ w-full ]" alt="Using LINQ First to Select Single Data" loading="lazy"/></figure></a></header>
+                            <time datetime="2022-10-02 22-30-00">16 days ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-first-to-select-single-data"><figure><img src="image/blogs/linq/using-linq-first-to-select-single-data.svg" class="[ w-full ]" alt="Using LINQ First to Select Single Data" loading="lazy"/></figure></a></header>
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/linq"><figure><img src="image/icons/linq.png" alt="LINQ" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/using-linq-first-to-select-single-data"><h2 class="[ font-medium break-words hover:underline ]">Using LINQ First to Select Single Data</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-09-25 22-30-00">20 days ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/profiling-webapi-with-mini-profiler"><figure><img src="image/blogs/webapi/profiling-webapi-with-mini-profiler.svg" class="[ w-full ]" alt="Profiling Web API with Mini Profiler" loading="lazy"/></figure></a></header>
+                            <time datetime="2022-09-25 22-30-00">23 days ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/profiling-webapi-with-mini-profiler"><figure><img src="image/blogs/webapi/profiling-webapi-with-mini-profiler.svg" class="[ w-full ]" alt="Profiling Web API with Mini Profiler" loading="lazy"/></figure></a></header>
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/webapi"><figure><img src="image/icons/webapi.png" alt="WebAPI" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/profiling-webapi-with-mini-profiler"><h2 class="[ font-medium break-words hover:underline ]">Profiling Web API with Mini Profiler</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-09-18 22-30-00">27 days ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/python-dynamic-interop-with-dotnet"><figure><img src="image/blogs/python/python-dynamic-interop-with-dotnet.svg" class="[ w-full ]" alt="Python Dynamic Interop with Dotnet" loading="lazy"/></figure></a></header>
+                            <time datetime="2022-09-18 22-30-00">one month ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/python-dynamic-interop-with-dotnet"><figure><img src="image/blogs/python/python-dynamic-interop-with-dotnet.svg" class="[ w-full ]" alt="Python Dynamic Interop with Dotnet" loading="lazy"/></figure></a></header>
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/python"><figure><img src="image/icons/python.png" alt="Python" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/python-dynamic-interop-with-dotnet"><h2 class="[ font-medium break-words hover:underline ]">Python Dynamic Interop with Dotnet</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
@@ -523,7 +522,7 @@
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/blazor"><figure><img src="image/icons/blazor.png" alt="Blazor" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/blazor-wasm-communication-between-components"><h2 class="[ font-medium break-words hover:underline ]">Blazor WASM Communication Between Components</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-05-22 22-30-00">4 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/oops-abstraction"><figure><img src="image/blogs/oops/oops-abstraction.svg" class="[ w-full ]" alt="OOPS Abstraction" loading="lazy"/></figure></a></header>
+                            <time datetime="2022-05-22 22-30-00">5 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/oops-abstraction"><figure><img src="image/blogs/oops/oops-abstraction.svg" class="[ w-full ]" alt="OOPS Abstraction" loading="lazy"/></figure></a></header>
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/oops"><figure><img src="image/icons/oops.png" alt="OOPS" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/oops-abstraction"><h2 class="[ font-medium break-words hover:underline ]">OOPS Abstraction</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
@@ -539,7 +538,7 @@
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/blazor"><figure><img src="image/icons/blazor.png" alt="Blazor" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/blazor-wasm-data-binding"><h2 class="[ font-medium break-words hover:underline ]">Blazor WASM Data Binding</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-04-24 22-30-00">5 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/blazor-wasm-event-handling-and-event-arguments"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-event-handling-and-event-arguments.svg" class="[ w-full ]" alt="Blazor WASM Event Handling And Event Arguments" loading="lazy"/></figure></a></header>
+                            <time datetime="2022-04-24 22-30-00">6 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/blazor-wasm-event-handling-and-event-arguments"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-event-handling-and-event-arguments.svg" class="[ w-full ]" alt="Blazor WASM Event Handling And Event Arguments" loading="lazy"/></figure></a></header>
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/blazor"><figure><img src="image/icons/blazor.png" alt="Blazor" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/blazor-wasm-event-handling-and-event-arguments"><h2 class="[ font-medium break-words hover:underline ]">Blazor WASM Event Handling And Event Arguments</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
@@ -618,7 +617,7 @@
            <path d="M8 11v-4a4 4 0 0 1 8 0v4"></path></svg>
         <span class="[ text-xs text-center ]">Privacy</span></a></nav>
             
-    <!--Blazor:{"prerenderId":"62aaf602aa79412aa89270e3d4a49dd5"}-->
+    <!--Blazor:{"prerenderId":"97c458c167504a9d92eb383e25434b33"}-->
 <!-- %%-PRERENDERING-END-%% -->
 <!--Blazor-Component-State:e30=--></div>
 
