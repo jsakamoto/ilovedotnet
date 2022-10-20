@@ -15,7 +15,7 @@
       "Microsoft.AspNetCore.Components.dll": "sha256-OYkC1W30uIiXPV\/W0AyjnQOiucwuSrUof189JPh7PVA=",
       "Microsoft.AspNetCore.Components.Forms.dll": "sha256-jHiZyV5RP5\/4Vul\/PbO0XhbEqgKwBjssE3Q6\/ImxWg4=",
       "Microsoft.AspNetCore.Components.Web.dll": "sha256-Jv6qY0Tr9Ak1kN\/j0td0LZki3b9QP32SC82rxFg2U0Y=",
-      "Microsoft.AspNetCore.Components.WebAssembly.dll": "sha256-2AGwn7xKLEVMS96Ho5bTKskiNDf473GizN7+zBcIMgE=",
+      "Microsoft.AspNetCore.Components.WebAssembly.dll": "sha256-kn8vCM2ifqrF82nDc2ArnjWR8Z6n83ux8XDLmC1EbrY=",
       "Microsoft.CSharp.dll": "sha256-NNYk9KFNbAZM8Hn9ST7SfA+FrRV+avTJpDlrImsMdhs=",
       "Microsoft.Extensions.Configuration.Abstractions.dll": "sha256-C7yvnYV7TlPnFYkL43g+hDNDjzhfAEibiTtXZxV3YuE=",
       "Microsoft.Extensions.Configuration.Binder.dll": "sha256-jVi8NjubAD2tOusoLkeZOoGg0PTKQeYidpo0lRCPRwQ=",
@@ -70,7 +70,7 @@
       "Toolbelt.Blazor.HeadElement.Abstractions.dll": "sha256-CGf+mNF+VXVtxxm+PFFII0eZNFTCbw5Xj8XppFAS5Ks=",
       "Toolbelt.Blazor.HeadElement.dll": "sha256-3GRmbTJC6bFhPBANY9ttxu5hHvz\/A51e1JVvvPp3+RU=",
       "Toolbelt.Blazor.HeadElement.Services.dll": "sha256-PqA6kBjUWnC6U60iwS6l59My5+vthO2BuH4mLZ+mmHo=",
-      "Web.dll": "sha256-EBeahi3h0OVI\/O2ev3YPiXz1c0qjnMv9\/p4b\/jSstZ8="
+      "Web.dll": "sha256-XE+Qh+wxP+m3cq9RO2sPHp9o5vywiaEVgSMUxAhBMfI="
     },
     "extensions": null,
     "lazyAssembly": {
