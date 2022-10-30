@@ -43,7 +43,7 @@
     </script>
 
 <!-- %%-PRERENDERING-HEADOUTLET-BEGIN-%% -->
-<!--Blazor:{"type":"webassembly","assembly":"Microsoft.AspNetCore.Components.Web","typeName":"Microsoft.AspNetCore.Components.Web.HeadOutlet","parameterDefinitions":"W10=","parameterValues":"W10=","prerenderId":"bb14a1de451f4b9185c07e6c54752ff2"}--><script type="application/ld+json">
+<!--Blazor:{"type":"webassembly","assembly":"Microsoft.AspNetCore.Components.Web","typeName":"Microsoft.AspNetCore.Components.Web.HeadOutlet","parameterDefinitions":"W10=","parameterValues":"W10=","prerenderId":"80af2c719e1f480686ea571acc57f311"}--><script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "Article",
@@ -92,7 +92,7 @@
             "@id": "https://www.ilovedotnet.org/"
         }
     }
-    </script><!--Blazor:{"prerenderId":"bb14a1de451f4b9185c07e6c54752ff2"}-->
+    </script><!--Blazor:{"prerenderId":"80af2c719e1f480686ea571acc57f311"}-->
 <!-- %%-PRERENDERING-HEADOUTLET-END-%% -->
 
     <script type="text/default-title">I ❤️ DotNet</script>
@@ -139,7 +139,7 @@
 <body class="[ m-0 ] [ h-full ] [ dark:bg-stone-900 ] [ bg-gray-100 ]">
     <div id="app" class="[ dark:text-white ]">
 <!-- %%-PRERENDERING-BEGIN-%% -->
-<!--Blazor:{"type":"webassembly","assembly":"Web","typeName":"Web.App","parameterDefinitions":"W10=","parameterValues":"W10=","prerenderId":"138d256433a9405ea0cde19c01885dc3"}--><header id="header" class="[ flex items-center justify-between ] [ bg-white ] [ px-5 ] [ dark:bg-gray-800 dark:bg-gray-800/80 ] [ h-14 ] [ sticky top-0 ] [ backdrop-blur-sm bg-white/30 ]"><button type="button" class="[ hidden md:block ] [ mr-4 ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-menu-2 ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+<!--Blazor:{"type":"webassembly","assembly":"Web","typeName":"Web.App","parameterDefinitions":"W10=","parameterValues":"W10=","prerenderId":"e2c0c4f00eb447d095d125fd2aa2d689"}--><header id="header" class="[ flex items-center justify-between ] [ bg-white ] [ px-5 ] [ dark:bg-gray-800 dark:bg-gray-800/80 ] [ h-14 ] [ sticky top-0 ] [ backdrop-blur-sm bg-white/30 ]"><button type="button" class="[ hidden md:block ] [ mr-4 ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-menu-2 ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
            <line x1="4" y1="6" x2="20" y2="6"></line>
            <line x1="4" y1="12" x2="20" y2="12"></line>
            <line x1="4" y1="18" x2="20" y2="18"></line></svg></button>
@@ -271,33 +271,55 @@
                 <section class="[ flex justify-between ]"><p>2 Articles</p></section></article></a>
         <a href="https://github.com/ILoveDotNet/ilovedotnet/blob/main/Web/Pages/Blogs/TDD/Introduction.razor" target="_blank" class="[ md:bg-red-700 ] [ text-red-500 md:text-white uppercase ] [ px-3 py-2 ] [ font-semibold ]">Improve</a></section>
     <hr class="[ dark:text-white my-1.5 ]"/></header>
-        <section class="[ dark:text-white ] [ space-y-2 ] [ leading-relaxed ]"><h3 class="[ font-semibold text-lg ]">What is Test Driven Development?</h3>
-
-        <p>
-            TDD is a very powerful approach to build robust software. Before we develop the feature, we will write a unit test for the feature 
-            which means the unit test will drive our feature development.
+        <section class="[ dark:text-white ] [ space-y-2 ] [ leading-relaxed ]"><p>
+            In this article, let's learn about <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">(<abbr title="Test Driven Development">TDD</abbr>) Test Driven Development</code> using C# .NET.
         </p>
 
-        <h3 class="[ font-semibold text-lg ]">Basics of Test-Driven Development</h3>
+        <h3 class="[ font-semibold text-lg ]">Table of Contents</h3>
+
+        <ol class="[ list-decimal ] [ ml-4 ]"><li><a href="blogs/introducing-tdd-in-csharp-dotnet#what-is-test-driven-development" class="[ underline ]">
+                    What is Test Driven Development?
+                </a></li>
+            <li><a href="blogs/introducing-tdd-in-csharp-dotnet#basics-of-test-driven-development" class="[ underline ]">
+                    Basics of Test-Driven Development
+                </a></li>
+            <li><a href="blogs/introducing-tdd-in-csharp-dotnet#advantages" class="[ underline ]">
+                    Advantages
+                </a></li>
+            <li><a href="blogs/introducing-tdd-in-csharp-dotnet#disadvantages" class="[ underline ]">
+                    Disadvantages
+                </a></li>
+            <li><a href="blogs/introducing-tdd-in-csharp-dotnet#summary" class="[ underline ]">
+                    Summary
+                </a></li></ol>
+
+        <h3 id="what-is-test-driven-development" class="[ font-semibold text-lg ]">What is Test Driven Development?</h3>
+
+        <p>
+            TDD is a very powerful approach to build robust software. Before we develop the feature, we will write a unit test for the feature which means the unit test will drive our 
+            feature development.
+        </p>
+
+        <h3 id="basics-of-test-driven-development" class="[ font-semibold text-lg ]">Basics of Test-Driven Development</h3>
 
         <p>
             Let’s see what is test-driven Development and explain to you the project scenario.
         </p>
 
         <p>
-            Test-Driven Development, or TDD for short, is a method used to write tests before we start our implementation. Before you start, 
-            you might list the requirements that need to be fulfilled in your application.
+            Test-Driven Development, or TDD for short, is a method used to write tests before we start our implementation. Before you start, you might list the requirements that need to be 
+            fulfilled in your application.
         </p>
 
         <figure><img src="./image/blogs/tdd/introduction/requirements.jpg" alt="Requirements" class="[ w-full ]"/></figure>
 
         <p>
-            Then you take the first requirement and write a failing test. The test fails and it is RED as you haven’t developed it yet. But the 
-            test describes already what your code should do to fulfill the requirement. Now you need to make the test GREEN by writing the 
-            necessary code to make the test pass. After you write the code to make the test green you need to Refactor the code. Maybe you can 
-            simplify the code or extract few code lines into a method to make code more readable and maintainable. After you are done with the 
-            first requirement, you can continue with the next requirement. This means you iterate the entire cycle (Red -&gt; Green -&gt; Refactor) for 
-            another requirement and so on. So the tests are driving your development. This is the heart of TDD and known as TDD cycle.
+            Then you take the first requirement and write a failing test. The test fails and it is <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">RED</code> as you haven’t developed it yet. But the test 
+            describes already what your code should do to fulfill the requirement. Now you need to make the test <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">GREEN</code> by writing the necessary code to 
+            make the test pass. After you write the code to make the test green you need to <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">REFACTOR</code> the code. Maybe you can simplify the code or extract 
+            few code lines into a method to make code more readable and maintainable. After you are done with the first requirement, you can continue with the next requirement. This means you 
+            iterate the entire cycle <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">(Red -&gt; Green -&gt; Refactor)</code> for another requirement and so on. So the tests are driving your development. This is the 
+            heart of TDD and known as TDD cycle.
         </p>
 
         <p>
@@ -306,64 +328,68 @@
 
          <figure><img src="./image/blogs/tdd/introduction/red green refactor.jpg" alt="Red Green Refactor" class="[ w-full ]"/></figure>
 
-         <h3 class="[ font-semibold text-lg ]">Advantages</h3>
+         <h3 id="advantages" class="[ font-semibold text-lg ]">Advantages</h3>
 
          <figure><img src="./image/blogs/tdd/introduction/advantages.jpg" alt="Advantages" class="[ w-full ]"/></figure>
 
          <ol class="[ list-decimal ] [ ml-4 ]"><li>
-                 TDD makes you think with the needed API from the beginning. You need to think about what classes, properties, API’s are needed. 
-                 This will usually lead to great API design.
+                 TDD makes you think with the needed API from the beginning. You need to think about what classes, properties, API’s are needed. This will usually lead to great API design.
              </li>
              <li>
-                 After you know the class and properties, another big advantage is that you need to think about what the code should do than how 
-                 it should do. As you start with test you don’t need to have any idea about implementation. You just need to write a test for what 
-                 the code should do. After writing the test you can think of requirements and their development.
+                 After you know the class and properties, another big advantage is that you need to think about what the code should do than how it should do. As you start with test you don’t 
+                 need to have any idea about implementation. You just need to write a test for what the code should do. After writing the test you can think of requirements and their development.
              </li>
              <li>
-                 While thinking of your requirements, you get quick feedback about your requirements by running the test. The fact that you get 
-                 quick feedback means you even don’t need a fully working application at all. You just need a class library to build your business 
-                 logic and don’t need the entire project.
+                 While thinking of your requirements, you get quick feedback about your requirements by running the test. The fact that you get quick feedback means you even don’t need a fully 
+                 working application at all. You just need a class library to build your business logic and don’t need the entire project.
              </li>
              <li>
-                 This helps you create modular code. You can decouple the dependencies from the beginning and TDD makes you do that from the 
-                 beginning. This decoupling of dependency makes you write a modular code by isolating the dependencies like a database that is not 
-                 ready yet and the web API isn't ready when beginning the development.
+                 This helps you create modular code. You can decouple the dependencies from the beginning and TDD makes you do that from the beginning. This decoupling of dependency makes you 
+                 write a modular code by isolating the dependencies like a database that is not ready yet and the web API isn't ready when beginning the development.
              </li>
              <li>
-                 This leads to a maintainable codebase, as you will have one test per requirement. You can write code to add new functionality and 
-                 run all the unit tests to ensure that the existing code doesn’t break. You can be confident about your new code as well as the 
-                 existing code.
+                 This leads to a maintainable codebase, as you will have one test per requirement. You can write code to add new functionality and run all the unit tests to ensure that the 
+                 existing code doesn’t break. You can be confident about your new code as well as the existing code.
              </li>
              <li>
-                 These tests will serve as good documentation. For example, the test for the code written by others will help you understand why 
-                 the code has been written.
+                 These tests will serve as good documentation. For example, the test for the code written by others will help you understand why the code has been written.
              </li></ol>
 
-         <h3 class="[ font-semibold text-lg ]">Disadvantages</h3>
+         <h3 id="disadvantages" class="[ font-semibold text-lg ]">Disadvantages</h3>
 
          <p>
-             The only disadvantage is that TDD is not so easy to start by writing tests for beginners. In fact, TDD is an art that every developer 
-             should master.
-         </p></section>
+             The only disadvantage is that TDD is not so easy to start by writing tests for beginners. In fact, TDD is an art that every developer should master.
+         </p>
+
+        <h3 id="summary" class="[ font-semibold text-lg ]">Summary</h3>
+
+        <p>
+            In this article we got introduced to TDD and learnt about Red, Green and Refactor phases of TDD along with its advantages and disadvantages. In next article lets learn about how to 
+            implement TDD using C# .NET in detail.
+        </p></section>
         <footer class="[ max-w-full ]"><ul class="[ list-none ] [ flex items-center justify-start md:justify-center ] [ space-x-3 ] [ overflow-hidden overflow-x-auto ]"><li class="[ px-3 py-1 ] [ rounded-full ] [ bg-black text-white dark:bg-white dark:text-black ]">Tdd</li><li class="[ px-3 py-1 ] [ rounded-full ] [ bg-black text-white dark:bg-white dark:text-black ] [ whitespace-nowrap ]">Test Driven Development</li></ul></footer>
         <hr class="[ dark:text-white my-1.5 ]"/></article>
-    <aside class="[ flex flex-col md:basis-1/4 ] [ space-y-2 ]"><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-skip-to-select-specific-data"><figure><img src="image/blogs/linq/using-linq-skip-to-select-specific-data.svg" class="[ w-full ]" alt="Using LINQ Skip to Select Specific Data" loading="lazy"/></figure></a></header>
+    <aside class="[ flex flex-col md:basis-1/4 ] [ space-y-2 ]"><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-distinct-to-select-unique-data"><figure><img src="image/blogs/linq/using-linq-distinct-to-select-unique-data.svg" class="[ w-full ]" alt="Using LINQ Distinct to Select Unique Data" loading="lazy"/></figure></a></header>
+                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/linq"><figure><img src="image/icons/linq.png" alt="LINQ" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
+                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/using-linq-distinct-to-select-unique-data"><h2 class="[ font-medium break-words hover:underline ]">Using LINQ Distinct to Select Unique Data</h2></a>
+                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
+                            <time datetime="2022-10-30 22-30-00">6 hours from now</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-skip-to-select-specific-data"><figure><img src="image/blogs/linq/using-linq-skip-to-select-specific-data.svg" class="[ w-full ]" alt="Using LINQ Skip to Select Specific Data" loading="lazy"/></figure></a></header>
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/linq"><figure><img src="image/icons/linq.png" alt="LINQ" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/using-linq-skip-to-select-specific-data"><h2 class="[ font-medium break-words hover:underline ]">Using LINQ Skip to Select Specific Data</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-10-23 22-30-00">3 days ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-take-to-select-specific-data"><figure><img src="image/blogs/linq/using-linq-take-to-select-specific-data.svg" class="[ w-full ]" alt="Using LINQ Take to Select Specific Data" loading="lazy"/></figure></a></header>
+                            <time datetime="2022-10-23 22-30-00">6 days ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-take-to-select-specific-data"><figure><img src="image/blogs/linq/using-linq-take-to-select-specific-data.svg" class="[ w-full ]" alt="Using LINQ Take to Select Specific Data" loading="lazy"/></figure></a></header>
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/linq"><figure><img src="image/icons/linq.png" alt="LINQ" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/using-linq-take-to-select-specific-data"><h2 class="[ font-medium break-words hover:underline ]">Using LINQ Take to Select Specific Data</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-10-16 22-30-00">10 days ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-single-to-select-single-data"><figure><img src="image/blogs/linq/using-linq-single-to-select-single-data.svg" class="[ w-full ]" alt="Using LINQ Single to Select Single Data" loading="lazy"/></figure></a></header>
+                            <time datetime="2022-10-16 22-30-00">13 days ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-single-to-select-single-data"><figure><img src="image/blogs/linq/using-linq-single-to-select-single-data.svg" class="[ w-full ]" alt="Using LINQ Single to Select Single Data" loading="lazy"/></figure></a></header>
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/linq"><figure><img src="image/icons/linq.png" alt="LINQ" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/using-linq-single-to-select-single-data"><h2 class="[ font-medium break-words hover:underline ]">Using LINQ Single to Select Single Data</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-10-09 22-30-00">17 days ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-last-to-select-single-data"><figure><img src="image/blogs/linq/using-linq-last-to-select-single-data.svg" class="[ w-full ]" alt="Using LINQ Last to Select Single Data" loading="lazy"/></figure></a></header>
+                            <time datetime="2022-10-09 22-30-00">20 days ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-last-to-select-single-data"><figure><img src="image/blogs/linq/using-linq-last-to-select-single-data.svg" class="[ w-full ]" alt="Using LINQ Last to Select Single Data" loading="lazy"/></figure></a></header>
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/linq"><figure><img src="image/icons/linq.png" alt="LINQ" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/using-linq-last-to-select-single-data"><h2 class="[ font-medium break-words hover:underline ]">Using LINQ Last to Select Single Data</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-10-02 22-30-00">24 days ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-first-to-select-single-data"><figure><img src="image/blogs/linq/using-linq-first-to-select-single-data.svg" class="[ w-full ]" alt="Using LINQ First to Select Single Data" loading="lazy"/></figure></a></header>
+                            <time datetime="2022-10-02 22-30-00">27 days ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-first-to-select-single-data"><figure><img src="image/blogs/linq/using-linq-first-to-select-single-data.svg" class="[ w-full ]" alt="Using LINQ First to Select Single Data" loading="lazy"/></figure></a></header>
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/linq"><figure><img src="image/icons/linq.png" alt="LINQ" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/using-linq-first-to-select-single-data"><h2 class="[ font-medium break-words hover:underline ]">Using LINQ First to Select Single Data</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
@@ -399,7 +425,7 @@
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/dependency-injection"><figure><img src="image/icons/dependency-injection.png" alt="Dependency-Injection" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/dependency-injection-lifetimes-in-dotnet"><h2 class="[ font-medium break-words hover:underline ]">Dependency Injection Lifetimes in .NET</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-07-31 22-30-00">2 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/introducing-dependency-injection-in-dotnet"><figure><img src="image/blogs/dependency-injection/introducing-dependency-injection-in-dotnet.svg" class="[ w-full ]" alt="Introducing Dependency Injection in .NET" loading="lazy"/></figure></a></header>
+                            <time datetime="2022-07-31 22-30-00">3 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/introducing-dependency-injection-in-dotnet"><figure><img src="image/blogs/dependency-injection/introducing-dependency-injection-in-dotnet.svg" class="[ w-full ]" alt="Introducing Dependency Injection in .NET" loading="lazy"/></figure></a></header>
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/dependency-injection"><figure><img src="image/icons/dependency-injection.png" alt="Dependency-Injection" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/introducing-dependency-injection-in-dotnet"><h2 class="[ font-medium break-words hover:underline ]">Introducing Dependency Injection in .NET</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
@@ -415,7 +441,7 @@
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/blazor"><figure><img src="image/icons/blazor.png" alt="Blazor" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/blazor-wasm-dynamic-component"><h2 class="[ font-medium break-words hover:underline ]">Blazor WASM Dynamic Component</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-07-03 22-30-00">3 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/types-of-middleware-in-aspnet"><figure><img src="image/blogs/middleware/types-of-middleware-in-aspnet.svg" class="[ w-full ]" alt="Types of Middleware in ASP.NET" loading="lazy"/></figure></a></header>
+                            <time datetime="2022-07-03 22-30-00">4 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/types-of-middleware-in-aspnet"><figure><img src="image/blogs/middleware/types-of-middleware-in-aspnet.svg" class="[ w-full ]" alt="Types of Middleware in ASP.NET" loading="lazy"/></figure></a></header>
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/middleware"><figure><img src="image/icons/middleware.png" alt="Middleware" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/types-of-middleware-in-aspnet"><h2 class="[ font-medium break-words hover:underline ]">Types of Middleware in ASP.NET</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
@@ -479,7 +505,7 @@
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/webapi"><figure><img src="image/icons/webapi.png" alt="WebAPI" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/webapi-importance-of-status-code"><h2 class="[ font-medium break-words hover:underline ]">Importance of Status Code in Web API</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-03-06 22-30-00">7 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/blazor-wasm-app-settings"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-app-settings.svg" class="[ w-full ]" alt="Blazor WASM App Settings" loading="lazy"/></figure></a></header>
+                            <time datetime="2022-03-06 22-30-00">8 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/blazor-wasm-app-settings"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-app-settings.svg" class="[ w-full ]" alt="Blazor WASM App Settings" loading="lazy"/></figure></a></header>
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/blazor"><figure><img src="image/icons/blazor.png" alt="Blazor" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/blazor-wasm-app-settings"><h2 class="[ font-medium break-words hover:underline ]">Blazor WASM App Settings</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
@@ -495,7 +521,7 @@
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/blazor"><figure><img src="image/icons/blazor.png" alt="Blazor" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/blazor-wasm-javascript-interop-and-isolation"><h2 class="[ font-medium break-words hover:underline ]">Blazor WASM Javascript Interop and Isolation</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-02-06 22-30-00">8 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/blazor-wasm-dark-theme-and-light-theme"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-dark-theme-and-light-theme.svg" class="[ w-full ]" alt="Blazor WASM Dark Theme and Light Theme" loading="lazy"/></figure></a></header>
+                            <time datetime="2022-02-06 22-30-00">9 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/blazor-wasm-dark-theme-and-light-theme"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-dark-theme-and-light-theme.svg" class="[ w-full ]" alt="Blazor WASM Dark Theme and Light Theme" loading="lazy"/></figure></a></header>
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/blazor"><figure><img src="image/icons/blazor.png" alt="Blazor" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/blazor-wasm-dark-theme-and-light-theme"><h2 class="[ font-medium break-words hover:underline ]">Blazor WASM Dark Theme and Light Theme</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
@@ -534,7 +560,7 @@
            <path d="M8 11v-4a4 4 0 0 1 8 0v4"></path></svg>
         <span class="[ text-xs text-center ]">Privacy</span></a></nav>
             
-    <!--Blazor:{"prerenderId":"138d256433a9405ea0cde19c01885dc3"}-->
+    <!--Blazor:{"prerenderId":"e2c0c4f00eb447d095d125fd2aa2d689"}-->
 <!-- %%-PRERENDERING-END-%% -->
 <!--Blazor-Component-State:e30=--></div>
 

@@ -43,7 +43,7 @@
     </script>
 
 <!-- %%-PRERENDERING-HEADOUTLET-BEGIN-%% -->
-<!--Blazor:{"type":"webassembly","assembly":"Microsoft.AspNetCore.Components.Web","typeName":"Microsoft.AspNetCore.Components.Web.HeadOutlet","parameterDefinitions":"W10=","parameterValues":"W10=","prerenderId":"046a7d6f63ec4dffa7c10a80d40fe68a"}--><script type="application/ld+json">
+<!--Blazor:{"type":"webassembly","assembly":"Microsoft.AspNetCore.Components.Web","typeName":"Microsoft.AspNetCore.Components.Web.HeadOutlet","parameterDefinitions":"W10=","parameterValues":"W10=","prerenderId":"ff28291689fc4a91af481eda50d402b0"}--><script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "Article",
@@ -92,7 +92,7 @@
             "@id": "https://www.ilovedotnet.org/"
         }
     }
-    </script><!--Blazor:{"prerenderId":"046a7d6f63ec4dffa7c10a80d40fe68a"}-->
+    </script><!--Blazor:{"prerenderId":"ff28291689fc4a91af481eda50d402b0"}-->
 <!-- %%-PRERENDERING-HEADOUTLET-END-%% -->
 
     <script type="text/default-title">I ❤️ DotNet</script>
@@ -139,7 +139,7 @@
 <body class="[ m-0 ] [ h-full ] [ dark:bg-stone-900 ] [ bg-gray-100 ]">
     <div id="app" class="[ dark:text-white ]">
 <!-- %%-PRERENDERING-BEGIN-%% -->
-<!--Blazor:{"type":"webassembly","assembly":"Web","typeName":"Web.App","parameterDefinitions":"W10=","parameterValues":"W10=","prerenderId":"020fe4e024ca4400b5c5cef27397f260"}--><header id="header" class="[ flex items-center justify-between ] [ bg-white ] [ px-5 ] [ dark:bg-gray-800 dark:bg-gray-800/80 ] [ h-14 ] [ sticky top-0 ] [ backdrop-blur-sm bg-white/30 ]"><button type="button" class="[ hidden md:block ] [ mr-4 ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-menu-2 ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+<!--Blazor:{"type":"webassembly","assembly":"Web","typeName":"Web.App","parameterDefinitions":"W10=","parameterValues":"W10=","prerenderId":"8e565dd185ab4af28dd9d42a90b7f7f3"}--><header id="header" class="[ flex items-center justify-between ] [ bg-white ] [ px-5 ] [ dark:bg-gray-800 dark:bg-gray-800/80 ] [ h-14 ] [ sticky top-0 ] [ backdrop-blur-sm bg-white/30 ]"><button type="button" class="[ hidden md:block ] [ mr-4 ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-menu-2 ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
            <line x1="4" y1="6" x2="20" y2="6"></line>
            <line x1="4" y1="12" x2="20" y2="12"></line>
            <line x1="4" y1="18" x2="20" y2="18"></line></svg></button>
@@ -274,32 +274,48 @@
         <section class="[ dark:text-white ] [ space-y-2 ] [ leading-relaxed ]"><p>
             In previous article, we learnt what is components in blazor. if you are new to blazor, I strongly recommend you to check out my article on
             <a href="blogs/blazor-wasm-introduction" class="[ underline ]">Blazor Wasm Introduction</a> and
-            <a href="blogs/blazor-wasm-components" class="[ underline ]">Blazor Wasm Components</a>. If you are familiar with blazor and components,            you can skip introdution and continue with this article.
+            <a href="blogs/blazor-wasm-components" class="[ underline ]">Blazor Wasm Components</a>. If you are familiar with blazor and components, you can skip introdution and 
+            continue with this article.
         </p>
 
-        <h3 class="[ font-semibold text-lg ]">Why Event Handling in blazor components?</h3>
+        <h3 class="[ font-semibold text-lg ]">Table of Contents</h3>
 
-        <p><code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">Event Handling</code> in blazor components helps us to bring interactivity in our blazor applications. What should            happen when a user clicks on a button or when the user hovers on element inside a component? we can run a form submit event on click of button or            show an alert on click of button or animate a element inside component when the users hovers on the element, etc. We can do all these with the help            of event handlers in blazor components.
+        <ol class="[ list-decimal ] [ ml-4 ]"><li><a href="blogs/blazor-wasm-event-handling-and-event-arguments#why-event-handling-in-blazor-components" class="[ underline ]">
+                    Why Event Handling in blazor components?
+                </a></li>
+            <li><a href="blogs/blazor-wasm-event-handling-and-event-arguments#event-arguments" class="[ underline ]">
+                    Event arguments
+                </a></li>
+            <li><a href="blogs/blazor-wasm-event-handling-and-event-arguments#summary" class="[ underline ]">
+                    Summary
+                </a></li></ol>
+
+        <h3 id="why-event-handling-in-blazor-components" class="[ font-semibold text-lg ]">Why Event Handling in blazor components?</h3>
+
+        <p><code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">Event Handling</code> in blazor components helps us to bring interactivity in our blazor applications. What should happen when a user clicks on a 
+            button or when the user hovers on element inside a component? we can run a form submit event on click of button or show an alert on click of button or animate a element inside 
+            component when the users hovers on the element, etc. We can do all these with the help of event handlers in blazor components.
         </p>
 
         <p>
             The razor syntax for that is <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">@on{DOM EVENT}="{DELEGATE}"</code></p>
 
         <ul class="[ list-disc ] [ ml-4 ]"><li>
-                The <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">{DOM EVENT}</code> placeholder is a <a href="https://developer.mozilla.org/en-US/docs/Web/Events" target="_blank" class="[ underline ]">Document Object Model (DOM) event (for example, click).</a></li>
+                The <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">{DOM EVENT}</code> placeholder is a 
+                <a href="https://developer.mozilla.org/en-US/docs/Web/Events" target="_blank" class="[ underline ]">Document Object Model (DOM) event (for example, click).</a></li>
             <li>The <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">{DELEGATE}</code> placeholder is the C# delegate event handler.</li></ul>
 
         <section class="[ flex flex-col ]"><h4 class="[ bg-gray-200 ] [ p-2 ] [ font-semibold ] [ text-black ] [ flex items-center ] [ dark:bg-gray-800 dark:bg-gray-800/80 dark:text-white ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-code ] [ text-purple-700 ] [ fill-purple-500 ]" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - Blazor WASM Event Handling</h4>
-    <article id="5bbd7fa6-dda0-463b-b943-00e94a596565" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="1159ce06-1be6-4992-8543-e13444e024f3" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <section class="[ flex flex-col ]"><h4 class="[ bg-gray-200 ] [ p-2 ] [ font-semibold ] [ text-black ] [ flex items-center ] [ dark:bg-gray-800 dark:bg-gray-800/80 dark:text-white ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-caret-right ] [ text-lime-700 ] [ fill-lime-500 ]" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
             <path d="M18 15l-6 -6l-6 6h12" transform="rotate(90 12 12)"></path></svg> Demo - Event Handling</h4>
     <article class="[ bg-gray-300 ] [ dark:bg-gray-700 ] [ p-4 ]"><p class="[ text-black ] [ dark:text-white ]"><b>
-                    Scenario - Let's try a simple <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">@onclick</code> and <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">@onchange</code>. Click on
-                    the button and checkbox to see how event handler works.
+                    Scenario - Let's try a simple <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">@onclick</code> and <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">@onchange</code>. Click on the button and checkbox to see 
+                    how event handler works.
                 </b></p>
             <h1>I ❤️ .NET</h1>
 
@@ -316,19 +332,19 @@
 <p><label><input type="checkbox"/>
         Not changed yet</label></p></article></section>
 
-        <h3 class="[ font-semibold text-lg ]">Event arguments</h3>
+        <h3 id="event-arguments" class="[ font-semibold text-lg ]">Event arguments</h3>
 
         <p>
-            For events that support an event argument type, specifying an event parameter in the event method definition is only necessary if the event type is
-            used in the method. In the following example, MouseEventArgs is used in the <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">ReportPointerLocation</code> method to set
-            message text that reports the mouse coordinates when the user selects a button in the UI.
+            For events that support an event argument type, specifying an event parameter in the event method definition is only necessary if the event type is used in the method. In the 
+            following example, MouseEventArgs is used in the <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">ReportPointerLocation</code> method to set message text that reports the mouse coordinates when the 
+            user selects a button in the UI.
         </p>
 
         <section class="[ flex flex-col ]"><h4 class="[ bg-gray-200 ] [ p-2 ] [ font-semibold ] [ text-black ] [ flex items-center ] [ dark:bg-gray-800 dark:bg-gray-800/80 dark:text-white ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-code ] [ text-purple-700 ] [ fill-purple-500 ]" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - Blazor WASM Event Arguments</h4>
-    <article id="a1e3b2b7-e2c6-4f67-bf9d-0c84e73419ee" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="59358b65-beb7-4c00-8770-46a73400e883" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <section class="[ flex flex-col ]"><h4 class="[ bg-gray-200 ] [ p-2 ] [ font-semibold ] [ text-black ] [ flex items-center ] [ dark:bg-gray-800 dark:bg-gray-800/80 dark:text-white ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-caret-right ] [ text-lime-700 ] [ fill-lime-500 ]" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
             <path d="M18 15l-6 -6l-6 6h12" transform="rotate(90 12 12)"></path></svg> Demo - Event Arguments</h4>
@@ -347,7 +363,9 @@
 
 <p></p></article></section>
 
-        Here are the list of supported event arguments:
+        <p>
+            Here are the list of supported event arguments:
+        </p>
 
         <div class="[ w-full ] [ overflow-x-auto ]"><table aria-label="Built-in event arguments" class="[ table-fixed border-collapse ] [ bg-white ] [ border-2 ] [ dark:bg-black dark:border-slate-500 ]"><thead><tr class="[ bg-gray-100 ] [ dark:bg-slate-500 ]"><th class="[ border-2 ] [ dark:border-slate-600 ] [ p-2 ]">Event</th>
                         <th class="[ border-2 ] [ dark:border-slate-600 ] [ p-2 ]">Class</th>
@@ -393,31 +411,35 @@
                         <td class="[ border-2 ] [ dark:border-slate-700 ] [ p-2 ]"><code>ontouchstart</code>, <code>ontouchend</code>, <code>ontouchmove</code>, <code>ontouchenter</code>, <code>ontouchleave</code>, <code>ontouchcancel</code><br/><br/><a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.components.web.touchpoint" target="_blank" class="[ underline ]">TouchPoint</a> represents a single contact point on a touch-sensitive device.
                         </td></tr></tbody></table></div>
 
-        <h3 class="[ font-semibold text-lg ]">Summary</h3>
+        <h3 id="summary" class="[ font-semibold text-lg ]">Summary</h3>
 
         <p>
-            In this article, we learn't about what is event handling in blazor components and experienced a live demo. In our next
-            article let's learn about what is event callback and how to communicate between components.
+            In this article, we learn't about what is event handling in blazor components and experienced a live demo. In our next article let's learn about what is event callback and how to 
+            communicate between components.
         </p></section>
         <footer class="[ max-w-full ]"><ul class="[ list-none ] [ flex items-center justify-start md:justify-center ] [ space-x-3 ] [ overflow-hidden overflow-x-auto ]"><li class="[ px-3 py-1 ] [ rounded-full ] [ bg-black text-white dark:bg-white dark:text-black ]">Blazor</li><li class="[ px-3 py-1 ] [ rounded-full ] [ bg-black text-white dark:bg-white dark:text-black ] [ whitespace-nowrap ]">Event Hadling</li><li class="[ px-3 py-1 ] [ rounded-full ] [ bg-black text-white dark:bg-white dark:text-black ] [ whitespace-nowrap ]">Event Arguments</li></ul></footer>
         <hr class="[ dark:text-white my-1.5 ]"/></article>
-    <aside class="[ flex flex-col md:basis-1/4 ] [ space-y-2 ]"><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-skip-to-select-specific-data"><figure><img src="image/blogs/linq/using-linq-skip-to-select-specific-data.svg" class="[ w-full ]" alt="Using LINQ Skip to Select Specific Data" loading="lazy"/></figure></a></header>
+    <aside class="[ flex flex-col md:basis-1/4 ] [ space-y-2 ]"><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-distinct-to-select-unique-data"><figure><img src="image/blogs/linq/using-linq-distinct-to-select-unique-data.svg" class="[ w-full ]" alt="Using LINQ Distinct to Select Unique Data" loading="lazy"/></figure></a></header>
+                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/linq"><figure><img src="image/icons/linq.png" alt="LINQ" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
+                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/using-linq-distinct-to-select-unique-data"><h2 class="[ font-medium break-words hover:underline ]">Using LINQ Distinct to Select Unique Data</h2></a>
+                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
+                            <time datetime="2022-10-30 22-30-00">6 hours from now</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-skip-to-select-specific-data"><figure><img src="image/blogs/linq/using-linq-skip-to-select-specific-data.svg" class="[ w-full ]" alt="Using LINQ Skip to Select Specific Data" loading="lazy"/></figure></a></header>
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/linq"><figure><img src="image/icons/linq.png" alt="LINQ" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/using-linq-skip-to-select-specific-data"><h2 class="[ font-medium break-words hover:underline ]">Using LINQ Skip to Select Specific Data</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-10-23 22-30-00">3 days ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-take-to-select-specific-data"><figure><img src="image/blogs/linq/using-linq-take-to-select-specific-data.svg" class="[ w-full ]" alt="Using LINQ Take to Select Specific Data" loading="lazy"/></figure></a></header>
+                            <time datetime="2022-10-23 22-30-00">6 days ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-take-to-select-specific-data"><figure><img src="image/blogs/linq/using-linq-take-to-select-specific-data.svg" class="[ w-full ]" alt="Using LINQ Take to Select Specific Data" loading="lazy"/></figure></a></header>
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/linq"><figure><img src="image/icons/linq.png" alt="LINQ" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/using-linq-take-to-select-specific-data"><h2 class="[ font-medium break-words hover:underline ]">Using LINQ Take to Select Specific Data</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-10-16 22-30-00">10 days ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-single-to-select-single-data"><figure><img src="image/blogs/linq/using-linq-single-to-select-single-data.svg" class="[ w-full ]" alt="Using LINQ Single to Select Single Data" loading="lazy"/></figure></a></header>
+                            <time datetime="2022-10-16 22-30-00">13 days ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-single-to-select-single-data"><figure><img src="image/blogs/linq/using-linq-single-to-select-single-data.svg" class="[ w-full ]" alt="Using LINQ Single to Select Single Data" loading="lazy"/></figure></a></header>
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/linq"><figure><img src="image/icons/linq.png" alt="LINQ" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/using-linq-single-to-select-single-data"><h2 class="[ font-medium break-words hover:underline ]">Using LINQ Single to Select Single Data</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-10-09 22-30-00">17 days ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-last-to-select-single-data"><figure><img src="image/blogs/linq/using-linq-last-to-select-single-data.svg" class="[ w-full ]" alt="Using LINQ Last to Select Single Data" loading="lazy"/></figure></a></header>
+                            <time datetime="2022-10-09 22-30-00">20 days ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-last-to-select-single-data"><figure><img src="image/blogs/linq/using-linq-last-to-select-single-data.svg" class="[ w-full ]" alt="Using LINQ Last to Select Single Data" loading="lazy"/></figure></a></header>
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/linq"><figure><img src="image/icons/linq.png" alt="LINQ" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/using-linq-last-to-select-single-data"><h2 class="[ font-medium break-words hover:underline ]">Using LINQ Last to Select Single Data</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-10-02 22-30-00">24 days ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-first-to-select-single-data"><figure><img src="image/blogs/linq/using-linq-first-to-select-single-data.svg" class="[ w-full ]" alt="Using LINQ First to Select Single Data" loading="lazy"/></figure></a></header>
+                            <time datetime="2022-10-02 22-30-00">27 days ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-first-to-select-single-data"><figure><img src="image/blogs/linq/using-linq-first-to-select-single-data.svg" class="[ w-full ]" alt="Using LINQ First to Select Single Data" loading="lazy"/></figure></a></header>
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/linq"><figure><img src="image/icons/linq.png" alt="LINQ" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/using-linq-first-to-select-single-data"><h2 class="[ font-medium break-words hover:underline ]">Using LINQ First to Select Single Data</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
@@ -453,7 +475,7 @@
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/dependency-injection"><figure><img src="image/icons/dependency-injection.png" alt="Dependency-Injection" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/dependency-injection-lifetimes-in-dotnet"><h2 class="[ font-medium break-words hover:underline ]">Dependency Injection Lifetimes in .NET</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-07-31 22-30-00">2 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/introducing-dependency-injection-in-dotnet"><figure><img src="image/blogs/dependency-injection/introducing-dependency-injection-in-dotnet.svg" class="[ w-full ]" alt="Introducing Dependency Injection in .NET" loading="lazy"/></figure></a></header>
+                            <time datetime="2022-07-31 22-30-00">3 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/introducing-dependency-injection-in-dotnet"><figure><img src="image/blogs/dependency-injection/introducing-dependency-injection-in-dotnet.svg" class="[ w-full ]" alt="Introducing Dependency Injection in .NET" loading="lazy"/></figure></a></header>
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/dependency-injection"><figure><img src="image/icons/dependency-injection.png" alt="Dependency-Injection" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/introducing-dependency-injection-in-dotnet"><h2 class="[ font-medium break-words hover:underline ]">Introducing Dependency Injection in .NET</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
@@ -469,7 +491,7 @@
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/blazor"><figure><img src="image/icons/blazor.png" alt="Blazor" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/blazor-wasm-dynamic-component"><h2 class="[ font-medium break-words hover:underline ]">Blazor WASM Dynamic Component</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-07-03 22-30-00">3 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/types-of-middleware-in-aspnet"><figure><img src="image/blogs/middleware/types-of-middleware-in-aspnet.svg" class="[ w-full ]" alt="Types of Middleware in ASP.NET" loading="lazy"/></figure></a></header>
+                            <time datetime="2022-07-03 22-30-00">4 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/types-of-middleware-in-aspnet"><figure><img src="image/blogs/middleware/types-of-middleware-in-aspnet.svg" class="[ w-full ]" alt="Types of Middleware in ASP.NET" loading="lazy"/></figure></a></header>
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/middleware"><figure><img src="image/icons/middleware.png" alt="Middleware" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/types-of-middleware-in-aspnet"><h2 class="[ font-medium break-words hover:underline ]">Types of Middleware in ASP.NET</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
@@ -533,7 +555,7 @@
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/webapi"><figure><img src="image/icons/webapi.png" alt="WebAPI" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/webapi-importance-of-status-code"><h2 class="[ font-medium break-words hover:underline ]">Importance of Status Code in Web API</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-03-06 22-30-00">7 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/blazor-wasm-app-settings"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-app-settings.svg" class="[ w-full ]" alt="Blazor WASM App Settings" loading="lazy"/></figure></a></header>
+                            <time datetime="2022-03-06 22-30-00">8 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/blazor-wasm-app-settings"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-app-settings.svg" class="[ w-full ]" alt="Blazor WASM App Settings" loading="lazy"/></figure></a></header>
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/blazor"><figure><img src="image/icons/blazor.png" alt="Blazor" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/blazor-wasm-app-settings"><h2 class="[ font-medium break-words hover:underline ]">Blazor WASM App Settings</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
@@ -549,7 +571,7 @@
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/blazor"><figure><img src="image/icons/blazor.png" alt="Blazor" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/blazor-wasm-javascript-interop-and-isolation"><h2 class="[ font-medium break-words hover:underline ]">Blazor WASM Javascript Interop and Isolation</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-02-06 22-30-00">8 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/blazor-wasm-dark-theme-and-light-theme"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-dark-theme-and-light-theme.svg" class="[ w-full ]" alt="Blazor WASM Dark Theme and Light Theme" loading="lazy"/></figure></a></header>
+                            <time datetime="2022-02-06 22-30-00">9 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/blazor-wasm-dark-theme-and-light-theme"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-dark-theme-and-light-theme.svg" class="[ w-full ]" alt="Blazor WASM Dark Theme and Light Theme" loading="lazy"/></figure></a></header>
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/blazor"><figure><img src="image/icons/blazor.png" alt="Blazor" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/blazor-wasm-dark-theme-and-light-theme"><h2 class="[ font-medium break-words hover:underline ]">Blazor WASM Dark Theme and Light Theme</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
@@ -588,7 +610,7 @@
            <path d="M8 11v-4a4 4 0 0 1 8 0v4"></path></svg>
         <span class="[ text-xs text-center ]">Privacy</span></a></nav>
             
-    <!--Blazor:{"prerenderId":"020fe4e024ca4400b5c5cef27397f260"}-->
+    <!--Blazor:{"prerenderId":"8e565dd185ab4af28dd9d42a90b7f7f3"}-->
 <!-- %%-PRERENDERING-END-%% -->
 <!--Blazor-Component-State:e30=--></div>
 

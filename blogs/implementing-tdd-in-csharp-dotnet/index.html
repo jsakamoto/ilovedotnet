@@ -43,7 +43,7 @@
     </script>
 
 <!-- %%-PRERENDERING-HEADOUTLET-BEGIN-%% -->
-<!--Blazor:{"type":"webassembly","assembly":"Microsoft.AspNetCore.Components.Web","typeName":"Microsoft.AspNetCore.Components.Web.HeadOutlet","parameterDefinitions":"W10=","parameterValues":"W10=","prerenderId":"e63a4d0e6a0f4efd98376277c095b984"}--><script type="application/ld+json">
+<!--Blazor:{"type":"webassembly","assembly":"Microsoft.AspNetCore.Components.Web","typeName":"Microsoft.AspNetCore.Components.Web.HeadOutlet","parameterDefinitions":"W10=","parameterValues":"W10=","prerenderId":"95d859a35e924a44b2276e7626b4a8e7"}--><script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "Article",
@@ -92,7 +92,7 @@
             "@id": "https://www.ilovedotnet.org/"
         }
     }
-    </script><!--Blazor:{"prerenderId":"e63a4d0e6a0f4efd98376277c095b984"}-->
+    </script><!--Blazor:{"prerenderId":"95d859a35e924a44b2276e7626b4a8e7"}-->
 <!-- %%-PRERENDERING-HEADOUTLET-END-%% -->
 
     <script type="text/default-title">I ❤️ DotNet</script>
@@ -139,7 +139,7 @@
 <body class="[ m-0 ] [ h-full ] [ dark:bg-stone-900 ] [ bg-gray-100 ]">
     <div id="app" class="[ dark:text-white ]">
 <!-- %%-PRERENDERING-BEGIN-%% -->
-<!--Blazor:{"type":"webassembly","assembly":"Web","typeName":"Web.App","parameterDefinitions":"W10=","parameterValues":"W10=","prerenderId":"c19e398f8560487eab913fc4dd460a7a"}--><header id="header" class="[ flex items-center justify-between ] [ bg-white ] [ px-5 ] [ dark:bg-gray-800 dark:bg-gray-800/80 ] [ h-14 ] [ sticky top-0 ] [ backdrop-blur-sm bg-white/30 ]"><button type="button" class="[ hidden md:block ] [ mr-4 ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-menu-2 ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+<!--Blazor:{"type":"webassembly","assembly":"Web","typeName":"Web.App","parameterDefinitions":"W10=","parameterValues":"W10=","prerenderId":"a16cb617113c468ba93b00673cfacd59"}--><header id="header" class="[ flex items-center justify-between ] [ bg-white ] [ px-5 ] [ dark:bg-gray-800 dark:bg-gray-800/80 ] [ h-14 ] [ sticky top-0 ] [ backdrop-blur-sm bg-white/30 ]"><button type="button" class="[ hidden md:block ] [ mr-4 ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-menu-2 ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
            <line x1="4" y1="6" x2="20" y2="6"></line>
            <line x1="4" y1="12" x2="20" y2="12"></line>
            <line x1="4" y1="18" x2="20" y2="18"></line></svg></button>
@@ -272,16 +272,51 @@
         <a href="https://github.com/ILoveDotNet/ilovedotnet/blob/main/Web/Pages/Blogs/TDD/Implementation.razor" target="_blank" class="[ md:bg-red-700 ] [ text-red-500 md:text-white uppercase ] [ px-3 py-2 ] [ font-semibold ]">Improve</a></section>
     <hr class="[ dark:text-white my-1.5 ]"/></header>
         <section class="[ dark:text-white ] [ space-y-2 ] [ leading-relaxed ]"><p>
-            In our previous article <a href="blogs/introducing-tdd-in-csharp-dotnet" class="[ underline ]">Introducing TDD in C# .NET</a>,
-            we learnt what is the principle of TDD, it's advantages and disadvantages. We also learnt the terms <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">Red, Green, Refactor</code>
-            in TDD. In this article, let's learn about how to practice and implement TDD in C# .NET.
+            In our previous article <a href="blogs/introducing-tdd-in-csharp-dotnet" class="[ underline ]">Introducing TDD in C# .NET</a>, we learnt what is the principle of TDD, 
+            it's advantages and disadvantages. We also learnt the terms <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">Red, Green, Refactor</code> in TDD. In this article, let's learn about how to practice and 
+            implement TDD in C# .NET.
         </p>
+
+        <h3 class="[ font-semibold text-lg ]">Table of Contents</h3>
+
+        <ol class="[ list-decimal ] [ ml-4 ]"><li><a href="blogs/implementing-tdd-in-csharp-dotnet#scenario" class="[ underline ]">
+                    Scenario
+                </a></li>
+            <li><a href="blogs/implementing-tdd-in-csharp-dotnet#using-tdd-to-write-business-logic" class="[ underline ]">
+                    Using TDD to write business logic
+                </a></li>
+            <li><a href="blogs/implementing-tdd-in-csharp-dotnet#understanding-the-first-requirement" class="[ underline ]">
+                    Understanding the First Requirement
+                </a></li>
+            <li><a href="blogs/implementing-tdd-in-csharp-dotnet#creating-a-red-unit-test" class="[ underline ]">
+                    Create a Red unit test
+                </a></li>
+            <li><a href="blogs/implementing-tdd-in-csharp-dotnet#write-code-to-make-test-green" class="[ underline ]">
+                    Write Code to make test Green
+                </a></li>
+            <li><a href="blogs/implementing-tdd-in-csharp-dotnet#refactor-to-improve-the-code" class="[ underline ]">
+                    Refactor to improve the code
+                </a></li>
+            <li><a href="blogs/implementing-tdd-in-csharp-dotnet#understanding-the-second-requirement" class="[ underline ]">
+                    Understanding the second Requirement
+                </a></li>
+            <li><a href="blogs/implementing-tdd-in-csharp-dotnet#decouple-the-dependencies" class="[ underline ]">
+                    Decouple the Dependencies
+                </a></li>
+            <li><a href="blogs/implementing-tdd-in-csharp-dotnet#writing-code-to-make-test-pass" class="[ underline ]">
+                    Writing code to make the test pass
+                </a></li>
+            <li><a href="blogs/implementing-tdd-in-csharp-dotnet#again-refactor-the-code" class="[ underline ]">
+                    Again refactor the code
+                </a></li>
+            <li><a href="blogs/implementing-tdd-in-csharp-dotnet#summary" class="[ underline ]">
+                    Summary
+                </a></li></ol>
         
-        <h3 class="[ font-semibold text-lg ]">Scenario</h3>
+        <h3 id="scenario" class="[ font-semibold text-lg ]">Scenario</h3>
 
         <p>
-            Let’s take a simple scenario where a user needs to book a ticket. The user needs to fill a form with basic details to 
-            book the ticket.
+            Let’s take a simple scenario where a user needs to book a ticket. The user needs to fill a form with basic details to book the ticket.
         </p>
 
         <ul><li>Ticket Booking</li>
@@ -293,30 +328,27 @@
             <li>Adding features in asp.net core app.</li></ul>
         
         <p>
-            Let’s first start with creating a test project named TicketBookingCore.Test for business logic. We will start writing 
-            the first failing test and continue from that. Then let’s work on adding additional business logic by implementing tests 
-            and iterating through the TDD cycle. We have more complex requirements that will force us to decouple dependencies and 
-            we need to mock those classes while writing the test.
+            Let’s first start with creating a test project named TicketBookingCore.Test for business logic. We will start writing the first failing test and continue from that. Then let’s work 
+            on adding additional business logic by implementing tests and iterating through the TDD cycle. We have more complex requirements that will force us to decouple dependencies and we 
+            need to mock those classes while writing the test.
         </p>
         
         <p>
-            Finally let’s see how to implement TDD with web project. It is your responsibility to check the user entered information 
-            and implement TDD.
+            Finally let’s see how to implement TDD with web project. It is your responsibility to check the user entered information and implement TDD.
         </p>
         
-        <h3 class="[ font-semibold text-lg ]">Using TDD to write business logic</h3>
+        <h3 id="using-tdd-to-write-business-logic" class="[ font-semibold text-lg ]">Using TDD to write business logic</h3>
 
         <h4 class="[ font-semibold text-base ]">Requirements</h4>
         
         <ol class="[ list-decimal ] [ ml-4 ]"><li>Response should contain the same values as request after booking.</li>
             <li>Booking should be saved to database.</li></ol>
         
-        <h3 class="[ font-semibold text-lg ]">Understand the First Requirement</h3>
+        <h3 id="understanding-the-first-requirement" class="[ font-semibold text-lg ]">Understanding the First Requirement</h3>
 
         <p>
-            The user will submit a form to book a ticket which will make a call to TicketBookingRequestProcessor to book a ticket. 
-            The processor must return the same data after the booking is successful. To do this lets first think of the API. The 
-            TicketBookingRequestProcessor will use Book to book a ticket and it will receive TicketBookingRequest as input and return 
+            The user will submit a form to book a ticket which will make a call to TicketBookingRequestProcessor to book a ticket. The processor must return the same data after the booking is 
+            successful. To do this lets first think of the API. The TicketBookingRequestProcessor will use Book to book a ticket and it will receive TicketBookingRequest as input and return 
             TicketBookingResponse as result.
         </p>
         
@@ -326,7 +358,7 @@
             This simple requirement is good to start with TDD.
         </p>
 
-        <h3 class="[ font-semibold text-lg ]">Create a Red unit test</h3>
+        <h3 id="creating-a-red-unit-test" class="[ font-semibold text-lg ]">Create a Red unit test</h3>
 
         <ol class="[ list-decimal ] [ ml-4 ]"><li>Create a new C# XUnit test project named TicketBookingCore.Tests.</li>
             <li>As you need to test TicketBookingProcessor Class, create a new class named TicketBookingRequestProcessorTests.</li>
@@ -338,22 +370,20 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - TDD Red Phase - First Requirement - New Unit Test</h4>
-    <article id="745061c5-3773-4591-bae4-91d55232825f" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="71deaf33-66c0-4baf-8a66-76321b5f5635" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
         
         <p>
-            Create a TicketBookingRequest with FirstName, LastName and Email properties and set the values and again press Ctrl + . 
-            to create the class in new file.
+            Create a TicketBookingRequest with FirstName, LastName and Email properties and set the values and again press Ctrl + . to create the class in new file.
         </p>
         
         <section class="[ flex flex-col ]"><h4 class="[ bg-gray-200 ] [ p-2 ] [ font-semibold ] [ text-black ] [ flex items-center ] [ dark:bg-gray-800 dark:bg-gray-800/80 dark:text-white ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-code ] [ text-purple-700 ] [ fill-purple-500 ]" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - TDD Red Phase - First Requirement - Creating Request Class</h4>
-    <article id="e3ce2adc-7996-4af8-98de-c058b7aa202d" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="635c3c65-5196-4002-b8dc-79df850e2b5f" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <p>
-            Add the following line TicketBookingResponse response = processor.Book(request); and press Ctrl + . to generate the Book 
-            method in TicketBookingRequestProcessor class.
+            Add the following line TicketBookingResponse response = processor.Book(request); and press Ctrl + . to generate the Book method in TicketBookingRequestProcessor class.
         </p>
 
         <p>
@@ -372,7 +402,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - TDD Red Phase - First Requirement - Creating Response Class</h4>
-    <article id="c743eca4-7bb6-499e-8469-0d147be3518d" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="518c5fdf-cdd9-468d-ad0b-dbe1b7de7280" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
         
         <p>
             We are all set with AAA (Arrange, Act, and Assert) of unit tests.
@@ -382,11 +412,11 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - TDD Red Phase - First Requriement - Arrange Assert Act</h4>
-    <article id="e263e61a-6edb-4567-8494-96e3d704f3a5" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="264be661-05a0-473f-a1f3-49c6bc5351b5" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <p>
-            Press Ctrl + E, T to open Test Explorer. You can now see the test is listed in the test explorer. Now Click on the Run 
-            (Green Triangle) button. You can see that the test fails with NotImplementedException.
+            Press Ctrl + E, T to open Test Explorer. You can now see the test is listed in the test explorer. Now Click on the Run (Green Triangle) button. You can see that the test fails with 
+            NotImplementedException.
         </p>
         
         <figure><img src="./image/blogs/tdd/implementation/first red test.jpg" alt="First Red Test" class="[ w-full ]"/></figure>
@@ -395,7 +425,7 @@
             Great, we completed the 1st step of TDD (Red Phase).
         </p>
 
-        <h3 class="[ font-semibold text-lg ]">Write Code to make test Green</h3>
+        <h3 id="write-code-to-make-test-green" class="[ font-semibold text-lg ]">Write Code to make test Green</h3>
 
         <p>
             Now let’s go to 2nd step of TDD (Green Phase) and write the bare minimum code required to make the test pass.
@@ -409,7 +439,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - TDD Green Phase - First Requirement - Adding Minimal Requried Code</h4>
-    <article id="7aa98278-9a62-4376-9502-1f679560afd2" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="232afc85-c29a-4dbc-8e4b-cd6da4d3e0a4" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <p>
             That’s it. Now again run the test. The test passes and turns green.
@@ -421,22 +451,16 @@
             Great, we completed the 2nd step of TDD (Green Phase).
         </p>
 
-        <h3 class="[ font-semibold text-lg ]">Refactor to improve the code</h3>
+        <h3 id="refactor-to-improve-the-code" class="[ font-semibold text-lg ]">Refactor to improve the code</h3>
 
         <p>
             Now we are in the 3rd step of TDD (Refactor Phase). We can refactor and improve the code as follows,
         </p>
 
-        <ol class="[ list-decimal ] [ ml-4 ]"><li>
-                Create New .Net Core Class Library Named TicketBookingCore and move TicketBookingRequest, TicketBookingRequestProcessor and 
-                TicketBookingResponse into this project.
-            </li>
+        <ol class="[ list-decimal ] [ ml-4 ]"><li>Create New .Net Core Class Library Named TicketBookingCore and move TicketBookingRequest, TicketBookingRequestProcessor and TicketBookingResponse into this project.</li>
             <li>Fix Namespaces of the files in TicketBookingCore project.</li>
             <li>Change the access modifier of all classes and methods to the public.</li>
-            <li>
-                Create a base class TicketBookingBase and move the properties from TicketBookingRequest and TicketBookingResponse and inherit from 
-                TicketBookingBase class.
-            </li>
+            <li>Create a base class TicketBookingBase and move the properties from TicketBookingRequest and TicketBookingResponse and inherit from TicketBookingBase class.</li>
             <li>Add a reference to TicketBookingCore project in the TicketBookingCore.Tests project.</li>            
             <li>Now Build the solution and run the tests again.</li>
             <li>The test should pass.</li></ol>
@@ -459,7 +483,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - TDD Red Phase - First Requirement - Another Unit Test</h4>
-    <article id="5ec48eed-0231-48be-8860-26c67af3952e" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="cde6403e-8f1f-42af-8418-853371d00a38" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <p>
             Now if you run the above from test explorer, the test will fail with NullReferenceException instead of ArgumentNullException, as shown below:
@@ -475,7 +499,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - TDD Green Phase - First Requriement - Minimal Required Code to Make Test Pass</h4>
-    <article id="0e0532e3-a5e8-4eeb-b638-3c3c2179fc96" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="cc475bff-4d13-4ed2-bfe8-3c096bf72ad1" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <p>
             Now run the test again and the test will pass.
@@ -484,58 +508,54 @@
         <figure><img src="./image/blogs/tdd/implementation/second green test.jpg" alt="Second Green Test" class="[ w-full ]"/></figure>
 
         <p>
-            The next step is to refactor. We don’t have anything in Book method to refactor but that doesn’t mean that we have nothing we can also 
-            refactor our tests.
+            The next step is to refactor. We don’t have anything in Book method to refactor but that doesn’t mean that we have nothing we can also refactor our tests.
         </p>
 
         <p>
-            Since we need TicketBookingRequestProcessor in both the test, we can remove that from both the test and move it to 
-            TicketBookingRequestProcessorTests constructor and use that in our test methods.
+            Since we need TicketBookingRequestProcessor in both the test, we can remove that from both the test and move it to TicketBookingRequestProcessorTests constructor and use that in 
+            our test methods.
         </p>
 
         <section class="[ flex flex-col ]"><h4 class="[ bg-gray-200 ] [ p-2 ] [ font-semibold ] [ text-black ] [ flex items-center ] [ dark:bg-gray-800 dark:bg-gray-800/80 dark:text-white ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-code ] [ text-purple-700 ] [ fill-purple-500 ]" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - TDD Refactor Phase - First Requriement - Refactoring Tests</h4>
-    <article id="d11140b0-9cf2-488f-a784-1d7b99ffd2cc" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="805b3c64-9f2e-461e-91c4-d0c6fc04407e" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
-        <h3 class="[ font-semibold text-lg ]">Understand the second Requirement</h3>
+        <h3 id="understanding-the-second-requirement" class="[ font-semibold text-lg ]">Understanding the second Requirement</h3>
 
         <p>
-            Now we need to save the booking to the database. To save to database we need to modify the book method to save the booking to the 
-            database and return the booking request values.
+            Now we need to save the booking to the database. To save to database we need to modify the book method to save the booking to the database and return the booking request values.
         </p>
 
         <figure><img src="./image/blogs/tdd/implementation/second requirement.jpg" alt="Second Requirement" class="[ w-full ]"/></figure>
 
-        <h3 class="[ font-semibold text-lg ]">Decouple the Dependencies</h3>
+        <h3 id="decouple-the-dependencies" class="[ font-semibold text-lg ]">Decouple the Dependencies</h3>
 
         <p>
-            If you look at the above image, TicketBookingRequestProcessor has too many responsibilities. One is to process the booking request and 
-            another is to save it to the database.
+            If you look at the above image, TicketBookingRequestProcessor has too many responsibilities. One is to process the booking request and another is to save it to the database.
         </p>
 
         <p>
-            But this violates the Single Responsibility Principle (SRP) – which says a class should have a single responsibility. So, to adhere to 
-            the SRP principle, we need to move the save to database logic to a separate class like TicketBookingRepository.
+            But this violates the Single Responsibility Principle (SRP) – which says a class should have a single responsibility. So, to adhere to the SRP principle, we need to move the save 
+            to database logic to a separate class like TicketBookingRepository.
         </p>
 
         <figure><img src="./image/blogs/tdd/implementation/save concrete.jpg" alt="Save Concrete" class="[ w-full ]"/></figure>
 
         <p>
-            We can now save the TicketBooking object to the database using the TicketBookingRepository class. But now TicketBookingRequestProcessor 
-            depends on the TicketBookingRepository class to save to the database. This is not for the unit test, as the test needs to run in 
-            isolation. So here comes the Dependency Inversion Principle (DI), which says a class should always depend on abstraction, not on 
-            implementation. We can implement this by introducing a new interface ITicketBookingRepository. This interface implements 
-            TicketBookingRepository and saves to the database.
+            We can now save the TicketBooking object to the database using the TicketBookingRepository class. But now TicketBookingRequestProcessor depends on the TicketBookingRepository class 
+            to save to the database. This is not for the unit test, as the test needs to run in isolation. So here comes the Dependency Inversion Principle (DI), which says a class should 
+            always depend on abstraction, not on implementation. We can implement this by introducing a new interface ITicketBookingRepository. This interface implements TicketBookingRepository 
+            and saves to the database.
         </p>
 
         <figure><img src="./image/blogs/tdd/implementation/save abstraction.jpg" alt="Save Abstraction" class="[ w-full ]"/></figure>
 
         <p>
-            So now TicketBookingRequestProcessor depends on ITicketBookingRepository and we don’t need to worry about the database. This means to 
-            write a test we can create a mock (fake) object and use that to save to database and we can verify by this from the mock object that 
-            Save method is called at least once. This is how we can use interface to decouple the dependencies.
+            So now TicketBookingRequestProcessor depends on ITicketBookingRepository and we don’t need to worry about the database. This means to write a test we can create a mock (fake) 
+            object and use that to save to database and we can verify by this from the mock object that Save method is called at least once. This is how we can use interface to decouple the 
+            dependencies.
         </p>
 
         <p>
@@ -549,7 +569,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - TDD Red Phase - Second Requirement - New Failing Test</h4>
-    <article id="9f45de3c-e605-41e3-b0c5-7b0a16ca10e2" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="114b3fe8-f83c-4ec7-b806-a1da06f7dc05" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <p>
             Now to save to database, we need ITicketBookingRepository and that needs to be injected to TicketBookingRequestProcessor.
@@ -563,73 +583,64 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - TDD Red Phase - Second Requirement - New Failing Test Compilation Fix</h4>
-    <article id="d2a59fa3-4df9-4a16-9aaf-fc1bcc043656" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="35e4fe14-9f8e-4c49-9ba8-899b8ab1a230" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <p>
             Now we need a mock object for ITicketBookingRepository. We can use the mock library to fake the repository.
         </p>
 
         <ol class="[ list-decimal ] [ ml-4 ]"><li>Add _ticketBookingRepositoryMock = new Mock&lt;ITicketBookingRepository&gt;(); to TicketBookingRequestProcessorTests constructor.</li>
-            <li>
-                Press Ctrl + . to download install Moq nuget package and repeat to add a private readonly field 
-                Mock&lt;ITicketBookingRepository&gt; _ticketBookingRepositoryMock for that repository.
-            </li>
-            <li>
-                Pass the field to TicketBookingRequestProcessor constructor and press Ctrl + . to add that as a parameter to 
-                TicketBookingRequestProcessor class.
-            </li></ol>
+            <li>Press Ctrl + . to download install Moq nuget package and repeat to add a private readonly field Mock&lt;ITicketBookingRepository&gt; _ticketBookingRepositoryMock for that repository.</li>
+            <li>Pass the field to TicketBookingRequestProcessor constructor and press Ctrl + . to add that as a parameter to TicketBookingRequestProcessor class.</li></ol>
 
         <section class="[ flex flex-col ]"><h4 class="[ bg-gray-200 ] [ p-2 ] [ font-semibold ] [ text-black ] [ flex items-center ] [ dark:bg-gray-800 dark:bg-gray-800/80 dark:text-white ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-code ] [ text-purple-700 ] [ fill-purple-500 ]" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - TDD Red Phase - Second Requirement - New Failing Test Mocking Dependencies</h4>
-    <article id="7c0f2ac7-4a18-4d0e-8c6a-658e9aaa812e" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="18d5980f-5466-4631-9b18-0f26bb84e88d" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <p>
-            Now we need to write a setup in mock repository to make a callback when Save is called in that repository. And we need to assert that 
-            the Save method in the repository is called at least once and verifies the properties in the callback object.
+            Now we need to write a setup in mock repository to make a callback when Save is called in that repository. And we need to assert that the Save method in the repository is called at 
+            least once and verifies the properties in the callback object.
         </p>
 
         <section class="[ flex flex-col ]"><h4 class="[ bg-gray-200 ] [ p-2 ] [ font-semibold ] [ text-black ] [ flex items-center ] [ dark:bg-gray-800 dark:bg-gray-800/80 dark:text-white ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-code ] [ text-purple-700 ] [ fill-purple-500 ]" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - TDD Red Phase - Second Requirement - New Failing Test Asserting</h4>
-    <article id="731f82e0-2ba4-49eb-83d6-f9ef6e56160b" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="315e00b5-01df-449e-bfbc-76b04137e440" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <p>Now we are done with test setup. Run the test and the test should fail.</p>
 
         <figure><img src="./image/blogs/tdd/implementation/third red test.jpg" alt="Third Red Test" class="[ w-full ]"/></figure>
 
-        <h3 class="[ font-semibold text-lg ]">Writing code to make the test pass</h3>
+        <h3 id="writing-code-to-make-test-pass" class="[ font-semibold text-lg ]">Writing code to make the test pass</h3>
 
         <p>
-            Now we need to write the minimum code to make the test pass which is to create a private readonly field for ITicketBookingRepository 
-            make a call to Save method in repository inside the Book method in processor class.
+            Now we need to write the minimum code to make the test pass which is to create a private readonly field for ITicketBookingRepository make a call to Save method in repository inside 
+            the Book method in processor class.
         </p>
 
         <section class="[ flex flex-col ]"><h4 class="[ bg-gray-200 ] [ p-2 ] [ font-semibold ] [ text-black ] [ flex items-center ] [ dark:bg-gray-800 dark:bg-gray-800/80 dark:text-white ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-code ] [ text-purple-700 ] [ fill-purple-500 ]" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - TDD Green Phase - Second Requirement - Minimal Requried Code</h4>
-    <article id="0a924d4f-5c01-4957-9e07-23abf7301f7e" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="46c84d6e-bec9-4268-8895-2998c6375984" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <p>Now if you run the test, the test will pass.</p>
 
         <figure><img src="./image/blogs/tdd/implementation/third green test.jpg" alt="Third Green Test" class="[ w-full ]"/></figure>
 
-        <h3 class="[ font-semibold text-lg ]">Refactor the code</h3>
+        <h3 id="again-refactor-the-code" class="[ font-semibold text-lg ]">Again refactor the code</h3>
 
         <p>Now we can improve the code by doing some refactoring.</p>
 
         <ol class="[ list-decimal ] [ ml-4 ]"><li>According to Do Not Repeat Principle (DRY), we should avoid repeating the same code.</li>
             <li>
-                In the TicketBookingRequestProcessorTests class, the same TicketBookingRequest object is constructed and used in two methods. This 
-                can be moved to the TicketBookingRequestProcessorTests constructor and can be made as a private readonly field.
+                In the TicketBookingRequestProcessorTests class, the same TicketBookingRequest object is constructed and used in two methods. This can be moved to the 
+                TicketBookingRequestProcessorTests constructor and can be made as a private readonly field.
             </li>
-            <li>
-                In the TicketBookingProcessor class, we can see that the mapping of properties is done twice. This mapping can be extracted into a 
-                generic method.
-            </li></ol>
+            <li>In the TicketBookingProcessor class, we can see that the mapping of properties is done twice. This mapping can be extracted into a generic method.</li></ol>
 
         <p>
             Now your code should look like as follows:
@@ -639,39 +650,43 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - TDD Complete Code</h4>
-    <article id="09c6805d-6e63-4d31-b340-2fae1c07c219" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="3537159a-7fa0-4231-8b77-268f4ec9617b" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <p>Now run all the tests. All the tests should pass.</p>
 
         <figure><img src="./image/blogs/tdd/implementation/all green test.jpg" alt="All Green Test" class="[ w-full ]"/></figure>
         
+        <h3 id="summary" class="[ font-semibold text-lg ]">Summary</h3>
+
         <p>
-            In this article, we learned how to implement TDD in C# .Net applications. We learned the TDD principle, advantages and 
-            disadvantages of TDD, understanding the requirements and starting from the test project then slowly building the actual 
-            requirement. We also learned how to decouple dependencies and mock them in a unit test. TDD is all about iterating the 
-            RED, GREEN and Refactor cycle over and again to develop our requirement. This is a demo project and it has a lot of 
-            scope for improvement. We learned TDD with XUnit Project, but the same can be applied to NUnit or MSTest projects as 
-            well.
+            In this article, we learned how to implement TDD in C# .Net applications. We learned the TDD principle, advantages and disadvantages of TDD, understanding the requirements and 
+            starting from the test project then slowly building the actual requirement. We also learned how to decouple dependencies and mock them in a unit test. TDD is all about iterating 
+            the RED, GREEN and Refactor cycle over and again to develop our requirement. This is a demo project and it has a lot of scope for improvement. We learned TDD with XUnit Project, 
+            but the same can be applied to NUnit or MSTest projects as well.
         </p></section>
         <footer class="[ max-w-full ]"><ul class="[ list-none ] [ flex items-center justify-start md:justify-center ] [ space-x-3 ] [ overflow-hidden overflow-x-auto ]"><li class="[ px-3 py-1 ] [ rounded-full ] [ bg-black text-white dark:bg-white dark:text-black ]">Tdd</li><li class="[ px-3 py-1 ] [ rounded-full ] [ bg-black text-white dark:bg-white dark:text-black ] [ whitespace-nowrap ]">Test Driven Development</li></ul></footer>
         <hr class="[ dark:text-white my-1.5 ]"/></article>
-    <aside class="[ flex flex-col md:basis-1/4 ] [ space-y-2 ]"><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-skip-to-select-specific-data"><figure><img src="image/blogs/linq/using-linq-skip-to-select-specific-data.svg" class="[ w-full ]" alt="Using LINQ Skip to Select Specific Data" loading="lazy"/></figure></a></header>
+    <aside class="[ flex flex-col md:basis-1/4 ] [ space-y-2 ]"><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-distinct-to-select-unique-data"><figure><img src="image/blogs/linq/using-linq-distinct-to-select-unique-data.svg" class="[ w-full ]" alt="Using LINQ Distinct to Select Unique Data" loading="lazy"/></figure></a></header>
+                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/linq"><figure><img src="image/icons/linq.png" alt="LINQ" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
+                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/using-linq-distinct-to-select-unique-data"><h2 class="[ font-medium break-words hover:underline ]">Using LINQ Distinct to Select Unique Data</h2></a>
+                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
+                            <time datetime="2022-10-30 22-30-00">6 hours from now</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-skip-to-select-specific-data"><figure><img src="image/blogs/linq/using-linq-skip-to-select-specific-data.svg" class="[ w-full ]" alt="Using LINQ Skip to Select Specific Data" loading="lazy"/></figure></a></header>
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/linq"><figure><img src="image/icons/linq.png" alt="LINQ" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/using-linq-skip-to-select-specific-data"><h2 class="[ font-medium break-words hover:underline ]">Using LINQ Skip to Select Specific Data</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-10-23 22-30-00">3 days ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-take-to-select-specific-data"><figure><img src="image/blogs/linq/using-linq-take-to-select-specific-data.svg" class="[ w-full ]" alt="Using LINQ Take to Select Specific Data" loading="lazy"/></figure></a></header>
+                            <time datetime="2022-10-23 22-30-00">6 days ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-take-to-select-specific-data"><figure><img src="image/blogs/linq/using-linq-take-to-select-specific-data.svg" class="[ w-full ]" alt="Using LINQ Take to Select Specific Data" loading="lazy"/></figure></a></header>
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/linq"><figure><img src="image/icons/linq.png" alt="LINQ" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/using-linq-take-to-select-specific-data"><h2 class="[ font-medium break-words hover:underline ]">Using LINQ Take to Select Specific Data</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-10-16 22-30-00">10 days ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-single-to-select-single-data"><figure><img src="image/blogs/linq/using-linq-single-to-select-single-data.svg" class="[ w-full ]" alt="Using LINQ Single to Select Single Data" loading="lazy"/></figure></a></header>
+                            <time datetime="2022-10-16 22-30-00">13 days ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-single-to-select-single-data"><figure><img src="image/blogs/linq/using-linq-single-to-select-single-data.svg" class="[ w-full ]" alt="Using LINQ Single to Select Single Data" loading="lazy"/></figure></a></header>
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/linq"><figure><img src="image/icons/linq.png" alt="LINQ" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/using-linq-single-to-select-single-data"><h2 class="[ font-medium break-words hover:underline ]">Using LINQ Single to Select Single Data</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-10-09 22-30-00">17 days ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-last-to-select-single-data"><figure><img src="image/blogs/linq/using-linq-last-to-select-single-data.svg" class="[ w-full ]" alt="Using LINQ Last to Select Single Data" loading="lazy"/></figure></a></header>
+                            <time datetime="2022-10-09 22-30-00">20 days ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-last-to-select-single-data"><figure><img src="image/blogs/linq/using-linq-last-to-select-single-data.svg" class="[ w-full ]" alt="Using LINQ Last to Select Single Data" loading="lazy"/></figure></a></header>
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/linq"><figure><img src="image/icons/linq.png" alt="LINQ" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/using-linq-last-to-select-single-data"><h2 class="[ font-medium break-words hover:underline ]">Using LINQ Last to Select Single Data</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-10-02 22-30-00">24 days ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-first-to-select-single-data"><figure><img src="image/blogs/linq/using-linq-first-to-select-single-data.svg" class="[ w-full ]" alt="Using LINQ First to Select Single Data" loading="lazy"/></figure></a></header>
+                            <time datetime="2022-10-02 22-30-00">27 days ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-first-to-select-single-data"><figure><img src="image/blogs/linq/using-linq-first-to-select-single-data.svg" class="[ w-full ]" alt="Using LINQ First to Select Single Data" loading="lazy"/></figure></a></header>
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/linq"><figure><img src="image/icons/linq.png" alt="LINQ" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/using-linq-first-to-select-single-data"><h2 class="[ font-medium break-words hover:underline ]">Using LINQ First to Select Single Data</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
@@ -707,7 +722,7 @@
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/dependency-injection"><figure><img src="image/icons/dependency-injection.png" alt="Dependency-Injection" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/dependency-injection-lifetimes-in-dotnet"><h2 class="[ font-medium break-words hover:underline ]">Dependency Injection Lifetimes in .NET</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-07-31 22-30-00">2 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/introducing-dependency-injection-in-dotnet"><figure><img src="image/blogs/dependency-injection/introducing-dependency-injection-in-dotnet.svg" class="[ w-full ]" alt="Introducing Dependency Injection in .NET" loading="lazy"/></figure></a></header>
+                            <time datetime="2022-07-31 22-30-00">3 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/introducing-dependency-injection-in-dotnet"><figure><img src="image/blogs/dependency-injection/introducing-dependency-injection-in-dotnet.svg" class="[ w-full ]" alt="Introducing Dependency Injection in .NET" loading="lazy"/></figure></a></header>
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/dependency-injection"><figure><img src="image/icons/dependency-injection.png" alt="Dependency-Injection" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/introducing-dependency-injection-in-dotnet"><h2 class="[ font-medium break-words hover:underline ]">Introducing Dependency Injection in .NET</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
@@ -723,7 +738,7 @@
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/blazor"><figure><img src="image/icons/blazor.png" alt="Blazor" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/blazor-wasm-dynamic-component"><h2 class="[ font-medium break-words hover:underline ]">Blazor WASM Dynamic Component</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-07-03 22-30-00">3 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/types-of-middleware-in-aspnet"><figure><img src="image/blogs/middleware/types-of-middleware-in-aspnet.svg" class="[ w-full ]" alt="Types of Middleware in ASP.NET" loading="lazy"/></figure></a></header>
+                            <time datetime="2022-07-03 22-30-00">4 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/types-of-middleware-in-aspnet"><figure><img src="image/blogs/middleware/types-of-middleware-in-aspnet.svg" class="[ w-full ]" alt="Types of Middleware in ASP.NET" loading="lazy"/></figure></a></header>
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/middleware"><figure><img src="image/icons/middleware.png" alt="Middleware" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/types-of-middleware-in-aspnet"><h2 class="[ font-medium break-words hover:underline ]">Types of Middleware in ASP.NET</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
@@ -787,7 +802,7 @@
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/webapi"><figure><img src="image/icons/webapi.png" alt="WebAPI" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/webapi-importance-of-status-code"><h2 class="[ font-medium break-words hover:underline ]">Importance of Status Code in Web API</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-03-06 22-30-00">7 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/blazor-wasm-app-settings"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-app-settings.svg" class="[ w-full ]" alt="Blazor WASM App Settings" loading="lazy"/></figure></a></header>
+                            <time datetime="2022-03-06 22-30-00">8 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/blazor-wasm-app-settings"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-app-settings.svg" class="[ w-full ]" alt="Blazor WASM App Settings" loading="lazy"/></figure></a></header>
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/blazor"><figure><img src="image/icons/blazor.png" alt="Blazor" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/blazor-wasm-app-settings"><h2 class="[ font-medium break-words hover:underline ]">Blazor WASM App Settings</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
@@ -803,7 +818,7 @@
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/blazor"><figure><img src="image/icons/blazor.png" alt="Blazor" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/blazor-wasm-javascript-interop-and-isolation"><h2 class="[ font-medium break-words hover:underline ]">Blazor WASM Javascript Interop and Isolation</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-02-06 22-30-00">8 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/blazor-wasm-dark-theme-and-light-theme"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-dark-theme-and-light-theme.svg" class="[ w-full ]" alt="Blazor WASM Dark Theme and Light Theme" loading="lazy"/></figure></a></header>
+                            <time datetime="2022-02-06 22-30-00">9 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/blazor-wasm-dark-theme-and-light-theme"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-dark-theme-and-light-theme.svg" class="[ w-full ]" alt="Blazor WASM Dark Theme and Light Theme" loading="lazy"/></figure></a></header>
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/blazor"><figure><img src="image/icons/blazor.png" alt="Blazor" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/blazor-wasm-dark-theme-and-light-theme"><h2 class="[ font-medium break-words hover:underline ]">Blazor WASM Dark Theme and Light Theme</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
@@ -842,7 +857,7 @@
            <path d="M8 11v-4a4 4 0 0 1 8 0v4"></path></svg>
         <span class="[ text-xs text-center ]">Privacy</span></a></nav>
             
-    <!--Blazor:{"prerenderId":"c19e398f8560487eab913fc4dd460a7a"}-->
+    <!--Blazor:{"prerenderId":"a16cb617113c468ba93b00673cfacd59"}-->
 <!-- %%-PRERENDERING-END-%% -->
 <!--Blazor-Component-State:e30=--></div>
 

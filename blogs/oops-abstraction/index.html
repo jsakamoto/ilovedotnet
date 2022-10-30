@@ -43,7 +43,7 @@
     </script>
 
 <!-- %%-PRERENDERING-HEADOUTLET-BEGIN-%% -->
-<!--Blazor:{"type":"webassembly","assembly":"Microsoft.AspNetCore.Components.Web","typeName":"Microsoft.AspNetCore.Components.Web.HeadOutlet","parameterDefinitions":"W10=","parameterValues":"W10=","prerenderId":"1abf4f12e9fb453db691ebe5040a7a34"}--><script type="application/ld+json">
+<!--Blazor:{"type":"webassembly","assembly":"Microsoft.AspNetCore.Components.Web","typeName":"Microsoft.AspNetCore.Components.Web.HeadOutlet","parameterDefinitions":"W10=","parameterValues":"W10=","prerenderId":"0ee39ac7121f4e759b22a98bbfbc4bbe"}--><script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "Article",
@@ -92,7 +92,7 @@
             "@id": "https://www.ilovedotnet.org/"
         }
     }
-    </script><!--Blazor:{"prerenderId":"1abf4f12e9fb453db691ebe5040a7a34"}-->
+    </script><!--Blazor:{"prerenderId":"0ee39ac7121f4e759b22a98bbfbc4bbe"}-->
 <!-- %%-PRERENDERING-HEADOUTLET-END-%% -->
 
     <script type="text/default-title">I ❤️ DotNet</script>
@@ -139,7 +139,7 @@
 <body class="[ m-0 ] [ h-full ] [ dark:bg-stone-900 ] [ bg-gray-100 ]">
     <div id="app" class="[ dark:text-white ]">
 <!-- %%-PRERENDERING-BEGIN-%% -->
-<!--Blazor:{"type":"webassembly","assembly":"Web","typeName":"Web.App","parameterDefinitions":"W10=","parameterValues":"W10=","prerenderId":"c496413b65b54dd183f622e21a82b1f1"}--><header id="header" class="[ flex items-center justify-between ] [ bg-white ] [ px-5 ] [ dark:bg-gray-800 dark:bg-gray-800/80 ] [ h-14 ] [ sticky top-0 ] [ backdrop-blur-sm bg-white/30 ]"><button type="button" class="[ hidden md:block ] [ mr-4 ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-menu-2 ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+<!--Blazor:{"type":"webassembly","assembly":"Web","typeName":"Web.App","parameterDefinitions":"W10=","parameterValues":"W10=","prerenderId":"300220f526c84b6482b13b2727f2888e"}--><header id="header" class="[ flex items-center justify-between ] [ bg-white ] [ px-5 ] [ dark:bg-gray-800 dark:bg-gray-800/80 ] [ h-14 ] [ sticky top-0 ] [ backdrop-blur-sm bg-white/30 ]"><button type="button" class="[ hidden md:block ] [ mr-4 ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-menu-2 ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
            <line x1="4" y1="6" x2="20" y2="6"></line>
            <line x1="4" y1="12" x2="20" y2="12"></line>
            <line x1="4" y1="18" x2="20" y2="18"></line></svg></button>
@@ -272,12 +272,35 @@
         <a href="https://github.com/ILoveDotNet/ilovedotnet/blob/main/Web/Pages/Blogs/OOPS/Abstraction.razor" target="_blank" class="[ md:bg-red-700 ] [ text-red-500 md:text-white uppercase ] [ px-3 py-2 ] [ font-semibold ]">Improve</a></section>
     <hr class="[ dark:text-white my-1.5 ]"/></header>
         <section class="[ dark:text-white ] [ space-y-2 ] [ leading-relaxed ]"><p>
-            In our previous post we saw what is <a href="blogs/oops-encapsulation" class="[ underline ]">Encapsulation</a>. I strongly recommend 
-            you to go through previous article if you didn't read it. Encapsulation and Abstraction are highly interconnected but still have a different 
-            principle. In this post lets see what is Abstraction.
+            In our previous post we saw what is <a href="blogs/oops-encapsulation" class="[ underline ]">Encapsulation</a>. I strongly recommend you to go through previous article if 
+            you didn't read it. Encapsulation and Abstraction are highly interconnected but still have a different principle. In this post lets see what is Abstraction.
         </p>
 
-        <h3 class="[ font-semibold text-lg ]">What is Abstraction?</h3>
+        <h3 class="[ font-semibold text-lg ]">Table of Contents</h3>
+
+        <ol class="[ list-decimal ] [ ml-4 ]"><li><a href="blogs/oops-abstraction#what-is-abstraction" class="[ underline ]">
+                    What is Abstraction?
+                </a></li>
+            <li><a href="blogs/oops-abstraction#unlimited-ways-to-write-code" class="[ underline ]">
+                    Unlimited ways to write code!!
+                </a></li>
+            <li><a href="blogs/oops-abstraction#the-purpose-of-abstraction" class="[ underline ]">
+                    The Purpose of Abstraction
+                </a></li>
+            <li><a href="blogs/oops-abstraction#how-does-an-abstraction-look-in-code-csharp" class="[ underline ]">
+                    How Does an Abstraction Look in Code (C#)
+                </a></li>
+            <li><a href="blogs/oops-abstraction#abstraction-hierarchy" class="[ underline ]">
+                    Abstraction Hierarchy
+                </a></li>
+            <li><a href="blogs/oops-abstraction#other-benefits-of-abstraction" class="[ underline ]">
+                    Other Benefits of Abstraction
+                </a></li>
+            <li><a href="blogs/oops-abstraction#summary" class="[ underline ]">
+                    Summary
+                </a></li></ol>
+
+        <h3 id="what-is-abstraction" class="[ font-semibold text-lg ]">What is Abstraction?</h3>
 
         <figure><blockquote cite="https://books.google.co.in/books?vid=ISBN9780135974445&amp;redir_esc=y">
                 Abstraction is the amplification of the essential and the elimination of irrelevant.
@@ -285,25 +308,25 @@
             <figcaption>
                 —<cite><a href="https://en.wikipedia.org/wiki/Robert_C._Martin" target="_blank" class="[ underline ]">Robert C. Martin</a></cite></figcaption></figure>
 
-        <h3 class="[ font-semibold text-lg ]">Unlimited ways to write code!!</h3>
+        <h3 id="unlimited-ways-to-write-code" class="[ font-semibold text-lg ]">Unlimited ways to write code!!</h3>
         
         <p>
-            When we write code we have unlimited options to write code. We can write code in different ways for any task we think of. There are no restrictions. 
-            For example, we can write entire application in one class but that will be terrible idea and the reason is our brains are limited and can only handle 
-            small things at a time. If this exceeds then our development slows down and we start to introduce lots of bugs.
+            When we write code we have unlimited options to write code. We can write code in different ways for any task we think of. There are no restrictions. For example, we can write entire 
+            application in one class but that will be terrible idea and the reason is our brains are limited and can only handle small things at a time. If this exceeds then our development 
+            slows down and we start to introduce lots of bugs.
         </p>
 
         <section class="[ flex flex-col ]"><h4 class="[ bg-gray-200 ] [ p-2 ] [ font-semibold ] [ text-black ] [ flex items-center ] [ dark:bg-gray-800 dark:bg-gray-800/80 dark:text-white ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-code ] [ text-purple-700 ] [ fill-purple-500 ]" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - OOPS Abstraction Unlimited Ways to Write Code</h4>
-    <article id="66215066-3886-4664-a7b2-a997d57bffa7" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="8d9c4534-9e58-43b7-a34c-9a60619c5e42" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <p>
             So its better to avoid <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">freestyle</code> mode and thats why all guidelines and structure for programming exists.
         </p>
 
-        <h3 class="[ font-semibold text-lg ]">The Purpose of Abstraction</h3>
+        <h3 id="the-purpose-of-abstraction" class="[ font-semibold text-lg ]">The Purpose of Abstraction</h3>
 
         <p>
             Abstraction helps you focus on one particular task. That is, 
@@ -318,7 +341,7 @@
             This way we can split our application into chunks and tackle them one by one.
         </p>
         
-        <h3 class="[ font-semibold text-lg ]">How Does an Abstraction Look in Code (C#)?</h3>
+        <h3 id="how-does-an-abstraction-look-in-code-csharp" class="[ font-semibold text-lg ]">How Does an Abstraction Look in Code (C#)?</h3>
 
         <p><s>abstract class MyClass</s> ? or <s>interface IMyInterface</s> ? Abstraction doesn't have anything to do with keywords 
             <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">abstract</code> or <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">interface</code>. These are just language specific implementation 
@@ -335,7 +358,7 @@
             violates SRP then it is bad abstraction.
         </p>
         
-        <h3 class="[ font-semibold text-lg ]">Abstraction Hierarchy</h3>
+        <h3 id="abstraction-hierarchy" class="[ font-semibold text-lg ]">Abstraction Hierarchy</h3>
 
         <p>
             Abstraction allows us to express complex ideas as easily as simple ones. The idea is to break down the complex problem into simple methods.
@@ -345,7 +368,7 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - OOPS Abstraction Hierarchy</h4>
-    <article id="86ddeacb-e451-4d0e-a180-5d3a2040e427" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="69146b65-5747-43b1-97e6-3c428b86345f" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
         
         <p>
             Here to focus on single task, the trimming functionality is abstracted to new method so that this code doesn't needs to be repeated and called at 
@@ -371,14 +394,14 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - OOPS Abstraction Hierarchy</h4>
-    <article id="fa6c51c2-e29c-42b8-aaa0-043aa58eed12" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="52326eac-d898-4fde-a9ef-929bd8661557" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <section class="[ flex flex-col ]"><h4 class="[ bg-gray-200 ] [ p-2 ] [ font-semibold ] [ text-black ] [ flex items-center ] [ dark:bg-gray-800 dark:bg-gray-800/80 dark:text-white ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-caret-right ] [ text-lime-700 ] [ fill-lime-500 ]" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
             <path d="M18 15l-6 -6l-6 6h12" transform="rotate(90 12 12)"></path></svg> Demo - Abstracted Email Address</h4>
     <article class="[ bg-gray-300 ] [ dark:bg-gray-700 ] [ p-4 ]"><p class="[ text-black ] [ dark:text-white ]"><b>
                     Scenario - Let's try creating a email address that is properly abstracted from <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">string</code>.
                 </b></p>
-           <label>
+            <label>
     Email Address
     <input class="[ w-full h-full ] [ px-4 py-2 ] [ border-2 ] [ focus:outline-none focus:border-gray-400 ] [ dark:bg-black dark:border-gray-800 dark:focus:border-b-white dark:md:focus:border-blue-800 dark:caret-white dark:text-white ]" type="email"/></label>
 
@@ -394,30 +417,30 @@
                     <path d="M3 12h4l3 8l4 -16l3 8h4"></path></svg></button></article></section>
 
         <p>
-            This class represents Email Address and it has hierarchy of abstractions. It abstracts away the work with strings and creates its own higher order 
-            abstraction such the client code can focus on tests related to Email Address than with strings. As a result we get the below graph of abstractions.
-            Thus allowing us to build complex logic as easily as simple ones. This will be within our brain capacity and doesn't slow down development and won't
-            introduce large amoun of bugs. Thus helps to focus on one task at a time and focus on WHAT's, not HOW's.
+            This class represents Email Address and it has hierarchy of abstractions. It abstracts away the work with strings and creates its own higher order abstraction such the client code 
+            can focus on tests related to Email Address than with strings. As a result we get the below graph of abstractions. Thus allowing us to build complex logic as easily as simple ones. 
+            This will be within our brain capacity and doesn't slow down development and won't introduce large amoun of bugs. Thus helps to focus on one task at a time and focus on WHAT's, not 
+            HOW's.
         </p>
 
         <details open="true"><summary>Even higher-order abstractions</summary>
             <div class="[ ml-4 ]"><details open="true"><summary>Higher-order abstractions</summary>
                     <div class="[ ml-4 ]"><details open="false"><summary>Lower-order abstractions</summary></details></div></details></div></details>
 
-        <h3 class="[ font-semibold text-lg ]">Other Benefits of Abstraction</h3>
+        <h3 id="other-benefits-of-abstraction" class="[ font-semibold text-lg ]">Other Benefits of Abstraction</h3>
         
         <p>
-            Abstraction is not just for code reuse. We should introduce this method even if it is used in one place. Thats because its easier to read the following 
-            code than to understand the implementation. It is also clear at highlevel and gives better code simplification.
+            Abstraction is not just for code reuse. We should introduce this method even if it is used in one place. Thats because its easier to read the following code than to understand the 
+            implementation. It is also clear at highlevel and gives better code simplification.
         </p>
 
         <section class="[ flex flex-col ]"><h4 class="[ bg-gray-200 ] [ p-2 ] [ font-semibold ] [ text-black ] [ flex items-center ] [ dark:bg-gray-800 dark:bg-gray-800/80 dark:text-white ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-code ] [ text-purple-700 ] [ fill-purple-500 ]" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - OOPS Abstraction Benefits</h4>
-    <article id="dfa9f75e-ce0f-4e5e-8b38-a9ac1b78ff5a" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="3ce65058-77b6-4c74-afd3-1118e6928ce9" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
         
-        <h3 class="[ font-semibold text-lg ]">Summary</h3>
+        <h3 id="summary" class="[ font-semibold text-lg ]">Summary</h3>
 
         <p>
             In this post, we learn't what is abstraction in oops and the principle behind it. It means amplification of the essential and elimination of the 
@@ -432,23 +455,27 @@
         </p></section>
         <footer class="[ max-w-full ]"><ul class="[ list-none ] [ flex items-center justify-start md:justify-center ] [ space-x-3 ] [ overflow-hidden overflow-x-auto ]"><li class="[ px-3 py-1 ] [ rounded-full ] [ bg-black text-white dark:bg-white dark:text-black ]">Oops</li><li class="[ px-3 py-1 ] [ rounded-full ] [ bg-black text-white dark:bg-white dark:text-black ] [ whitespace-nowrap ]">Abstraction</li></ul></footer>
         <hr class="[ dark:text-white my-1.5 ]"/></article>
-    <aside class="[ flex flex-col md:basis-1/4 ] [ space-y-2 ]"><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-skip-to-select-specific-data"><figure><img src="image/blogs/linq/using-linq-skip-to-select-specific-data.svg" class="[ w-full ]" alt="Using LINQ Skip to Select Specific Data" loading="lazy"/></figure></a></header>
+    <aside class="[ flex flex-col md:basis-1/4 ] [ space-y-2 ]"><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-distinct-to-select-unique-data"><figure><img src="image/blogs/linq/using-linq-distinct-to-select-unique-data.svg" class="[ w-full ]" alt="Using LINQ Distinct to Select Unique Data" loading="lazy"/></figure></a></header>
+                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/linq"><figure><img src="image/icons/linq.png" alt="LINQ" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
+                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/using-linq-distinct-to-select-unique-data"><h2 class="[ font-medium break-words hover:underline ]">Using LINQ Distinct to Select Unique Data</h2></a>
+                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
+                            <time datetime="2022-10-30 22-30-00">6 hours from now</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-skip-to-select-specific-data"><figure><img src="image/blogs/linq/using-linq-skip-to-select-specific-data.svg" class="[ w-full ]" alt="Using LINQ Skip to Select Specific Data" loading="lazy"/></figure></a></header>
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/linq"><figure><img src="image/icons/linq.png" alt="LINQ" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/using-linq-skip-to-select-specific-data"><h2 class="[ font-medium break-words hover:underline ]">Using LINQ Skip to Select Specific Data</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-10-23 22-30-00">3 days ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-take-to-select-specific-data"><figure><img src="image/blogs/linq/using-linq-take-to-select-specific-data.svg" class="[ w-full ]" alt="Using LINQ Take to Select Specific Data" loading="lazy"/></figure></a></header>
+                            <time datetime="2022-10-23 22-30-00">6 days ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-take-to-select-specific-data"><figure><img src="image/blogs/linq/using-linq-take-to-select-specific-data.svg" class="[ w-full ]" alt="Using LINQ Take to Select Specific Data" loading="lazy"/></figure></a></header>
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/linq"><figure><img src="image/icons/linq.png" alt="LINQ" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/using-linq-take-to-select-specific-data"><h2 class="[ font-medium break-words hover:underline ]">Using LINQ Take to Select Specific Data</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-10-16 22-30-00">10 days ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-single-to-select-single-data"><figure><img src="image/blogs/linq/using-linq-single-to-select-single-data.svg" class="[ w-full ]" alt="Using LINQ Single to Select Single Data" loading="lazy"/></figure></a></header>
+                            <time datetime="2022-10-16 22-30-00">13 days ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-single-to-select-single-data"><figure><img src="image/blogs/linq/using-linq-single-to-select-single-data.svg" class="[ w-full ]" alt="Using LINQ Single to Select Single Data" loading="lazy"/></figure></a></header>
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/linq"><figure><img src="image/icons/linq.png" alt="LINQ" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/using-linq-single-to-select-single-data"><h2 class="[ font-medium break-words hover:underline ]">Using LINQ Single to Select Single Data</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-10-09 22-30-00">17 days ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-last-to-select-single-data"><figure><img src="image/blogs/linq/using-linq-last-to-select-single-data.svg" class="[ w-full ]" alt="Using LINQ Last to Select Single Data" loading="lazy"/></figure></a></header>
+                            <time datetime="2022-10-09 22-30-00">20 days ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-last-to-select-single-data"><figure><img src="image/blogs/linq/using-linq-last-to-select-single-data.svg" class="[ w-full ]" alt="Using LINQ Last to Select Single Data" loading="lazy"/></figure></a></header>
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/linq"><figure><img src="image/icons/linq.png" alt="LINQ" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/using-linq-last-to-select-single-data"><h2 class="[ font-medium break-words hover:underline ]">Using LINQ Last to Select Single Data</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-10-02 22-30-00">24 days ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-first-to-select-single-data"><figure><img src="image/blogs/linq/using-linq-first-to-select-single-data.svg" class="[ w-full ]" alt="Using LINQ First to Select Single Data" loading="lazy"/></figure></a></header>
+                            <time datetime="2022-10-02 22-30-00">27 days ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-first-to-select-single-data"><figure><img src="image/blogs/linq/using-linq-first-to-select-single-data.svg" class="[ w-full ]" alt="Using LINQ First to Select Single Data" loading="lazy"/></figure></a></header>
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/linq"><figure><img src="image/icons/linq.png" alt="LINQ" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/using-linq-first-to-select-single-data"><h2 class="[ font-medium break-words hover:underline ]">Using LINQ First to Select Single Data</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
@@ -484,7 +511,7 @@
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/dependency-injection"><figure><img src="image/icons/dependency-injection.png" alt="Dependency-Injection" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/dependency-injection-lifetimes-in-dotnet"><h2 class="[ font-medium break-words hover:underline ]">Dependency Injection Lifetimes in .NET</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-07-31 22-30-00">2 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/introducing-dependency-injection-in-dotnet"><figure><img src="image/blogs/dependency-injection/introducing-dependency-injection-in-dotnet.svg" class="[ w-full ]" alt="Introducing Dependency Injection in .NET" loading="lazy"/></figure></a></header>
+                            <time datetime="2022-07-31 22-30-00">3 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/introducing-dependency-injection-in-dotnet"><figure><img src="image/blogs/dependency-injection/introducing-dependency-injection-in-dotnet.svg" class="[ w-full ]" alt="Introducing Dependency Injection in .NET" loading="lazy"/></figure></a></header>
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/dependency-injection"><figure><img src="image/icons/dependency-injection.png" alt="Dependency-Injection" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/introducing-dependency-injection-in-dotnet"><h2 class="[ font-medium break-words hover:underline ]">Introducing Dependency Injection in .NET</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
@@ -500,7 +527,7 @@
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/blazor"><figure><img src="image/icons/blazor.png" alt="Blazor" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/blazor-wasm-dynamic-component"><h2 class="[ font-medium break-words hover:underline ]">Blazor WASM Dynamic Component</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-07-03 22-30-00">3 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/types-of-middleware-in-aspnet"><figure><img src="image/blogs/middleware/types-of-middleware-in-aspnet.svg" class="[ w-full ]" alt="Types of Middleware in ASP.NET" loading="lazy"/></figure></a></header>
+                            <time datetime="2022-07-03 22-30-00">4 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/types-of-middleware-in-aspnet"><figure><img src="image/blogs/middleware/types-of-middleware-in-aspnet.svg" class="[ w-full ]" alt="Types of Middleware in ASP.NET" loading="lazy"/></figure></a></header>
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/middleware"><figure><img src="image/icons/middleware.png" alt="Middleware" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/types-of-middleware-in-aspnet"><h2 class="[ font-medium break-words hover:underline ]">Types of Middleware in ASP.NET</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
@@ -564,7 +591,7 @@
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/webapi"><figure><img src="image/icons/webapi.png" alt="WebAPI" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/webapi-importance-of-status-code"><h2 class="[ font-medium break-words hover:underline ]">Importance of Status Code in Web API</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-03-06 22-30-00">7 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/blazor-wasm-app-settings"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-app-settings.svg" class="[ w-full ]" alt="Blazor WASM App Settings" loading="lazy"/></figure></a></header>
+                            <time datetime="2022-03-06 22-30-00">8 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/blazor-wasm-app-settings"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-app-settings.svg" class="[ w-full ]" alt="Blazor WASM App Settings" loading="lazy"/></figure></a></header>
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/blazor"><figure><img src="image/icons/blazor.png" alt="Blazor" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/blazor-wasm-app-settings"><h2 class="[ font-medium break-words hover:underline ]">Blazor WASM App Settings</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
@@ -580,7 +607,7 @@
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/blazor"><figure><img src="image/icons/blazor.png" alt="Blazor" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/blazor-wasm-javascript-interop-and-isolation"><h2 class="[ font-medium break-words hover:underline ]">Blazor WASM Javascript Interop and Isolation</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-02-06 22-30-00">8 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/blazor-wasm-dark-theme-and-light-theme"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-dark-theme-and-light-theme.svg" class="[ w-full ]" alt="Blazor WASM Dark Theme and Light Theme" loading="lazy"/></figure></a></header>
+                            <time datetime="2022-02-06 22-30-00">9 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/blazor-wasm-dark-theme-and-light-theme"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-dark-theme-and-light-theme.svg" class="[ w-full ]" alt="Blazor WASM Dark Theme and Light Theme" loading="lazy"/></figure></a></header>
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/blazor"><figure><img src="image/icons/blazor.png" alt="Blazor" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/blazor-wasm-dark-theme-and-light-theme"><h2 class="[ font-medium break-words hover:underline ]">Blazor WASM Dark Theme and Light Theme</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
@@ -619,7 +646,7 @@
            <path d="M8 11v-4a4 4 0 0 1 8 0v4"></path></svg>
         <span class="[ text-xs text-center ]">Privacy</span></a></nav>
             
-    <!--Blazor:{"prerenderId":"c496413b65b54dd183f622e21a82b1f1"}-->
+    <!--Blazor:{"prerenderId":"300220f526c84b6482b13b2727f2888e"}-->
 <!-- %%-PRERENDERING-END-%% -->
 <!--Blazor-Component-State:e30=--></div>
 

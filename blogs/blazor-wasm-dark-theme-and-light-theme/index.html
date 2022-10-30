@@ -43,7 +43,7 @@
     </script>
 
 <!-- %%-PRERENDERING-HEADOUTLET-BEGIN-%% -->
-<!--Blazor:{"type":"webassembly","assembly":"Microsoft.AspNetCore.Components.Web","typeName":"Microsoft.AspNetCore.Components.Web.HeadOutlet","parameterDefinitions":"W10=","parameterValues":"W10=","prerenderId":"77ead4dcd11a459f9d96bb339923dd53"}--><script type="application/ld+json">
+<!--Blazor:{"type":"webassembly","assembly":"Microsoft.AspNetCore.Components.Web","typeName":"Microsoft.AspNetCore.Components.Web.HeadOutlet","parameterDefinitions":"W10=","parameterValues":"W10=","prerenderId":"a5ecc14fee684807bdec0338d08ad987"}--><script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "Article",
@@ -92,7 +92,7 @@
             "@id": "https://www.ilovedotnet.org/"
         }
     }
-    </script><!--Blazor:{"prerenderId":"77ead4dcd11a459f9d96bb339923dd53"}-->
+    </script><!--Blazor:{"prerenderId":"a5ecc14fee684807bdec0338d08ad987"}-->
 <!-- %%-PRERENDERING-HEADOUTLET-END-%% -->
 
     <script type="text/default-title">I ❤️ DotNet</script>
@@ -139,7 +139,7 @@
 <body class="[ m-0 ] [ h-full ] [ dark:bg-stone-900 ] [ bg-gray-100 ]">
     <div id="app" class="[ dark:text-white ]">
 <!-- %%-PRERENDERING-BEGIN-%% -->
-<!--Blazor:{"type":"webassembly","assembly":"Web","typeName":"Web.App","parameterDefinitions":"W10=","parameterValues":"W10=","prerenderId":"ea02d42d03d74dd6b1d26236905134f8"}--><header id="header" class="[ flex items-center justify-between ] [ bg-white ] [ px-5 ] [ dark:bg-gray-800 dark:bg-gray-800/80 ] [ h-14 ] [ sticky top-0 ] [ backdrop-blur-sm bg-white/30 ]"><button type="button" class="[ hidden md:block ] [ mr-4 ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-menu-2 ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+<!--Blazor:{"type":"webassembly","assembly":"Web","typeName":"Web.App","parameterDefinitions":"W10=","parameterValues":"W10=","prerenderId":"ac4c47466c814e2fa8d9b22056ba935e"}--><header id="header" class="[ flex items-center justify-between ] [ bg-white ] [ px-5 ] [ dark:bg-gray-800 dark:bg-gray-800/80 ] [ h-14 ] [ sticky top-0 ] [ backdrop-blur-sm bg-white/30 ]"><button type="button" class="[ hidden md:block ] [ mr-4 ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-menu-2 ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
            <line x1="4" y1="6" x2="20" y2="6"></line>
            <line x1="4" y1="12" x2="20" y2="12"></line>
            <line x1="4" y1="18" x2="20" y2="18"></line></svg></button>
@@ -272,46 +272,55 @@
         <a href="https://github.com/ILoveDotNet/ilovedotnet/blob/main/Web/Pages/Blogs/Blazor/Wasm/DarkThemeAndLightTheme.razor" target="_blank" class="[ md:bg-red-700 ] [ text-red-500 md:text-white uppercase ] [ px-3 py-2 ] [ font-semibold ]">Improve</a></section>
     <hr class="[ dark:text-white my-1.5 ]"/></header>
         <section class="[ dark:text-white ] [ space-y-2 ] [ leading-relaxed ]"><p>
-            Dark Mode or Theme has become common nowadays. Almost all the operating system, apps and websites started supporting Dark Mode
-            as first class feature as it gives a pleasing experience to eyes when reading or using the app at night time. So it's time to
-            design dark version of apps or website to go along with the default design. Let's see how we can implement this in Blazor application.
+            In this article, let's learn about how to configure dark theme in Blazor WASM application.
         </p>
 
+        <h3 class="[ font-semibold text-lg ]">Table of Contents</h3>
+
+        <ol class="[ list-decimal ] [ ml-4 ]"><li><a href="blogs/blazor-wasm-dark-theme-and-light-theme#what-is-dark-theme-and-why-it-is-needed" class="[ underline ]">
+                    What is Dark Theme and Why it is needed?
+                </a></li>
+            <li><a href="blogs/blazor-wasm-dark-theme-and-light-theme#steps-to-configure-dark-theme" class="[ underline ]">
+                    Steps to configure dark theme
+                </a></li>
+            <li><a href="blogs/blazor-wasm-dark-theme-and-light-theme#summary" class="[ underline ]">
+                    Summary
+                </a></li></ol>
+
+        <h3 id="what-is-dark-theme-and-why-it-is-needed" class="[ font-semibold text-lg ]">What is Dark Theme and Why it is needed?</h3>
+
         <p>
-            First, lets have a <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">enum</code>
-            <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">DisplayMode</code> to represent different display modes.
-            Next, we need the help of <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">Javascript</code> here to add
-            respective <abbr title="Cascading Style Sheet">CSS</abbr> class to our document based on the option we select. We can select
-            <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">Light</code> mode,
-            <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">Dark</code> mode or
-            <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">System</code> mode to let it detect based on operating
-            systems default display mode.
+            Dark Mode or Theme has become common nowadays. Almost all the operating system, apps and websites started supporting Dark Mode as first class feature as it gives a pleasing 
+            experience to eyes when reading or using the app at night time. So it's time to design dark version of apps or website to go along with the default design. Let's see how we 
+            can implement this in Blazor application.
+        </p>
+
+        <h3 id="steps-to-configure-dark-theme" class="[ font-semibold text-lg ]">Steps to configure dark theme</h3>
+
+        <p>
+            First, lets have a <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">enum</code> <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">DisplayMode</code> to represent different display modes. Next, we need the help of 
+            <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">Javascript</code> here to add respective <abbr title="Cascading Style Sheet">CSS</abbr> class to our document based on the option we select. We 
+            can select <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">Light</code> mode, <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">Dark</code> mode or <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">System</code> mode to let it detect 
+            based on operating systems default display mode.
         </p>
 
         <section class="[ flex flex-col ]"><h4 class="[ bg-gray-200 ] [ p-2 ] [ font-semibold ] [ text-black ] [ flex items-center ] [ dark:bg-gray-800 dark:bg-gray-800/80 dark:text-white ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-code ] [ text-purple-700 ] [ fill-purple-500 ]" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - Display Theme Component to toggle Display Mode</h4>
-    <article id="48b50520-3cab-49e3-84aa-ef2d52a16c7f" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="65478f94-5259-4e43-a66f-44614d452105" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <p>
-            When we click on button to set theme or mode, <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">SetTheme(DisplayMode displayMode)</code>
-            method is called by <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">Blazor</code> which in turn will use
-            <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">JavaScript</code> to call
-            <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">onDisplayModeChanged</code> function. If the selected
-            <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">DisplayMode</code> is
-            <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">Dark</code> or
-            <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">System</code> and if the operation system has dark theme enabled? then we can set
-            <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">dark</code> CSS Class to <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">HTML</code>
-            document and store the user preference in <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">Local Storage</code> to retain it for
-            next time when the user visits our app.
+            When we click on button to set theme or mode, <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">SetTheme(DisplayMode displayMode)</code> method is called by <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">Blazor</code> 
+            which in turn will use <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">JavaScript</code> to call <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">onDisplayModeChanged</code> function. If the selected 
+            <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">DisplayMode</code> is <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">Dark</code> or <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">System</code> and if the operation system has dark 
+            theme enabled? then we can set <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">dark</code> CSS Class to <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">HTML</code> document and store the user preference in 
+            <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">Local Storage</code> to retain it for next time when the user visits our app.
         </p>
 
         <p>
-            If the user has selecetd <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">Light</code>
-            <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">DisplayMode</code> then we can remove the
-            <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">dark</code> CSS Class from the
-            <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">HTML</code> document and also remove the entry from
+            If the user has selecetd <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">Light</code> <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">DisplayMode</code> then we can remove the 
+            <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">dark</code> CSS Class from the <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">HTML</code> document and also remove the entry from 
             <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">Local Storage</code>.
         </p>
 
@@ -319,30 +328,24 @@
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - Javascript function to store and toggle CSS class</h4>
-    <article id="0ece89e4-7313-4353-83c0-86a610c4e125" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="033a4957-4888-4447-a4bc-f8e5d1f26481" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <p>
-            Now that all set, we need to make sure to load the user preference when the user visits our site anytime in future. For this we
-            can again use small <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">Javascript</code> on page load in our
-            <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">index.html</code> to check if the
-            <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">Local Storage</code> entry has
-            <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">DisplayMode</code> key with
-            <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">dark</code> value or we can check if the operating system
-            supports <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">Dark</code> mode. In both case we can add
-            <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">dark</code> CSS class back to
-            <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">HTML</code> document. If both the above cases are not met then,
-            we can leave it to default light theme.
+            Now that all set, we need to make sure to load the user preference when the user visits our site anytime in future. For this we can again use small 
+            <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">Javascript</code> on page load in our <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">index.html</code> to check if the 
+            <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">Local Storage</code> entry has <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">DisplayMode</code> key with <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">dark</code> value or we can 
+            check if the operating system supports <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">Dark</code> mode. In both case we can add <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">dark</code> CSS class back to 
+            <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">HTML</code> document. If both the above cases are not met then, we can leave it to default light theme.
         </p>
 
         <section class="[ flex flex-col ]"><h4 class="[ bg-gray-200 ] [ p-2 ] [ font-semibold ] [ text-black ] [ flex items-center ] [ dark:bg-gray-800 dark:bg-gray-800/80 dark:text-white ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-code ] [ text-purple-700 ] [ fill-purple-500 ]" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - Javascript to toggle display mode CSS class on page load</h4>
-    <article id="da754a78-10b7-4fe5-acef-b9045c892c16" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="ad7ad974-fb05-47f1-a2df-6330cae493e4" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <p>
-            Time for a live demo. Try with below demo and make sure to inspect and see how CSS classed are toggled in
-            <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">HTML</code> along with
+            Time for a live demo. Try with below demo and make sure to inspect and see how CSS classed are toggled in <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">HTML</code> along with 
             <code class="[ p-0.5 ] [ border border-black ] [ dark:border-white ] ">Local Storage</code> changes.
         </p>
 
@@ -370,26 +373,37 @@
             <line x1="7" y1="20" x2="17" y2="20"></line>
             <line x1="9" y1="16" x2="9" y2="20"></line>
             <line x1="15" y1="16" x2="15" y2="20"></line></svg>
-        <span class="[ text-white ]">System</span></button></section></article></section></section>
+        <span class="[ text-white ]">System</span></button></section></article></section>
+
+        <h3 id="summary" class="[ font-semibold text-lg ]">Summary</h3>
+
+        <p>
+            In this article we saw how to configure dark theme in blazor wasm application. We saw how to apply system theme by default and we also saw a live demo of how i love dotnet responds 
+            to dark theme.
+        </p></section>
         <footer class="[ max-w-full ]"><ul class="[ list-none ] [ flex items-center justify-start md:justify-center ] [ space-x-3 ] [ overflow-hidden overflow-x-auto ]"><li class="[ px-3 py-1 ] [ rounded-full ] [ bg-black text-white dark:bg-white dark:text-black ]">Blazor</li><li class="[ px-3 py-1 ] [ rounded-full ] [ bg-black text-white dark:bg-white dark:text-black ] [ whitespace-nowrap ]">Dark Mode</li><li class="[ px-3 py-1 ] [ rounded-full ] [ bg-black text-white dark:bg-white dark:text-black ] [ whitespace-nowrap ]">Light Mode</li><li class="[ px-3 py-1 ] [ rounded-full ] [ bg-black text-white dark:bg-white dark:text-black ] [ whitespace-nowrap ]">Dark Theme</li><li class="[ px-3 py-1 ] [ rounded-full ] [ bg-black text-white dark:bg-white dark:text-black ] [ whitespace-nowrap ]">Light Theme</li></ul></footer>
         <hr class="[ dark:text-white my-1.5 ]"/></article>
-    <aside class="[ flex flex-col md:basis-1/4 ] [ space-y-2 ]"><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-skip-to-select-specific-data"><figure><img src="image/blogs/linq/using-linq-skip-to-select-specific-data.svg" class="[ w-full ]" alt="Using LINQ Skip to Select Specific Data" loading="lazy"/></figure></a></header>
+    <aside class="[ flex flex-col md:basis-1/4 ] [ space-y-2 ]"><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-distinct-to-select-unique-data"><figure><img src="image/blogs/linq/using-linq-distinct-to-select-unique-data.svg" class="[ w-full ]" alt="Using LINQ Distinct to Select Unique Data" loading="lazy"/></figure></a></header>
+                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/linq"><figure><img src="image/icons/linq.png" alt="LINQ" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
+                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/using-linq-distinct-to-select-unique-data"><h2 class="[ font-medium break-words hover:underline ]">Using LINQ Distinct to Select Unique Data</h2></a>
+                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
+                            <time datetime="2022-10-30 22-30-00">6 hours from now</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-skip-to-select-specific-data"><figure><img src="image/blogs/linq/using-linq-skip-to-select-specific-data.svg" class="[ w-full ]" alt="Using LINQ Skip to Select Specific Data" loading="lazy"/></figure></a></header>
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/linq"><figure><img src="image/icons/linq.png" alt="LINQ" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/using-linq-skip-to-select-specific-data"><h2 class="[ font-medium break-words hover:underline ]">Using LINQ Skip to Select Specific Data</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-10-23 22-30-00">3 days ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-take-to-select-specific-data"><figure><img src="image/blogs/linq/using-linq-take-to-select-specific-data.svg" class="[ w-full ]" alt="Using LINQ Take to Select Specific Data" loading="lazy"/></figure></a></header>
+                            <time datetime="2022-10-23 22-30-00">6 days ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-take-to-select-specific-data"><figure><img src="image/blogs/linq/using-linq-take-to-select-specific-data.svg" class="[ w-full ]" alt="Using LINQ Take to Select Specific Data" loading="lazy"/></figure></a></header>
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/linq"><figure><img src="image/icons/linq.png" alt="LINQ" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/using-linq-take-to-select-specific-data"><h2 class="[ font-medium break-words hover:underline ]">Using LINQ Take to Select Specific Data</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-10-16 22-30-00">10 days ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-single-to-select-single-data"><figure><img src="image/blogs/linq/using-linq-single-to-select-single-data.svg" class="[ w-full ]" alt="Using LINQ Single to Select Single Data" loading="lazy"/></figure></a></header>
+                            <time datetime="2022-10-16 22-30-00">13 days ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-single-to-select-single-data"><figure><img src="image/blogs/linq/using-linq-single-to-select-single-data.svg" class="[ w-full ]" alt="Using LINQ Single to Select Single Data" loading="lazy"/></figure></a></header>
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/linq"><figure><img src="image/icons/linq.png" alt="LINQ" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/using-linq-single-to-select-single-data"><h2 class="[ font-medium break-words hover:underline ]">Using LINQ Single to Select Single Data</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-10-09 22-30-00">17 days ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-last-to-select-single-data"><figure><img src="image/blogs/linq/using-linq-last-to-select-single-data.svg" class="[ w-full ]" alt="Using LINQ Last to Select Single Data" loading="lazy"/></figure></a></header>
+                            <time datetime="2022-10-09 22-30-00">20 days ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-last-to-select-single-data"><figure><img src="image/blogs/linq/using-linq-last-to-select-single-data.svg" class="[ w-full ]" alt="Using LINQ Last to Select Single Data" loading="lazy"/></figure></a></header>
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/linq"><figure><img src="image/icons/linq.png" alt="LINQ" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/using-linq-last-to-select-single-data"><h2 class="[ font-medium break-words hover:underline ]">Using LINQ Last to Select Single Data</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-10-02 22-30-00">24 days ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-first-to-select-single-data"><figure><img src="image/blogs/linq/using-linq-first-to-select-single-data.svg" class="[ w-full ]" alt="Using LINQ First to Select Single Data" loading="lazy"/></figure></a></header>
+                            <time datetime="2022-10-02 22-30-00">27 days ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-first-to-select-single-data"><figure><img src="image/blogs/linq/using-linq-first-to-select-single-data.svg" class="[ w-full ]" alt="Using LINQ First to Select Single Data" loading="lazy"/></figure></a></header>
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/linq"><figure><img src="image/icons/linq.png" alt="LINQ" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/using-linq-first-to-select-single-data"><h2 class="[ font-medium break-words hover:underline ]">Using LINQ First to Select Single Data</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
@@ -425,7 +439,7 @@
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/dependency-injection"><figure><img src="image/icons/dependency-injection.png" alt="Dependency-Injection" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/dependency-injection-lifetimes-in-dotnet"><h2 class="[ font-medium break-words hover:underline ]">Dependency Injection Lifetimes in .NET</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-07-31 22-30-00">2 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/introducing-dependency-injection-in-dotnet"><figure><img src="image/blogs/dependency-injection/introducing-dependency-injection-in-dotnet.svg" class="[ w-full ]" alt="Introducing Dependency Injection in .NET" loading="lazy"/></figure></a></header>
+                            <time datetime="2022-07-31 22-30-00">3 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/introducing-dependency-injection-in-dotnet"><figure><img src="image/blogs/dependency-injection/introducing-dependency-injection-in-dotnet.svg" class="[ w-full ]" alt="Introducing Dependency Injection in .NET" loading="lazy"/></figure></a></header>
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/dependency-injection"><figure><img src="image/icons/dependency-injection.png" alt="Dependency-Injection" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/introducing-dependency-injection-in-dotnet"><h2 class="[ font-medium break-words hover:underline ]">Introducing Dependency Injection in .NET</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
@@ -441,7 +455,7 @@
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/blazor"><figure><img src="image/icons/blazor.png" alt="Blazor" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/blazor-wasm-dynamic-component"><h2 class="[ font-medium break-words hover:underline ]">Blazor WASM Dynamic Component</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-07-03 22-30-00">3 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/types-of-middleware-in-aspnet"><figure><img src="image/blogs/middleware/types-of-middleware-in-aspnet.svg" class="[ w-full ]" alt="Types of Middleware in ASP.NET" loading="lazy"/></figure></a></header>
+                            <time datetime="2022-07-03 22-30-00">4 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/types-of-middleware-in-aspnet"><figure><img src="image/blogs/middleware/types-of-middleware-in-aspnet.svg" class="[ w-full ]" alt="Types of Middleware in ASP.NET" loading="lazy"/></figure></a></header>
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/middleware"><figure><img src="image/icons/middleware.png" alt="Middleware" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/types-of-middleware-in-aspnet"><h2 class="[ font-medium break-words hover:underline ]">Types of Middleware in ASP.NET</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
@@ -509,7 +523,7 @@
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/webapi"><figure><img src="image/icons/webapi.png" alt="WebAPI" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/webapi-importance-of-status-code"><h2 class="[ font-medium break-words hover:underline ]">Importance of Status Code in Web API</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-03-06 22-30-00">7 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/blazor-wasm-app-settings"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-app-settings.svg" class="[ w-full ]" alt="Blazor WASM App Settings" loading="lazy"/></figure></a></header>
+                            <time datetime="2022-03-06 22-30-00">8 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/blazor-wasm-app-settings"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-app-settings.svg" class="[ w-full ]" alt="Blazor WASM App Settings" loading="lazy"/></figure></a></header>
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/blazor"><figure><img src="image/icons/blazor.png" alt="Blazor" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/blazor-wasm-app-settings"><h2 class="[ font-medium break-words hover:underline ]">Blazor WASM App Settings</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
@@ -525,7 +539,7 @@
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/blazor"><figure><img src="image/icons/blazor.png" alt="Blazor" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/blazor-wasm-javascript-interop-and-isolation"><h2 class="[ font-medium break-words hover:underline ]">Blazor WASM Javascript Interop and Isolation</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-02-06 22-30-00">8 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/blazor-wasm-error-logging"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-error-logging.svg" class="[ w-full ]" alt="Blazor WASM Error Logging" loading="lazy"/></figure></a></header>
+                            <time datetime="2022-02-06 22-30-00">9 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/blazor-wasm-error-logging"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-error-logging.svg" class="[ w-full ]" alt="Blazor WASM Error Logging" loading="lazy"/></figure></a></header>
                 <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/blazor"><figure><img src="image/icons/blazor.png" alt="Blazor" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
                     <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/blazor-wasm-error-logging"><h2 class="[ font-medium break-words hover:underline ]">Blazor WASM Error Logging</h2></a>
                         <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
@@ -560,7 +574,7 @@
            <path d="M8 11v-4a4 4 0 0 1 8 0v4"></path></svg>
         <span class="[ text-xs text-center ]">Privacy</span></a></nav>
             
-    <!--Blazor:{"prerenderId":"ea02d42d03d74dd6b1d26236905134f8"}-->
+    <!--Blazor:{"prerenderId":"ac4c47466c814e2fa8d9b22056ba935e"}-->
 <!-- %%-PRERENDERING-END-%% -->
 <!--Blazor-Component-State:e30=--></div>
 
