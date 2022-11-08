@@ -70,12 +70,12 @@
       "Toolbelt.Blazor.HeadElement.Abstractions.dll": "sha256-CGf+mNF+VXVtxxm+PFFII0eZNFTCbw5Xj8XppFAS5Ks=",
       "Toolbelt.Blazor.HeadElement.dll": "sha256-iFzFYvodcVhh3LI1rxx8TRmklmImeOV5MGXxUWJG3Uo=",
       "Toolbelt.Blazor.HeadElement.Services.dll": "sha256-cbQ69Q9LZIeLEOVWxbK4H5sPRhLI4to\/+rO+HnuYsVs=",
-      "Web.dll": "sha256-hSZci\/4nqYh5mTThEDlDubVyuqRVGP0ihHwko9yc5Fc="
+      "Web.dll": "sha256-Be0pxXz75h0+lCM48SxJgLqz4QzUu59uZxXSFDEwSh4="
     },
     "extensions": null,
     "lazyAssembly": {
       "BlazorDemoComponents.dll": "sha256-ZvLKXo+HmV7Nray9sC5HcPVAgTHYTdwuvIC52UTXO7o=",
-      "Components.dll": "sha256-zbtS8ka6XmSB0MFfgpV4WC\/bGPl3xlEgirkoH\/7zBc4=",
+      "Components.dll": "sha256-u+1Q8f7Qus+MqIYOlpupFp8V4mPt2uEeCARF0y10Dzc=",
       "DependencyInjectionDemoComponents.dll": "sha256-kaFE6D49HHjaSVYle\/2rcBQnbaVcHdq\/tdy55\/eyf7Q=",
       "LINQDemoComponents.dll": "sha256-E9KzoHtq43NLpJ5WnBNnwljDP5US\/6foHrCDnj3baaA=",
       "OOPSDemoComponents.dll": "sha256-w\/jNpdKvO4zKmz6nEWkGY0jFMLtgxas5Hqd69j\/FmrM="
