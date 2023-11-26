@@ -8,7 +8,7 @@
 	</url>
 	<url>
 		<loc>https://ilovedotnet.org/blogs/blazor-wasm-error-logging</loc>
-		<lastmod>2022-01-23T22:30:00+05:30</lastmod>
+		<lastmod>2023-10-01T22:30:00+05:30</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
@@ -141,6 +141,24 @@
 	<url>
 		<loc>https://ilovedotnet.org/blogs/printing-barcode-to-label-printer-from-blazor-wasm</loc>
 		<lastmod>2023-07-02T22:30:00+05:30</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://ilovedotnet.org/blogs/improve-performance-by-dynamically-loading-image-in-blazor-wasm</loc>
+		<lastmod>2023-10-08T22:30:00+05:30</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://ilovedotnet.org/blogs/prevent-image-leech-by-dynamically-streaming-image-in-blazor-wasm</loc>
+		<lastmod>2023-10-15T22:30:00+05:30</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://ilovedotnet.org/blogs/using-hot-keys-in-blazor-wasm</loc>
+		<lastmod>2023-10-22T22:30:00+05:30</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>

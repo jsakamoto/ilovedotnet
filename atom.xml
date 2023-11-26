@@ -15,8 +15,8 @@
 			<title>Blazor WASM Error Logging</title>
 			<link>https://ilovedotnet.org/blogs/blazor-wasm-error-logging</link>
 			<guid isPermaLink="true">https://ilovedotnet.org/blogs/blazor-wasm-error-logging</guid>
-			<description>In this post I will teach you how to log error in your Blazor applications. All with live working demo.</description>
-			<pubDate>Sun, 23 Jan 2022 22:30:00 +0530</pubDate>
+			<description>In this post I will teach you how to log error in your Blazor WASM applications using SeriLog. All with live working demo.</description>
+			<pubDate>Sun, 01 Oct 2023 22:30:00 +0530</pubDate>
 		</item>
 		<item>
 			<title>Blazor WASM Dark Theme and Light Theme</title>
@@ -577,6 +577,104 @@
 			<guid isPermaLink="true">https://ilovedotnet.org/blogs/configuring-authentication-in-functional-testing-in-asp-net-webapi</guid>
 			<description>In this post I will teach how to configure authentication in functional testing in ASP.NET web api. All with live working demo.</description>
 			<pubDate>Sun, 06 Aug 2023 22:30:00 +0530</pubDate>
+		</item>
+		<item>
+			<title>Unit Testing Hosted Services in ASP.NET WEB API</title>
+			<link>https://ilovedotnet.org/blogs/unit-testing-hosted-services-in-asp-net-webapi</link>
+			<guid isPermaLink="true">https://ilovedotnet.org/blogs/unit-testing-hosted-services-in-asp-net-webapi</guid>
+			<description>In this post I will teach how to unit test hosted services in ASP.NET web api. All with live working demo.</description>
+			<pubDate>Sun, 13 Aug 2023 22:30:00 +0530</pubDate>
+		</item>
+		<item>
+			<title>Improving performance and memory use while accessing APIs using HTTPClient in dotnet</title>
+			<link>https://ilovedotnet.org/blogs/improving-performance-and-memory-use-while-accessing-apis-using-http-client-in-dotnet</link>
+			<guid isPermaLink="true">https://ilovedotnet.org/blogs/improving-performance-and-memory-use-while-accessing-apis-using-http-client-in-dotnet</guid>
+			<description>In this post I will teach how to improve performance and memory use while accessing APIs with Streams using HTTP Client. All with live working demo.</description>
+			<pubDate>Sun, 20 Aug 2023 22:30:00 +0530</pubDate>
+		</item>
+		<item>
+			<title>Free up resources with Cancellation while accessing APIs using HTTPClient in dotnet</title>
+			<link>https://ilovedotnet.org/blogs/free-up-resources-with-cancellation-while-accessing-apis-using-http-client-in-dotnet</link>
+			<guid isPermaLink="true">https://ilovedotnet.org/blogs/free-up-resources-with-cancellation-while-accessing-apis-using-http-client-in-dotnet</guid>
+			<description>In this post I will teach how to free up resources with cancellation while accessing APIs using HTTP Client. All with live working demo.</description>
+			<pubDate>Sun, 27 Aug 2023 22:30:00 +0530</pubDate>
+		</item>
+		<item>
+			<title>Save bandwidth with Compression when sending and reading data using HTTPClient in dotnet</title>
+			<link>https://ilovedotnet.org/blogs/save-bandwidth-with-compression-when-sending-and-reading-data-using-http-client-in-dotnet</link>
+			<guid isPermaLink="true">https://ilovedotnet.org/blogs/save-bandwidth-with-compression-when-sending-and-reading-data-using-http-client-in-dotnet</guid>
+			<description>In this post I will teach how to save bandwidth with compression while sending and reading data using HTTP Client. All with live working demo.</description>
+			<pubDate>Sun, 03 Sep 2023 22:30:00 +0530</pubDate>
+		</item>
+		<item>
+			<title>Working with API that supports remote streaming using HTTPClient in dotnet</title>
+			<link>https://ilovedotnet.org/blogs/working-with-api-that-supports-remote-streaming-using-http-client-in-dotnet</link>
+			<guid isPermaLink="true">https://ilovedotnet.org/blogs/working-with-api-that-supports-remote-streaming-using-http-client-in-dotnet</guid>
+			<description>In this post I will teach how to work with API that supports remote streaming using HTTP Client. All with live working demo.</description>
+			<pubDate>Sun, 10 Sep 2023 22:30:00 +0530</pubDate>
+		</item>
+		<item>
+			<title>Extending HTTPClient with Custom Http Message Handlers in dotnet</title>
+			<link>https://ilovedotnet.org/blogs/extending-http-client-with-custom-http-message-handlers-in-dotnet</link>
+			<guid isPermaLink="true">https://ilovedotnet.org/blogs/extending-http-client-with-custom-http-message-handlers-in-dotnet</guid>
+			<description>In this post I will teach how to extend HTTP Client with custom Http Message Handlers. All with live working demo.</description>
+			<pubDate>Sun, 17 Sep 2023 22:30:00 +0530</pubDate>
+		</item>
+		<item>
+			<title>Unit Testing HTTPClient in dotnet</title>
+			<link>https://ilovedotnet.org/blogs/unit-testing-http-client-in-dotnet</link>
+			<guid isPermaLink="true">https://ilovedotnet.org/blogs/unit-testing-http-client-in-dotnet</guid>
+			<description>In this post I will teach how to unit test HTTP Client in dotnet. All with live working demo.</description>
+			<pubDate>Sun, 24 Sep 2023 22:30:00 +0530</pubDate>
+		</item>
+		<item>
+			<title>Improve performance by dynamically loading image in Blazor WASM</title>
+			<link>https://ilovedotnet.org/blogs/improve-performance-by-dynamically-loading-image-in-blazor-wasm</link>
+			<guid isPermaLink="true">https://ilovedotnet.org/blogs/improve-performance-by-dynamically-loading-image-in-blazor-wasm</guid>
+			<description>In this post I will teach how to improve performance by dynamically loading image in blazor wasm. All with live working demo.</description>
+			<pubDate>Sun, 08 Oct 2023 22:30:00 +0530</pubDate>
+		</item>
+		<item>
+			<title>Prevent image leech by dynamically streaming image in Blazor WASM</title>
+			<link>https://ilovedotnet.org/blogs/prevent-image-leech-by-dynamically-streaming-image-in-blazor-wasm</link>
+			<guid isPermaLink="true">https://ilovedotnet.org/blogs/prevent-image-leech-by-dynamically-streaming-image-in-blazor-wasm</guid>
+			<description>In this post I will teach how to prevent image leech by dynamically streaming image in blazor wasm. All with live working demo.</description>
+			<pubDate>Sun, 15 Oct 2023 22:30:00 +0530</pubDate>
+		</item>
+		<item>
+			<title>Using Hot Keys in Blazor WASM</title>
+			<link>https://ilovedotnet.org/blogs/using-hot-keys-in-blazor-wasm</link>
+			<guid isPermaLink="true">https://ilovedotnet.org/blogs/using-hot-keys-in-blazor-wasm</guid>
+			<description>In this post I will teach how to setup and use hot keys in blazor wasm. All with live working demo.</description>
+			<pubDate>Sun, 22 Oct 2023 22:30:00 +0530</pubDate>
+		</item>
+		<item>
+			<title>Request Endpoint Response (REPR) pattern in ASP.NET WEB API</title>
+			<link>https://ilovedotnet.org/blogs/request-endpoint-response-repr-pattern-in-asp-net-webapi</link>
+			<guid isPermaLink="true">https://ilovedotnet.org/blogs/request-endpoint-response-repr-pattern-in-asp-net-webapi</guid>
+			<description>In this post I will teach about REPR pattern, a better way to organize API's and how to implement in ASP.NET Web API. All with live working demo.</description>
+			<pubDate>Sun, 29 Oct 2023 22:30:00 +0530</pubDate>
+		</item>
+		<item>
+			<title>Architecture Test using Net Arch Test in ASP.NET WEB API</title>
+			<link>https://ilovedotnet.org/blogs/architecture-test-using-net-arch-test-in-asp-net-webapi</link>
+			<guid isPermaLink="true">https://ilovedotnet.org/blogs/architecture-test-using-net-arch-test-in-asp-net-webapi</guid>
+			<description>In this post I will teach how to enforce architecture fitness using Architecture Test in ASP.NET Web API. All with live working demo.</description>
+			<pubDate>Sun, 05 Nov 2023 22:30:00 +0530</pubDate>
+		</item>
+		<item>
+			<title>Global Exception Handling in ASP.NET WEB API</title>
+			<link>https://ilovedotnet.org/blogs/global-exception-handling-in-asp-net-webapi</link>
+			<guid isPermaLink="true">https://ilovedotnet.org/blogs/global-exception-handling-in-asp-net-webapi</guid>
+			<description>In this post I will teach how to handle exceptions globally in ASP.NET Web API. All with live working demo.</description>
+			<pubDate>Sun, 12 Nov 2023 22:30:00 +0530</pubDate>
+		</item>
+		<item>
+			<title>Using Docker Test Containers in Functional Testing in ASP.NET WEB API</title>
+			<link>https://ilovedotnet.org/blogs/using-test-docker-containers-in-functional-testing-in-asp-net-webapi</link>
+			<guid isPermaLink="true">https://ilovedotnet.org/blogs/using-docker-test-containers-in-functional-testing-in-asp-net-webapi</guid>
+			<description>In this post I will teach how to test with real database using Docker Test Containers in functional testing in ASP.NET Web API. All with live working demo.</description>
+			<pubDate>Sun, 19 Nov 2023 22:30:00 +0530</pubDate>
 		</item>
 	</channel>
 </rss>

@@ -25,6 +25,7 @@
                upgrade-insecure-requests;">-->
     <title>Blazor WASM Error Logging - I ❤️ DotNet</title>
     <base href="/"/>
+    <link href="css/charts.min.css" rel="stylesheet"/>
     <link href="css/app.min.css" rel="stylesheet"/>
     <link href="manifest.json" rel="manifest"/>
     <link rel="icon" type="image/x-icon" href="favicon.ico"/>
@@ -81,8 +82,7 @@
         }
     </script>
 
-<!-- %%-PRERENDERING-HEADOUTLET-BEGIN-%% -->
-<!--Blazor:{"type":"webassembly","assembly":"Microsoft.AspNetCore.Components.Web","typeName":"Microsoft.AspNetCore.Components.Web.HeadOutlet","parameterDefinitions":"W10=","parameterValues":"W10=","prerenderId":"bad51144c8d94fbdbc2908b22fbe645c"}--><script type="application/ld+json">
+<!--Blazor:{"type":"webassembly","assembly":"Microsoft.AspNetCore.Components.Web","typeName":"Microsoft.AspNetCore.Components.Web.HeadOutlet","parameterDefinitions":"W10=","parameterValues":"W10=","prerenderId":"baada2cec36b4f9e9addb6163bafce2a"}--><script type="application/ld+json">
 {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -116,28 +116,27 @@
     },
     "headline": "Blazor WASM Error Logging",
     "url": "https://ilovedotnet.org/blogs/blazor-wasm-error-logging/",
-    "datePublished": "2022-01-23T22:30:00.000Z",
-    "dateModified": "2022-01-23T22:30:00.000Z",
+    "datePublished": "2023-10-01T22:30:00.000Z",
+    "dateModified": "2023-10-01T22:30:00.000Z",
     "image": {
         "@type": "ImageObject",
         "url": "https://ilovedotnet.org/image/blogs/blazor/wasm/blazor-wasm-error-logging.png",
         "width": 1265,
         "height": 827
     },
-    "keywords": ".NET, DotNet, I Love DotNet, I ❤️ DotNet, Blazor, Blazor (WebAssembly), Blazor Wasm, C#, Entity Framework, LINQ, ML.NET, Web API, TDD, OOPS, Middleware, JWT, Dependency Injection, Exception Logging, Error Logging",
+    "keywords": ".NET, DotNet, I Love DotNet, I ❤️ DotNet, Blazor, Blazor (WebAssembly), Blazor Wasm, C#, Entity Framework, LINQ, ML.NET, Web API, TDD, OOPS, Middleware, JWT, Dependency Injection, Report, Design Pattern, SOLID, HTTPClient, Exception Logging, Error Logging, SeriLog",
     "description": "In this post I will teach you how to log error in your Blazor applications. All with live working demo.",
     "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "https://ilovedotnet.org/"
     }
 }
-</script><!--Blazor:{"prerenderId":"bad51144c8d94fbdbc2908b22fbe645c"}-->
-<!-- %%-PRERENDERING-HEADOUTLET-END-%% -->
+</script><!--Blazor:{"prerenderId":"baada2cec36b4f9e9addb6163bafce2a"}-->
 
     <script type="text/default-title">I ❤️ DotNet</script>
     <script type="text/default-meta-elements">[[,"author",,,"Abdul Rahman Shabeek Mohamed"],[,"viewport",,,"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"],[,"copyright",,,"I Love DotNet"],[,"language",,,"EN"],[,"robots",,,"index,follow"],[,"owner",,,"Abdul Rahman Shabeek Mohamed"]]</script>
     <meta property="description" content="In this post I will teach you how to log error in your Blazor applications. All with live working demo."/>
-    <meta property="keywords" content=".NET, DotNet, I Love DotNet, I ❤️ DotNet, Blazor, Blazor (WebAssembly), Blazor Wasm, C#, Entity Framework, LINQ, ML.NET, Web API, TDD, OOPS, Middleware, JWT, Dependency Injection, Report, Design Pattern, SOLID Exception Logging, Error Logging"/>
+    <meta property="keywords" content=".NET, DotNet, I Love DotNet, I ❤️ DotNet, Blazor, Blazor (WebAssembly), Blazor Wasm, C#, Entity Framework, LINQ, ML.NET, Web API, TDD, OOPS, Middleware, JWT, Dependency Injection, Report, Design Pattern, SOLID Exception Logging, Error Logging, SeriLog"/>
     <meta property="url" content="https://ilovedotnet.org/blogs/blazor-wasm-error-logging/"/>
     <meta property="identifier-URL" content="https://ilovedotnet.org/blogs/blazor-wasm-error-logging/"/>
     <meta property="og:site_name" content="I Love DotNet"/>
@@ -153,14 +152,16 @@
     <meta property="twitter:image:alt" content="DotNet bot with heart and DotNet brand"/>
     <meta property="twitter:description" content="In this post I will teach you how to log error in your Blazor applications. All with live working demo."/>
     <meta property="twitter:url" content="https://ilovedotnet.org/blogs/blazor-wasm-error-logging/"/>
-    <meta property="article:published_time" content="2022-01-23T22:30:00.000Z"/>
-    <meta property="article:modified_time" content="2022-01-23T22:30:00.000Z"/>
-    <meta property="article:tag" content="Error Logging"/>
-    <script type="text/default-link-elements">[["stylesheet","css/app.min.css"],["manifest","manifest.json"],["icon","favicon.ico",,"image/x-icon"],["me","https://www.linkedin.com/in/fingers10",,"text/html"],["apple-touch-icon-precomposed","appicons/apple-touch-icon-144x144.png","144x144"],["apple-touch-icon-precomposed","appicons/apple-touch-icon-152x152.png","152x152"],["icon","appicons/favicon-196x196.png","196x196","image/png"],["icon","appicons/favicon-128.png","128x128","image/png"]]</script>
+    <meta property="article:published_time" content="2023-10-01T22:30:00.000Z"/>
+    <meta property="article:modified_time" content="2023-10-01T22:30:00.000Z"/>
+    <meta property="article:tag" content="SeriLog"/>
+    <script type="text/default-link-elements">[["stylesheet","css/charts.min.css"],["stylesheet","css/app.min.css"],["manifest","manifest.json"],["icon","favicon.ico",,"image/x-icon"],["me","https://www.linkedin.com/in/fingers10",,"text/html"],["apple-touch-icon-precomposed","appicons/apple-touch-icon-144x144.png","144x144"],["apple-touch-icon-precomposed","appicons/apple-touch-icon-152x152.png","152x152"],["icon","appicons/favicon-196x196.png","196x196","image/png"],["icon","appicons/favicon-128.png","128x128","image/png"]]</script>
     <link rel="sitemap" href="https://ilovedotnet.org/sitemap.xml" type="application/xml" title="Sitemap"/>
+    <link rel="sitemap" href="https://ilovedotnet.org/sitemap-authors.xml" type="application/xml" title="Sitemap"/>
     <link rel="sitemap" href="https://ilovedotnet.org/sitemap-blog-blazor-wasm.xml" type="application/xml" title="Sitemap"/>
     <link rel="sitemap" href="https://ilovedotnet.org/sitemap-blog-dependency-injection.xml" type="application/xml" title="Sitemap"/>
     <link rel="sitemap" href="https://ilovedotnet.org/sitemap-blog-design-pattern.xml" type="application/xml" title="Sitemap"/>
+    <link rel="sitemap" href="https://ilovedotnet.org/sitemap-blog-http-client.xml" type="application/xml" title="Sitemap"/>
     <link rel="sitemap" href="https://ilovedotnet.org/sitemap-blog-linq.xml" type="application/xml" title="Sitemap"/>
     <link rel="sitemap" href="https://ilovedotnet.org/sitemap-blog-middleware.xml" type="application/xml" title="Sitemap"/>
     <link rel="sitemap" href="https://ilovedotnet.org/sitemap-blog-oops.xml" type="application/xml" title="Sitemap"/>
@@ -181,7 +182,7 @@
 <body class="[ m-0 ] [ h-full ] [ dark:bg-stone-900 ] [ bg-gray-100 ]">
     <div id="app" class="[ dark:text-white ]">
 <!-- %%-PRERENDERING-BEGIN-%% -->
-<!--Blazor:{"type":"webassembly","assembly":"Web","typeName":"Web.App","parameterDefinitions":"W10=","parameterValues":"W10=","prerenderId":"f683fa7dc0934dafa15913c9eda2cd28"}--><header id="header" class="[ flex items-center justify-between ] [ bg-white ] [ px-5 ] [ dark:bg-gray-800 dark:bg-gray-800/80 ] [ h-14 ] [ sticky top-0 ] [ backdrop-blur-sm bg-white/80 ] [ z-10 ]"><button type="button" class="[ hidden md:block ] [ mr-4 ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-menu-2 ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+<!--Blazor:{"type":"webassembly","assembly":"Web","typeName":"Web.App","parameterDefinitions":"W10=","parameterValues":"W10=","prerenderId":"cbb1014847394871b36407fc24c4de84"}--><header id="header" class="[ flex items-center justify-between ] [ bg-white ] [ px-5 ] [ dark:bg-gray-800 dark:bg-gray-800/80 ] [ h-14 ] [ sticky top-0 ] [ backdrop-blur-sm bg-white/80 ] [ z-10 ]"><button type="button" class="[ hidden md:block ] [ mr-4 ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-menu-2 ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
            <line x1="4" y1="6" x2="20" y2="6"></line>
            <line x1="4" y1="12" x2="20" y2="12"></line>
            <line x1="4" y1="18" x2="20" y2="18"></line></svg></button>
@@ -192,12 +193,15 @@
             <line x1="5" y1="12" x2="19" y2="12"></line>
             <line x1="5" y1="12" x2="11" y2="18"></line>
             <line x1="5" y1="12" x2="11" y2="6"></line></svg></button>
-    <div class="[ dropdown ] [  ] [ w-1/2 ] [ hidden ] [  ]"><div class="[ dropdown-trigger ] [ w-full ]"><input type="search" placeholder="Search" class="[ w-full h-full ] [ px-4 ] [ border-2 ] [ focus:outline-none focus:border-gray-400 ] [ dark:bg-black dark:border-gray-800 dark:focus:border-b-white dark:md:focus:border-blue-800 dark:caret-white dark:text-white ]" autocapitalize="none" autocomplete="off" autocorrect="off" aria-haspopup="true" aria-controls="dropdown-menu" value=""/></div>
+    <div class="[ dropdown ] [  ] [ w-1/2 ] [ hidden ] [  ]"><div class="[ dropdown-trigger ] [ w-full ]"><input type="search" placeholder="Type / to search" class="[ w-full h-full ] [ px-4 ] [ border-2 ] [ focus:outline-none focus:border-gray-400 ] [ dark:bg-black dark:border-gray-800 dark:focus:border-b-white dark:md:focus:border-blue-800 dark:caret-white dark:text-white ]" autocapitalize="none" autocomplete="off" autocorrect="off" aria-haspopup="true" aria-controls="dropdown-menu" value=""/></div>
         <div class="[ dropdown-menu ] [ w-full ]" id="dropdown-menu" role="menu"><div class="[ dropdown-content ] [ dark:bg-black ] [ overflow-y-auto ]" style="max-height:50vh;"></div></div></div>
     <button type="button" aria-label="Search" class="[ h-10 w-10 ] [  ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-search ] [ inline ] [ text-gray-500 ] [ stroke-1 ] [ dark:text-white ]" width="25" height="25" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
             <circle cx="10" cy="10" r="7"></circle>
             <line x1="21" y1="21" x2="15" y2="15"></line></svg></button></section>
-    <section id="display-and-social" class="[  ] [ flex items-center space-x-1.5 ]"><section id="displaymode"><div class="dropdown is-right "><div class="dropdown-trigger"><button class="button [ flex items-center ]" aria-haspopup="true" aria-controls="displaymode-menu"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-device-desktop ] [ dark:text-white ]" width="25" height="25" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+    <section id="display-and-social" class="[  ] [ flex items-center space-x-1.5 ]"><a href="https://github.com/ILoveDotNet/ilovedotnet" target="blank" class="[ flex items-center space-x-1 ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-star ] [ fill-yellow-400 stroke-yellow-400 ] [ animate-pulse ]" width="25" height="25" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"></path></svg>
+            <span class="hidden md:block">Starred 0</span></a>
+        <section id="displaymode"><div class="dropdown is-right "><div class="dropdown-trigger"><button class="button [ flex items-center ]" aria-haspopup="true" aria-controls="displaymode-menu"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-device-desktop ] [ dark:text-white ]" width="25" height="25" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                         <rect x="3" y="4" width="18" height="12" rx="1"></rect>
                         <line x1="7" y1="20" x2="17" y2="20"></line>
                         <line x1="9" y1="16" x2="9" y2="20"></line>
@@ -239,7 +243,12 @@
                         <path d="M10 11v-2a2 2 0 1 1 4 0v2"></path>
                         <rect x="4" y="4" width="16" height="16" rx="2"></rect></svg>
                     <span class="[ dark:text-white ]">Privacy</span></a></div></div></div></section></section></header>
-<main id="main" class="[ [ pb-14 md:pb-0 md:pl-16 ] ]">
+<main id="main" class="[ [ pb-14 md:pb-0 md:pl-16 ] ]"><section class="[ font-bold ] [ p-5 ] [ flex items-center justify-center ]"><a href="https://whatsapp.com/channel/0029VaAGMV2LtOj5S5MHd23h" target="_blank"><span>👉🏼 Click here to Join I ❤️ .NET </span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-brand-whatsapp ] [ fill-green-500 ] [ inline ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9"></path>
+                <path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1"></path></svg>
+            <span>WhatsApp Channel to get 🔔 notified about new articles and other updates.</span></a></section>
+    
 
 
 
@@ -279,9 +288,9 @@
 
 
 
-<section class="[ flex flex-col md:flex-row ] [ p-5 md:px-20 ] [ md:space-x-5 space-y-5 md:space-y-0 ]"><article class="[ md:basis-3/4 ] [ space-y-5 ]"><header class="[ space-y-2 ]"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-error-logging.png" alt="Blazor WASM Error Logging" class="[ w-full ]" loading="lazy"/></figure><h2 class="[ dark:text-white ] [ font-semibold text-xl ]">Blazor WASM Error Logging</h2>
+<section class="[ flex flex-col md:flex-row ] [ p-5 md:px-20 ] [ md:space-x-5 space-y-5 md:space-y-0 ]"><article class="[ md:basis-3/4 ] [ space-y-5 ]"><header class="[ space-y-2 ]"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-error-logging.webp" alt="Blazor WASM Error Logging" class="[ w-full ]" loading="lazy"/></figure><h2 class="[ dark:text-white ] [ font-semibold text-xl ]">Blazor WASM Error Logging</h2>
     <section class="[ flex flex-col md:flex-row justify-between ] [ space-y-1 md:space-y-0 ] [ dark:text-white ] [ font-bold ]"><div><p>Authors - <a href="https://www.linkedin.com/in/fingers10" class="[ underline ]" target="_blank">Abdul Rahman (Content Writer)</a>, <a href="https://www.linkedin.com/in/regina-sharon" class="[ underline ]" target="_blank">Regina Sharon (Graphic Designer)</a></p>
-            <time datetime="2022-01-23 22:30:00">Last updated one year ago</time></div>
+            <time datetime="2023-10-01 22:30:00">Last updated one month ago</time></div>
         <div><section class="[ flex justify-between md:justify-start ]"><a href="https://github.com/sponsors/fingers10" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-heart ] [ text-red-500 ] [ fill-red-500 ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
            <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"></path></svg></a>
     <a href="https://api.whatsapp.com/send?text=Blazor WASM Error Logging%20https%3a%2f%2filovedotnet.org%2fblogs%2fblazor-wasm-error-logging%2f" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-brand-whatsapp ] [ text-emerald-500 dark:text-emerald-300 ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -297,21 +306,33 @@
             <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"></path></svg></a>
     <a href="https://twitter.com/intent/tweet?url=https%3a%2f%2filovedotnet.org%2fblogs%2fblazor-wasm-error-logging%2f&amp;text=Blazor WASM Error Logging" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-brand-twitter ] [ text-blue-700 ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
             <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z"></path></svg></a></section></div></section>
-    <section class="[ flex items-center justify-between ]"><a href="channels/blazor" class="[ flex ]"><aside><figure class="[ mt-2 mr-2 ]"><img src="/image/icons/blazor.png" alt="blazor" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></aside>
+    <section class="[ flex items-center justify-between ]"><a href="channels/blazor" class="[ flex ]"><aside><figure class="[ mt-2 mr-2 ]"><img src="/image/icons/blazor.webp" alt="blazor" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></aside>
             <article class="[ flex flex-col justify-between ] [ dark:text-white ] [ mt-2 ]"><h2 class="[ font-medium break-words ] [ uppercase ]">blazor</h2>
-                <section class="[ flex justify-between ]"><p>24 Articles</p></section></article></a>
+                <section class="[ flex justify-between ]"><p>27 Articles</p></section></article></a>
         <a href="https://github.com/ILoveDotNet/ilovedotnet/blob/main/Web/Pages/Blogs/Blazor/Wasm/ErrorLogging.razor" target="_blank" class="[ md:bg-red-700 ] [ text-red-500 md:text-white uppercase ] [ px-3 py-2 ] [ font-semibold ]">Improve</a></section>
     <hr class="[ dark:text-white my-1.5 ]"/></header>
         <section class="[ dark:text-white ] [ space-y-2 ] [ leading-relaxed ]"><p>
-            In our previous article <a href="blogs/blazor-wasm-exception-handling-and-error-boundary" class="[ underline ]">Blazor WASM Exception Handling and Error Boundary</a>,
-            we learnt how global exception works and how to handle exceptions using built in <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">ErrorBoundary</code> component. In this article, let's learn about 
-            Error Logging in Blazor WASM.
+            In this article, let's learn about how to <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">log errors</code> using <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">SeriLog</code> 
+            in <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">Blazor WASM</code> in .NET.
         </p>
-        
+
+        <p><strong>Note:</strong> If you have not done so already, I recommend you read the article on
+            <a href="blogs/blazor-wasm-exception-handling-and-error-boundary" class="[ underline ]">Blazor WASM Exception Handling and Error Boundary</a>.
+        </p>
+
         <h3 class="[ font-semibold text-lg ]">Table of Contents</h3>
 
         <ol class="[ list-decimal ] [ ml-4 ]"><li><a href="blogs/blazor-wasm-error-logging#introduction" class="[ underline ]">
                     Introduction
+                </a></li>
+            <li><a href="blogs/blazor-wasm-error-logging#how-logging-works-in-blazor-wasm" class="[ underline ]">
+                    How logging works in Blazor WASM ?
+                </a></li>
+            <li><a href="blogs/blazor-wasm-error-logging#configuring-serilog" class="[ underline ]">
+                    Configuring SeriLog
+                </a></li>
+            <li><a href="blogs/blazor-wasm-error-logging#logging-to-server-from-blazor-wasm" class="[ underline ]">
+                    Logging to server from Blazor WASM
                 </a></li>
             <li><a href="blogs/blazor-wasm-error-logging#creating-error-component-to-log-error" class="[ underline ]">
                     Creating Error component to log error
@@ -323,53 +344,202 @@
         <h3 id="introduction" class="[ font-semibold text-lg ]">Introduction</h3>
 
         <p>
-            Logging is needed in all applications. This will help to find root cause or track user activity in any environment. This can be done easily in server side applications with logging 
-            frameworks but for <abbr title="Single Page Application">SPA</abbr> like <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">Blazor <abbr title="Web Assembly">WASM</abbr></code> running in browser 
-            sandbox, we will not be having direct access to file system or database and logging cannot be done like how we do in server side applications. We can use browser console to log 
-            <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">Information</code>, <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">Warning</code> or <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">Error</code>. But this will not help much in 
-            production. We can still make logging happen in production by processing <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">Exception</code> and posting the error details to backend API. Let's look on 
-            how to achieve this in <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">Blazor <abbr title="Web Assembly">WASM</abbr></code>.
+            Logging is needed in all applications. This will help to find root cause or track user activity in any environment. This can be done easily in 
+            server side applications with logging frameworks but for <abbr title="Single Page Application">SPA</abbr> like <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">Blazor 
+            <abbr title="Web Assembly">WASM</abbr></code> running in browser sandbox, we will not be having direct access to file system or database 
+            and logging cannot be done like how we do in server side applications. We can use browser console to log 
+            <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">Information</code>, <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">Warning</code> or <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">Error</code>. But 
+            this will not help much in production. We can still make logging happen in production by processing <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">Exception</code> 
+            and posting the error details to backend API. Let's look on how to achieve this in <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">Blazor <abbr title="Web Assembly">WASM</abbr></code>.
         </p>
+
+        
+
+        <h3 id="how-logging-works-in-blazor-wasm" class="[ font-semibold text-lg ]">How logging works in Blazor WASM ?</h3>
+
+        <p>
+            .NET supports logging with variety of logging providers. <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">Logging</code> can be set on the 
+            <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">minimum severity level</code>. The severity levels are, 
+        </p>
+
+        <table class="[ table-fixed border-collapse ] [ bg-white ] [ border-2 ] [ dark:bg-black dark:border-slate-500 ]"><thead><tr class="[ bg-gray-100 ] [ dark:bg-slate-500 ]"><th class="[ border-2 ] [ dark:border-slate-600 ] [ p-2 ]">Name</th>
+                    <th class="[ border-2 ] [ dark:border-slate-600 ] [ p-2 ]">Severity Level</th></tr></thead>
+            <tbody><tr class="[ bg-yellow-100 ] [ dark:bg-blue-600 ]"><td class="[ border-2 ] [ dark:border-slate-700 ] [ p-2 ]">Trace</td>
+                    <td class="[ border-2 ] [ dark:border-slate-700 ] [ p-2 ]">0</td></tr>
+                <tr class="[ bg-green-100 ] [ dark:bg-green-600 ]"><td class="[ border-2 ] [ dark:border-slate-700 ] [ p-2 ]">Debug</td>
+                    <td class="[ border-2 ] [ dark:border-slate-700 ] [ p-2 ]">1</td></tr>
+                <tr class="[ bg-fuchsia-100 ] [ dark:bg-fuchsia-600 ]"><td class="[ border-2 ] [ dark:border-slate-700 ] [ p-2 ]">Information</td>
+                    <td class="[ border-2 ] [ dark:border-slate-700 ] [ p-2 ]">2</td></tr>
+                <tr class="[ bg-yellow-100 ] [ dark:bg-yellow-600 ]"><td class="[ border-2 ] [ dark:border-slate-700 ] [ p-2 ]">Warning</td>
+                    <td class="[ border-2 ] [ dark:border-slate-700 ] [ p-2 ]">3</td></tr>
+                <tr class="[ bg-red-100 ] [ dark:bg-red-600 ]"><td class="[ border-2 ] [ dark:border-slate-700 ] [ p-2 ]">Error</td>
+                    <td class="[ border-2 ] [ dark:border-slate-700 ] [ p-2 ]">4</td></tr>
+                <tr class="[ bg-red-100 ] [ dark:bg-red-600 ]"><td class="[ border-2 ] [ dark:border-slate-700 ] [ p-2 ]">Critical</td>
+                    <td class="[ border-2 ] [ dark:border-slate-700 ] [ p-2 ]">5</td></tr></tbody></table>
+
+        <p><code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">Logging</code> can be set in the <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">appsettings.json</code> file and can be specified 
+            inside the <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">Logging</code> section. Default logging is set in the <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">LogLevel</code> section. 
+            The <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">namespace</code> is set as <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">key</code> and 
+            <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">minimum severity level</code> is set as <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">value</code>. The 
+            <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">appsettings.json</code> file is inside the <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">wwwroot</code> folder of Blazor WASM app. 
+            Here is the example how logging is set in <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">appsettings.json</code> file.
+        </p>
+
+        <section class="[ flex flex-col ]"><h4 class="[ bg-gray-200 ] [ p-2 ] [ font-semibold ] [ text-black ] [ flex items-center ] [ dark:bg-gray-800 dark:bg-gray-800/80 dark:text-white ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-code ] [ text-purple-700 ] [ fill-purple-500 ]" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <polyline points="7 8 3 12 7 16"></polyline>
+            <polyline points="17 8 21 12 17 16"></polyline>
+            <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - Logging settings in appsettings.json in Blazor WASM</h4>
+    <article id="1c8c2485-91b8-41f5-b42b-7c08da2599ac" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+
+        <p>
+            For this to work in blazor wasm, we need to add <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] [ break-all ]">Microsoft.Extensions.Logging.Configuration</code> 
+            Nuget package to the project. Now this needs to be configured in <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">Program.cs</code> file as shown below.
+        </p>
+
+        <section class="[ flex flex-col ]"><h4 class="[ bg-gray-200 ] [ p-2 ] [ font-semibold ] [ text-black ] [ flex items-center ] [ dark:bg-gray-800 dark:bg-gray-800/80 dark:text-white ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-code ] [ text-purple-700 ] [ fill-purple-500 ]" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <polyline points="7 8 3 12 7 16"></polyline>
+            <polyline points="17 8 21 12 17 16"></polyline>
+            <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - Configuring Logging in Blazor WASM</h4>
+    <article id="44b7e055-792a-48ce-af24-aa80a0d5f029" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+
+        <p>
+            That's all with configuring logging in blazor wasm. Now you can <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">inject</code> 
+            <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">ILogger&lt;T&gt;</code> in any component and log the messages. You can also inject 
+            <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">ILoggerFactory</code> and create logger for specific class using 
+            <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">loggerFactory.CreateLogger&lt;T&gt;();</code> and log messages. Both approaches will log messages to 
+            <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">Output Window</code> in your editor and to <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">browser console</code>.
+        </p>
+
+        
+
+        <h3 id="configuring-serilog" class="[ font-semibold text-lg ]">Configuring SeriLog</h3>
+
+        <p>
+            So far so good. But Logging to browser console is not always helpful. The problem with blazor wasm is that not every features of ASP.NET Core 
+            logging is supported. As it is a client side web framework it doesn't have access to file system or network so it's unable to write directly to it. 
+            So we need to log the errors to some backend storage like <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">Azure AppInsights</code> or 
+            <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">AWS CloudWatch</code> or to a <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">file system</code>. This can be done by sending log 
+            information to server side applications which then can be used to log to backend storage configured on the server application. This can be done by 
+            using <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">SeriLog</code> which is a popular logging framework for .NET.
+        </p>
+
+        <p>
+            First let's setup backend API which we usually use to get data for our blazor wasm app. You need to do the following steps in your backend API 
+            project.
+        </p>
+
+        <ol class="[ list-disc ] [ ml-4 ]"><li>Install <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">Serilog.AspNetCore</code> Nuget package in server app a.k.a your API.</li>
+            <li>Next install <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">Serilog.AspNetCore.Ingestion</code> Nuget package in server app.</li>
+            <li><p>Now configure <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">appsettings.json</code> in your server app and configure the destination or sinks to store logs.</p>
+                <section class="[ flex flex-col ]"><h4 class="[ bg-gray-200 ] [ p-2 ] [ font-semibold ] [ text-black ] [ flex items-center ] [ dark:bg-gray-800 dark:bg-gray-800/80 dark:text-white ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-code ] [ text-purple-700 ] [ fill-purple-500 ]" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <polyline points="7 8 3 12 7 16"></polyline>
+            <polyline points="17 8 21 12 17 16"></polyline>
+            <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - Configuring Logging in Backend App</h4>
+    <article id="b5c21034-1ff0-40c8-98f3-52abee8d7c47" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section></li>
+            <li><p>Register <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">Serilog Logging in Host Builder</code> of backend app.</p>
+                <section class="[ flex flex-col ]"><h4 class="[ bg-gray-200 ] [ p-2 ] [ font-semibold ] [ text-black ] [ flex items-center ] [ dark:bg-gray-800 dark:bg-gray-800/80 dark:text-white ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-code ] [ text-purple-700 ] [ fill-purple-500 ]" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <polyline points="7 8 3 12 7 16"></polyline>
+            <polyline points="17 8 21 12 17 16"></polyline>
+            <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - Add Serilog to Host Builder</h4>
+    <article id="08e4f1f5-7c9f-40c5-8c18-d25c6a386afd" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section></li>
+            <li><p>
+                    Finally you need to add the following <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">middleware</code> to your back end API request pipeline. 
+                    This tells the application that serilog endpoints needs is setup so that logs can be sent to the server. This will be helpful for 
+                    Blazor WASM app to send logs to backend API.
+                </p>
+                <section class="[ flex flex-col ]"><h4 class="[ bg-gray-200 ] [ p-2 ] [ font-semibold ] [ text-black ] [ flex items-center ] [ dark:bg-gray-800 dark:bg-gray-800/80 dark:text-white ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-code ] [ text-purple-700 ] [ fill-purple-500 ]" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <polyline points="7 8 3 12 7 16"></polyline>
+            <polyline points="17 8 21 12 17 16"></polyline>
+            <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - Add Serilog Injestion to Backend Request Pipeline</h4>
+    <article id="108aaf04-1aa5-4eb9-8e11-57f6020a146c" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section></li></ol>
+
+        
+
+        <h3 id="logging-to-server-from-blazor-wasm" class="[ font-semibold text-lg ]">Logging to server from Blazor WASM</h3>
+
+        <p>
+            Now its time to setup and configure logging in blazor wasm app. You need to do the following steps in your blazor wasm project.
+        </p>
+
+        <ol class="[ list-disc ] [ ml-4 ]"><li>First install <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] [ break-all ]">Microsoft.Extensions.Logging.Configuration</code> Nuget package.</li>
+            <li>Next install <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">Serilog.Extensions.Logging</code> Nuget package.</li>
+            <li>Next install <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">Serilog.Settings.Configuration</code> Nuget package.</li>
+            <li>Next install <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">Serilog.Sinks.BrowserConsole</code> Nuget package.</li>
+            <li>Next install <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">Serilog.Sinks.BrowserHttp</code> Nuget package.</li>
+            <li><p>Finally add the following configuration in <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">Program.cs</code></p>
+                <section class="[ flex flex-col ]"><h4 class="[ bg-gray-200 ] [ p-2 ] [ font-semibold ] [ text-black ] [ flex items-center ] [ dark:bg-gray-800 dark:bg-gray-800/80 dark:text-white ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-code ] [ text-purple-700 ] [ fill-purple-500 ]" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <polyline points="7 8 3 12 7 16"></polyline>
+            <polyline points="17 8 21 12 17 16"></polyline>
+            <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - Configure Serilog in Blazor WASM</h4>
+    <article id="2f8e6f7f-8216-45ac-a54f-00b5e7466b9e" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section></li></ol>
+
+        <p>
+            In the above code we are initialising <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">Logger</code> and wiring it with <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">Serilog</code>. 
+            And we can <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">Enrich()</code> the logs with any data. In our case we are adding a simple 
+            <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">Guid</code> as instance id to track the logs in backend system. Finally we are adding the 
+            <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">sinks</code> to log to <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">backend</code> using 
+            <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">BrowserHttp()</code> and to <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">browser console</code> using 
+            <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">BrowserConsole()</code>.
+        </p>
+
+        <p>
+            That's it now whenever you log any messages it will be logged in both browser console and in your backend API.
+        </p>
+
+        <figure><img src="./image/blogs/blazor/wasm/blazor-wasm-error-logging/Browser Http Logs.png" alt="Browser Http Logs" class="[ w-full ]"/></figure>
+
+        
+
+        <figure><img src="./image/blogs/blazor/wasm/blazor-wasm-error-logging/Browser Console Logs.png" alt="Browser Console Logs" class="[ w-full ]"/></figure>
+
+        
 
         <h3 id="creating-error-component-to-log-error" class="[ font-semibold text-lg ]">Creating Error component to log error</h3>
 
         <p>
-            Let's start with simple <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">Subscription</code> component. This will throw error on <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">Subscribe Now</code> button click.
+            Let's start with simple <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">Subscription</code> component. This will throw error on 
+            <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">Subscribe Now</code> button click.
         </p>
 
         <section class="[ flex flex-col ]"><h4 class="[ bg-gray-200 ] [ p-2 ] [ font-semibold ] [ text-black ] [ flex items-center ] [ dark:bg-gray-800 dark:bg-gray-800/80 dark:text-white ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-code ] [ text-purple-700 ] [ fill-purple-500 ]" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - Subscribe component to simulate exception</h4>
-    <article id="82d7c2a2-6a0b-4c28-81ca-a5081b6fb711" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="5ff395c7-5b14-4a80-a3cc-9bf2eb07a395" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         
 
         <p>
-            To process the error, let's create an <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">Error</code> component. This component takes Child Content <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">RenderFragment</code> 
-            as input. This component also has <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">ProcessError</code> method to process the exception and log it to 
-            <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">browser console</code> or <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">backend API</code>. For simplicity I'm logging into browser console.
+            To process the error, let's create an <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">Error</code> component. This component takes 
+            <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">Child Content</code> <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">RenderFragment</code> as input. This component also has 
+            <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">ProcessError</code> method to process the exception and log it to <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">browser console</code> 
+            or <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">backend API</code>. For simplicity I'm logging into browser console.
         </p>
 
         <section class="[ flex flex-col ]"><h4 class="[ bg-gray-200 ] [ p-2 ] [ font-semibold ] [ text-black ] [ flex items-center ] [ dark:bg-gray-800 dark:bg-gray-800/80 dark:text-white ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-code ] [ text-purple-700 ] [ fill-purple-500 ]" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - Error component to log exception</h4>
-    <article id="5959d190-2212-4feb-95ea-bebc6fc101fa" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="425a5553-5fce-473c-8d74-d36fe43e1f94" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
 
         <p>
             Now lets wrap our <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">Subscription</code> component with <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">Error</code> component.
         </p>
 
+        <p>Note that the above mentioned components are created in previous article.</p>
+
         <section class="[ flex flex-col ]"><h4 class="[ bg-gray-200 ] [ p-2 ] [ font-semibold ] [ text-black ] [ flex items-center ] [ dark:bg-gray-800 dark:bg-gray-800/80 dark:text-white ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-code ] [ text-purple-700 ] [ fill-purple-500 ]" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
             <polyline points="7 8 3 12 7 16"></polyline>
             <polyline points="17 8 21 12 17 16"></polyline>
             <line x1="14" y1="4" x2="10" y2="20"></line></svg> Code Sample - Blazor Error logging with Error Component</h4>
-    <article id="15a33dca-8661-4272-8150-3c3048a10329" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+    <article id="2b9f937a-998c-4d38-886a-33781c3439e7" class="[ bg-gray-300 ] [ dark:bg-gray-700 ]"></article></section>
+
+        
 
         <p>
-            That's it. Now if any exception occurs, <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">Subscription</code> component will make use of <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">CascadingParameter Error</code> 
-            component and process the exception which then can be used to log to browser console or posted to backend API.
+            That's it. Now if any exception occurs, <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">Subscription</code> component will make use of 
+            <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">CascadingParameter Error</code> component and process the exception which then can be used to log to browser console 
+            or posted to backend API.
         </p>
 
         <section class="[ flex flex-col ]"><h4 class="[ bg-gray-200 ] [ p-2 ] [ font-semibold ] [ text-black ] [ flex items-center ] [ dark:bg-gray-800 dark:bg-gray-800/80 dark:text-white ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-caret-right ] [ text-lime-700 ] [ fill-lime-500 ]" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -389,336 +559,41 @@
         <h3 id="summary" class="[ font-semibold text-lg ]">Summary</h3>
 
         <p>
-            I'm happy that you have reached to the end of this article. Here we learnt how to log exceptions in blazor wasm applications by wrapping the components in a error component. Once 
-            we get the error we can notify users in a beautiful way and log to azure app insights or to any external system.
+            In this article, we have learnt about how to log errors in <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">Blazor <abbr title="Web Assembly">WASM</abbr></code> 
+            using <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">SeriLog</code>. We have also seen how to create an <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">Error</code> component to 
+            process the exception and log it to <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">browser console</code> or <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">backend API</code>. 
+            You can find the source code for this article in this <code class="[ p-0.5 ] [ text-indigo-600 ] [ dark:text-green-400 ] ">I Love .NET</code> repository.
         </p></section>
-        <footer class="[ max-w-full ]"><ul class="[ list-none ] [ flex items-center justify-start md:justify-center ] [ space-x-3 ] [ overflow-hidden overflow-x-auto ]"><li class="[ px-3 py-1 ] [ rounded-md ] [ bg-black text-white dark:bg-white dark:text-black ]">Blazor</li><li class="[ px-3 py-1 ] [ rounded-md ] [ bg-black text-white dark:bg-white dark:text-black ] [ whitespace-nowrap ]">Exception Logging</li><li class="[ px-3 py-1 ] [ rounded-md ] [ bg-black text-white dark:bg-white dark:text-black ] [ whitespace-nowrap ]">Error Logging</li></ul></footer>
+        <footer class="[ max-w-full ]"><ul class="[ list-none ] [ flex items-center justify-start md:justify-center ] [ space-x-3 ] [ overflow-hidden overflow-x-auto ]"><li class="[ px-3 py-1 ] [ rounded-md ] [ bg-black text-white dark:bg-white dark:text-black ]">Blazor</li><li class="[ px-3 py-1 ] [ rounded-md ] [ bg-black text-white dark:bg-white dark:text-black ] [ whitespace-nowrap ]">Exception Logging</li><li class="[ px-3 py-1 ] [ rounded-md ] [ bg-black text-white dark:bg-white dark:text-black ] [ whitespace-nowrap ]">Error Logging</li><li class="[ px-3 py-1 ] [ rounded-md ] [ bg-black text-white dark:bg-white dark:text-black ] [ whitespace-nowrap ]">SeriLog</li></ul></footer>
         <hr class="[ dark:text-white my-1.5 ]"/></article>
-    <aside class="[ flex flex-col md:basis-1/4 ] [ space-y-2 ]"><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/configuring-authentication-in-functional-testing-in-asp-net-webapi"><figure><img src="image/blogs/webapi/configuring-authentication-in-functional-testing-in-asp-net-webapi.png" class="[ w-full ] [ rounded-md ]" alt="Configuring Authentication in Functional testing in ASP.NET WEB API" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/webapi"><figure><img src="image/icons/webapi.png" alt="WebAPI" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/configuring-authentication-in-functional-testing-in-asp-net-webapi"><h2 class="[ font-medium break-words hover:underline ]">Configuring Authentication in Functional testing in ASP.NET WEB API</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2023-08-06 22-30-00">3 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-wiremock-net-in-functional-testing-in-asp-net-webapi"><figure><img src="image/blogs/webapi/using-wiremock-net-in-functional-testing-in-asp-net-webapi.png" class="[ w-full ] [ rounded-md ]" alt="Using WireMock.NET in Functional testing in ASP.NET WEB API" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/webapi"><figure><img src="image/icons/webapi.png" alt="WebAPI" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/using-wiremock-net-in-functional-testing-in-asp-net-webapi"><h2 class="[ font-medium break-words hover:underline ]">Using WireMock.NET in Functional testing in ASP.NET WEB API</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2023-07-30 22-30-00">3 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/faking-dependencies-in-functional-testing-in-asp-net-webapi"><figure><img src="image/blogs/webapi/faking-dependencies-in-functional-testing-in-asp-net-webapi.png" class="[ w-full ] [ rounded-md ]" alt="Faking Dependencies in Functional testing in ASP.NET WEB API" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/webapi"><figure><img src="image/icons/webapi.png" alt="WebAPI" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/faking-dependencies-in-functional-testing-in-asp-net-webapi"><h2 class="[ font-medium break-words hover:underline ]">Faking Dependencies in Functional testing in ASP.NET WEB API</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2023-07-23 22-30-00">4 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/functional-testing-your-asp-net-webapi"><figure><img src="image/blogs/webapi/functional-testing-your-asp-net-webapi.png" class="[ w-full ] [ rounded-md ]" alt="Functional testing your ASP.NET WEB API" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/webapi"><figure><img src="image/icons/webapi.png" alt="WebAPI" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/functional-testing-your-asp-net-webapi"><h2 class="[ font-medium break-words hover:underline ]">Functional testing your ASP.NET WEB API</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2023-07-16 22-30-00">4 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/perform-background-workloads-in-hosted-service-using-channels-in-asp-net-webapi"><figure><img src="image/blogs/webapi/perform-background-workloads-in-hosted-service-using-channels-in-asp-net-webapi.png" class="[ w-full ] [ rounded-md ]" alt="Perform Background Workloads in Hosted Service using Channels in ASP.NET Web API" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/webapi"><figure><img src="image/icons/webapi.png" alt="WebAPI" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/perform-background-workloads-in-hosted-service-using-channels-in-asp-net-webapi"><h2 class="[ font-medium break-words hover:underline ]">Perform Background Workloads in Hosted Service using Channels in ASP.NET Web API</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2023-07-09 22-30-00">4 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/printing-barcode-to-label-printer-from-blazor-wasm"><figure><img src="image/blogs/blazor/wasm/printing-barcode-to-label-printer-from-blazor-wasm.png" class="[ w-full ] [ rounded-md ]" alt="Printing barcode to label printer from Blazor WASM" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/blazor"><figure><img src="image/icons/blazor.png" alt="Blazor" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/printing-barcode-to-label-printer-from-blazor-wasm"><h2 class="[ font-medium break-words hover:underline ]">Printing barcode to label printer from Blazor WASM</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2023-07-02 22-30-00">4 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/how-to-generate-barcode-in-blazor-wasm"><figure><img src="image/blogs/blazor/wasm/how-to-generate-barcode-in-blazor-wasm.png" class="[ w-full ] [ rounded-md ]" alt="How to generate barcode in Blazor WASM" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/blazor"><figure><img src="image/icons/blazor.png" alt="Blazor" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/how-to-generate-barcode-in-blazor-wasm"><h2 class="[ font-medium break-words hover:underline ]">How to generate barcode in Blazor WASM</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2023-06-25 22-30-00">4 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/unit-testing-controllers-in-asp-net-webapi"><figure><img src="image/blogs/webapi/unit-testing-controllers-in-asp-net-webapi.png" class="[ w-full ] [ rounded-md ]" alt="Unit Testing Controllers in ASP.NET Web API" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/webapi"><figure><img src="image/icons/webapi.png" alt="WebAPI" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/unit-testing-controllers-in-asp-net-webapi"><h2 class="[ font-medium break-words hover:underline ]">Unit Testing Controllers in ASP.NET Web API</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2023-06-18 22-30-00">5 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/unit-testing-service-registrations-in-asp-net-webapi"><figure><img src="image/blogs/webapi/unit-testing-service-registrations-in-asp-net-webapi.png" class="[ w-full ] [ rounded-md ]" alt="Unit Testing Service Registrations in ASP.NET Web API" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/webapi"><figure><img src="image/icons/webapi.png" alt="WebAPI" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/unit-testing-service-registrations-in-asp-net-webapi"><h2 class="[ font-medium break-words hover:underline ]">Unit Testing Service Registrations in ASP.NET Web API</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2023-06-11 22-30-00">5 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/unit-testing-middlewares-in-asp-net-webapi"><figure><img src="image/blogs/webapi/unit-testing-middlewares-in-asp-net-webapi.png" class="[ w-full ] [ rounded-md ]" alt="Unit Testing Middlewares in ASP.NET Web API" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/webapi"><figure><img src="image/icons/webapi.png" alt="WebAPI" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/unit-testing-middlewares-in-asp-net-webapi"><h2 class="[ font-medium break-words hover:underline ]">Unit Testing Middlewares in ASP.NET Web API</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2023-06-04 22-30-00">5 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/unit-testing-filters-in-asp-net-webapi"><figure><img src="image/blogs/webapi/unit-testing-filters-in-asp-net-webapi.png" class="[ w-full ] [ rounded-md ]" alt="Unit Testing Filters in ASP.NET Web API" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/webapi"><figure><img src="image/icons/webapi.png" alt="WebAPI" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/unit-testing-filters-in-asp-net-webapi"><h2 class="[ font-medium break-words hover:underline ]">Unit Testing Filters in ASP.NET Web API</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2023-05-28 22-30-00">5 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/blazor-wasm-publishing-to-aws-amplify"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-publishing-to-aws-amplify.png" class="[ w-full ] [ rounded-md ]" alt="Blazor WASM Publishing to AWS Amplify" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/blazor"><figure><img src="image/icons/blazor.png" alt="Blazor" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/blazor-wasm-publishing-to-aws-amplify"><h2 class="[ font-medium break-words hover:underline ]">Blazor WASM Publishing to AWS Amplify</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2023-05-21 22-30-00">6 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/dependency-inversion-principle-in-solid"><figure><img src="image/blogs/solid/dependency-inversion-principle-in-solid.png" class="[ w-full ] [ rounded-md ]" alt="Dependency Inversion Principle in SOLID" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/solid"><figure><img src="image/icons/solid.png" alt="SOLID" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/dependency-inversion-principle-in-solid"><h2 class="[ font-medium break-words hover:underline ]">Dependency Inversion Principle in SOLID</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2023-05-14 22-30-00">6 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/interface-segregation-principle-in-solid"><figure><img src="image/blogs/solid/interface-segregation-principle-in-solid.png" class="[ w-full ] [ rounded-md ]" alt="Interface Segregation Principle in SOLID" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/solid"><figure><img src="image/icons/solid.png" alt="SOLID" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/interface-segregation-principle-in-solid"><h2 class="[ font-medium break-words hover:underline ]">Interface Segregation Principle in SOLID</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2023-05-07 22-30-00">6 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/liskov-substitution-principle-in-solid"><figure><img src="image/blogs/solid/liskov-substitution-principle-in-solid.png" class="[ w-full ] [ rounded-md ]" alt="Liskov Substitution Principle in SOLID" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/solid"><figure><img src="image/icons/solid.png" alt="SOLID" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/liskov-substitution-principle-in-solid"><h2 class="[ font-medium break-words hover:underline ]">Liskov Substitution Principle in SOLID</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2023-04-30 22-30-00">6 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/open-closed-principle-in-solid"><figure><img src="image/blogs/solid/open-closed-principle-in-solid.png" class="[ w-full ] [ rounded-md ]" alt="Open Closed Principle in SOLID" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/solid"><figure><img src="image/icons/solid.png" alt="SOLID" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/open-closed-principle-in-solid"><h2 class="[ font-medium break-words hover:underline ]">Open Closed Principle in SOLID</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2023-04-23 22-30-00">7 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/single-responsibility-principle-in-solid"><figure><img src="image/blogs/solid/single-responsibility-principle-in-solid.png" class="[ w-full ] [ rounded-md ]" alt="Single Responsibility Principle in SOLID" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/solid"><figure><img src="image/icons/solid.png" alt="SOLID" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/single-responsibility-principle-in-solid"><h2 class="[ font-medium break-words hover:underline ]">Single Responsibility Principle in SOLID</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2023-04-16 22-30-00">7 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/convert-html-to-pdf-report-in-dotnet"><figure><img src="image/blogs/report/convert-html-to-pdf-report-in-dotnet.png" class="[ w-full ] [ rounded-md ]" alt="Convert HTML to PDF Report in .NET" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/report"><figure><img src="image/icons/report.png" alt="Report" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/convert-html-to-pdf-report-in-dotnet"><h2 class="[ font-medium break-words hover:underline ]">Convert HTML to PDF Report in .NET</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2023-04-09 22-30-00">7 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/solid-principles-introduction"><figure><img src="image/blogs/solid/solid-principles-introduction.png" class="[ w-full ] [ rounded-md ]" alt="SOLID Principles Introduction" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/solid"><figure><img src="image/icons/solid.png" alt="SOLID" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/solid-principles-introduction"><h2 class="[ font-medium break-words hover:underline ]">SOLID Principles Introduction</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2023-04-02 22-30-00">7 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/blazor-wasm-dockerizing"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-dockerizing.png" class="[ w-full ] [ rounded-md ]" alt="Blazor WASM Dockerizing" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/blazor"><figure><img src="image/icons/blazor.png" alt="Blazor" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/blazor-wasm-dockerizing"><h2 class="[ font-medium break-words hover:underline ]">Blazor WASM Dockerizing</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2023-03-26 22-30-00">8 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/creational-design-pattern-singleton"><figure><img src="image/blogs/design-pattern/creational-design-pattern-singleton.png" class="[ w-full ] [ rounded-md ]" alt="Creational Design Pattern - Singleton" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/design-pattern"><figure><img src="image/icons/design-pattern.png" alt="Design-Pattern" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/creational-design-pattern-singleton"><h2 class="[ font-medium break-words hover:underline ]">Creational Design Pattern - Singleton</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2023-03-19 22-30-00">8 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/design-pattern-introduction"><figure><img src="image/blogs/design-pattern/design-pattern-introduction.png" class="[ w-full ] [ rounded-md ]" alt="Design Pattern Introduction" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/design-pattern"><figure><img src="image/icons/design-pattern.png" alt="Design-Pattern" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/design-pattern-introduction"><h2 class="[ font-medium break-words hover:underline ]">Design Pattern Introduction</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2023-03-12 22-30-00">8 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/understanding-linq-deferred-immediate-streaming-and-non-streaming-executions"><figure><img src="image/blogs/linq/understanding-linq-deferred-immediate-streaming-and-non-streaming-executions.png" class="[ w-full ] [ rounded-md ]" alt="Understanding LINQ Deferred, Immediate, Streaming and Non-Streaming Executions" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/linq"><figure><img src="image/icons/linq.png" alt="LINQ" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/understanding-linq-deferred-immediate-streaming-and-non-streaming-executions"><h2 class="[ font-medium break-words hover:underline ]">Understanding LINQ Deferred, Immediate, Streaming and Non-Streaming Executions</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2023-03-05 22-30-00">8 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-for-each-to-iterate-collections"><figure><img src="image/blogs/linq/using-linq-for-each-to-iterate-collections.png" class="[ w-full ] [ rounded-md ]" alt="Using LINQ For Each to Iterate Collections" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/linq"><figure><img src="image/icons/linq.png" alt="LINQ" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/using-linq-for-each-to-iterate-collections"><h2 class="[ font-medium break-words hover:underline ]">Using LINQ For Each to Iterate Collections</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2023-02-26 22-30-00">9 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/generate-pdf-report-using-quest-pdf-in-dotnet"><figure><img src="image/blogs/report/generate-pdf-report-using-quest-pdf-in-dotnet.png" class="[ w-full ] [ rounded-md ]" alt="Generate PDF Report using Quest PDF in .NET" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/report"><figure><img src="image/icons/report.png" alt="Report" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/generate-pdf-report-using-quest-pdf-in-dotnet"><h2 class="[ font-medium break-words hover:underline ]">Generate PDF Report using Quest PDF in .NET</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2023-02-19 22-30-00">9 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-count-min-max-average-sum-to-aggregate-data"><figure><img src="image/blogs/linq/using-linq-count-min-max-average-sum-to-aggregate-data.png" class="[ w-full ] [ rounded-md ]" alt="Using LINQ Count Min Max Average and Sum to Aggregate data" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/linq"><figure><img src="image/icons/linq.png" alt="LINQ" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/using-linq-count-min-max-average-sum-to-aggregate-data"><h2 class="[ font-medium break-words hover:underline ]">Using LINQ Count Min Max Average and Sum to Aggregate data</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2023-02-12 22-30-00">9 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-group-by-to-group-data"><figure><img src="image/blogs/linq/using-linq-group-by-to-group-data.png" class="[ w-full ] [ rounded-md ]" alt="Using LINQ Group By to group data" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/linq"><figure><img src="image/icons/linq.png" alt="LINQ" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/using-linq-group-by-to-group-data"><h2 class="[ font-medium break-words hover:underline ]">Using LINQ Group By to group data</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2023-02-05 22-30-00">9 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/generate-excel-report-using-closed-xml-in-dotnet"><figure><img src="image/blogs/report/generate-excel-report-using-closed-xml-in-dotnet.png" class="[ w-full ] [ rounded-md ]" alt="Generate Excel Report using Closed XML in .NET" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/report"><figure><img src="image/icons/report.png" alt="Report" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/generate-excel-report-using-closed-xml-in-dotnet"><h2 class="[ font-medium break-words hover:underline ]">Generate Excel Report using Closed XML in .NET</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2023-01-29 22-30-00">9 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/simulating-left-outer-join-using-linq"><figure><img src="image/blogs/linq/simulating-left-outer-join-using-linq.png" class="[ w-full ] [ rounded-md ]" alt="Simulating Left Outer Join using LINQ" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/linq"><figure><img src="image/icons/linq.png" alt="LINQ" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/simulating-left-outer-join-using-linq"><h2 class="[ font-medium break-words hover:underline ]">Simulating Left Outer Join using LINQ</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2023-01-22 22-30-00">10 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-group-join-to-combine-data"><figure><img src="image/blogs/linq/using-linq-group-join-to-combine-data.png" class="[ w-full ] [ rounded-md ]" alt="Using LINQ Group Join to combine data" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/linq"><figure><img src="image/icons/linq.png" alt="LINQ" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/using-linq-group-join-to-combine-data"><h2 class="[ font-medium break-words hover:underline ]">Using LINQ Group Join to combine data</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2023-01-15 22-30-00">10 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-join-to-combine-data"><figure><img src="image/blogs/linq/using-linq-join-to-combine-data.png" class="[ w-full ] [ rounded-md ]" alt="Using LINQ Join to combine data" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/linq"><figure><img src="image/icons/linq.png" alt="LINQ" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/using-linq-join-to-combine-data"><h2 class="[ font-medium break-words hover:underline ]">Using LINQ Join to combine data</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2023-01-08 22-30-00">10 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-concat-to-combine-data"><figure><img src="image/blogs/linq/using-linq-concat-to-combine-data.png" class="[ w-full ] [ rounded-md ]" alt="Using LINQ Concat to combine data" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/linq"><figure><img src="image/icons/linq.png" alt="LINQ" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/using-linq-concat-to-combine-data"><h2 class="[ font-medium break-words hover:underline ]">Using LINQ Concat to combine data</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2023-01-01 22-30-00">10 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-union-to-combine-data"><figure><img src="image/blogs/linq/using-linq-union-to-combine-data.png" class="[ w-full ] [ rounded-md ]" alt="Using LINQ Union to combine data" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/linq"><figure><img src="image/icons/linq.png" alt="LINQ" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/using-linq-union-to-combine-data"><h2 class="[ font-medium break-words hover:underline ]">Using LINQ Union to combine data</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-12-25 22-30-00">11 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-intersect-to-find-common-data"><figure><img src="image/blogs/linq/using-linq-intersect-to-find-common-data.png" class="[ w-full ] [ rounded-md ]" alt="Using LINQ Intersect to Find Common data" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/linq"><figure><img src="image/icons/linq.png" alt="LINQ" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/using-linq-intersect-to-find-common-data"><h2 class="[ font-medium break-words hover:underline ]">Using LINQ Intersect to Find Common data</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-12-18 22-30-00">11 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-except-to-find-difference-in-data"><figure><img src="image/blogs/linq/using-linq-except-to-find-difference-in-data.png" class="[ w-full ] [ rounded-md ]" alt="Using LINQ Except to Find Difference in data" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/linq"><figure><img src="image/icons/linq.png" alt="LINQ" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/using-linq-except-to-find-difference-in-data"><h2 class="[ font-medium break-words hover:underline ]">Using LINQ Except to Find Difference in data</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-12-11 22-30-00">11 months ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-sequence-equal-to-find-equality-of-data"><figure><img src="image/blogs/linq/using-linq-sequence-equal-to-find-equality-of-data.png" class="[ w-full ] [ rounded-md ]" alt="Using LINQ Sequence Equal to Find Equality of data" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/linq"><figure><img src="image/icons/linq.png" alt="LINQ" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/using-linq-sequence-equal-to-find-equality-of-data"><h2 class="[ font-medium break-words hover:underline ]">Using LINQ Sequence Equal to Find Equality of data</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-12-04 22-30-00">one year ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-contains-to-check-data"><figure><img src="image/blogs/linq/using-linq-contains-to-check-data.png" class="[ w-full ] [ rounded-md ]" alt="Using LINQ Contains to Check Data" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/linq"><figure><img src="image/icons/linq.png" alt="LINQ" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/using-linq-contains-to-check-data"><h2 class="[ font-medium break-words hover:underline ]">Using LINQ Contains to Check Data</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-11-27 22-30-00">one year ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-any-to-find-type-of-data"><figure><img src="image/blogs/linq/using-linq-any-to-find-type-of-data.png" class="[ w-full ] [ rounded-md ]" alt="Using LINQ Any to Find Type of Data" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/linq"><figure><img src="image/icons/linq.png" alt="LINQ" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/using-linq-any-to-find-type-of-data"><h2 class="[ font-medium break-words hover:underline ]">Using LINQ Any to Find Type of Data</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-11-20 22-30-00">one year ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-all-to-find-type-of-data"><figure><img src="image/blogs/linq/using-linq-all-to-find-type-of-data.png" class="[ w-full ] [ rounded-md ]" alt="Using LINQ All to Find Type of Data" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/linq"><figure><img src="image/icons/linq.png" alt="LINQ" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/using-linq-all-to-find-type-of-data"><h2 class="[ font-medium break-words hover:underline ]">Using LINQ All to Find Type of Data</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-11-13 22-30-00">one year ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-chunk-to-split-data"><figure><img src="image/blogs/linq/using-linq-chunk-to-split-data.png" class="[ w-full ] [ rounded-md ]" alt="Using LINQ Chunk to Split Data" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/linq"><figure><img src="image/icons/linq.png" alt="LINQ" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/using-linq-chunk-to-split-data"><h2 class="[ font-medium break-words hover:underline ]">Using LINQ Chunk to Split Data</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-11-06 22-30-00">one year ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-distinct-to-select-unique-data"><figure><img src="image/blogs/linq/using-linq-distinct-to-select-unique-data.png" class="[ w-full ] [ rounded-md ]" alt="Using LINQ Distinct to Select Unique Data" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/linq"><figure><img src="image/icons/linq.png" alt="LINQ" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/using-linq-distinct-to-select-unique-data"><h2 class="[ font-medium break-words hover:underline ]">Using LINQ Distinct to Select Unique Data</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-10-30 22-30-00">one year ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-skip-to-select-specific-data"><figure><img src="image/blogs/linq/using-linq-skip-to-select-specific-data.png" class="[ w-full ] [ rounded-md ]" alt="Using LINQ Skip to Select Specific Data" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/linq"><figure><img src="image/icons/linq.png" alt="LINQ" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/using-linq-skip-to-select-specific-data"><h2 class="[ font-medium break-words hover:underline ]">Using LINQ Skip to Select Specific Data</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-10-23 22-30-00">one year ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-take-to-select-specific-data"><figure><img src="image/blogs/linq/using-linq-take-to-select-specific-data.png" class="[ w-full ] [ rounded-md ]" alt="Using LINQ Take to Select Specific Data" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/linq"><figure><img src="image/icons/linq.png" alt="LINQ" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/using-linq-take-to-select-specific-data"><h2 class="[ font-medium break-words hover:underline ]">Using LINQ Take to Select Specific Data</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-10-16 22-30-00">one year ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-single-to-select-single-data"><figure><img src="image/blogs/linq/using-linq-single-to-select-single-data.png" class="[ w-full ] [ rounded-md ]" alt="Using LINQ Single to Select Single Data" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/linq"><figure><img src="image/icons/linq.png" alt="LINQ" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/using-linq-single-to-select-single-data"><h2 class="[ font-medium break-words hover:underline ]">Using LINQ Single to Select Single Data</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-10-09 22-30-00">one year ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-last-to-select-single-data"><figure><img src="image/blogs/linq/using-linq-last-to-select-single-data.png" class="[ w-full ] [ rounded-md ]" alt="Using LINQ Last to Select Single Data" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/linq"><figure><img src="image/icons/linq.png" alt="LINQ" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/using-linq-last-to-select-single-data"><h2 class="[ font-medium break-words hover:underline ]">Using LINQ Last to Select Single Data</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-10-02 22-30-00">one year ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-first-to-select-single-data"><figure><img src="image/blogs/linq/using-linq-first-to-select-single-data.png" class="[ w-full ] [ rounded-md ]" alt="Using LINQ First to Select Single Data" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/linq"><figure><img src="image/icons/linq.png" alt="LINQ" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/using-linq-first-to-select-single-data"><h2 class="[ font-medium break-words hover:underline ]">Using LINQ First to Select Single Data</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-09-25 22-30-00">one year ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/profiling-webapi-with-mini-profiler"><figure><img src="image/blogs/webapi/profiling-webapi-with-mini-profiler.png" class="[ w-full ] [ rounded-md ]" alt="Profiling Web API with Mini Profiler" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/webapi"><figure><img src="image/icons/webapi.png" alt="WebAPI" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/profiling-webapi-with-mini-profiler"><h2 class="[ font-medium break-words hover:underline ]">Profiling Web API with Mini Profiler</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-09-18 22-30-00">one year ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/python-dynamic-interop-with-dotnet"><figure><img src="image/blogs/python/python-dynamic-interop-with-dotnet.png" class="[ w-full ] [ rounded-md ]" alt="Python Dynamic Interop with Dotnet" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/python"><figure><img src="image/icons/python.png" alt="Python" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/python-dynamic-interop-with-dotnet"><h2 class="[ font-medium break-words hover:underline ]">Python Dynamic Interop with Dotnet</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-09-11 22-30-00">one year ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-where-to-filter-data"><figure><img src="image/blogs/linq/using-linq-where-to-filter-data.png" class="[ w-full ] [ rounded-md ]" alt="Using LINQ Where to Filter Data" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/linq"><figure><img src="image/icons/linq.png" alt="LINQ" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/using-linq-where-to-filter-data"><h2 class="[ font-medium break-words hover:underline ]">Using LINQ Where to Filter Data</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-09-04 22-30-00">one year ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-orderby-to-sort-data"><figure><img src="image/blogs/linq/using-linq-orderby-to-sort-data.png" class="[ w-full ] [ rounded-md ]" alt="Using LINQ OrderBy to Sort Data" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/linq"><figure><img src="image/icons/linq.png" alt="LINQ" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/using-linq-orderby-to-sort-data"><h2 class="[ font-medium break-words hover:underline ]">Using LINQ OrderBy to Sort Data</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-08-28 22-30-00">one year ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-linq-to-select-and-project-data"><figure><img src="image/blogs/linq/using-linq-to-select-and-project-data.png" class="[ w-full ] [ rounded-md ]" alt="Using LINQ to Select and Project Data" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/linq"><figure><img src="image/icons/linq.png" alt="LINQ" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/using-linq-to-select-and-project-data"><h2 class="[ font-medium break-words hover:underline ]">Using LINQ to Select and Project Data</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-08-21 22-30-00">one year ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/linq-introduction"><figure><img src="image/blogs/linq/linq-introduction.png" class="[ w-full ] [ rounded-md ]" alt="LINQ Introduction" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/linq"><figure><img src="image/icons/linq.png" alt="LINQ" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/linq-introduction"><h2 class="[ font-medium break-words hover:underline ]">LINQ Introduction</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-08-14 22-30-00">one year ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/blazor-wasm-pre-rendering"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-pre-rendering.png" class="[ w-full ] [ rounded-md ]" alt="Blazor WASM Pre Rendering" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/blazor"><figure><img src="image/icons/blazor.png" alt="Blazor" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/blazor-wasm-pre-rendering"><h2 class="[ font-medium break-words hover:underline ]">Blazor WASM Pre Rendering</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-08-07 22-30-00">one year ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/dependency-injection-lifetimes-in-dotnet"><figure><img src="image/blogs/dependency-injection/dependency-injection-lifetimes-in-dotnet.png" class="[ w-full ] [ rounded-md ]" alt="Dependency Injection Lifetimes in .NET" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/dependency-injection"><figure><img src="image/icons/dependency-injection.png" alt="Dependency-Injection" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/dependency-injection-lifetimes-in-dotnet"><h2 class="[ font-medium break-words hover:underline ]">Dependency Injection Lifetimes in .NET</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-07-31 22-30-00">one year ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/introducing-dependency-injection-in-dotnet"><figure><img src="image/blogs/dependency-injection/introducing-dependency-injection-in-dotnet.png" class="[ w-full ] [ rounded-md ]" alt="Introducing Dependency Injection in .NET" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/dependency-injection"><figure><img src="image/icons/dependency-injection.png" alt="Dependency-Injection" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/introducing-dependency-injection-in-dotnet"><h2 class="[ font-medium break-words hover:underline ]">Introducing Dependency Injection in .NET</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-07-24 22-30-00">one year ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/blazor-wasm-publishing-to-github-pages"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-publishing-to-github-pages.png" class="[ w-full ] [ rounded-md ]" alt="Blazor WASM Publishing to GitHub Pages" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/blazor"><figure><img src="image/icons/blazor.png" alt="Blazor" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/blazor-wasm-publishing-to-github-pages"><h2 class="[ font-medium break-words hover:underline ]">Blazor WASM Publishing to GitHub Pages</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-07-17 22-30-00">one year ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/blazor-wasm-publishing-to-iis"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-publishing-to-iis.png" class="[ w-full ] [ rounded-md ]" alt="Blazor WASM Publishing to IIS" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/blazor"><figure><img src="image/icons/blazor.png" alt="Blazor" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/blazor-wasm-publishing-to-iis"><h2 class="[ font-medium break-words hover:underline ]">Blazor WASM Publishing to IIS</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-07-10 22-30-00">one year ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/blazor-wasm-dynamic-component"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-dynamic-component.png" class="[ w-full ] [ rounded-md ]" alt="Blazor WASM Dynamic Component" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/blazor"><figure><img src="image/icons/blazor.png" alt="Blazor" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/blazor-wasm-dynamic-component"><h2 class="[ font-medium break-words hover:underline ]">Blazor WASM Dynamic Component</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-07-03 22-30-00">one year ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/types-of-middleware-in-aspnet"><figure><img src="image/blogs/middleware/types-of-middleware-in-aspnet.png" class="[ w-full ] [ rounded-md ]" alt="Types of Middleware in ASP.NET" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/middleware"><figure><img src="image/icons/middleware.png" alt="Middleware" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/types-of-middleware-in-aspnet"><h2 class="[ font-medium break-words hover:underline ]">Types of Middleware in ASP.NET</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-06-26 22-30-00">one year ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/introducing-middleware-in-aspnet"><figure><img src="image/blogs/middleware/introducing-middleware-in-aspnet.png" class="[ w-full ] [ rounded-md ]" alt="Introducing Middleware in ASP.NET" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/middleware"><figure><img src="image/icons/middleware.png" alt="Middleware" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/introducing-middleware-in-aspnet"><h2 class="[ font-medium break-words hover:underline ]">Introducing Middleware in ASP.NET</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-06-19 22-30-00">one year ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/blazor-wasm-virtualization"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-virtualization.png" class="[ w-full ] [ rounded-md ]" alt="Blazor WASM Virtualization" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/blazor"><figure><img src="image/icons/blazor.png" alt="Blazor" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/blazor-wasm-virtualization"><h2 class="[ font-medium break-words hover:underline ]">Blazor WASM Virtualization</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-06-12 22-30-00">one year ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/blazor-wasm-forms-validation"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-forms-validation.png" class="[ w-full ] [ rounded-md ]" alt="Blazor WASM Forms Validation" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/blazor"><figure><img src="image/icons/blazor.png" alt="Blazor" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/blazor-wasm-forms-validation"><h2 class="[ font-medium break-words hover:underline ]">Blazor WASM Forms Validation</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-06-05 22-30-00">one year ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/blazor-wasm-forms"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-forms.png" class="[ w-full ] [ rounded-md ]" alt="Blazor WASM Forms" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/blazor"><figure><img src="image/icons/blazor.png" alt="Blazor" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/blazor-wasm-forms"><h2 class="[ font-medium break-words hover:underline ]">Blazor WASM Forms</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-05-29 22-30-00">one year ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/blazor-wasm-communication-between-components"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-communication-between-components.png" class="[ w-full ] [ rounded-md ]" alt="Blazor WASM Communication Between Components" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/blazor"><figure><img src="image/icons/blazor.png" alt="Blazor" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/blazor-wasm-communication-between-components"><h2 class="[ font-medium break-words hover:underline ]">Blazor WASM Communication Between Components</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-05-22 22-30-00">one year ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/oops-abstraction"><figure><img src="image/blogs/oops/oops-abstraction.png" class="[ w-full ] [ rounded-md ]" alt="OOPS Abstraction" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/oops"><figure><img src="image/icons/oops.png" alt="OOPS" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/oops-abstraction"><h2 class="[ font-medium break-words hover:underline ]">OOPS Abstraction</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-05-15 22-30-00">one year ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/blazor-wasm-controlling-head-content"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-controlling-head-content.png" class="[ w-full ] [ rounded-md ]" alt="Blazor WASM Controlling Head Content" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/blazor"><figure><img src="image/icons/blazor.png" alt="Blazor" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/blazor-wasm-controlling-head-content"><h2 class="[ font-medium break-words hover:underline ]">Blazor WASM Controlling Head Content</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-05-08 22-30-00">one year ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/oops-encapsulation"><figure><img src="image/blogs/oops/oops-encapsulation.png" class="[ w-full ] [ rounded-md ]" alt="OOPS Encapsulation" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/oops"><figure><img src="image/icons/oops.png" alt="OOPS" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/oops-encapsulation"><h2 class="[ font-medium break-words hover:underline ]">OOPS Encapsulation</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-05-01 22-30-00">one year ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/blazor-wasm-data-binding"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-data-binding.png" class="[ w-full ] [ rounded-md ]" alt="Blazor WASM Data Binding" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/blazor"><figure><img src="image/icons/blazor.png" alt="Blazor" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/blazor-wasm-data-binding"><h2 class="[ font-medium break-words hover:underline ]">Blazor WASM Data Binding</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-04-24 22-30-00">one year ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/blazor-wasm-event-handling-and-event-arguments"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-event-handling-and-event-arguments.png" class="[ w-full ] [ rounded-md ]" alt="Blazor WASM Event Handling And Event Arguments" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/blazor"><figure><img src="image/icons/blazor.png" alt="Blazor" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/blazor-wasm-event-handling-and-event-arguments"><h2 class="[ font-medium break-words hover:underline ]">Blazor WASM Event Handling And Event Arguments</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-04-17 22-30-00">one year ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/blazor-wasm-components"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-components.png" class="[ w-full ] [ rounded-md ]" alt="Blazor WASM Components" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/blazor"><figure><img src="image/icons/blazor.png" alt="Blazor" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/blazor-wasm-components"><h2 class="[ font-medium break-words hover:underline ]">Blazor WASM Components</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-04-10 22-30-00">one year ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/implementing-tdd-in-csharp-dotnet"><figure><img src="image/blogs/tdd/implementing-tdd-in-csharp-dotnet.png" class="[ w-full ] [ rounded-md ]" alt="Implementing TDD in C# .Net" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/tdd"><figure><img src="image/icons/tdd.png" alt="TDD" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/implementing-tdd-in-csharp-dotnet"><h2 class="[ font-medium break-words hover:underline ]">Implementing TDD in C# .Net</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-04-03 22-30-00">one year ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/introducing-tdd-in-csharp-dotnet"><figure><img src="image/blogs/tdd/introducing-tdd-in-csharp-dotnet.png" class="[ w-full ] [ rounded-md ]" alt="Introducing TDD in C# .Net" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/tdd"><figure><img src="image/icons/tdd.png" alt="TDD" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/introducing-tdd-in-csharp-dotnet"><h2 class="[ font-medium break-words hover:underline ]">Introducing TDD in C# .Net</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-03-27 22-30-00">one year ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/blazor-wasm-introduction"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-introduction.png" class="[ w-full ] [ rounded-md ]" alt="Blazor WASM Introduction" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/blazor"><figure><img src="image/icons/blazor.png" alt="Blazor" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/blazor-wasm-introduction"><h2 class="[ font-medium break-words hover:underline ]">Blazor WASM Introduction</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-03-20 22-30-00">one year ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="talks/blazor-spa-from-aspnet-family"><figure><img src="image/talks/blazor-spa-from-aspnet-family.png" class="[ w-full ] [ rounded-md ]" alt="Blazor - SPA from ASP.NET Family" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/talk"><figure><img src="image/icons/talk.png" alt="Talk" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="talks/blazor-spa-from-aspnet-family"><h2 class="[ font-medium break-words hover:underline ]">Blazor - SPA from ASP.NET Family</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-03-13 22-30-00">one year ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/webapi-importance-of-status-code"><figure><img src="image/blogs/webapi/webapi-importance-of-status-code.png" class="[ w-full ] [ rounded-md ]" alt="Importance of Status Code in Web API" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/webapi"><figure><img src="image/icons/webapi.png" alt="WebAPI" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/webapi-importance-of-status-code"><h2 class="[ font-medium break-words hover:underline ]">Importance of Status Code in Web API</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-03-06 22-30-00">one year ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/blazor-wasm-app-settings"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-app-settings.png" class="[ w-full ] [ rounded-md ]" alt="Blazor WASM App Settings" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/blazor"><figure><img src="image/icons/blazor.png" alt="Blazor" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/blazor-wasm-app-settings"><h2 class="[ font-medium break-words hover:underline ]">Blazor WASM App Settings</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-02-27 22-30-00">one year ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/blazor-wasm-lazy-loading"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-lazy-loading.png" class="[ w-full ] [ rounded-md ]" alt="Blazor WASM Lazy Loading" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/blazor"><figure><img src="image/icons/blazor.png" alt="Blazor" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/blazor-wasm-lazy-loading"><h2 class="[ font-medium break-words hover:underline ]">Blazor WASM Lazy Loading</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-02-20 22-30-00">one year ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/blazor-wasm-styles-and-css-isolation"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-styles-and-css-isolation.png" class="[ w-full ] [ rounded-md ]" alt="Blazor WASM Styles and CSS Isolation" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/blazor"><figure><img src="image/icons/blazor.png" alt="Blazor" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/blazor-wasm-styles-and-css-isolation"><h2 class="[ font-medium break-words hover:underline ]">Blazor WASM Styles and CSS Isolation</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-02-13 22-30-00">one year ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/blazor-wasm-javascript-interop-and-isolation"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-javascript-interop-and-isolation.png" class="[ w-full ] [ rounded-md ]" alt="Blazor WASM Javascript Interop and Isolation" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/blazor"><figure><img src="image/icons/blazor.png" alt="Blazor" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/blazor-wasm-javascript-interop-and-isolation"><h2 class="[ font-medium break-words hover:underline ]">Blazor WASM Javascript Interop and Isolation</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-02-06 22-30-00">one year ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/blazor-wasm-dark-theme-and-light-theme"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-dark-theme-and-light-theme.png" class="[ w-full ] [ rounded-md ]" alt="Blazor WASM Dark Theme and Light Theme" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/blazor"><figure><img src="image/icons/blazor.png" alt="Blazor" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/blazor-wasm-dark-theme-and-light-theme"><h2 class="[ font-medium break-words hover:underline ]">Blazor WASM Dark Theme and Light Theme</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-01-30 22-30-00">one year ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/blazor-wasm-exception-handling-and-error-boundary"><figure><img src="image/blogs/blazor/wasm/blazor-wasm-exception-handling-and-error-boundary.png" class="[ w-full ] [ rounded-md ]" alt="Blazor WASM Exception Handling and Error Boundary" loading="lazy"/></figure></a></header>
-                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/blazor"><figure><img src="image/icons/blazor.png" alt="Blazor" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
-                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/blazor-wasm-exception-handling-and-error-boundary"><h2 class="[ font-medium break-words hover:underline ]">Blazor WASM Exception Handling and Error Boundary</h2></a>
-                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
-                            <time datetime="2022-01-16 22-30-00">one year ago</time></section></article></div></section></aside></section></main><nav class="[ fixed bottom-0 h-14 w-full md:top-14 md:left-0 md:h-full md:w-16 ] 
+    <aside class="[ flex flex-col md:basis-1/4 ] [ space-y-2 ]"><div class="[ md:sticky md:top-14 ]"></div><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-docker-test-containers-in-functional-testing-in-asp-net-webapi"><figure><img src="image/blogs/webapi/using-docker-test-containers-in-functional-testing-in-asp-net-webapi.webp" class="[ w-full ] [ rounded-md ]" alt="Using Docker Test Containers in Functional Testing in ASP.NET WEB API" loading="lazy"/></figure></a></header>
+                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/webapi"><figure><img src="image/icons/webapi.webp" alt="WebAPI" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
+                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/using-docker-test-containers-in-functional-testing-in-asp-net-webapi"><h2 class="[ font-medium break-words hover:underline ]">Using Docker Test Containers in Functional Testing in ASP.NET WEB API</h2></a>
+                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
+                            <time datetime="2023-11-19 22-30-00">6 days ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/global-exception-handling-in-asp-net-webapi"><figure><img src="image/blogs/webapi/global-exception-handling-in-asp-net-webapi.webp" class="[ w-full ] [ rounded-md ]" alt="Global Exception Handling in ASP.NET WEB API" loading="lazy"/></figure></a></header>
+                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/webapi"><figure><img src="image/icons/webapi.webp" alt="WebAPI" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
+                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/global-exception-handling-in-asp-net-webapi"><h2 class="[ font-medium break-words hover:underline ]">Global Exception Handling in ASP.NET WEB API</h2></a>
+                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
+                            <time datetime="2023-11-12 22-30-00">13 days ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/architecture-test-using-net-arch-test-in-asp-net-webapi"><figure><img src="image/blogs/webapi/architecture-test-using-net-arch-test-in-asp-net-webapi.webp" class="[ w-full ] [ rounded-md ]" alt="Architecture Test using Net Arch Test in ASP.NET WEB API" loading="lazy"/></figure></a></header>
+                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/webapi"><figure><img src="image/icons/webapi.webp" alt="WebAPI" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
+                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/architecture-test-using-net-arch-test-in-asp-net-webapi"><h2 class="[ font-medium break-words hover:underline ]">Architecture Test using Net Arch Test in ASP.NET WEB API</h2></a>
+                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
+                            <time datetime="2023-11-05 22-30-00">20 days ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/request-endpoint-response-repr-pattern-in-asp-net-webapi"><figure><img src="image/blogs/webapi/request-endpoint-response-repr-pattern-in-asp-net-webapi.webp" class="[ w-full ] [ rounded-md ]" alt="Request Endpoint Response (REPR) pattern in ASP.NET WEB API" loading="lazy"/></figure></a></header>
+                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/webapi"><figure><img src="image/icons/webapi.webp" alt="WebAPI" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
+                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/request-endpoint-response-repr-pattern-in-asp-net-webapi"><h2 class="[ font-medium break-words hover:underline ]">Request Endpoint Response (REPR) pattern in ASP.NET WEB API</h2></a>
+                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
+                            <time datetime="2023-10-29 22-30-00">27 days ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/using-hot-keys-in-blazor-wasm"><figure><img src="image/blogs/blazor/wasm/using-hot-keys-in-blazor-wasm.webp" class="[ w-full ] [ rounded-md ]" alt="Using Hot Keys in Blazor WASM" loading="lazy"/></figure></a></header>
+                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/blazor"><figure><img src="image/icons/blazor.webp" alt="Blazor" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
+                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/using-hot-keys-in-blazor-wasm"><h2 class="[ font-medium break-words hover:underline ]">Using Hot Keys in Blazor WASM</h2></a>
+                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
+                            <time datetime="2023-10-22 22-30-00">one month ago</time></section></article></div></section><section class="[ flex flex-col justify-between ] [ h-full ]"><header><a href="blogs/prevent-image-leech-by-dynamically-streaming-image-in-blazor-wasm"><figure><img src="image/blogs/blazor/wasm/prevent-image-leech-by-dynamically-streaming-image-in-blazor-wasm.webp" class="[ w-full ] [ rounded-md ]" alt="Prevent image leech by dynamically streaming image in Blazor WASM" loading="lazy"/></figure></a></header>
+                <div class="[ grow flex ]"><aside class="[ basis-1/6 flex items-center ]"><a href="channels/blazor"><figure><img src="image/icons/blazor.webp" alt="Blazor" loading="lazy" height="48" width="48" class="[ rounded-full ]"/></figure></a></aside>
+                    <article class="[ grow flex flex-col justify-between basis-5/6 ] [ dark:text-white ] [ mt-2 ]"><a href="blogs/prevent-image-leech-by-dynamically-streaming-image-in-blazor-wasm"><h2 class="[ font-medium break-words hover:underline ]">Prevent image leech by dynamically streaming image in Blazor WASM</h2></a>
+                        <section class="[ flex justify-between ]"><p>Abdul Rahman</p>
+                            <time datetime="2023-10-15 22-30-00">one month ago</time></section></article></div></section><div class="[ flex items-center justify-center ]"><button type="button" class="[ cursor-pointer ] [ px-3 py-1 ] [ rounded-md ] [ whitespace-nowrap ] [ flex items-center justify-center ] [ disabled:opacity-75 disabled:cursor-not-allowed ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-caret-down ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M6 10l6 6l6 -6h-12"></path></svg>
+            <p>Show more</p></button></div>
+    </aside></section></main><nav class="[ fixed bottom-0 h-14 w-full md:top-14 md:left-0 md:h-full md:w-16 ] 
             [ bg-white ] [ dark:bg-gray-800 dark:bg-gray-800/80 ] [ backdrop-blur-sm bg-white/80 ] [ md:pt-2 ]
             [ flex justify-around items-center md:flex-col md:justify-start md:space-y-4 ]"><a href="/" class="[ flex flex-col items-center ]"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-home ]" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
            <polyline points="5 12 3 12 12 3 21 12 19 12"></polyline>
@@ -741,8 +616,9 @@
             <circle cx="12" cy="12" r="9"></circle>
             <line x1="12" y1="8" x2="12.01" y2="8"></line>
             <polyline points="11 12 12 12 12 16 13 16"></polyline></svg>
-        <span class="[ text-xs text-center ]">About</span></a></nav>
-            <!--Blazor:{"prerenderId":"f683fa7dc0934dafa15913c9eda2cd28"}-->
+        <span class="[ text-xs text-center ]">About</span></a></nav><aside class="[ fixed bottom-14 md:bottom-0 right-2 ]"><button type="button"><svg xmlns="http://www.w3.org/2000/svg" class="[ icon icon-tabler icon-tabler-square-rounded-chevron-up-filled ]" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M12 2c-.218 0 -.432 .002 -.642 .005l-.616 .017l-.299 .013l-.579 .034l-.553 .046c-4.785 .464 -6.732 2.411 -7.196 7.196l-.046 .553l-.034 .579c-.005 .098 -.01 .198 -.013 .299l-.017 .616l-.004 .318l-.001 .324c0 .218 .002 .432 .005 .642l.017 .616l.013 .299l.034 .579l.046 .553c.464 4.785 2.411 6.732 7.196 7.196l.553 .046l.579 .034c.098 .005 .198 .01 .299 .013l.616 .017l.642 .005l.642 -.005l.616 -.017l.299 -.013l.579 -.034l.553 -.046c4.785 -.464 6.732 -2.411 7.196 -7.196l.046 -.553l.034 -.579c.005 -.098 .01 -.198 .013 -.299l.017 -.616l.005 -.642l-.005 -.642l-.017 -.616l-.013 -.299l-.034 -.579l-.046 -.553c-.464 -4.785 -2.411 -6.732 -7.196 -7.196l-.553 -.046l-.579 -.034a28.058 28.058 0 0 0 -.299 -.013l-.616 -.017l-.318 -.004l-.324 -.001zm-.707 7.293a1 1 0 0 1 1.32 -.083l.094 .083l3 3a1 1 0 0 1 -1.32 1.497l-.094 -.083l-2.293 -2.292l-2.293 2.292a1 1 0 0 1 -1.32 .083l-.094 -.083a1 1 0 0 1 -.083 -1.32l.083 -.094l3 -3z" fill="currentColor" stroke-width="0"></path></svg></button></aside>
+            <!--Blazor:{"prerenderId":"cbb1014847394871b36407fc24c4de84"}-->
 <!-- %%-PRERENDERING-END-%% -->
 <!--Blazor-Component-State:e30=--></div>
 
