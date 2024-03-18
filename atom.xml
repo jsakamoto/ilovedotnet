@@ -9,7 +9,7 @@
 			<link>https://ilovedotnet.org/blogs/blazor-wasm-exception-handling-and-error-boundary</link>
 			<guid isPermaLink="true">https://ilovedotnet.org/blogs/blazor-wasm-exception-handling-and-error-boundary</guid>
 			<description>In this post I will teach you how exception handling works and how to use error boundary in your Blazor applications. All with live working demo.</description>
-			<pubDate>Sun, 16 Jan 2022 22:30:00 +0530</pubDate>
+			<pubDate>Sun, 10 Dec 2023 22:30:00 +0530</pubDate>
 		</item>
 		<item>
 			<title>Blazor WASM Error Logging</title>
@@ -30,7 +30,7 @@
 			<link>https://ilovedotnet.org/blogs/blazor-wasm-javascript-interop-and-isolation</link>
 			<guid isPermaLink="true">https://ilovedotnet.org/blogs/blazor-wasm-javascript-interop-and-isolation</guid>
 			<description>In this post I will teach you how to interact with javascript and isolate javascript in your Blazor applications. All with live working demo.</description>
-			<pubDate>Sun, 06 Feb 2022 22:30:00 +0530</pubDate>
+			<pubDate>Sun, 17 Dec 2023 22:30:00 +0530</pubDate>
 		</item>
 		<item>
 			<title>Blazor WASM Styles and CSS Isolation</title>
@@ -44,14 +44,14 @@
 			<link>https://ilovedotnet.org/blogs/blazor-wasm-lazy-loading</link>
 			<guid isPermaLink="true">https://ilovedotnet.org/blogs/blazor-wasm-lazy-loading</guid>
 			<description>In this post I will teach you how to lazy load assemblies in your Blazor applications. All with live working demo.</description>
-			<pubDate>Sun, 20 Feb 2022 22:30:00 +0530</pubDate>
+			<pubDate>Sun, 03 Dec 2023 22:30:00 +0530</pubDate>
 		</item>
 		<item>
 			<title>Blazor WASM App Settings</title>
 			<link>https://ilovedotnet.org/blogs/blazor-wasm-app-settings</link>
 			<guid isPermaLink="true">https://ilovedotnet.org/blogs/blazor-wasm-app-settings</guid>
 			<description>In this post I will teach you how to read configuration from app settings in your Blazor applications. All with live working demo.</description>
-			<pubDate>Sun, 27 Feb 2022 22:30:00 +0530</pubDate>
+			<pubDate>Sun, 31 Dec 2023 22:30:00 +0530</pubDate>
 		</item>
 		<item>
 			<title>Importance of Status Code in Web API</title>
@@ -100,7 +100,7 @@
 			<link>https://ilovedotnet.org/blogs/blazor-wasm-event-handling-and-event-arguments</link>
 			<guid isPermaLink="true">https://ilovedotnet.org/blogs/blazor-wasm-event-handling-and-event-arguments</guid>
 			<description>In this post I will teach how to handle events inside components in your Blazor applications. All with live working demo.</description>
-			<pubDate>Sun, 17 Apr 2022 22:30:00 +0530</pubDate>
+			<pubDate>Sun, 17 Mar 2024 22:30:00 +0530</pubDate>
 		</item>
 		<item>
 			<title>Blazor WASM Data Binding</title>
@@ -135,7 +135,7 @@
 			<link>https://ilovedotnet.org/blogs/blazor-wasm-communication-between-components</link>
 			<guid isPermaLink="true">https://ilovedotnet.org/blogs/blazor-wasm-communication-between-components</guid>
 			<description>In this post I will teach how to communicate between components in your Blazor applications. All with live working demo.</description>
-			<pubDate>Sun, 22 May 2022 22:30:00 +0530</pubDate>
+			<pubDate>Sun, 04 Feb 2024 22:30:00 +0530</pubDate>
 		</item>
 		<item>
 			<title>Blazor WASM Forms</title>
@@ -156,7 +156,7 @@
 			<link>https://ilovedotnet.org/blogs/blazor-wasm-virtualization</link>
 			<guid isPermaLink="true">https://ilovedotnet.org/blogs/blazor-wasm-virtualization</guid>
 			<description>In this post I will teach how to use virtualization in your Blazor applications. All with live working demo.</description>
-			<pubDate>Sun, 12 Jun 2022 22:30:00 +0530</pubDate>
+			<pubDate>Sun, 24 Dec 2023 22:30:00 +0530</pubDate>
 		</item>
 		<item>
 			<title>Introducing Middleware in ASP.NET</title>
@@ -177,7 +177,7 @@
 			<link>https://ilovedotnet.org/blogs/blazor-wasm-dynamic-component</link>
 			<guid isPermaLink="true">https://ilovedotnet.org/blogs/blazor-wasm-dynamic-component</guid>
 			<description>In this post I will teach what is dynamic component and how to use dynamic component in your Blazor applications. All with live working demo.</description>
-			<pubDate>Sun, 03 Jul 2022 22:30:00 +0530</pubDate>
+			<pubDate>Sun, 18 Feb 2024 22:30:00 +0530</pubDate>
 		</item>
 		<item>
 			<title>Blazor WASM Publishing To IIS</title>
@@ -212,7 +212,7 @@
 			<link>https://ilovedotnet.org/blogs/blazor-wasm-pre-rendering</link>
 			<guid isPermaLink="true">https://ilovedotnet.org/blogs/blazor-wasm-pre-rendering</guid>
 			<description>In this post I will teach how to prerender Blazor applications during publish time to improve SEO. All with live working demo.</description>
-			<pubDate>Sun, 07 Aug 2022 22:30:00 +0530</pubDate>
+			<pubDate>Sun, 10 Mar 2024 22:30:00 +0530</pubDate>
 		</item>
 		<item>
 			<title>LINQ Introduction</title>
@@ -387,7 +387,7 @@
 			<link>https://ilovedotnet.org/blogs/generate-excel-report-using-closed-xml-in-dotnet</link>
 			<guid isPermaLink="true">https://ilovedotnet.org/blogs/generate-excel-report-using-closed-xml-in-dotnet</guid>
 			<description>In this post I will teach you how to generate excel report using Closed XML in .NET. All with live working demo.</description>
-			<pubDate>Sun, 29 Jan 2023 22:30:00 +0530</pubDate>
+			<pubDate>Sun, 11 Feb 2023 22:30:00 +0530</pubDate>
 		</item>
 		<item>
 			<title>Using LINQ Group By to group data</title>
@@ -408,7 +408,7 @@
 			<link>https://ilovedotnet.org/blogs/generate-pdf-report-using-quest-pdf-in-dotnet</link>
 			<guid isPermaLink="true">https://ilovedotnet.org/blogs/generate-pdf-report-using-quest-pdf-in-dotnet</guid>
 			<description>In this post I will teach you how to generate pdf report using Quest PDF in .NET. All with live working demo.</description>
-			<pubDate>Sun, 19 Feb 2023 22:30:00 +0530</pubDate>
+			<pubDate>Sun, 03 Mar 2024 22:30:00 +0530</pubDate>
 		</item>
 		<item>
 			<title>Using LINQ For Each to Iterate Collections</title>
@@ -656,10 +656,10 @@
 			<pubDate>Sun, 29 Oct 2023 22:30:00 +0530</pubDate>
 		</item>
 		<item>
-			<title>Architecture Test using Net Arch Test in ASP.NET WEB API</title>
-			<link>https://ilovedotnet.org/blogs/architecture-test-using-net-arch-test-in-asp-net-webapi</link>
-			<guid isPermaLink="true">https://ilovedotnet.org/blogs/architecture-test-using-net-arch-test-in-asp-net-webapi</guid>
-			<description>In this post I will teach how to enforce architecture fitness using Architecture Test in ASP.NET Web API. All with live working demo.</description>
+			<title>Fitness Test using Net Arch Test in ASP.NET WEB API</title>
+			<link>https://ilovedotnet.org/blogs/fitness-test-using-net-arch-test-in-asp-net-webapi</link>
+			<guid isPermaLink="true">https://ilovedotnet.org/blogs/fitness-test-using-net-arch-test-in-asp-net-webapi</guid>
+			<description>In this post I will teach how to enforce architecture fitness using Fitness Test in ASP.NET Web API. All with live working demo.</description>
 			<pubDate>Sun, 05 Nov 2023 22:30:00 +0530</pubDate>
 		</item>
 		<item>
@@ -671,10 +671,52 @@
 		</item>
 		<item>
 			<title>Using Docker Test Containers in Functional Testing in ASP.NET WEB API</title>
-			<link>https://ilovedotnet.org/blogs/using-test-docker-containers-in-functional-testing-in-asp-net-webapi</link>
+			<link>https://ilovedotnet.org/blogs/using-docker-test-containers-in-functional-testing-in-asp-net-webapi</link>
 			<guid isPermaLink="true">https://ilovedotnet.org/blogs/using-docker-test-containers-in-functional-testing-in-asp-net-webapi</guid>
 			<description>In this post I will teach how to test with real database using Docker Test Containers in functional testing in ASP.NET Web API. All with live working demo.</description>
 			<pubDate>Sun, 19 Nov 2023 22:30:00 +0530</pubDate>
+		</item>
+		<item>
+			<title>Structured Logging with Serilog in ASP.NET WEB API</title>
+			<link>https://ilovedotnet.org/blogs/structured-logging-with-serilog-in-asp-net-webapi</link>
+			<guid isPermaLink="true">https://ilovedotnet.org/blogs/structured-logging-with-serilog-in-asp-net-webapi</guid>
+			<description>In this post I will teach how to use serilog to do structured logging in ASP.NET Web API. All with live working demo.</description>
+			<pubDate>Sun, 26 Nov 2023 22:30:00 +0530</pubDate>
+		</item>
+		<item>
+			<title>Structural Design Pattern - Decorator</title>
+			<link>https://ilovedotnet.org/blogs/structural-design-pattern-decorator</link>
+			<guid isPermaLink="true">https://ilovedotnet.org/blogs/structural-design-pattern-decorator</guid>
+			<description>In this post I will teach you Structural Decorator Design Pattern in .NET. All with live working demo.</description>
+			<pubDate>Sun, 07 Jan 2024 22:30:00 +0530</pubDate>
+		</item>
+		<item>
+			<title>Implementing Caching using Decorator Pattern in ASP.NET WEB API</title>
+			<link>https://ilovedotnet.org/blogs/implementing-caching-using-decorator-pattern-in-asp-net-webapi</link>
+			<guid isPermaLink="true">https://ilovedotnet.org/blogs/implementing-caching-using-decorator-pattern-in-asp-net-webapi</guid>
+			<description>In this post I will teach how to implement caching using decorator pattern in ASP.NET Web API. All with live working demo.</description>
+			<pubDate>Sun, 14 Jan 2024 22:30:00 +0530</pubDate>
+		</item>
+		<item>
+			<title>Structural Design Pattern - Facade</title>
+			<link>https://ilovedotnet.org/blogs/structural-design-pattern-facade</link>
+			<guid isPermaLink="true">https://ilovedotnet.org/blogs/structural-design-pattern-facade</guid>
+			<description>In this post I will teach you Structural Facade Design Pattern in .NET. All with live working demo.</description>
+			<pubDate>Sun, 21 Jan 2024 22:30:00 +0530</pubDate>
+		</item>
+		<item>
+			<title>Creational Design Pattern - Builder</title>
+			<link>https://ilovedotnet.org/blogs/creational-design-pattern-Builder</link>
+			<guid isPermaLink="true">https://ilovedotnet.org/blogs/creational-design-pattern-builder</guid>
+			<description>In this post I will teach you Creational Builder Design Pattern in .NET. All with live working demo.</description>
+			<pubDate>Sun, 28 Jan 2024 22:30:00 +0530</pubDate>
+		</item>
+		<item>
+			<title>OWASP - Secure your dotnet app by scanning for vulnerable nuget dependencies in CI pipelines</title>
+			<link>https://ilovedotnet.org/blogs/owasp-secure-your-dotnet-app-by-scanning-for-vulnerable-nuget-dependency-in-ci-pipelines</link>
+			<guid isPermaLink="true">https://ilovedotnet.org/blogs/owasp-secure-your-dotnet-app-by-scanning-for-vulnerable-nuget-dependency-in-ci-pipelines</guid>
+			<description>In this post I will teach you one of the owasp top 10 requirement to verify code to avoid malicious dependencies. All with live working demo.</description>
+			<pubDate>Sun, 25 Feb 2024 22:30:00 +0530</pubDate>
 		</item>
 	</channel>
 </rss>

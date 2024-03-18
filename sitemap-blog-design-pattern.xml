@@ -12,4 +12,22 @@
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
+	<url>
+		<loc>https://ilovedotnet.org/blogs/structural-design-pattern-decorator</loc>
+		<lastmod>2024-01-07T22:30:00+05:30</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://ilovedotnet.org/blogs/structural-design-pattern-facade</loc>
+		<lastmod>2024-01-21T22:30:00+05:30</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://ilovedotnet.org/blogs/creational-design-pattern-builder</loc>
+		<lastmod>2024-01-28T22:30:00+05:30</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.5</priority>
+	</url>
 </urlset>

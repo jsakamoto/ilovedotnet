@@ -79,7 +79,7 @@
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://ilovedotnet.org/blogs/architecture-test-using-net-arch-test-in-asp-net-webapi</loc>
+		<loc>https://ilovedotnet.org/blogs/fitness-test-using-net-arch-test-in-asp-net-webapi</loc>
 		<lastmod>2023-11-05T22:30:00+05:30</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
@@ -93,6 +93,18 @@
 	<url>
 		<loc>https://ilovedotnet.org/blogs/using-docker-test-containers-in-functional-testing-in-asp-net-webapi</loc>
 		<lastmod>2023-11-19T22:30:00+05:30</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://ilovedotnet.org/blogs/structured-logging-with-serilog-in-asp-net-webapi</loc>
+		<lastmod>2023-11-26T22:30:00+05:30</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>https://ilovedotnet.org/blogs/implementing-caching-using-decorator-pattern-in-asp-net-webapi</loc>
+		<lastmod>2024-01-14T22:30:00+05:30</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.5</priority>
 	</url>
